@@ -12,6 +12,12 @@ a {
     text-decoration: none;
     color: unset;
 }
+.clear_left {
+    padding-left: 0!important;
+}
+.clear_right {
+    padding-right: 0!important;
+}
 
 /* Navigation */
 .navigation_container {
@@ -67,15 +73,34 @@ a {
 .paragraph .highlight_text {
     font-weight: bolder;
 }
-.what_we_do_container, .location_container {
+.what_we_do_container {
     margin-bottom: 50px;
+}
+.location_container {
+    margin-bottom: 100px;
 }
 /* WhatWeDo */
 
 
 
 /* Location */
-
+.location_map_container {
+    text-align: left;
+}
+.location_map_container iframe{
+    width: 100%;
+    height: 300px;
+}
 
 
 /* Associate Service Providers */
+.associate_service_providers_image_container {
+    width: 100%;
+}
+.associate_service_providers_image_item {
+    padding: 0 8%;
+    width: 33.33%;
+}
+.associate_service_providers_image_item img {
+    width: 100%;
+}
