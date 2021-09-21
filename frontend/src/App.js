@@ -1,4 +1,5 @@
 import './App.css';
+import './Icon.css';
 
 function App() {
     return ( <div className = "App" >
