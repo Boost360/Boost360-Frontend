@@ -1,0 +1,81 @@
+/* GLOBAL */
+* {
+    font-family: Montserrat;
+}
+.in_line_flex {
+    display: inline-flex;
+}
+.flex {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* Navigation */
+.navigation_container {
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    color:#828282;
+}
+.seperator_right {
+    border-right: 1px solid #828282;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+
+/* BannerImage*/
+.banner_image_container {
+    width: 100%;
+    margin-bottom: 110px;
+}
+.banner_image_container img.banner_image {
+    width: 100%;
+}
+
+
+/* Main */
+.main_container {
+    width: 90%;
+}
+.left_column, .right_column {
+    width: 50%;
+}
+.left_column {
+    margin-left: 15%;
+    font-size: 25px;
+    color:#2E414F;
+    text-align: left;
+}
+.title_underlined {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8AE3FF;
+}
+.paragraph {
+    font-size: 15px;
+    color: #2E414F;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.paragraph .highlight_text {
+    font-weight: bolder;
+}
+.what_we_do_container, .location_container {
+    margin-bottom: 50px;
+}
+/* WhatWeDo */
+
+
+
+/* Location */
+
+
+
+/* Associate Service Providers */
