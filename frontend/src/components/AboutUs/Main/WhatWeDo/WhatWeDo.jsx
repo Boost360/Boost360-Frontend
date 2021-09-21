@@ -2,7 +2,7 @@ import React from "react";
 
 const WhatWeDo = () => {
     return (
-        <div className='flex'>
+        <div className='flex mobile_grid'>
             <div className='left_column'>
                 <span className='title_underlined'>What we do</span>
             </div>
