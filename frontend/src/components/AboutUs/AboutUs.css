@@ -2,6 +2,9 @@
 * {
     font-family: Montserrat;
 }
+html {
+    scroll-behavior: smooth;
+}
 .in_line_flex {
     display: inline-flex;
 }
@@ -18,7 +21,15 @@ a {
 .clear_right {
     padding-right: 0!important;
 }
+.mobile_hide {
+    display: none;
+}
 
+@media (max-width: 600px) {
+    .mobile_grid {
+        display: grid;
+    }
+}
 /* Navigation */
 .navigation_container {
     padding: 20px 0;
@@ -33,7 +44,21 @@ a {
     padding-right: 20px;
     margin-right: 20px;
 }
-
+.navigation_item:hover {
+    color:black;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .navigation_container {
+        text-align: center;
+    }
+    .navigation_container .seperator_right {
+        border-right: none;
+        padding-right: unset;
+        margin-right: unset;
+        margin-bottom: 10px;
+    }
+}
 
 /* BannerImage*/
 .banner_image_container {
@@ -79,6 +104,20 @@ a {
 .location_container {
     margin-bottom: 100px;
 }
+
+@media (max-width: 600px){
+    .left_column, .right_column {
+        width: 90%;
+        margin-left: 10%;
+    }
+    .left_column {
+        margin-bottom: 50px;
+    }
+    .title_underlined {
+        line-height: 50px;
+    }
+}
+
 /* WhatWeDo */
 
 

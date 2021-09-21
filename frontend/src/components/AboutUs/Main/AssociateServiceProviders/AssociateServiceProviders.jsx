@@ -3,7 +3,7 @@ import partner_logo from '../../../../static/img/partner.png'
 
 const AssociateServiceProviders = () => {
     return (
-        <div className='flex'>
+        <div className='flex mobile_grid'>
             <div className='left_column'>
                 <span className='title_underlined'>Associate service providers</span>
             </div>
