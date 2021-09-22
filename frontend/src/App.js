@@ -1,5 +1,6 @@
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
+import Partner from "./components/Partner/Partner";
 import './Icon.css';
 import {
     BrowserRouter as Router,
@@ -14,7 +15,7 @@ function App() {
         <div className="App" >
             <Switch>
                 <Route path="/">
-                    <AboutUs />
+                    <Partner />
                 </Route>
             </Switch>
 
