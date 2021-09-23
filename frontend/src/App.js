@@ -1,5 +1,6 @@
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
+import LandingPage from './components/LandingPage/LandingPage';
 import './Icon.css';
 
 
