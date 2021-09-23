@@ -2,6 +2,8 @@ import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import Partner from "./components/Partner/Partner";
 import './Icon.css';
+import NavBar from './components/NavBar/NavBar';
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -18,7 +20,6 @@ function App() {
                     <Partner />
                 </Route>
             </Switch>
-
         </div>
     );
 }
