@@ -1,5 +1,7 @@
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
+import LandingPage from './components/LandingPage/LandingPage';
+import HomePage from './components/HomePage/HomePage';
 import Partner from "./components/Partner/Partner";
 import './Icon.css';
 import NavBar from './components/NavBar/NavBar';
