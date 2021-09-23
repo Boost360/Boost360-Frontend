@@ -6,15 +6,15 @@ import WhatWeDo from './WhatWeDo/WhatWeDo'
 const Main = () => {
     return (
         <div className='main_container'>
-            <div className='what_we_do_container'>
+            <div className='what_we_do_container' id='what_we_do_container'>
                 <WhatWeDo/>
             </div>
 
-            <div className='location_container'>
+            <div className='location_container' id='location_container'>
                 <Location/>
             </div>
 
-            <div className='associate_service_providers_container'>
+            <div className='associate_service_providers_container' id='associate_service_providers_container'>
                 <AssociateServiceProviders/>
             </div>
 
