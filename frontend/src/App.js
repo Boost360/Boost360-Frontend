@@ -1,5 +1,5 @@
 import './App.css';
-import LandingPage from './components/LandingPage/LandingPage';
+import Team from './components/Team/Team'
 import './Icon.css';
 import Site from './components/Site/Site';
 
@@ -15,14 +15,15 @@ function App() {
     return (
         <div className="App" >
             <Switch>
-                <Route path="/" exact>
-                    <LandingPage />
+      
+                <Route path="/">
+                    <Team />
                 </Route>
+      
                 <Route path="/site">
                     <Site></Site>
-
-
                 </Route>
+      
             </Switch>
         </div>
     );

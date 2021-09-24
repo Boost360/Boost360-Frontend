@@ -1,0 +1,106 @@
+/* Global */
+
+
+
+
+
+/* Team */
+
+
+
+
+
+/* TeamNavigator */
+.TeamPage_navigation_container {
+    padding: 10px 0;
+    font-size: 15px;
+    color: #2E414F;
+
+}
+
+
+
+
+/* TeamImageBanner */
+.TeamPage_banner_image {
+    width: 100%;
+    height: 200px;
+    background: url("../../static/img/team-auckland.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+/* TeamMemberMain */
+.TeamPage_main_container {
+    width: 80%;
+    background: #F1F1F1;
+    padding: 100px 10% 0 10%;
+    display: inline-block;
+}
+.TeamPage_single_member_container {
+    width: 19%;
+    padding: 0 3% 100px 3%;
+    float: left;
+}
+@media (max-width:600px) {
+    .TeamPage_single_member_container {
+        width: 100%;
+    }
+}
+
+
+
+
+/* TeamMember */
+.TeamPage_single_member {
+    width: 100%;
+}
+.TeamPage_member_avatar, .TeamPage_member_name {
+    margin-bottom: 30px;
+    color: #2E414F;
+    font-size: 25px;
+    line-height: 25px;
+
+}
+.TeamPage_member_avatar img{
+    width: 80%;
+    border-radius: 50%;
+}
+.TeamPage_name_container {
+    display: inline-flex;
+}
+.TeamPage_name_container .TeamPage_member_badge {
+    margin-left: 10px;
+}
+.TeamPage_member_badge img {
+    height: 25px;
+}
+.TeamPage_member_role {
+    font-size: 15px;
+    color: #2E414F;
+}
+.TeamPage_single_member:hover .TeamPage_member_avatar img{
+    box-shadow: 10px 10px 100px rgba(75, 211, 255, 0.3), -10px -10px 100px rgba(75, 211, 255, 0.2);
+}
+.TeamPage_tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: white;
+    color: #2E414F;
+    text-align: center;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.TeamPage_single_member:hover .TeamPage_tooltip {
+    visibility: visible;
+}
+.TeamPage_badge_display_none {
+    display: none;
+}
