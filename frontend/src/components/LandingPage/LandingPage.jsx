@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import logo  from '../../static/img/logo.png';
+import { Link } from "react-router-dom";
 
 export default function LandingPage(){
     return(
@@ -12,8 +13,8 @@ export default function LandingPage(){
             </div>
             <div className="buttonArea">
                 <div className="enterButton">
-                    <button className="landingButton"><span>Enter Site</span></button> 
-                    <button className="landingButton"><span>Student Login</span></button>
+                    <Link className="landingButton" to="/site"><span>Enter Site</span></Link> 
+                    <Link className="landingButton"><span>Student Login</span></Link>
                 </div>                
                 <div className="languages">
                 <a>English</a>

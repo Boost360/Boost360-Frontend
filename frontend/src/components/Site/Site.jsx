@@ -3,6 +3,7 @@ import NavBar from "../NavBar/NavBar";
 import AboutUs from "../AboutUs/AboutUs"
 import { Route, useRouteMatch } from "react-router";
 import Partner from "../Partner/Partner"
+import Team from "../Team/Team"
 
 
 
@@ -14,7 +15,7 @@ const Site = () => {
     let { path, url } = useRouteMatch();
     return (
         <div>
-            {/* <NavBar></NavBar> */}
+            <NavBar></NavBar>
             
             <Route path={path} exact>
                 Index Page HERE
@@ -26,6 +27,10 @@ const Site = () => {
 
             <Route path={`${path}/partner`}>
                 <Partner></Partner>
+            </Route>
+
+            <Route path={`${path}/team`}>
+                <Team></Team>
             </Route>
 
 

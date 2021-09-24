@@ -1,7 +1,7 @@
 import './App.css';
-import Team from './components/Team/Team'
 import './Icon.css';
 import Site from './components/Site/Site';
+import LandingPage from './components/LandingPage/LandingPage';
 
 
 import {
@@ -16,8 +16,8 @@ function App() {
         <div className="App" >
             <Switch>
       
-                <Route path="/">
-                    <Team />
+                <Route path="/" exact>
+                    <LandingPage></LandingPage>
                 </Route>
       
                 <Route path="/site">
