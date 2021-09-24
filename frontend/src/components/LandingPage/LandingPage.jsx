@@ -23,9 +23,6 @@ export default function LandingPage(){
                 <a>中文</a>
             </div>
             </div>
-            
-            
-
         </div>
 
     )
