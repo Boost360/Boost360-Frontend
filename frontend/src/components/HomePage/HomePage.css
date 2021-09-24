@@ -1,0 +1,36 @@
+.HomePage{
+    background: url('../../static/img/background8.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.HomePagebody{
+    color: #ffffff;
+    margin-top: 24%;
+    margin-bottom: 9%;
+    font-size: 400%;
+}
+
+.HomePagebody span{
+    color: #8AE3FF;
+}
+
+.HomePageheader{
+    height: 10%;
+    background-color: black;
+}
+
+.HomePagelink{
+    height: 20%;
+    background-color: aqua;
+
+}
