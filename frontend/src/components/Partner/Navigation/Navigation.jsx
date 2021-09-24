@@ -29,7 +29,7 @@ function goToPartnerDetail(event){
 
 const Navigation = () => {
     return (
-        <div className='navigation_container'>
+        <div className='partner_page_navigation_container'>
             <div onMouseEnter={goToPartnerDetail} id='partner_page_logo_1' className='navigation_partner_image_container'>
                 <img src={partner_logo_1}/>
             </div>
