@@ -1,6 +1,17 @@
 import React, {Component} from 'react';
-import Avatar from '../../../../static/img/avatar05.png';
 import RoleBadge from '../../../../static/img/partner.png';
+
+var tooltip = document.querySelectorAll('.TeamPage_tooltip');
+document.addEventListener('mousemove', ToolTipFollow, false);
+
+function ToolTipFollow(event) {
+
+    for (var i=tooltip.length; i--;) {
+        tooltip[i].style.left = event.pageX + 'px';
+        tooltip[i].style.top = event.pageY + 'px';
+    }
+}
+
 
 const TeamMember = (props) => {
     let badge_class;
@@ -12,7 +23,7 @@ const TeamMember = (props) => {
     return (
         <div className='TeamPage_single_member'>
             <div className="TeamPage_tooltip">
-                Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me
+                {props.user.tooltip}
             </div>
             <div className='TeamPage_member_avatar'>
                 <img src={props.user.avatar.default}/>

@@ -7,14 +7,14 @@ const TeamMemberMain = () => {
         role: 'Role',
         partner: true,
         avatar: require('../../../static/img/avatar05.png'),
-        tooltip: 'Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me'
+        tooltip: '1Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me'
     }
     const user2 = {
         name: 'Angela Chien',
         role: 'Role',
         partner: false,
         avatar: require('../../../static/img/avatar03.png'),
-        tooltip: 'Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me'
+        tooltip: '2Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me Hover over me'
     }
     const user3 = {
         name: 'Ollie Chien',
