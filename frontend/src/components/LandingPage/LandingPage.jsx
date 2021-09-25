@@ -15,7 +15,7 @@ export default function LandingPage(){
                     <button className="landingButton"><span>Enter Site</span></button> 
                     <button className="landingButton"><span>Student Login</span></button>
                 </div>                
-                <div className="languages">
+                <div className="languagesection">
                 <a>English</a>
                 <p>|</p>
                 <a>한국어</a>
