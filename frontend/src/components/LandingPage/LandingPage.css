@@ -1,13 +1,19 @@
 /* Whole page */
 .LandingPage{
-    background: url('../../static/img/background8.png')no-repeat center / cover;
+    background: url('../../static/img/background8.png')rgba(0,0,0,.4) no-repeat center / cover;
     align-items: center;
     position: absolute;
     width: 100vw;
     height: 100vh;
     background-size:100% 100%;
     overflow:hidden;
-    filter: brightness(80%);
+}
+
+.LandingPage-mask{
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+
 }
 
 /* icon */
@@ -42,17 +48,6 @@
     padding: 0px;
 
     position: static;
-    /* width: 701px;
-    height: 230px;
-    left: 369.5px;
-    top: 543px; */
-
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    flex-grow: 0;
-    /* margin: 300px 0px;    */
 }
 
 .enterButton{
@@ -109,9 +104,6 @@
     height: 30px;
     left: 20px;
     top: 20px;
-
-    /* Secondary/light */
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -157,8 +149,7 @@
 
 .languagesection a{
     position: static;
-    width: 69px;
-    height: 30px;
+
     left: 154px;
     top: 15px;
     /* Secondary/light */
@@ -201,13 +192,15 @@
 
 @media screen and (max-width: 1025px){
     .LandingPage{
-        background: url('../../static/img/background8.png')no-repeat center / cover;
         align-items: center;
         position: absolute;
         width: 100%;
         height: 100%;
-        overflow:hidden;
-        filter: brightness(80%);
+        overflow-y: auto;
+    }
+
+    .LandingPage-mask{
+        overflow-y: auto;
     }
 
     .LandingPageicon{
@@ -224,13 +217,7 @@
     }
 
     .buttonArea{
-           display: flex;
            flex-direction: column;
-           align-items: center;
-           padding: 0px;
-           position: static;
-           flex: none;
-           flex-grow: 0;
        }
        
     .enterButton{
@@ -256,7 +243,6 @@
         padding: 20px;
         position: static;
         width: auto;
- 
         background: rgba(32, 32, 32, 0);
         /* Theme/text */
         border: 1px solid #F1F1F1;
@@ -268,9 +254,6 @@
         margin-top: 5%;
     }
     
-    .landingButton:hover{
-        background: rgba(32, 32, 32, 0.4);
-    }
     
     
     .languagesection{
