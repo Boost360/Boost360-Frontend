@@ -7,7 +7,7 @@
     height: 100vh;
     background-size:100% 100%;
     overflow:hidden;
-    filter: brightness(90%);
+    filter: brightness(80%);
 }
 
 /* icon */
@@ -22,9 +22,9 @@
 .LandingPageicon img{
     height: 60%;
     padding: 6px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 15px;
-    margin-left: 20px;
+    margin-left: 50px;
     float: left;
 }
 
@@ -51,7 +51,6 @@
     /* Inside Auto Layout */
 
     flex: none;
-    order: 1;
     flex-grow: 0;
     /* margin: 300px 0px;    */
 }
@@ -132,7 +131,7 @@
     margin: 0px 10px;
 }
 
-.languages{
+.languagesection{
     /* Auto Layout */
 
     display: flex;
@@ -156,7 +155,7 @@
     margin-bottom: 200px;
 }
 
-.languages a{
+.languagesection a{
     position: static;
     width: 69px;
     height: 30px;
@@ -176,12 +175,12 @@
     margin: 0px 20px;
 }
 
-.languages a:hover{
+.languagesection a:hover{
     color: #8AE3FF;
 }
 
 
-.languages p{
+.languagesection p{
     position: static;
     width: 30px;
     height: 0px;
@@ -198,4 +197,97 @@
     flex: none;
     flex-grow: 0;
     margin: 0px 15px;
+}
+
+@media screen and (max-width: 1025px){
+    .LandingPage{
+        background: url('../../static/img/background8.png')no-repeat center / cover;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow:hidden;
+        filter: brightness(80%);
+    }
+
+    .LandingPageicon{
+        width: 100%;
+        height: 60%;
+    }
+
+    .LandingPageicon img{
+        height: 60%;
+        float: none;
+        margin: 0;
+        margin-top: 30px;
+
+    }
+
+    .buttonArea{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           padding: 0px;
+           position: static;
+           flex: none;
+           flex-grow: 0;
+       }
+       
+    .enterButton{
+        /* Auto Layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        position: static;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 100px 0px;
+    }
+    
+    .landingButton{
+        /* Auto Layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        position: static;
+        width: auto;
+ 
+        background: rgba(32, 32, 32, 0);
+        /* Theme/text */
+        border: 1px solid #F1F1F1;
+        box-sizing: border-box;
+        /* Inside Auto Layout */
+        flex: none;
+        flex-grow: 0;
+        /* margin: 0px 260px; */
+        margin-top: 5%;
+    }
+    
+    .landingButton:hover{
+        background: rgba(32, 32, 32, 0.4);
+    }
+    
+    
+    .languagesection{
+        flex-direction: column;
+        margin-top: 5%;
+        margin-bottom: 200px;
+    }
+    
+    .languagesection a{
+        margin: 2%;
+    }
+
+    
+    .languagesection p{
+        display: none;
+    }
+    
+    
+
 }
