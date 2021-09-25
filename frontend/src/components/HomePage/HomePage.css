@@ -1,36 +1,77 @@
 .HomePage{
-    background: url('../../static/img/background8.png');
-    display: flex;
-    flex-direction: column;
+    background: url('../../static/img/background8.png')no-repeat center / cover;
     align-items: center;
-    padding: 0px;
-
     position: absolute;
-    width: 1440px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-size:100% 100%;
+    overflow:hidden;
 
 }
 
 .HomePagebody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    position: static;
+    width: auto;
+    height: 70%;
+    left: 10px;
+    top: 10px;
+}
+
+.messageHome{
+    position: static;
+    width: auto;
+    height: 20%;
+    top: 298.5px;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 105px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.01em;
     color: #ffffff;
-    margin-top: 24%;
-    margin-bottom: 9%;
-    font-size: 400%;
 }
 
 .HomePagebody span{
     color: #8AE3FF;
 }
 
-.HomePageheader{
-    height: 10%;
-    background-color: black;
+.HomePagelink{
+    /* The two line belowed make sure that all item in this div will display as row */
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    /* this two lines of code help div keep bottom */
+    position: absolute;
+    bottom: 0;
+
+
+    width: auto;
+    height: auto;
+    backdrop-filter: blur(7px);
+
+    left: 45%;
 }
 
-.HomePagelink{
-    height: 20%;
-    background-color: aqua;
+.HomeIcon{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 1025px){
+    .HomePage{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
 
 }
