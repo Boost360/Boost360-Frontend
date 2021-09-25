@@ -4,6 +4,7 @@ import AboutUs from "../AboutUs/AboutUs"
 import { Route, useRouteMatch } from "react-router";
 import Partner from "../Partner/Partner"
 import Team from "../Team/Team"
+import HomePage from "../HomePage/HomePage"
 
 
 
@@ -18,7 +19,7 @@ const Site = () => {
             <NavBar></NavBar>
             
             <Route path={path} exact>
-                Index Page HERE
+                <HomePage></HomePage>
             </Route>
 
             <Route path={`${path}/about`}>
