@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 export default function LandingPage(){
     return(
         <div className="LandingPage">
+            <div className="LandingPage-mask">
             <div className="LandingPageheader">
                 <div className="LandingPageicon">
                     <img src={logo} alt="logo"/>
@@ -18,10 +19,11 @@ export default function LandingPage(){
                 </div>                
                 <div className="languagesection">
                 <a>English</a>
-                <p>|</p>
+                <p/>
                 <a>한국어</a>
-                <p>|</p>
+                <p/>
                 <a>中文</a>
+            </div>
             </div>
             </div>
         </div>
