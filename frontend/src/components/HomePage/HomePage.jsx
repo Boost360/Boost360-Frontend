@@ -9,9 +9,6 @@ import { IconContext } from "react-icons";
 export default function HomePage(){
     return(
         <div className="HomePage">
-            <div className="HomePageheader">
-                <NavBar/>
-            </div>
 
             <div className="HomePagebody">
                 <div className="messageHome">
