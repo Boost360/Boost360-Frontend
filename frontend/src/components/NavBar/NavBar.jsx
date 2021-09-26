@@ -134,7 +134,7 @@ const NavBar = ({page, goToPage}) => {
             <div className="menu" style={isFold ? {display: 'none'} : {display: 'flex'}}>
                 <div className="logo"></div>
                 <div className="menuItems">
-                    <MenuItem page='Home' navLink='/site/home'/>
+                    <MenuItem page='Home' navLink='/site'/>
                     |
                     <MenuItem page='About' navLink='/site/about'/>
                     |
