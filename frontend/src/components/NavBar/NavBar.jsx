@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
+import {Link} from 'react-router';
 import './NavBar.css';
 import {AiOutlineMenu, AiOutlineArrowLeft, AiOutlineArrowUp} from 'react-icons/ai';
+
 
 // BEHAVIORS        
 //
@@ -28,12 +30,11 @@ import {AiOutlineMenu, AiOutlineArrowLeft, AiOutlineArrowUp} from 'react-icons/a
 // @todo refactor
 // [24/sep/2021 @Sarah]
     
-const NavBar = () => {
+const NavBar = ({page, goToPage}) => {
     const [language, setLanguage] = useState('english');
     const [isFold, setIsFold] = useState(false);
     const [isLogin, setIsLogin] = useState(true);
-    const [currentPage, setCurrentPage] = useState('Schedule'); // Note: always use setPage() instead of setCurrentPage(). [24/sep/2021 @Sarah]
-    const [parentPage, setParentPage] = useState('Student home');
+    const [currentPage, setCurrentPage] = useState(page); // Note: always use setPage() instead of setCurrentPage(). [24/sep/2021 @Sarah]
     const [pages, setPages] = useState(
         {
             'Home' : null,
@@ -55,7 +56,10 @@ const NavBar = () => {
             'Development program' : 'Student home'
         } 
     );
+    const [parentPage, setParentPage] = useState(pages[currentPage]);
 
+
+// @todo add onMount function {setPage(page)}
         
     const setPage = (page) => {
         if (pages[page] !== undefined) {
@@ -69,11 +73,11 @@ const NavBar = () => {
 
     const getNavbarClassName = () => {
         if (currentPage === 'Home' || currentPage === 'Contact') {
-            return "navBar-transparent";
-        } else if (parentPage === 'Student home') {
-            return "navBar-dark";
+            return "navBar transparent";
+        } else if (parentPage === 'Student home' || currentPage === 'Student home') {
+            return "navBar dark";
         } else {
-            return "navBar-light";
+            return "navBar light";
         }
     }
 
@@ -103,12 +107,12 @@ const NavBar = () => {
         const handleClick = () => {
             setPage(page);
             page === 'Home' ? setIsFold(false) : setIsFold(true);
-            // @todo route to navLink
+            goToPage(navLink);
         };
         return (
             <span key={page}
-                className="menuItem"
                 onClick={handleClick}
+                className="menuItem"
                 style={(currentPage === page || parentPage === page) ? { font: "var(--tertiary-bold)" } : {}}
             >
                 {page}
@@ -130,23 +134,23 @@ const NavBar = () => {
             <div className="menu" style={isFold ? {display: 'none'} : {display: 'flex'}}>
                 <div className="logo"></div>
                 <div className="menuItems">
-                    <MenuItem page='Home' navLink='@todo'/>
+                    <MenuItem page='Home' navLink='/site'/>
                     |
-                    <MenuItem page='About' navLink='@todo'/>
+                    <MenuItem page='About' navLink='/site/about'/>
                     |
-                    <MenuItem page='Contact' navLink='@todo'/>
+                    <MenuItem page='Contact' navLink='/site/contact'/>
                     |
-                    <MenuItem page='Partners' navLink='@todo'/>
+                    <MenuItem page='Partners' navLink='/site/partner'/>
                     |
-                    <MenuItem page='Team'navLink='@todo'/>
+                    <MenuItem page='Team'navLink='/site/team'/>
                     |
-                    <MenuItem page='Services'navLink='@todo'/>
+                    <MenuItem page='Services'navLink='/site/services'/>
                     |
-                    <MenuItem page='Blog'navLink='@todo'/>
+                    <MenuItem page='Blog'navLink='/site/blog'/>
                     |
-                    <MenuItem page='Language'navLink='@todo'/>
+                    <MenuItem page='Language'navLink='/site/language'/>
                     |
-                    {isLogin ? (<MenuItem page='Student home' navLink='@todo'/>) : (<MenuItem page='Student login' navLink='@todo'/>)}
+                    {isLogin ? (<MenuItem page='Student home' navLink='/site/student_home'/>) : (<MenuItem page='Student login' navLink='/site/student-login'/>)}
                 </div>
             </div>
             <div className='header' style={currentPage === 'Home' ? {display: 'none'} : {display: 'flex'}}>
