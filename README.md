@@ -1,4 +1,6 @@
-# Golf Course Sys
+# Boost-360 Golf Course Site
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24e52b27-e45d-4c8c-a31b-45bcc53bbba6/deploy-status)](https://app.netlify.com/sites/boost360/deploys)
 
 # Environment vars
 This project uses the following environment variables:

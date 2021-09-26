@@ -3,6 +3,8 @@ import NavBar from "../NavBar/NavBar";
 import AboutUs from "../AboutUs/AboutUs"
 import { Route, useRouteMatch, useHistory } from "react-router";
 import Partner from "../Partner/Partner"
+import Team from "../Team/Team"
+import HomePage from "../HomePage/HomePage"
 
 
 
@@ -16,10 +18,10 @@ const Site = () => {
     const [page, setPage] = useState('Home'); // Do not use inside Route compoennt! @Sarah
     return (
         <div>
-            <NavBar page={page} goToPage={(path)=>history.push(path)}></NavBar>
-            
+            <NavBar page={page} goToPage={(path)=>history.push(path)}></NavBar> 
+
             <Route path={path} exact>
-                Index Page HERE
+                <HomePage></HomePage>
             </Route>
 
             <Route path={`${path}/about`}>
@@ -28,6 +30,10 @@ const Site = () => {
 
             <Route path={`${path}/partner`}>
                 <Partner></Partner>
+            </Route>
+
+            <Route path={`${path}/team`}>
+                <Team></Team>
             </Route>
 
 
