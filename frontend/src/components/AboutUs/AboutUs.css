@@ -38,11 +38,19 @@ a {
     font-size: 15px;
     font-weight: 400;
     color:#828282;
+    position: sticky;
+    top: 75px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #1A69AB;
 }
 .seperator_right {
     border-right: 1px solid #828282;
     padding-right: 20px;
     margin-right: 20px;
+}
+.navigation_item {
+    display: inline;
 }
 .navigation_item:hover {
     color:black;
