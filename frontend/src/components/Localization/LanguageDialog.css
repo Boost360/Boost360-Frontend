@@ -18,6 +18,7 @@
 
 .langDialog-Button {
     /* button */
+    cursor: pointer;
     /* Auto Layout */
     display: flex;
     flex-direction: row;
@@ -65,6 +66,11 @@
     color: black;
     margin: 0px 3px;
 }
+
+.languageSet-label:hover{
+    cursor: pointer;
+}
+
 .languageSet-currentLabel {
     font-family: Montserrat;
     font-size: 25px;
@@ -79,4 +85,20 @@
     border: 1px solid #F1F1F1;
     transform: rotate(-90deg);
     margin: 0px 15px;
+}
+
+
+@media screen and (max-width: 1025px){
+    .languageSet{
+        flex-direction: column;
+    }
+    .languageSet p{
+        display: none;
+    }
+    .languageSet-label{
+        margin-top: 5px;
+    }
+
+
+
 }

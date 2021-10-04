@@ -14,14 +14,17 @@ import './LanguageDialog.css'
 
 const LanguageDialog = ({ open, handleClose }) => {
   const [currentLang, setCurrentLang] = React.useState("EN")
+  
 
+
+  /**
+   * 
+   * @param {String} lang  "EN" = English  "CH" = Chinese "KR" = Korean
+   */
   const handleChangeLang = (lang) => {
     setCurrentLang(lang)
 
   }
-
-
-
 
 
   return (
@@ -49,10 +52,10 @@ const LanguageDialog = ({ open, handleClose }) => {
         </div>
         <div className="langDialog-Buttongroup">
           <div className="langDialog-Button">
-            <a className="langDialog-Button-text">Cancel</a>
+            <a className="langDialog-Button-text" onClick={handleClose}>Cancel</a>
           </div>
           <div className="langDialog-Button blue">
-            <a className="langDialog-Button-text">Change</a>
+            <a className="langDialog-Button-text" onClick={handleClose}>Change</a>
           </div>
         </div>
 
