@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {Link} from 'react-router';
 import './NavBar.css';
 import {AiOutlineMenu, AiOutlineArrowLeft, AiOutlineArrowUp} from 'react-icons/ai';
+import LanguageDialog from '../Localization/LanguageDialog';
 
 
 // BEHAVIORS        
@@ -57,6 +58,15 @@ const NavBar = ({page, goToPage}) => {
         } 
     );
     const [parentPage, setParentPage] = useState(pages[currentPage]);
+    const [showLanguageDialog,setShowLanguageDialog] =useState(false);
+
+    const handleOpenLanguageDialog = () =>{
+        setShowLanguageDialog(true);
+    }
+
+    const handleCloseLanguageDialog = () =>{
+        setShowLanguageDialog(false);
+    }
 
 
 // @todo add onMount function {setPage(page)}
@@ -148,7 +158,9 @@ const NavBar = ({page, goToPage}) => {
                     |
                     <MenuItem page='Blog'navLink='/site/blog'/>
                     |
-                    <MenuItem page='Language'navLink='/site/language'/>
+                    <span className="menuItem" onClick={handleOpenLanguageDialog}>
+                        Language
+                    </span>
                     |
                     {isLogin ? (<MenuItem page='Student home' navLink='/site/student_home'/>) : (<MenuItem page='Student login' navLink='/site/student-login'/>)}
                 </div>
@@ -157,6 +169,7 @@ const NavBar = ({page, goToPage}) => {
                 <MenuIcon/>
                 <div className="header-text">{getHeaderText()}</div>
             </div>
+            <LanguageDialog open={showLanguageDialog} handleClose={handleCloseLanguageDialog}></LanguageDialog>
         </div>
     );
 }
