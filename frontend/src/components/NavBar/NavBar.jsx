@@ -73,7 +73,7 @@ const NavBar = ({page, goToPage}) => {
 
     const getNavbarClassName = () => {
         if (currentPage === 'Home' || currentPage === 'Contact') {
-            return "navBar transparent";
+            return "navBar transparent cover";
         } else if (parentPage === 'Student home' || currentPage === 'Student home') {
             return "navBar dark";
         } else {
