@@ -1,5 +1,10 @@
 {
     "translations": {
+        "landing":{
+            "enter":"进入主页",
+            "login":"学生登录"
+        },
+
         "contact":{
             "mobile":"联系电话",
             "email":"电子邮箱",
