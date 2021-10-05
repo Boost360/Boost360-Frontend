@@ -1,0 +1,104 @@
+.langDialog {
+    padding: 50px;
+}
+
+.langDialog-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.langDialog-Buttongroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.langDialog-Button {
+    /* button */
+    cursor: pointer;
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 224.5px;
+    height: 50px;
+    background: #C2C2C2;
+    /* Theme/white */
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    margin: 10px;
+    /* Inside Auto Layout */
+}
+
+.blue{
+    background: #8AE3FF;
+}
+
+.langDialog-Button-text {
+    /* Secondary/light */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    /* Theme/white */
+    color: #FFFFFF;
+}
+
+.languageSet{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.languageSet-label {
+    font-family: Montserrat;
+    font-size: 25px;
+    line-height: 30px;
+    color: black;
+    margin: 0px 3px;
+}
+
+.languageSet-label:hover{
+    cursor: pointer;
+}
+
+.languageSet-currentLabel {
+    font-family: Montserrat;
+    font-size: 25px;
+    line-height: 30px;
+    color: #8AE3FF;
+    margin: 0px 3px;
+}
+
+
+.languageSet p {
+    width: 30px;
+    border: 1px solid #F1F1F1;
+    transform: rotate(-90deg);
+    margin: 0px 15px;
+}
+
+
+@media screen and (max-width: 1025px){
+    .languageSet{
+        flex-direction: column;
+    }
+    .languageSet p{
+        display: none;
+    }
+    .languageSet-label{
+        margin-top: 5px;
+    }
+
+
+
+}
