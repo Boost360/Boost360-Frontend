@@ -8,7 +8,6 @@ import HomePage from "../HomePage/HomePage"
 import ContactUs from "../ContactUs/ContactUs";
 
 
-
 /**
  * This is the entry point of front site.
  * @Author Zach
@@ -37,7 +36,7 @@ const Site = () => {
                 <Team></Team>
             </Route>
 
-            <Route path={`${path}/contactus`}>
+            <Route path={`${path}/contact`}>
                 <ContactUs></ContactUs>
             </Route>
 

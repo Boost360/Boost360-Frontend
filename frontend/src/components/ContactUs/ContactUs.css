@@ -16,17 +16,13 @@
 }
 
 .ContactUsSectionBox{
-    /* Auto Layout */
-
-/* Auto Layout */
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     padding: 0px;
 
-    position: static;
+    position: relative;
     width: 1233px;
     height: 638px;
     left: calc(50% - 1233px/2);
@@ -34,97 +30,5 @@
 
     backdrop-filter: blur(4px);
     /* Note: backdrop-filter has minimal browser support */
-
-
-    /* Inside Auto Layout */
-
     flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 100px 0px;
-}
-
-
-/*Contact Name Section start*/
-.ContactName-section{
-    /* Auto Layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: static;
-    width: 300px;
-    height: 148px;
-    left: 136.5px;
-    top: 0px;
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 30px;
-}
-
-.ContactName-name{
-    /* Customer service */
-    position: static;
-    width: 300px;
-    height: 122px;
-    left: 0px;
-    top: 0px;
-
-    /* Primary/light */
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 61px;
-
-    /* Theme/text */
-
-    color: #F1F1F1;
-
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    /* margin: 20px 0px; */
-
-}
-
-.nameline{
-    /* Line 25 */
-    position: static;
-    width: 120px;
-    height: 6px;
-    left: 0px;
-    top: 142px;
-
-    opacity: 0.6;
-    /* Theme/secondary */
-
-    border: 4px solid #8AE3FF;
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 20px 0px;
-
-}
-/*Contact Name Section finished*/
-
-.ContactInfo{
-
-}
-
-.ContactInput{
-
 }

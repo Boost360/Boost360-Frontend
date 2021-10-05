@@ -1,0 +1,90 @@
+/*Contact Info Section start*/
+.ContactInfo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 300px;
+    height: 594px;
+    left: 466.5px;
+    top: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 30px;
+}
+
+.ContactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 300px;
+    height: 76px;
+    left: 0px;
+    top: 256px;
+    flex: none;
+    margin-bottom: 60px;
+}
+
+.ContactInfo div{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F1F1F1;
+    text-align: left;
+}
+
+.ContactInfo p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #F1F1F1;
+}
+
+.ContactInfo-Social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 185px;
+    height: 192px;
+    left: 0px;
+    top: 402px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.ContactInfo-SocialIcon{
+    color: #F1F1F1;
+    margin-bottom: 30px;
+    text-align: left;
+    display: flex;
+}
+
+.ContactInfo-SocialIcon p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 15px;
+}
+/*Contact Info Section finished*/

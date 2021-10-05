@@ -1,5 +1,5 @@
 import React from "react";
-import './ContactUs.css';
+import './ContactUsName.css';
 
 export default function ContactUsName() {
     return(
@@ -11,7 +11,7 @@ export default function ContactUsName() {
                 <div>
                     Joe
                 </div>
-            <a className="nameline"></a>
+            <p className="nameline"></p>
             </div>
         </div>
     )
