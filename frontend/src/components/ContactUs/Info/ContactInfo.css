@@ -88,3 +88,19 @@
     margin-left: 15px;
 }
 /*Contact Info Section finished*/
+
+/* Smaller laptop */
+@media screen and (max-width: 1068px) {
+    .ContactInfo-section{
+        width: 200px;
+        left: 0;
+    }
+
+}
+
+/* iPad */
+@media screen and (max-width: 700px) {
+    .ContactInfo-section{
+        display: none;
+    }
+}
