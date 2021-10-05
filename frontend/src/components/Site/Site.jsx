@@ -6,6 +6,8 @@ import Partner from "../Partner/Partner"
 import Team from "../Team/Team"
 import HomePage from "../HomePage/HomePage"
 import ContactUs from "../ContactUs/ContactUs";
+import Student from "../Student/Student";
+
 
 
 /**
@@ -40,7 +42,9 @@ const Site = () => {
                 <ContactUs></ContactUs>
             </Route>
 
-
+            <Route path={`${path}/student`}>
+                <Student></Student>
+            </Route>
 
         </div>
 
