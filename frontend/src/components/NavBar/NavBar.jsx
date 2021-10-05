@@ -34,7 +34,7 @@ import LanguageDialog from '../Localization/LanguageDialog';
 const NavBar = ({page, goToPage}) => {
     const [language, setLanguage] = useState('english');
     const [isFold, setIsFold] = useState(false);
-    const [isLogin, setIsLogin] = useState(true);
+    const [isLogin, setIsLogin] = useState(false);
     const [currentPage, setCurrentPage] = useState(page); // Note: always use setPage() instead of setCurrentPage(). [24/sep/2021 @Sarah]
     const [pages, setPages] = useState(
         {
@@ -162,7 +162,7 @@ const NavBar = ({page, goToPage}) => {
                         Language
                     </span>
                     |
-                    {isLogin ? (<MenuItem page='Student home' navLink='/site/student_home'/>) : (<MenuItem page='Student login' navLink='/site/student-login'/>)}
+                    {isLogin ? (<MenuItem page='Student home' navLink='/site/student'/>) : (<MenuItem page='Student login' navLink='/site/student/login'/>)}
                 </div>
             </div>
             <div className='header' style={currentPage === 'Home' ? {display: 'none'} : {display: 'flex'}}>
