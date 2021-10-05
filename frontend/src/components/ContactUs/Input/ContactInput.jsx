@@ -1,17 +1,19 @@
 import React from "react";
 import './ContactInput.css';
+import { useTranslation } from "react-i18next";
 
 export default function ContactInput() {
+    const { t, i18n } = useTranslation();
     return(
         <div className="ContactInput-section">
             <div className="ContactInput-info">
-                <p>If you have any questions about our services, please fill in the box below, we are happy to help.</p>
+                <p>{t('contact.info')}</p>
             </div>
             <div className="ContactInput">
-                <input placeholder="Name"></input>
-                <input placeholder="Email"></input>
-                <textarea placeholder="Message"></textarea>
-                <button>Send</button>
+                <input placeholder={t('contact.name')}></input>
+                <input placeholder={t('contact.email')}></input>
+                <textarea placeholder={t('contact.msg')}></textarea>
+                <button>{t('contact.send')}</button>
             </div>
         </div>
     )

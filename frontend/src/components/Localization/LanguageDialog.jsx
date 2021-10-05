@@ -1,7 +1,7 @@
 import React from "react";
 import Dialog from '@mui/material/Dialog';
 import './LanguageDialog.css'
-
+import { useTranslation } from "react-i18next";
 
 /**
  * This component provides a language change dialog.
@@ -10,7 +10,8 @@ import './LanguageDialog.css'
  */
 
 const LanguageDialog = ({ open, handleClose }) => {
-  const [currentLang, setCurrentLang] = React.useState("EN")
+  const [currentLang, setCurrentLang] = React.useState("en")
+  const { t, i18n } = useTranslation();
 
   /**
    * 
@@ -18,7 +19,12 @@ const LanguageDialog = ({ open, handleClose }) => {
    */
   const handleChangeLang = (lang) => {
     setCurrentLang(lang)
+  }
 
+  const onLanguageHandle = () => {
+    handleClose()
+    i18n.changeLanguage(currentLang)
+    
   }
 
 
@@ -32,25 +38,25 @@ const LanguageDialog = ({ open, handleClose }) => {
     >
       <div className="langDialog">
         <div className="langDialog-text">
-          Please choose the language you wish to switch to
+          {t("language.info")}
         </div>
         <div className="languageSet">
-          <a className={currentLang === "EN" ? "languageSet-currentLabel" : "languageSet-label"} onClick={()=>{handleChangeLang("EN")}}>
+          <a className={currentLang === "en" ? "languageSet-currentLabel" : "languageSet-label"} onClick={() => { handleChangeLang("en") }}>
             English
           </a>
           <p />
-          <a className={currentLang === "KR" ? "languageSet-currentLabel" : "languageSet-label"} onClick={()=>{handleChangeLang("KR")}}>
+          <a className={currentLang === "kr" ? "languageSet-currentLabel" : "languageSet-label"} onClick={() => { handleChangeLang("kr") }}>
             한국어</a>
           <p />
-          <a className={currentLang === "CH" ? "languageSet-currentLabel" : "languageSet-label"} onClick={()=>{handleChangeLang("CH")}}>
+          <a className={currentLang === "ch" ? "languageSet-currentLabel" : "languageSet-label"} onClick={() => { handleChangeLang("ch") }}>
             中文</a>
         </div>
         <div className="langDialog-Buttongroup">
           <div className="langDialog-Button" onClick={handleClose}>
-            <a className="langDialog-Button-text">Cancel</a>
+            <a className="langDialog-Button-text">{t("language.cancel")}</a>
           </div>
-          <div className="langDialog-Button blue" onClick={handleClose}>
-            <a className="langDialog-Button-text">Change</a>
+          <div className="langDialog-Button blue" onClick={onLanguageHandle}>
+            <a className="langDialog-Button-text">{t("language.change")}</a>
           </div>
         </div>
 

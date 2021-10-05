@@ -1,0 +1,27 @@
+{
+    "translations": {
+        "landing":{
+            "enter":"Enter Site",
+            "login":"Student Login"
+        },
+
+        "contact":{
+            "mobile":"Mobile",
+            "email":"Email",
+            "address":"Address",
+            "address-content":"123 Cyka rd, Moscow",
+            "info":"If you have any questions about our services, please fill in the box below, we are happy to help.",
+            "name":"Name",
+            "msg":"Message",
+            "send":"Send"
+
+        },
+        
+        "language":{
+            "info":"Please choose the language you wish to switch to",
+            "cancel":"Cancel",
+            "change":"Change"
+        }
+
+    }
+}
