@@ -92,6 +92,7 @@
 
 .languagesection a:hover{
     color: #8AE3FF;
+    cursor: pointer;
 }
 
 

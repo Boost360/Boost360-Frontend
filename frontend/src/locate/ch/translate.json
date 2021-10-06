@@ -1,0 +1,25 @@
+{
+    "translations": {
+        "landing":{
+            "enter":"进入主页",
+            "login":"学生登录"
+        },
+
+        "contact":{
+            "mobile":"联系电话",
+            "email":"电子邮箱",
+            "address":"地址",
+            "address-content":"123 苏噶大街， 莫斯科",
+            "info":"如果您有任何问题，请填写以下表格，我们非常乐意为您提供帮助！",
+            "name":"姓名",
+            "msg":"信息",
+            "send":"发送"
+
+        },
+        "language":{
+            "info":"请选择您要更换的语言",
+            "cancel":"取消",
+            "change":"更换"
+        }
+    }
+}

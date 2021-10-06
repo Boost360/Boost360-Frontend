@@ -2,20 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n'
+// import * as serviceWorker from './serviceWorker';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
 } from "react-router-dom";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-    <App />
-    </Router>
+    <I18nextProvider i18n={i18n}>
+      <Router>
+        <App />
+      </Router>
+    </I18nextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

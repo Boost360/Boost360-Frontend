@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {Link} from 'react-router';
 import './NavBar.css';
 import {AiOutlineMenu, AiOutlineArrowLeft, AiOutlineArrowUp} from 'react-icons/ai';
+import LanguageDialog from '../Localization/LanguageDialog';
 
 
 // BEHAVIORS        
@@ -33,7 +34,7 @@ import {AiOutlineMenu, AiOutlineArrowLeft, AiOutlineArrowUp} from 'react-icons/a
 const NavBar = ({page, goToPage}) => {
     const [language, setLanguage] = useState('english');
     const [isFold, setIsFold] = useState(false);
-    const [isLogin, setIsLogin] = useState(true);
+    const [isLogin, setIsLogin] = useState(false);
     const [currentPage, setCurrentPage] = useState(page); // Note: always use setPage() instead of setCurrentPage(). [24/sep/2021 @Sarah]
     const [pages, setPages] = useState(
         {
@@ -57,6 +58,15 @@ const NavBar = ({page, goToPage}) => {
         } 
     );
     const [parentPage, setParentPage] = useState(pages[currentPage]);
+    const [showLanguageDialog,setShowLanguageDialog] =useState(false);
+
+    const handleOpenLanguageDialog = () =>{
+        setShowLanguageDialog(true);
+    }
+
+    const handleCloseLanguageDialog = () =>{
+        setShowLanguageDialog(false);
+    }
 
 
 // @todo add onMount function {setPage(page)}
@@ -73,7 +83,7 @@ const NavBar = ({page, goToPage}) => {
 
     const getNavbarClassName = () => {
         if (currentPage === 'Home' || currentPage === 'Contact') {
-            return "navBar transparent";
+            return "navBar transparent cover";
         } else if (parentPage === 'Student home' || currentPage === 'Student home') {
             return "navBar dark";
         } else {
@@ -148,15 +158,18 @@ const NavBar = ({page, goToPage}) => {
                     |
                     <MenuItem page='Blog'navLink='/site/blog'/>
                     |
-                    <MenuItem page='Language'navLink='/site/language'/>
+                    <span className="menuItem" onClick={handleOpenLanguageDialog}>
+                        Language
+                    </span>
                     |
-                    {isLogin ? (<MenuItem page='Student home' navLink='/site/student_home'/>) : (<MenuItem page='Student login' navLink='/site/student-login'/>)}
+                    {isLogin ? (<MenuItem page='Student home' navLink='/site/student'/>) : (<MenuItem page='Student login' navLink='/site/student/login'/>)}
                 </div>
             </div>
             <div className='header' style={currentPage === 'Home' ? {display: 'none'} : {display: 'flex'}}>
                 <MenuIcon/>
                 <div className="header-text">{getHeaderText()}</div>
             </div>
+            <LanguageDialog open={showLanguageDialog} handleClose={handleCloseLanguageDialog}></LanguageDialog>
         </div>
     );
 }
