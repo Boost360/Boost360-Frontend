@@ -8,25 +8,26 @@ This project uses the following environment variables:
 | Name                          | Description                         | Default Value                                  |
 | ----------------------------- | ------------------------------------| -----------------------------------------------|
 |CORS           | Cors accepted values            | "*"      |
-
-
-# Pre-requisites
-- Install [Node.js](https://nodejs.org/en/) version 8.0.0
+|CONNECT_STRING           | Database connect string           |      |
+|PORT           | Port of backend           |   3001   |
 
 
 # Getting started
-- Clone the repository
+- frontend
 ```
-git clone  <git lab template url> <project_name>
-```
-- Install dependencies
-```
-cd <project_name>
-npm install
-```
-- Build and run the project
-```
+cd frontend
+npm i
 npm start
 ```
-  Navigate to `http://localhost:8001`
+
+- backend
+```
+cd backend
+npm i
+npm start
+```
+
+#URL
+Backend `http://localhost:3001`
+Frontend `http://localhost:3000`
 
