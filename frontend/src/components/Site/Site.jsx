@@ -5,6 +5,7 @@ import { Route, useRouteMatch, useHistory } from "react-router";
 import Partner from "../Partner/Partner"
 import Team from "../Team/Team"
 import HomePage from "../HomePage/HomePage"
+import Blog from "../Blog/Blog"
 import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
 
@@ -36,6 +37,9 @@ const Site = () => {
 
             <Route path={`${path}/team`}>
                 <Team></Team>
+            </Route>
+            <Route path={`${path}/blog`}>
+                <Blog></Blog>
             </Route>
 
             <Route path={`${path}/contact`}>
