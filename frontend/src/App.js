@@ -2,6 +2,7 @@ import './App.css';
 import './Icon.css';
 import Site from './components/Site/Site';
 import LandingPage from './components/LandingPage/LandingPage';
+import Scheduler from './components/Schedule/Schedule';
 
 
 import {
@@ -23,6 +24,10 @@ function App() {
                 <Route path="/site">
                     <Site></Site>
                 </Route>
+
+                <Route path='/test'>
+                <Scheduler></Scheduler>
+            </Route>
       
             </Switch>
         </div>

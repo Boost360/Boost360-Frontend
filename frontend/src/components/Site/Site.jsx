@@ -8,6 +8,7 @@ import HomePage from "../HomePage/HomePage"
 import Blog from "../Blog/Blog"
 import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
+import Scheduler from "../Schedule/Schedule";
 
 
 
@@ -49,6 +50,8 @@ const Site = () => {
             <Route path={`${path}/student`}>
                 <Student></Student>
             </Route>
+
+           
 
         </div>
 
