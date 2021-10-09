@@ -1,0 +1,47 @@
+.StudentHomeMain{
+    background: #2E414F;
+    width: 100vw;
+    height: 100vh;
+    /* use 2 variables above could garentee that whole page will be filled with the color */
+}
+
+.StudentHomeContainer{
+    margin-top: 8%;
+    background: aqua;
+    max-width: 1410px;
+    display: -webkit-inline-box;
+}
+
+.StudentHomeCard{
+    /* Auto Layout */
+
+    display: inline-table;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    position: static;
+    width: 240px;
+    height: 339px;
+    left: 0px;
+    top: 0px;
+
+    border-radius: 20px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    flex-grow: 0;
+    margin: 10px 10px;
+
+    background: cornsilk;
+
+}
+
+.StudentHomeCardBoarder{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    background: #2E414F;
+    margin: 30px;
+}
