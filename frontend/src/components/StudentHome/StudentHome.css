@@ -3,15 +3,16 @@
     width: 100vw;
     height: 100vh;
     /* use 2 variables above could garentee that whole page will be filled with the color */
+    overflow-y: auto;
 }
 
 .StudentHomeContainer{
-    margin-top: 8%;
-    background: aqua;
+    margin-top: 6%;
     max-width: 1410px;
     display: -webkit-inline-box;
 }
 
+/* Normal cards */
 .StudentHomeCard{
     /* Auto Layout */
 
@@ -23,25 +24,56 @@
     position: static;
     width: 240px;
     height: 339px;
-    left: 0px;
-    top: 0px;
-
-    border-radius: 20px;
-
     /* Inside Auto Layout */
-
     flex: none;
     flex-grow: 0;
-    margin: 10px 10px;
-
-    background: cornsilk;
-
+    margin: 0px 0px;
 }
 
 .StudentHomeCardBoarder{
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    background: #2E414F;
     margin: 30px;
+    border: 2px solid #8AE3FF;
+}
+
+.StudentHomeCardText{
+    /* Tertiary/light */
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px 0px;
+}
+
+.StudentHome-SocialIcon{
+    color: #F1F1F1;
+    margin-top: 76px;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    margin-left: 76px;
+}
+
+/* Logout card */
+.StudentHomeLogoutBoarder{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 30px;
+    border: 2px solid #FFFFFF;
+}
+
+.StudentHomeLogout-Icon{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 80px;
 }
