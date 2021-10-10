@@ -10,7 +10,6 @@ import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
 
 
-
 /**
  * This is the entry point of front site.
  * @Author Zach
