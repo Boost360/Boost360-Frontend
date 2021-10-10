@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 
 const UserSchema = new Schema({
-    username: {type:String,required:true},
+    email: {type:String,required:true},
     password: { type: String, required: true },
     type: {type:String, required:true, default:"student"},
     firstName:{type:String, required:true},
@@ -13,7 +13,6 @@ const UserSchema = new Schema({
     dob:Date,
     address:String,
     mobile:String,
-    email:String,
     medicalCondition:String,
     club:String,
     yearsPlaying:Number,

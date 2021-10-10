@@ -24,6 +24,11 @@ export async function retrieveUser(id) {
     return await User.findById(id);
 }
 
+export async function retrieveUserByEmail(email){
+    const user={email:email}
+    return await User.findOne(user);
+}
+
 export async function updateUser(user) {
 
     const result = await User.findByIdAndUpdate(user._id, user, { new: true, useFindAndModify: false });
