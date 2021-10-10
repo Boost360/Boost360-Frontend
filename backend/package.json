@@ -8,7 +8,8 @@
     "server": "npm run start",
     "production": "cross-env NODE_ENV=production PORT=3000 node -r esm ./src/server.js",
     "init-db": "node -r esm ./src/db/init-db.js",
-    "test": "jest"
+    "test": "jest",
+    "build": "netlify-lambda build express"
   },
   "keywords": [],
   "author": "",
@@ -38,6 +39,7 @@
     "babel-jest": "^26.6.3",
     "cross-env": "^7.0.3",
     "jest": "^26.6.3",
-    "mongodb-memory-server": "^6.9.6"
+    "mongodb-memory-server": "^6.9.6",
+    "netlify-lambda": "^1.6.3"
   }
 }
