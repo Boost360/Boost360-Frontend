@@ -9,6 +9,10 @@
     gap: 100px;
     height: 100%;
     overflow-x: hidden;
+
+    /* This relates to the stacking issue with NavBar */
+    /* Issue @00002 [12/oct/2021 @Sarah] */
+    z-index: 0;
 }
 
 .layout {
