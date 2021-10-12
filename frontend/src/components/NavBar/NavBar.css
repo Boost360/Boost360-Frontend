@@ -10,6 +10,10 @@
     width: 100%;
     height: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    /* This relates to the stacking issue with Student Module page */
+    /* Issue @00002 [12/oct/2021 @Sarah] */
+    z-index: 10; 
 }
 
 .menu {
