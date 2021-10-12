@@ -6,7 +6,6 @@ export default function Module ({detail, i}) {
         // @todo Can't access clipboard string. 
         // Issue @00001 [12/oct/2021 @Sarah]
         // navigator.clipboard.writeText(detail.link); 
-        alert('Copied to clipboard! [to be fixed @Sarah]');
     };
     const handleClick = () => {
         // @todo show redirect modal animation 
@@ -33,7 +32,7 @@ export default function Module ({detail, i}) {
 
             <div className="container">
                 <div className="copyLink" onClick={handleCopy}>
-                    <span className='copy'>COPY</span>
+                    <span className='copy'>LINK</span>
                     <span className='link'>{detail.link}</span>
                 </div>
             </div>
