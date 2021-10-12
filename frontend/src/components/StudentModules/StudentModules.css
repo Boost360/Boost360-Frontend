@@ -1,0 +1,37 @@
+.studentModules {
+    position: relative;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+    height: 100%;
+    overflow-x: hidden;
+
+    /* This relates to the stacking issue with NavBar */
+    /* Issue @00002 [12/oct/2021 @Sarah] */
+    z-index: 0;
+}
+
+.layout {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 100px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.studentModules p {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font: var(--tertiary-medium);
+    color: var(--text);
+    text-align: left;
+}

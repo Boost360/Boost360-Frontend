@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import {Link} from 'react-router';
 import './NavBar.css';
 import {AiOutlineMenu, AiOutlineArrowLeft, AiOutlineArrowUp} from 'react-icons/ai';
 import LanguageDialog from '../Localization/LanguageDialog';
@@ -30,35 +29,47 @@ import LanguageDialog from '../Localization/LanguageDialog';
 // @todo folding animation
 // @todo refactor
 // [24/sep/2021 @Sarah]
+
+
     
-const NavBar = ({page, goToPage}) => {
-    const [language, setLanguage] = useState('english');
-    const [isFold, setIsFold] = useState(false);
-    const [isLogin, setIsLogin] = useState(false);
-    const [currentPage, setCurrentPage] = useState(page); // Note: always use setPage() instead of setCurrentPage(). [24/sep/2021 @Sarah]
+const NavBar = ({path, goToPage}) => {
     const [pages, setPages] = useState(
         {
-            'Home' : null,
-            'About' : null,
-            'Contact' : null,
-            'Partners' : null,
-            'Team' : null,
-            'Services' : null,
-            'Blog' : null,
-            'Language' : null,
-            'Student login' : null,
-            'Student home' : null,
-            'Profile' : 'Student home',
-            'Schedule' : 'Student home',
-            'Results' : 'Student home',
-            'Modules' : 'Student home',
-            'Equipment' : 'Student home',
-            'Video library' : 'Student home',
-            'Development program' : 'Student home'
+            'Home' : {path: '/site', parentPage: null},
+            'About' : {path: '/site/about', parentPage: null},
+            'Contact' : {path: '/site/contact', parentPage: null},
+            'Partners' : {path: '/site/partner', parentPage: null},
+            'Team' : {path: '/site/team', parentPage: null},
+            'Services' : {path: '/site/services', parentPage: null},
+            'Blog' : {path: '/site/blog', parentPage: null},
+            'Language' : {path: '/site/language', parentPage: null},
+            'Student login' : {path: '/site/student/login', parentPage: null},
+            'Student home' : {path: '/site/student/home', parentPage: null},
+            'Profile' : {path: '/site/student/profile', parentPage: 'Student home'},
+            'Schedule' : {path: '/site/student/schedule', parentPage: 'Student home'},
+            'Results' : {path: '/site/student/results', parentPage: 'Student home'},
+            'Modules' : {path: '/site/student/modules', parentPage: 'Student home'},
+            'Equipment' : {path: '/site/student/equipment', parentPage: 'Student home'},
+            'Video library' : {path: '/site/student/video-library', parentPage: 'Student home'},
+            'Development program' : {path: '/site/student/development-program', parentPage: 'Student home'}
         } 
     );
-    const [parentPage, setParentPage] = useState(pages[currentPage]);
+    // This code finds the matched page given the current path. 
+    // If not find, set NavBar to home page style. 
+    // The purpose to reset NavBar styling when accessing page via a direct address change.
+    // 
+    // Note: always use setPage() instead of setCurrentPage(). 
+    // [12/oct/2021 @Sarah]
+    const pathToPage = (path) => Object.keys(pages).filter((page) => path === pages[page].path)[0];
+    const p = pathToPage(path);
+    const [currentPage, setCurrentPage] = useState(p !== undefined ? p : 'Home');
+
+
+    const [parentPage, setParentPage] = useState(pages[currentPage].parentPage);
+    const [isFold, setIsFold] = useState(currentPage === 'Home' ? false : true);
     const [showLanguageDialog,setShowLanguageDialog] =useState(false);
+    const [language, setLanguage] = useState('english');
+    const [isLogin, setIsLogin] = useState(false);
 
     const handleOpenLanguageDialog = () =>{
         setShowLanguageDialog(true);
@@ -67,15 +78,13 @@ const NavBar = ({page, goToPage}) => {
     const handleCloseLanguageDialog = () =>{
         setShowLanguageDialog(false);
     }
-
-
-// @todo add onMount function {setPage(page)}
         
     const setPage = (page) => {
         if (pages[page] !== undefined) {
+            page === 'Home' ? setIsFold(false) : setIsFold(true);
             setCurrentPage(page);
-            setParentPage(pages[page]);
-            console.log('parent page set to', pages[page]);
+            setParentPage(pages[page].parentPage);
+            goToPage(pages[page].path);
         } else {
             alert(page + ' page not find!');
         }
@@ -113,11 +122,9 @@ const NavBar = ({page, goToPage}) => {
         setIsFold(false);
     }
 
-    const MenuItem = ({ page, navLink }) => {
+    const MenuItem = ({page}) => {
         const handleClick = () => {
             setPage(page);
-            page === 'Home' ? setIsFold(false) : setIsFold(true);
-            goToPage(navLink);
         };
         return (
             <span key={page}
@@ -126,7 +133,8 @@ const NavBar = ({page, goToPage}) => {
                 style={(currentPage === page || parentPage === page) ? { font: "var(--tertiary-bold)" } : {}}
             >
                 {page}
-            </span>);
+            </span>
+        );
     };
 
     const MenuIcon = () => {
@@ -144,25 +152,25 @@ const NavBar = ({page, goToPage}) => {
             <div className="menu" style={isFold ? {display: 'none'} : {display: 'flex'}}>
                 <div className="logo"></div>
                 <div className="menuItems">
-                    <MenuItem page='Home' navLink='/site'/>
+                    <MenuItem page='Home'/>
                     |
-                    <MenuItem page='About' navLink='/site/about'/>
+                    <MenuItem page='About'/>
                     |
-                    <MenuItem page='Contact' navLink='/site/contact'/>
+                    <MenuItem page='Contact'/>
                     |
-                    <MenuItem page='Partners' navLink='/site/partner'/>
+                    <MenuItem page='Partners'/>
                     |
-                    <MenuItem page='Team'navLink='/site/team'/>
+                    <MenuItem page='Team'/>
                     |
-                    <MenuItem page='Services'navLink='/site/services'/>
+                    <MenuItem page='Services'/>
                     |
-                    <MenuItem page='Blog'navLink='/site/blog'/>
+                    <MenuItem page='Blog'/>
                     |
                     <span className="menuItem" onClick={handleOpenLanguageDialog}>
                         Language
                     </span>
                     |
-                    {isLogin ? (<MenuItem page='Student home' navLink='/site/student'/>) : (<MenuItem page='Student login' navLink='/site/student/login'/>)}
+                    {isLogin ? (<MenuItem page='Student home'/>) : (<MenuItem page='Student login'/>)}
                 </div>
             </div>
             <div className='header' style={currentPage === 'Home' ? {display: 'none'} : {display: 'flex'}}>
