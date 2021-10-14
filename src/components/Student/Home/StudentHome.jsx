@@ -14,20 +14,20 @@ import { AiOutlineVideoCamera } from 'react-icons/ai';
 
 export default function StudentHome(){
     const cards = [
-        {title: "Profile", icon: <AiOutlineUser />},
-        {title: "Schedule", icon: <AiOutlineProfile />},
-        {title: "Result", icon: <AiOutlineCheck />},
-        {title: "Modules", icon: <AiOutlineSnippets />},
-        {title: "Equipment", icon: <AiOutlineWarning />},
-        {title: "Video library", icon: <AiOutlineVideoCamera />},
-        {title: "Development Program", icon: <AiOutlineSnippets />},
+        {title: "Profile", icon: <AiOutlineUser />, path:"/student/profile"},
+        {title: "Schedule", icon: <AiOutlineProfile />, path:"/student/schedule"}, ,
+        {title: "Result", icon: <AiOutlineCheck />, path:"/student/result"},
+        {title: "Modules", icon: <AiOutlineSnippets />, path:"/student/modules"},
+        {title: "Equipment", icon: <AiOutlineWarning />, path:"/student/equipment"},
+        {title: "Video library", icon: <AiOutlineVideoCamera />, path:"/student/video-library"},
+        {title: "Development Program", icon: <AiOutlineSnippets />, path: '/student/development-program'},
     ]
     return(
         <div className="StudentHomeMain">
             <div className="StudentHomeContainer">
                 <ul>
                     {cards.map((card) =>
-                        <StudentHomeCard title={card.title} icon={card.icon}></StudentHomeCard>
+                        <StudentHomeCard title={card.title} icon={card.icon} path={card.path}></StudentHomeCard>
                     )}
                     <StudentHomeLogout></StudentHomeLogout>
                 </ul>

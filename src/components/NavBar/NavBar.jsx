@@ -35,23 +35,23 @@ import LanguageDialog from '../Localization/LanguageDialog';
 const NavBar = ({path, goToPage}) => {
     const [pages, setPages] = useState(
         {
-            'Home' : {path: '/site', parentPage: null},
-            'About' : {path: '/site/about', parentPage: null},
-            'Contact' : {path: '/site/contact', parentPage: null},
-            'Partners' : {path: '/site/partner', parentPage: null},
-            'Team' : {path: '/site/team', parentPage: null},
-            'Services' : {path: '/site/services', parentPage: null},
-            'Blog' : {path: '/site/blog', parentPage: null},
-            'Language' : {path: '/site/language', parentPage: null},
-            'Student login' : {path: '/site/student/login', parentPage: null},
-            'Student home' : {path: '/site/student/home', parentPage: null},
-            'Profile' : {path: '/site/student/profile', parentPage: 'Student home'},
-            'Schedule' : {path: '/site/student/schedule', parentPage: 'Student home'},
-            'Results' : {path: '/site/student/results', parentPage: 'Student home'},
-            'Modules' : {path: '/site/student/modules', parentPage: 'Student home'},
-            'Equipment' : {path: '/site/student/equipment', parentPage: 'Student home'},
-            'Video library' : {path: '/site/student/video-library', parentPage: 'Student home'},
-            'Development program' : {path: '/site/student/development-program', parentPage: 'Student home'}
+            'Home' : {path: '/index', parentPage: null},
+            'About' : {path: '/about', parentPage: null},
+            'Contact' : {path: '/contact', parentPage: null},
+            'Partners' : {path: '/partner', parentPage: null},
+            'Team' : {path: '/team', parentPage: null},
+            'Services' : {path: '/services', parentPage: null},
+            'Blog' : {path: '/blog', parentPage: null},
+            'Language' : {path: '/language', parentPage: null},
+            'Student login' : {path: '/student/login', parentPage: null},
+            'Student home' : {path: '/student/home', parentPage: null},
+            'Profile' : {path: '/student/profile', parentPage: 'Student home'},
+            'Schedule' : {path: '/student/schedule', parentPage: 'Student home'},
+            'Results' : {path: '/student/results', parentPage: 'Student home'},
+            'Modules' : {path: '/student/modules', parentPage: 'Student home'},
+            'Equipment' : {path: '/student/equipment', parentPage: 'Student home'},
+            'Video library' : {path: '/student/video-library', parentPage: 'Student home'},
+            'Development program' : {path: '/student/development-program', parentPage: 'Student home'}
         } 
     );
     // This code finds the matched page given the current path. 

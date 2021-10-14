@@ -6,7 +6,7 @@ import Checkbox from '@mui/material/Checkbox';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
-const rows: GridRowsProp = [
+const rows = [
     {
         id: 1,
         col1: '#',
@@ -19,7 +19,7 @@ const rows: GridRowsProp = [
 
 ];
 
-const columns: GridColDef[] = [
+const columns = [
     { field: 'col1', headerName: 'Session', width: 150 },
     { field: 'col2', headerName: 'Date', width: 150 },
     { field: 'col3', headerName: 'Topic', width: 150 },

@@ -28,6 +28,7 @@
     flex: none;
     flex-grow: 0;
     margin: 0px 0px;
+    
 }
 
 .StudentHomeCardBoarder{
@@ -36,6 +37,7 @@
     height: 180px;
     margin: 30px;
     border: 2px solid #8AE3FF;
+    cursor: pointer;
 }
 
 .StudentHomeCardText{

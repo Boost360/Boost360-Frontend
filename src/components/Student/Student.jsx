@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import { Route, useRouteMatch, useHistory } from "react-router";
 import Login from "./Login/Login";
-
+import Home from "./Home/StudentHome"
+import Schedule from "./Schedule/Schedule";
+import Module from "./Modules/StudentModules"
+import DevelopmentProgram from "./DevelopmentProgram/DevelopmentProgram";
 
 /**
  * This is the entry point of Student Home.
@@ -14,11 +17,28 @@ const Student = () => {
 
     return (
         <div>
-            <Route path={path} exact>
-                Student Home Page
+            <Route path={`${path}/home`} exact>
+                <Home></Home> 
             </Route>
+
             <Route path={`${path}/login`} exact>
                 <Login></Login>
+            </Route>
+
+            <Route path={`${path}/schedule`} exact>
+                <Schedule></Schedule>
+            </Route>
+
+            <Route path={`${path}/modules`} exact>
+                <Module></Module>
+            </Route>
+
+            <Route path={`${path}/result`} exact>
+                <Module></Module>
+            </Route>
+            
+            <Route path={`${path}/development-program`} exact>
+                <DevelopmentProgram></DevelopmentProgram>
             </Route>
 
         </div>

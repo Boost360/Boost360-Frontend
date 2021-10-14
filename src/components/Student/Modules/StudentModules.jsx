@@ -1,8 +1,8 @@
 import React from 'react'
 import './StudentModules.css'
-import Icon_swing from '../../static/img/Icon_swing.svg';
-import Icon_flag from '../../static/img/Icon_flag.svg';
-import Icon_irons from '../../static/img/Icon_irons.svg';
+import Icon_swing from '../../../static/img/Icon_swing.svg';
+import Icon_flag from '../../../static/img/Icon_flag.svg';
+import Icon_irons from '../../../static/img/Icon_irons.svg';
 import Module from './Module/Module';
 
 export default function StudentModules() {

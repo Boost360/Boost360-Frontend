@@ -8,8 +8,8 @@ import HomePage from "../HomePage/HomePage"
 import Blog from "../Blog/Blog"
 import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
-import Scheduler from "../Schedule/Schedule";
-import StudentModules from "../StudentModules/StudentModules";
+import Scheduler from "../Student/Schedule/Schedule";
+import StudentModules from "../Student/Modules/StudentModules";
 
 /**
  * This is the entry point of front site.
@@ -22,36 +22,36 @@ const Site = () => {
         <div>
             <NavBar path={useLocation().pathname} goToPage={(path)=>history.push(path)}></NavBar> 
 
-            <Route path={path} exact>
+            <Route path='/index' exact>
                 <HomePage></HomePage>
             </Route>
 
-            <Route path={`${path}/about`}>
+            <Route path='/about'>
                 <AboutUs></AboutUs>
             </Route>
 
-            <Route path={`${path}/partner`}>
+            <Route path='/partner'>
                 <Partner></Partner>
             </Route>
 
-            <Route path={`${path}/team`}>
+            <Route path='/team'>
                 <Team></Team>
             </Route>
-            <Route path={`${path}/blog`}>
+            <Route path='/blog'>
                 <Blog></Blog>
             </Route>
 
-            <Route path={`${path}/contact`}>
+            <Route path='/contact'>
                 <ContactUs></ContactUs>
             </Route>
 
-            <Route path={`${path}/student`}>
+            <Route path='/student'>
                 <Student></Student>
             </Route>
-
+{/* 
             <Route path={`${path}/student/modules`}>
                 <StudentModules></StudentModules>
-            </Route>
+            </Route> */}
 
 
         </div>

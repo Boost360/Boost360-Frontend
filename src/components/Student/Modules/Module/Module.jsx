@@ -10,7 +10,7 @@ export default function Module ({detail, i}) {
     const handleClick = () => {
         // @todo show redirect modal animation 
         // [12/oct/2021 @Sarah]
-        window.location.href = detail.link;
+        // window.location.href = detail.link;
     };
     return (
         <div className="module" key={i}>

@@ -2,7 +2,7 @@ import './App.css';
 import './Icon.css';
 import Site from './components/Site/Site';
 import LandingPage from './components/LandingPage/LandingPage';
-import Scheduler from './components/Schedule/Schedule';
+import Scheduler from './components/Student/Schedule/Schedule';
 import {
     BrowserRouter as Router,
     Switch,
@@ -21,13 +21,12 @@ function App() {
                     <LandingPage></LandingPage>
                 </Route>
       
-                <Route path="/site">
+                {/* <Route path="/site">
                     <Site></Site>
-                </Route>
+                </Route> */}
+                <Site></Site>
 
-                <Route path='/test'>
-                <Scheduler></Scheduler>
-            </Route>
+                
       
             </Switch>
 

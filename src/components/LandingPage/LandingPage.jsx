@@ -24,7 +24,7 @@ export default function LandingPage() {
                 </div>
                 <div className="buttonArea">
                     <div className="enterButton">
-                        <Link className="landingButton" to="/site"><span>{t("landing.enter")}</span></Link>
+                        <Link className="landingButton" to="/index"><span>{t("landing.enter")}</span></Link>
                         <Link className="landingButton"><span>{t("landing.login")}</span></Link>
                     </div>
                     <div className="languagesection">
