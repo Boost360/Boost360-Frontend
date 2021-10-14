@@ -9,7 +9,7 @@ import Blog from "../Blog/Blog"
 import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
 import Scheduler from "../Schedule/Schedule";
-import StudentModules from "../StudentModules/StudentModules";
+
 
 /**
  * This is the entry point of front site.
@@ -50,15 +50,8 @@ const Site = () => {
             </Route>
 
             <Route path={`${path}/student`}>
-                <NavBar page='Student login'></NavBar> 
                 <Student></Student>
             </Route>
-
-            <Route path={`${path}/student/modules`}>
-                <NavBar page='Modules'></NavBar> 
-                <StudentModules></StudentModules>
-            </Route>
-
 
         </div>
 

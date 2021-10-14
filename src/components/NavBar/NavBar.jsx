@@ -39,14 +39,14 @@ const NavBar = ({page, path}) => {
             'Home' : {path: '/site', parentPage: null},
             'About' : {path: '/site/about', parentPage: null},
             'Contact' : {path: '/site/contact', parentPage: null},
-            'Partners' : {path: '/site/partner', parentPage: null},
+            'Partners' : {path: '/site/partners', parentPage: null},
             'Team' : {path: '/site/team', parentPage: null},
             'Membership' : {path: '/site/membership', parentPage: null},
             'Junior golf' : {path: '/site/junior-golf', parentPage: null},
             'Blog' : {path: '/site/blog', parentPage: null},
             'Language' : {path: '/site/language', parentPage: null},
             'Student login' : {path: '/site/student/login', parentPage: null},
-            'Student home' : {path: '/site/student/home', parentPage: null},
+            'Student home' : {path: '/site/student', parentPage: null},
             'Profile' : {path: '/site/student/profile', parentPage: 'Student home'},
             'Schedule' : {path: '/site/student/schedule', parentPage: 'Student home'},
             'Results' : {path: '/site/student/results', parentPage: 'Student home'},
@@ -63,12 +63,12 @@ const NavBar = ({page, path}) => {
     // Note: always use setPage() instead of setCurrentPage(). 
     // [12/oct/2021 @Sarah]
 
-    // Method 1 : By page prop
+    // Method 1 : By path prop
     // const pathToPage = (path) => Object.keys(pages).filter((page) => path === pages[page].path)[0];
     // const p = pathToPage(path);
     // const [currentPage, setCurrentPage] = useState(p !== undefined ? p : 'Home');
 
-    // Method 2 : By path prop
+    // Method 2 : By page prop
     const [currentPage, setCurrentPage] = useState(pages[page] !== undefined ? page : 'Home');
     
 
