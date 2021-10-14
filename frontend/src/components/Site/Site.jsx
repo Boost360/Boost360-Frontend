@@ -8,6 +8,7 @@ import HomePage from "../HomePage/HomePage"
 import Blog from "../Blog/Blog"
 import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
+import Scheduler from "../Schedule/Schedule";
 import StudentModules from "../StudentModules/StudentModules";
 
 /**
@@ -51,6 +52,7 @@ const Site = () => {
             <Route path={`${path}/student/modules`}>
                 <StudentModules></StudentModules>
             </Route>
+
 
         </div>
 
