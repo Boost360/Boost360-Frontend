@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import {useHistory} from 'react-router';
 import './NavBar.css';
 import {AiOutlineMenu, AiOutlineArrowLeft, AiOutlineArrowUp} from 'react-icons/ai';
 import LanguageDialog from '../Localization/LanguageDialog';
@@ -32,7 +33,7 @@ import LanguageDialog from '../Localization/LanguageDialog';
 
 
     
-const NavBar = ({path, goToPage}) => {
+const NavBar = ({page, path}) => {
     const [pages, setPages] = useState(
         {
             'Home' : {path: '/site', parentPage: null},
@@ -40,7 +41,8 @@ const NavBar = ({path, goToPage}) => {
             'Contact' : {path: '/site/contact', parentPage: null},
             'Partners' : {path: '/site/partner', parentPage: null},
             'Team' : {path: '/site/team', parentPage: null},
-            'Services' : {path: '/site/services', parentPage: null},
+            'Membership' : {path: '/site/membership', parentPage: null},
+            'Junior golf' : {path: '/site/junior-golf', parentPage: null},
             'Blog' : {path: '/site/blog', parentPage: null},
             'Language' : {path: '/site/language', parentPage: null},
             'Student login' : {path: '/site/student/login', parentPage: null},
@@ -60,16 +62,23 @@ const NavBar = ({path, goToPage}) => {
     // 
     // Note: always use setPage() instead of setCurrentPage(). 
     // [12/oct/2021 @Sarah]
-    const pathToPage = (path) => Object.keys(pages).filter((page) => path === pages[page].path)[0];
-    const p = pathToPage(path);
-    const [currentPage, setCurrentPage] = useState(p !== undefined ? p : 'Home');
 
+    // Method 1 : By page prop
+    // const pathToPage = (path) => Object.keys(pages).filter((page) => path === pages[page].path)[0];
+    // const p = pathToPage(path);
+    // const [currentPage, setCurrentPage] = useState(p !== undefined ? p : 'Home');
+
+    // Method 2 : By path prop
+    const [currentPage, setCurrentPage] = useState(pages[page] !== undefined ? page : 'Home');
+    
 
     const [parentPage, setParentPage] = useState(pages[currentPage].parentPage);
     const [isFold, setIsFold] = useState(currentPage === 'Home' ? false : true);
     const [showLanguageDialog,setShowLanguageDialog] =useState(false);
     const [language, setLanguage] = useState('english');
     const [isLogin, setIsLogin] = useState(false);
+    const history = useHistory();
+
 
     const handleOpenLanguageDialog = () =>{
         setShowLanguageDialog(true);
@@ -84,7 +93,7 @@ const NavBar = ({path, goToPage}) => {
             page === 'Home' ? setIsFold(false) : setIsFold(true);
             setCurrentPage(page);
             setParentPage(pages[page].parentPage);
-            goToPage(pages[page].path);
+            history.push(pages[page].path);
         } else {
             alert(page + ' page not find!');
         }
@@ -154,15 +163,17 @@ const NavBar = ({path, goToPage}) => {
                 <div className="menuItems">
                     <MenuItem page='Home'/>
                     |
-                    <MenuItem page='About'/>
-                    |
+                    {/* <MenuItem page='About'/>
+                    | */}
                     <MenuItem page='Contact'/>
                     |
                     <MenuItem page='Partners'/>
                     |
                     <MenuItem page='Team'/>
                     |
-                    <MenuItem page='Services'/>
+                    <MenuItem page='Membership'/>
+                    |
+                    <MenuItem page='Junior golf'/>
                     |
                     <MenuItem page='Blog'/>
                     |

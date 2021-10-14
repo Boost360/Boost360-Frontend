@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import NavBar from "../NavBar/NavBar";
 import AboutUs from "../AboutUs/AboutUs"
-import { Route, useRouteMatch, useHistory, useLocation } from "react-router";
+import { Route, useRouteMatch } from "react-router";
 import Partner from "../Partner/Partner"
 import Team from "../Team/Team"
 import HomePage from "../HomePage/HomePage"
@@ -17,39 +17,45 @@ import StudentModules from "../StudentModules/StudentModules";
  */
 const Site = () => {
     let { path, url } = useRouteMatch();
-    const history = useHistory();
     return (
         <div>
-            <NavBar path={useLocation().pathname} goToPage={(path)=>history.push(path)}></NavBar> 
-
             <Route path={path} exact>
+                <NavBar page='Home'></NavBar> 
                 <HomePage></HomePage>
             </Route>
 
             <Route path={`${path}/about`}>
+                <NavBar page='About'></NavBar> 
                 <AboutUs></AboutUs>
             </Route>
 
-            <Route path={`${path}/partner`}>
+            <Route path={`${path}/partners`}>
+                <NavBar page='Partners'></NavBar> 
                 <Partner></Partner>
             </Route>
 
             <Route path={`${path}/team`}>
+                <NavBar page='Team'></NavBar> 
                 <Team></Team>
             </Route>
+
             <Route path={`${path}/blog`}>
+                <NavBar page='Blog'></NavBar> 
                 <Blog></Blog>
             </Route>
 
             <Route path={`${path}/contact`}>
+                <NavBar page='Contact'></NavBar> 
                 <ContactUs></ContactUs>
             </Route>
 
             <Route path={`${path}/student`}>
+                <NavBar page='Student login'></NavBar> 
                 <Student></Student>
             </Route>
 
             <Route path={`${path}/student/modules`}>
+                <NavBar page='Modules'></NavBar> 
                 <StudentModules></StudentModules>
             </Route>
 
