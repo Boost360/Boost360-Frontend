@@ -1,7 +1,7 @@
 import express from 'express';
 import * as usersDao from '../../db/dao/users-dao'
 import mongoose from 'mongoose';
-
+var bcrypt = require('bcryptjs');
 
 // const HTTP_OK = 200; // Not really needed; this is the default if you don't set something else.
 const HTTP_CREATED = 201;
@@ -35,9 +35,9 @@ router.use('/:id',async (req, res, next) => {
 router.post('/', async (req, res) => {
 
 
-    if (!req.body.username) {
+    if (!req.body.email) {
         res.status(HTTP_BAD_REQUEST)
-            .contentType('text/plain').send('New User must have a username');
+            .contentType('text/plain').send('New User must have a email');
         return;
     }
     if (!req.body.password) {
@@ -55,6 +55,17 @@ router.post('/', async (req, res) => {
             .contentType('text/plain').send('New User must have a second name');
         return;
     }
+    // check if user already exist
+    // Validate if user exist in our database
+    const oldUser = await usersDao.retrieveUserByEmail(req.body.email);
+
+    if (oldUser) {
+      return res.status(409).send("User Already Exist.");
+    }
+
+
+    //Encrypt user password
+    req.body.password = await bcrypt.hash(req.body.password, 10);
 
 
     const tempUser= req.body;

@@ -3,13 +3,13 @@ import './Icon.css';
 import Site from './components/Site/Site';
 import LandingPage from './components/LandingPage/LandingPage';
 import Scheduler from './components/Schedule/Schedule';
-
-
 import {
     BrowserRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
+import DevelopmentProgram from './components/DevelopmentProgram/DevelopmentProgram'
+
 
 
 function App() {
@@ -30,6 +30,9 @@ function App() {
             </Route>
       
             </Switch>
+
+            <DevelopmentProgram />
+
         </div>
     );
 }
