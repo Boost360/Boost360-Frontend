@@ -8,7 +8,7 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import DevelopmentProgram from './components/DevelopmentProgram/DevelopmentProgram'
+
 
 
 
@@ -31,7 +31,6 @@ function App() {
       
             </Switch>
 
-            <DevelopmentProgram />
 
         </div>
     );
