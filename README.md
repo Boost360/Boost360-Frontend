@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Boost360-Frontend [![Netlify Status](https://api.netlify.com/api/v1/badges/24e52b27-e45d-4c8c-a31b-45bcc53bbba6/deploy-status)](https://app.netlify.com/sites/boost360/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

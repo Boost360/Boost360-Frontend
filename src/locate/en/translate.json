@@ -1,5 +1,6 @@
 {
     "translations": {
+        "lang":"en",
         "landing":{
             "enter":"Enter Site",
             "login":"Student Login"
