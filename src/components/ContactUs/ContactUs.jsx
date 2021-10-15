@@ -3,10 +3,11 @@ import './ContactUs.css';
 import ContactUsName from "./Name/ContactUsName";
 import ContactInfo from "./Info/ContactInfo";
 import ContactInput from "./Input/ContactInput";
+import ReactLoading from 'react-loading';
 
 export default function ContactUs() {
     return(
-        <div className="ContactPage">
+        <div className="ContactPage">        
             <div className="ContactPage-mask">
                 <div className="ContactUsSectionBox">
                     <ContactUsName/>

@@ -1,5 +1,6 @@
 {
     "translations": {
+        "lang":"ch",
         "landing":{
             "enter":"进入主页",
             "login":"学生登录"
