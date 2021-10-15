@@ -1,8 +1,7 @@
 .StudentHomeMain{
     background: #2E414F;
-    width: 100vw;
-    height: 100vh;
-    /* use 2 variables above could garentee that whole page will be filled with the color */
+    width: 100%;
+    height: 100%;
     overflow-y: auto;
 }
 

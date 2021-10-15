@@ -5,6 +5,7 @@ import Home from "./Home/StudentHome"
 import Schedule from "./Schedule/Schedule";
 import Module from "./Modules/StudentModules"
 import DevelopmentProgram from "./DevelopmentProgram/DevelopmentProgram";
+import Profile from "./Profile/Profile";
 
 /**
  * This is the entry point of Student Home.
@@ -38,6 +39,10 @@ const Student = () => {
             
             <Route path={`${path}/development-program`} exact>
                 <DevelopmentProgram></DevelopmentProgram>
+            </Route>
+
+            <Route path={`${path}/profile`} exact>
+                <Profile></Profile>
             </Route>
 
         </div>

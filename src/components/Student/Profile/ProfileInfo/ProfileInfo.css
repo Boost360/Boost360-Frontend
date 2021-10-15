@@ -1,0 +1,55 @@
+.ProfileInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: static;
+    width: 577.5px;
+    height: 580px;
+}
+
+.ProfileInputSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 577.5px;
+    height: 40px;
+    flex: none;
+    align-self: stretch;
+    margin: 10px 0px;
+}
+
+.ProfileInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px 0px 0px 10px;
+    position: static;
+    width: 426.5px;
+    height: 38px;
+    flex: none;
+    margin: 0px 18px;
+    border-bottom: 0.5px solid #C2C2C2;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    background: #2E414F;
+}
+
+.ProfileMustInput{
+    position: static;
+    width: 6px;
+    height: 18px;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #8AE3FF;
+    margin: 10px 0px;
+}
+

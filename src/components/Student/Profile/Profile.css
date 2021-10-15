@@ -1,0 +1,54 @@
+.Profile{
+    background: #2E414F;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.ProfileContaniner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 30px 0px;
+    position: static;
+    width: 1155px;
+    height: 1016.98px;
+}
+
+.ProfileBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: static;
+    width: 1155px;
+    height: 656.98px;
+}
+
+.ProfileContactSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    width: 577.5px;
+    height: 656.98px;
+}
+
+.ProfileSave{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: static;
+    width: 577.5px;
+    height: 39.64px;
+    background: #00AAE7;
+    align-self: stretch;
+    margin: 50px 0px;
+    border: none;
+    /* font */
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
