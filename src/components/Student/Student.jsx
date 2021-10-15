@@ -13,8 +13,7 @@ import DevelopmentProgram from "./DevelopmentProgram/DevelopmentProgram";
 const Student = () => {
     let { path, url } = useRouteMatch();
     const history = useHistory();
-    console.log(path)
-
+    
     return (
         <div>
             <Route path={`${path}/home`} exact>
