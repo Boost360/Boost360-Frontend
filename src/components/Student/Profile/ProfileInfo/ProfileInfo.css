@@ -53,3 +53,27 @@
     margin: 10px 0px;
 }
 
+.ProfileSelect{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: static;
+    width: 435.5px;
+    height: 33px;
+    flex: none;
+    margin: 0px 18px;
+    border: 0.5px solid #C2C2C2;
+    background: #2E414F;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-left: 4px;
+    color: #C2C2C2;
+}
