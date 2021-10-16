@@ -1,0 +1,101 @@
+.ProfileInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: static;
+    width: 577.5px;
+    height: 580px;
+}
+
+.ProfileInputSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 577.5px;
+    height: 40px;
+    flex: none;
+    align-self: stretch;
+    margin: 10px 0px;
+}
+
+.ProfileInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px 0px 0px 10px;
+    position: static;
+    width: 426.5px;
+    height: 38px;
+    flex: none;
+    margin: 0px 18px;
+    border-bottom: 0.5px solid #C2C2C2;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    background: #2E414F;
+    color: #F1F1F1;
+    /* in the input section, put color will change the color of user input text */
+}
+
+.ProfileMustInput{
+    position: static;
+    width: 6px;
+    height: 18px;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #8AE3FF;
+    margin: 10px 0px;
+}
+
+.ProfileSelect{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: static;
+    width: 435.5px;
+    height: 33px;
+    flex: none;
+    margin: 0px 18px;
+    border: 0.5px solid #C2C2C2;
+    background: #2E414F;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-left: 4px;
+    color: #C2C2C2;
+}
+
+.marginRight{
+    margin-right: 18px;
+}
+
+.ProfileDateSelect{
+    width: 295.5px;
+    margin-left: 18px;
+    background: #2E414F;
+    border: 0.5px solid #C2C2C2;
+    height: 33px;
+    color: #F1F1F1;
+    padding-left: 10px;
+}
+
+.ProfileDOBInput{
+    width: 130px;
+    font-size: 15px;
+    color: #F1F1F1;
+}

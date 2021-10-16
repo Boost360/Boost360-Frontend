@@ -1,0 +1,16 @@
+.development_program_container{
+    background: #2E414F;
+    padding: 100px 10% 100px 10%;
+}
+.development_gray_row {
+    background: #F1F1F1;
+}
+.development_program_file_icon svg {
+    fill: white;
+    stroke: black;
+}
+@media (max-width: 800px) {
+    .development_program_container{
+        padding: 50px 5% 50px 5%;
+    }
+}
