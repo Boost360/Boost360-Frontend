@@ -1,8 +1,10 @@
 {
     "translations": {
+        "lang":"ch",
         "landing":{
             "enter":"进入主页",
-            "login":"学生登录"
+            "login":"学生登录",
+            "home":"学生主页"
         },
 
         "contact":{

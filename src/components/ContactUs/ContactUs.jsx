@@ -4,9 +4,10 @@ import ContactUsName from "./Name/ContactUsName";
 import ContactInfo from "./Info/ContactInfo";
 import ContactInput from "./Input/ContactInput";
 
+
 export default function ContactUs() {
     return(
-        <div className="ContactPage">
+        <div className="ContactPage">        
             <div className="ContactPage-mask">
                 <div className="ContactUsSectionBox">
                     <ContactUsName/>

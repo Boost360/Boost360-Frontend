@@ -4,7 +4,7 @@ import logo from '../../static/img/logo.png';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export default function LandingPage() {
+export default function LandingPage({user}) {
     const { t, i18n } = useTranslation()
 
 
@@ -25,7 +25,9 @@ export default function LandingPage() {
                 <div className="buttonArea">
                     <div className="enterButton">
                         <Link className="landingButton" to="/index"><span>{t("landing.enter")}</span></Link>
-                        <Link className="landingButton"><span>{t("landing.login")}</span></Link>
+                        {user? <Link className="landingButton" to="/student/home"><span>{t("landing.home")}</span></Link>:
+                         <Link className="landingButton" to="/login"><span>{t("landing.login")}</span></Link>}
+                       
                     </div>
                     <div className="languagesection">
                         <a onClick={()=>{handleChangeLang('en')}}>English</a>
