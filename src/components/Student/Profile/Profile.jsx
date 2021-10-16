@@ -20,7 +20,6 @@ export default function Profile() {
                     <ProfileInfo></ProfileInfo>
                     <div className="ProfileContactSection">
                         <ProfileContact></ProfileContact>
-                        <ProfileContact></ProfileContact>
                         <button className="ProfileSave">Save</button>
                     </div>
                 </div>

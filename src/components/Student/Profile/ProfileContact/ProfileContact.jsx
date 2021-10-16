@@ -11,21 +11,39 @@ export default function ProfileContact() {
     const onSubmit = (data) => setContactDetail(JSON.stringify(data));
 
     return(
-        <div className="ProfileContact">
-            <p className="contactTitle">* Contact</p>
-            <div className="ProfileInputSection">
-                <input className="ProfileInput" placeholder="Name"></input>
+        <div>
+            <div className="ProfileContact">
+                <p className="contactTitle">* Contact</p>
+                <div className="ProfileInputSection">
+                    <input className="ProfileInput" placeholder="Name"></input>
+                </div>
+                <div className="ProfileInputSection">
+                    <input className="ProfileInput" placeholder="Relationship"></input>
+                </div>
+                <div className="ProfileInputSection">
+                    <input className="ProfileInput" placeholder="Mobile"></input>
+                </div>
+                <div className="ProfileInputSection">
+                    <input className="ProfileInput" placeholder="Email"></input>
+                </div>
             </div>
-            <div className="ProfileInputSection">
-                <input className="ProfileInput" placeholder="Relationship"></input>
-            </div>
-            <div className="ProfileInputSection">
-                <input className="ProfileInput" placeholder="Mobile"></input>
-            </div>
-            <div className="ProfileInputSection">
-                <input className="ProfileInput" placeholder="Email"></input>
+            <div className="ProfileContact">
+                <p className="contactTitle">* Contact</p>
+                <div className="ProfileInputSection">
+                    <input className="ProfileInput" placeholder="Name"></input>
+                </div>
+                <div className="ProfileInputSection">
+                    <input className="ProfileInput" placeholder="Relationship"></input>
+                </div>
+                <div className="ProfileInputSection">
+                    <input className="ProfileInput" placeholder="Mobile"></input>
+                </div>
+                <div className="ProfileInputSection">
+                    <input className="ProfileInput" placeholder="Email"></input>
+                </div>
             </div>
 
         </div>
+        
     )
 }
