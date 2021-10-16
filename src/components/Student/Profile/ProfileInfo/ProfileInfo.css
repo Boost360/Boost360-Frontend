@@ -38,6 +38,7 @@
     border-right:0px;
     background: #2E414F;
     color: #F1F1F1;
+    /* in the input section, put color will change the color of user input text */
 }
 
 .ProfileMustInput{
@@ -81,4 +82,20 @@
 
 .marginRight{
     margin-right: 18px;
+}
+
+.ProfileDateSelect{
+    width: 295.5px;
+    margin-left: 18px;
+    background: #2E414F;
+    border: 0.5px solid #C2C2C2;
+    height: 33px;
+    color: #F1F1F1;
+    padding-left: 10px;
+}
+
+.ProfileDOBInput{
+    width: 130px;
+    font-size: 15px;
+    color: #F1F1F1;
 }

@@ -1,28 +1,16 @@
 import React, { useState } from "react";
 import './ProfileInfo.css';
 import { useTranslation } from "react-i18next";
-import { useForm } from "react-hook-form";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import { grey } from '@mui/material/colors';
 
 
 
 
-export default function ProfileInfo() {
+
+export default function ProfileInfo({profile, handleChange}) {
     const { t, i18n } = useTranslation();
-    const { register, handleSubmit } = useForm();
-    const [contactDetail, setContactDetail] = useState("");
-    const onSubmit = (data) => setContactDetail(JSON.stringify(data));
-
-    const [value, setValue] = React.useState(null);
-    const color = grey[50];
-
-
-
-
-
 
 
     return (
@@ -32,7 +20,7 @@ export default function ProfileInfo() {
                 <p className="ProfileMustInput marginRight">*</p>
                 <Autocomplete
                     id="country-select-demo"
-                    sx={{ width: 426.5 }}
+                    sx={{ width: 436.5 }}
                     options={countries}
                     autoHighlight
                     getOptionLabel={(option) => option.label}
@@ -60,22 +48,28 @@ export default function ProfileInfo() {
                                 },
                                 '& .MuiInput-underline': {
                                     color: "#C2C2C2",
-                                    borderBottom: "0.5px solid #fff"
+                                    borderBottom: "0.5px solid #C2C2C2"
                                 },
                                 '& .MuiInput-underline.Mui-focused': {
                                     color: "#C2C2C2",
                                     borderBottom: "0.5px solid #fff"
                                 },
                                 '& label.Mui-focused': {
-                                    color: "#C2C2C2",
+                                    color: "#F1F1F1",
+                                    fontSize: '15px',
+                                    marginLeft: '10px',
                                 },
                                 '& label': {
-                                    color: "#C2C2C2",
+                                    // color: "#5d6163",
+                                    color: '#F1F1F1',
+                                    fontSize: '15px',
+                                    marginLeft: '10px',
                                 }
                             }}
                             inputProps={{
                                 ...params.inputProps,
                                 autoComplete: 'new-password', // disable autocomplete and autofill
+                                
                             }}
                         />
                     )}
@@ -84,34 +78,36 @@ export default function ProfileInfo() {
 
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input {...register("dob")} 
-                //  className="ProfileSelect"
+                <p className="ProfileDOBInput">Date of Birth</p>
+                <input 
+                value={profile.dob} onChange={handleChange('dob')}
+                 className="ProfileDateSelect"
                   type="date"></input>
             </div>
 
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input {...register("Address")} className="ProfileInput" placeholder="Address"></input>
+                <input className="ProfileInput" placeholder="Address"></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input {...register("Mobile")} className="ProfileInput" placeholder="Mobile"></input>
+                <input className="ProfileInput" placeholder="Mobile"></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input {...register("Email")} className="ProfileInput" placeholder="Email"></input>
+                <input className="ProfileInput" placeholder="Email"></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput"> </p>
-                <input {...register("MedicalCondition")} className="ProfileInput" placeholder="Medical condition"></input>
+                <input className="ProfileInput" placeholder="Medical condition"></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input {...register("GolfClub")} className="ProfileInput" placeholder="Golf club"></input>
+                <input className="ProfileInput" placeholder="Golf club"></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <select className="ProfileSelect" {...register("YearPlay")}>
+                <select className="ProfileSelect">
                     <option value="" disabled selected>Years playing golf</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -128,11 +124,11 @@ export default function ProfileInfo() {
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput"> </p>
-                <input {...register("School")} className="ProfileInput" placeholder="School"></input>
+                <input className="ProfileInput" placeholder="School"></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput"> </p>
-                <select className="ProfileSelect" {...register("SchoolYear")}>
+                <select className="ProfileSelect" >
                     <option value="" disabled selected>School year</option>
                     <option value="1">1</option>
                     <option value="2">2</option>

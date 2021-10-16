@@ -28,6 +28,7 @@
     line-height: 18px;
     color: #00AAE7;
     margin: 18px 0px;
+    text-align: left;
 }
 
 .ProfileName{
@@ -37,8 +38,14 @@
     line-height: 30px;
     color: #F1F1F1;
     margin: 18px 0px;
+    background-color: #2E414F;
+    border: none;
 }
 
 .ProfileNameSection{
     padding-left: 46px;
 }
+
+::placeholder { /* Most modern browsers support this now. */
+    color:  #F1F1F1;
+ }
