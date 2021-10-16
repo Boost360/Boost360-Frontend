@@ -6,6 +6,7 @@ import Home from "./Home/StudentHome"
 import Schedule from "./Schedule/Schedule";
 import Module from "./Modules/StudentModules"
 import DevelopmentProgram from "./DevelopmentProgram/DevelopmentProgram";
+import VideoLibrary from "./VideoLibrary/VideoLibrary";
 
 /**
  * This is the entry point of Student Home.
@@ -45,6 +46,11 @@ const Student = () => {
             <Route path={`${path}/development-program`} exact>
                 <NavBar page='Development program'></NavBar>
                 <DevelopmentProgram></DevelopmentProgram>
+            </Route>
+
+            <Route path={`${path}/video-library`} exact>
+                <NavBar page='Video library'></NavBar>
+                <VideoLibrary></VideoLibrary>
             </Route>
 
         </div>
