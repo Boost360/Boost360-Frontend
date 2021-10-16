@@ -47,13 +47,13 @@ const Student = ({ user }) => {
 
 
             <Route path={`${path}/profile`} exact>
-             <NavBar page='Profile' user={user}></NavBar>
+                <NavBar page='Profile' user={user}></NavBar>
                 <Profile></Profile>
             </Route>
-                
-              
+
+
             <Route path={`${path}/video-library`} exact>
-                <NavBar page='Video library'></NavBar>
+                <NavBar page='Video library' user={user}></NavBar>
                 <VideoLibrary></VideoLibrary>
             </Route>
 
