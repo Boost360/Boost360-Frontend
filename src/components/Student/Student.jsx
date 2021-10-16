@@ -1,7 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Route, useRouteMatch, useHistory } from "react-router";
 import NavBar from '../NavBar/NavBar';
-import Login from "./Login/Login";
 import Home from "./Home/StudentHome"
 import Schedule from "./Schedule/Schedule";
 import Module from "./Modules/StudentModules"
@@ -11,39 +10,35 @@ import DevelopmentProgram from "./DevelopmentProgram/DevelopmentProgram";
  * This is the entry point of Student Home.
  * @Author Zach
  */
-const Student = () => {
+const Student = ({ user }) => {
     let { path, url } = useRouteMatch();
     const history = useHistory();
-    
+
     return (
         <div>
-            <Route path={`${path}/home`} exact>
-                <NavBar page='Student home'></NavBar>
-                <Home></Home> 
-            </Route>
 
-            <Route path={`${path}/login`} exact>
-                <NavBar page='Student login'></NavBar>
-                <Login></Login>
+            <Route path={`${path}/home`} exact>
+                <NavBar page='Student home' user={user}></NavBar>
+                <Home></Home>
             </Route>
 
             <Route path={`${path}/schedule`} exact>
-                <NavBar page='Schedule'></NavBar>
+                <NavBar page='Schedule' user={user}></NavBar>
                 <Schedule></Schedule>
             </Route>
 
             <Route path={`${path}/modules`} exact>
-                <NavBar page='Modules'></NavBar>
+                <NavBar page='Modules' user={user}></NavBar>
                 <Module></Module>
             </Route>
 
             <Route path={`${path}/results`} exact>
-                <NavBar page='Results'></NavBar>
+                <NavBar page='Results' user={user}></NavBar>
                 <Module></Module>
             </Route>
-            
+
             <Route path={`${path}/development-program`} exact>
-                <NavBar page='Development program'></NavBar>
+                <NavBar page='Development program' user={user}></NavBar>
                 <DevelopmentProgram></DevelopmentProgram>
             </Route>
 
