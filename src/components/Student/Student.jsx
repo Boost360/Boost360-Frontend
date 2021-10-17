@@ -48,7 +48,7 @@ const Student = ({ user,setUser }) => {
 
             <Route path={`${path}/profile`} exact>
                 <NavBar page='Profile' user={user}></NavBar>
-                <Profile user={user}></Profile>
+                <Profile user={user} setUser={setUser}></Profile>
             </Route>
 
 

@@ -5,10 +5,11 @@ import { useForm } from "react-hook-form";
 import ProfileHeader from "./ProfileHeader/ProfileHeader";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import ProfileContact from "./ProfileContact/ProfileContact";
+import { profile } from "../../../api/profile/profile";
 
-export default function Profile({user}) {
+export default function Profile({user,setUser}) {
 
-    const [profile, setProfile] = React.useState({
+    const [profileInfo, setProfile] = React.useState({
         avatar: user.avatar,
         firstName: user.firstName,
         secondName: user.secondName,
@@ -33,26 +34,29 @@ export default function Profile({user}) {
     });
 
     const handleChange = (prop) => (event) => {
-        setProfile({ ...profile, [prop]: event.target.profile });
+        setProfile({ ...profileInfo, [prop]: event.target.profileInfo });
     };
 
     const handleSubChange = (key,value) => {
-        setProfile({ ...profile, [key]:value });
+        setProfile({ ...profileInfo, [key]:value });
     }
 
-
-    const handleSave = ()=>{
-        console.log(profile)
+    const handleSave = async () => {
+        let response = await profile(profileInfo,user._id);
+        if (response.status === 200) {
+            setUser(response.data)
+        }
     }
 
     return(
         <div className="Profile">
+            
             <div className="ProfileContaniner">
-                <ProfileHeader profile={profile} handleChange={handleSubChange}/>
+                <ProfileHeader profileInfo={profileInfo} handleChange={handleSubChange}/>
                 <div className="ProfileBottom">
-                    <ProfileInfo profile={profile} handleChange={handleSubChange}></ProfileInfo>
+                    <ProfileInfo profileInfo={profileInfo} handleChange={handleSubChange}></ProfileInfo>
                     <div className="ProfileContactSection">
-                        <ProfileContact profile={profile} handleChange={handleSubChange}></ProfileContact>
+                        <ProfileContact profileInfo={profileInfo} handleChange={handleSubChange}></ProfileContact>
                         <button className="ProfileSave" onClick={handleSave}>Save</button>
                     </div>
                 </div>
