@@ -37,6 +37,7 @@ export default function Profile({user,setUser}) {
         setProfile({ ...profileInfo, [prop]: event.target.profileInfo });
     };
 
+
     const handleSubChange = (key,value) => {
         setProfile({ ...profileInfo, [key]:value });
     }
@@ -49,10 +50,13 @@ export default function Profile({user,setUser}) {
     }
 
     return(
+
         <div className="Profile">
             
             <div className="ProfileContaniner">
-                <ProfileHeader profileInfo={profileInfo} handleChange={handleSubChange}/>
+
+                <ProfileHeader profileInfo={profileInfo} handleChange={handleSubChange} user={user} setUser={setUser}/>
+
                 <div className="ProfileBottom">
                     <ProfileInfo profileInfo={profileInfo} handleChange={handleSubChange}></ProfileInfo>
                     <div className="ProfileContactSection">
