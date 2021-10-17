@@ -13,7 +13,7 @@ import VideoLibrary from "./VideoLibrary/VideoLibrary";
  * This is the entry point of Student Home.
  * @Author Zach
  */
-const Student = ({ user }) => {
+const Student = ({ user,setUser }) => {
     let { path, url } = useRouteMatch();
     const history = useHistory();
 
@@ -22,7 +22,7 @@ const Student = ({ user }) => {
 
             <Route path={`${path}/home`} exact>
                 <NavBar page='Student home' user={user}></NavBar>
-                <Home></Home>
+                <Home setUser={setUser}></Home>
             </Route>
 
             <Route path={`${path}/schedule`} exact>

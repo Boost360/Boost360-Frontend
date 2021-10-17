@@ -70,6 +70,7 @@ const Login = ({ setUser }) => {
     const handleLogin = async () => {
         if (values.id === '' || values.password === '') {
             setError(true)
+            return
         }
         setLoading(true)
         let loginPayload = { email: values.id, password: values.password };
@@ -77,9 +78,12 @@ const Login = ({ setUser }) => {
         if (response.status === 200) {
             localStorage.setItem("token", response.data.token)
             setUser(response.data.user)
+            setLoading(false)
             history.push('/student/home')
+
         } else {
             setError(true)
+            setLoading(false)
         }
 
     }

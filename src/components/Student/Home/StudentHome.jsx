@@ -12,7 +12,7 @@ import { AiOutlineWarning } from 'react-icons/ai';
 import { AiOutlineVideoCamera } from 'react-icons/ai';
 
 
-export default function StudentHome(){
+export default function StudentHome({setUser}){
     const cards = [
         {title: "Profile", icon: <AiOutlineUser />, path:"/student/profile"},
         {title: "Schedule", icon: <AiOutlineProfile />, path:"/student/schedule"}, ,
@@ -29,7 +29,7 @@ export default function StudentHome(){
                     {cards.map((card) =>
                         <StudentHomeCard title={card.title} icon={card.icon} path={card.path}></StudentHomeCard>
                     )}
-                    <StudentHomeLogout></StudentHomeLogout>
+                    <StudentHomeLogout setUser={setUser}></StudentHomeLogout>
                 </ul>
             </div>
         </div>
