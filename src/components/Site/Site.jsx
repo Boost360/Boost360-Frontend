@@ -60,7 +60,7 @@ const Site = ({ user,setUser }) => {
             </Route>
 
             <Route path='/student'>
-                {user ? <Student user={user}></Student> : <Redirect to="/login" />}
+                {user ? <Student user={user} setUser={setUser}></Student> : <Redirect to="/login" />}
             </Route>
 
             <Route path='/login' exact>
