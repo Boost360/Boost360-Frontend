@@ -52,3 +52,9 @@
     line-height: 18px;
     color: #FFFFFF;
 }
+
+@media screen and (min-width: 1625px){
+    .ProfileContaniner{
+        padding-left: 20%;
+    }
+}

@@ -9,13 +9,10 @@ import Autocomplete from '@mui/material/Autocomplete';
 
 
 
-export default function ProfileInfo({profile, handleChange}) {
+export default function ProfileInfo({ profile, handleChange }) {
     const { t, i18n } = useTranslation();
-
-
     return (
         <div className="ProfileInfo">
-
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput marginRight">*</p>
                 <Autocomplete
@@ -24,6 +21,7 @@ export default function ProfileInfo({profile, handleChange}) {
                     options={countries}
                     autoHighlight
                     getOptionLabel={(option) => option.label}
+                    onChange={(e) => { handleChange('ethnicity', e.target.outerText) }}
                     renderOption={(props, option) => (
                         <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
                             <img
@@ -41,10 +39,10 @@ export default function ProfileInfo({profile, handleChange}) {
                             {...params}
                             label="Nationality"
                             variant="standard"
+                            value={profile.ethnicity}
                             sx={{
                                 '& .MuiSvgIcon-root': {
                                     color: "#C2C2C2"
-
                                 },
                                 '& .MuiInput-underline': {
                                     color: "#C2C2C2",
@@ -69,7 +67,7 @@ export default function ProfileInfo({profile, handleChange}) {
                             inputProps={{
                                 ...params.inputProps,
                                 autoComplete: 'new-password', // disable autocomplete and autofill
-                                
+
                             }}
                         />
                     )}
@@ -79,35 +77,37 @@ export default function ProfileInfo({profile, handleChange}) {
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
                 <p className="ProfileDOBInput">Date of Birth</p>
-                <input 
-                value={profile.dob} onChange={handleChange('dob')}
-                 className="ProfileDateSelect"
-                  type="date"></input>
+                <input
+                    value={profile.dob}
+                    onChange={(e) => { handleChange('dob', e.target.value) }}
+                    className="ProfileDateSelect"
+                    type="date"
+                ></input>
             </div>
 
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input className="ProfileInput" placeholder="Address"></input>
+                <input className="ProfileInput" placeholder="Address" value={profile.address} onChange={(e) => { handleChange('address', e.target.value) }}></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input className="ProfileInput" placeholder="Mobile"></input>
+                <input className="ProfileInput" placeholder="Mobile" value={profile.mobile} onChange={(e) => { handleChange('mobile', e.target.value) }}></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input className="ProfileInput" placeholder="Email"></input>
+                <input className="ProfileInput" placeholder="Email" value={profile.email} onChange={(e) => { handleChange('email', e.target.value) }}></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput"> </p>
-                <input className="ProfileInput" placeholder="Medical condition"></input>
+                <input className="ProfileInput" placeholder="Medical condition" value={profile.medicalCondition} onChange={(e) => { handleChange('medicalCondition', e.target.value) }}></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <input className="ProfileInput" placeholder="Golf club"></input>
+                <input className="ProfileInput" placeholder="Golf club" value={profile.club} onChange={(e) => { handleChange('club', e.target.value) }}></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
-                <select className="ProfileSelect">
+                <select className="ProfileSelect" value={profile.yearsPlaying} onChange={(e) => { handleChange('yearsPlaying', e.target.value) }}>
                     <option value="" disabled selected>Years playing golf</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -124,11 +124,11 @@ export default function ProfileInfo({profile, handleChange}) {
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput"> </p>
-                <input className="ProfileInput" placeholder="School"></input>
+                <input className="ProfileInput" placeholder="School" value={profile.school} onChange={(e) => { handleChange('school', e.target.value) }}></input>
             </div>
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput"> </p>
-                <select className="ProfileSelect" >
+                <select className="ProfileSelect" value={profile.schoolYear} onChange={(e) => { handleChange('schoolYear', e.target.value) }}>
                     <option value="" disabled selected>School year</option>
                     <option value="1">1</option>
                     <option value="2">2</option>

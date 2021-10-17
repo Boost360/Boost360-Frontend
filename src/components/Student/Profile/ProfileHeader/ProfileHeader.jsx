@@ -5,12 +5,8 @@ import { useForm } from "react-hook-form";
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 
-export default function ProfileHeader() {
+export default function ProfileHeader({profile, handleChange}) {
     const { t, i18n } = useTranslation();
-    const { register, handleSubmit } = useForm();
-    const [contactDetail, setContactDetail] = useState("");
-    const onSubmit = (data) => setContactDetail(JSON.stringify(data));
-
     return (
         <div className="ProfileHeader">
             <Stack>
@@ -18,12 +14,14 @@ export default function ProfileHeader() {
                     alt="Remy Sharp"
                     src=""
                     sx={{ width: 200, height: 200 }}
+                    value={profile.avatar} 
+                    onChange={(e)=>{handleChange('avatar',e.target.value)}}
                 />
             </Stack>
             <div className="ProfileNameSection">
                 <div className="ProfileTite">Prisdent</div>
-                <input className="ProfileName" placeholder="First Name"></input>
-                <input className="ProfileName" placeholder="Last Name"></input>
+                <input className="ProfileName" placeholder="First Name" value={profile.firstName} onChange={(e)=>{handleChange('firstName',e.target.value)}}></input>
+                <input className="ProfileName" placeholder="Last Name" value={profile.secondName} onChange={(e)=>{handleChange('secondName',e.target.value)}}></input>
             </div>
 
         </div>
