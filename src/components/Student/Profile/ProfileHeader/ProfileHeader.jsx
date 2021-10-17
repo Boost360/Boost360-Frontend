@@ -9,9 +9,6 @@ import AvatarDialog from "../Avatar/AvatarDialog";
 
 export default function ProfileHeader({profileInfo, handleChange,user,setUser}) {
     const { t, i18n } = useTranslation();
-    const { register, handleSubmit } = useForm();
-    const [contactDetail, setContactDetail] = useState("");
-    const onSubmit = (data) => setContactDetail(JSON.stringify(data));
 
     const [showAvatar, setShowAvatar] = React.useState(false)
 
