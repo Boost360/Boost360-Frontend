@@ -41,7 +41,7 @@ export default function Profile({user,setUser}) {
         type: user.type,
         firstName: user.firstName,
         secondName: user.secondName,
-        ethnicity: user.ethnicity,
+        ethnicity: user.ethnicity?user.ethnicity:"",
         dob: user.dob,
         address: user.address,
         mobile: user.mobile,

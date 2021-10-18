@@ -11,6 +11,9 @@ import Autocomplete from '@mui/material/Autocomplete';
 
 export default function ProfileInfo({ profileInfo, handleChange }) {
     const { t, i18n } = useTranslation();
+
+    const [ethnicity, setEthnicity] = React.useState(getOption(profileInfo.ethnicity))
+
     return (
         <div className="ProfileInfo">
             <div className="ProfileInputSection">
@@ -21,7 +24,11 @@ export default function ProfileInfo({ profileInfo, handleChange }) {
                     options={countries}
                     autoHighlight
                     getOptionLabel={(option) => option.label}
-                    onChange={(e) => { handleChange('ethnicity', e.target.outerText) }}
+                    value={ethnicity}
+                    onChange={(e) => {
+                        handleChange('ethnicity', e.target.outerText)
+                        setEthnicity(getOption(e.target.outerText))
+                    }}
                     renderOption={(props, option) => (
                         <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
                             <img
@@ -39,7 +46,6 @@ export default function ProfileInfo({ profileInfo, handleChange }) {
                             {...params}
                             label="Nationality"
                             variant="standard"
-                            value={profileInfo.ethnicity}                            
                             sx={{
                                 '& .MuiSvgIcon-root': {
                                     color: "#C2C2C2"
@@ -148,6 +154,17 @@ export default function ProfileInfo({ profileInfo, handleChange }) {
             </div>
         </div>
     );
+}
+
+
+const getOption = (key) => {
+    for (var i = 0; i < countries.length; i++) {
+        if (countries[i].label === key) {
+            return countries[i];
+
+        }
+    }
+
 }
 
 // From https://bitbucket.org/atlassian/atlaskit-mk-2/raw/4ad0e56649c3e6c973e226b7efaeb28cb240ccb0/packages/core/select/src/data/countries.js
