@@ -5,6 +5,11 @@
     overflow-y: auto;
 }
 
+.Profile::-webkit-scrollbar {
+    display: none;
+}
+/* hide second scrollbar in chrome */
+
 .ProfileContaniner{
     display: flex;
     flex-direction: column;
@@ -40,11 +45,11 @@
     align-items: center;
     padding: 10px;
     position: static;
-    width: 577.5px;
+    width: 436px;
     height: 39.64px;
     /* background: #00AAE7; */
     align-self: stretch;
-    margin: 50px 0px;
+    margin: 50px 60px;
     border: none;
     /* font */
     font-family: Montserrat;

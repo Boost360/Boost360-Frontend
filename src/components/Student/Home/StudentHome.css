@@ -5,6 +5,11 @@
     overflow-y: auto;
 }
 
+.StudentHomeMain::-webkit-scrollbar {
+    display: none;
+}
+/* hide second scrollbar in chrome */
+
 .StudentHomeContainer {
     margin-top: 6%;
     max-width: 1410px;
