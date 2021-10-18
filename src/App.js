@@ -3,7 +3,7 @@ import './Icon.css';
 import Site from './components/Site/Site';
 import LandingPage from './components/LandingPage/LandingPage';
 import React from 'react'
-import {getSelf} from './api/login/login'
+import { getSelf } from './api/login/login'
 
 
 import {
@@ -21,13 +21,15 @@ function App() {
     const token = localStorage.getItem("token");
 
     React.useEffect(async () => {
-        if(token){
-           const self = await getSelf(token)
-           setUser(self)
+        if (token) {
+            const self = await getSelf(token)
+            if (self._id) {
+                setUser(self)
+            }
         }
-        
 
-    },[]);
+
+    }, []);
 
     return (
         <div className="App" >
