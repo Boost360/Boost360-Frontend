@@ -40,7 +40,6 @@ const AvatarDialog = ({ user, setUser, handleClose, open }) => {
     const [crop, setCrop] = useState({ x: 0, y: 0 })
     const [zoom, setZoom] = useState(1)
     const [croppedAreaPixels, setCroppedAreaPixels] = useState(null)
-    const [croppedImage, setCroppedImage] = useState(null)
     const [rotation, setRotation] = useState(0)
     const onCropComplete = useCallback((croppedArea, croppedAreaPixels) => {
         setCroppedAreaPixels(croppedAreaPixels)
@@ -63,18 +62,18 @@ const AvatarDialog = ({ user, setUser, handleClose, open }) => {
     }
 
     const handleSave = async () => {
-        // setLoading(true);
+        setLoading(true);
         try {
             const croppedImage = await getCroppedImg(
                 imageSrc,
                 croppedAreaPixels,
                 rotation
             )
-            setCroppedImage(croppedImage)
-            console.log(croppedImage)
-
-            const storageRef = ref(storage, `${user._id}`);
-            const uploadTask = uploadBytesResumable(storageRef, croppedImage);
+            const metadata = {
+                contentType: 'image/jpeg',
+              };
+            const storageRef = ref(storage, `AVATARS/${user._id}.jpg`);
+            const uploadTask = uploadBytesResumable(storageRef, croppedImage,metadata);
             //initiates the firebase side uploading 
             uploadTask.on('state_changed',
                 (snapshot) => {
@@ -89,7 +88,14 @@ const AvatarDialog = ({ user, setUser, handleClose, open }) => {
                     // For instance, get the download URL: https://firebasestorage.googleapis.com/...
                     getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
                         let payload = {avatar:downloadURL}
-                        await profile(payload,user._id)
+                        const data = await profile(payload,user._id)
+                        if(data.status===200){
+                            setUser(data.data);
+                            setImageSrc(user.avatar)
+                            handleClose();
+                        }
+                        setLoading(false);
+
                     });
                 }
             );

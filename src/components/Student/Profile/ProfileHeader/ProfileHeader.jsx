@@ -31,7 +31,7 @@ export default function ProfileHeader({profileInfo, handleChange,user,setUser}) 
             <Stack>
                 <Avatar
                     alt="Remy Sharp"
-                    src=""
+                    src={user.avatar}
                     sx={{ width: 200, height: 200 }}
                     value={profileInfo.avatar} 
                     onChange={(e)=>{handleChange('avatar',e.target.value)}}
