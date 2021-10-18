@@ -38,6 +38,7 @@ export default function Profile({user,setUser}) {
 
     const [profileInfo, setProfile] = React.useState({
         avatar: user.avatar,
+        type: user.type,
         firstName: user.firstName,
         secondName: user.secondName,
         ethnicity: user.ethnicity?user.ethnicity:"",
@@ -72,6 +73,8 @@ export default function Profile({user,setUser}) {
     const handleSave = async () => {
         let response = await profile(profileInfo,user._id);
         if (response.status === 200) {
+            
+            // response.data.dob = response.data.dob.substring(0, 10)
             setUser(response.data)
             setSuccess(true)
             setLoading(false)

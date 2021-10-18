@@ -37,7 +37,7 @@ export default function ProfileHeader({profileInfo, handleChange,user,setUser}) 
                 />
             </Stack>
             <div className="ProfileNameSection">
-                <div className="ProfileTite">Prisdent</div>
+                <div className="ProfileTite">{profileInfo.type}</div>
                 <input className="ProfileName" placeholder="First Name" value={profileInfo.firstName} onChange={(e)=>{handleChange('firstName',e.target.value)}}></input>
                 <input className="ProfileName" placeholder="Last Name" value={profileInfo.secondName} onChange={(e)=>{handleChange('secondName',e.target.value)}}></input>
             </div>

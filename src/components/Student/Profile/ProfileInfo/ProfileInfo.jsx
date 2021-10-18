@@ -84,8 +84,8 @@ export default function ProfileInfo({ profileInfo, handleChange }) {
                 <p className="ProfileMustInput">*</p>
                 <p className="ProfileDOBInput">Date of Birth</p>
                 <input
-                    value={profileInfo.dob}
-                    onChange={(e) => { handleChange('dob', e.target.value) }}
+                    value={profileInfo.dob.substring(0, 10)}
+                    onChange={(e) => { handleChange('dob', e.target.value)}}
                     className="ProfileDateSelect"
                     type="date"
                 ></input>
