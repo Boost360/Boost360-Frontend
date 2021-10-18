@@ -99,10 +99,10 @@ export default function ProfileInfo({ profileInfo, handleChange }) {
                 <p className="ProfileMustInput">*</p>
                 <input className="ProfileInput" placeholder="Mobile" value={profileInfo.mobile} onChange={(e) => { handleChange('mobile', e.target.value) }}></input>
             </div>
-            <div className="ProfileInputSection">
+            {/* <div className="ProfileInputSection">
                 <p className="ProfileMustInput">*</p>
                 <input className="ProfileInput" placeholder="Email" value={profileInfo.email} onChange={(e) => { handleChange('email', e.target.value) }}></input>
-            </div>
+            </div> */}
             <div className="ProfileInputSection">
                 <p className="ProfileMustInput"> </p>
                 <input className="ProfileInput" placeholder="Medical condition" value={profileInfo.medicalCondition} onChange={(e) => { handleChange('medicalCondition', e.target.value) }}></input>

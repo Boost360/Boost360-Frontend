@@ -99,3 +99,12 @@
     font-size: 15px;
     color: #F1F1F1;
 }
+
+/* Hide Calendar Icon In Chrome */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding-right: 10px;
+}
