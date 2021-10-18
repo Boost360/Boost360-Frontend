@@ -11,7 +11,9 @@ import { getRotatedImage, getCroppedImg } from './CanvasUtils';
 import { getOrientation } from 'get-orientation/browser';
 import LoadingButton from '@mui/lab/LoadingButton';
 import SaveIcon from '@mui/icons-material/Save';
-
+import { storage } from '../../../../firebase';
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import {profile} from "../../../../api/profile/profile"
 
 /**
  * Avatar Editor
@@ -38,11 +40,10 @@ const AvatarDialog = ({ user, setUser, handleClose, open }) => {
     const [crop, setCrop] = useState({ x: 0, y: 0 })
     const [zoom, setZoom] = useState(1)
     const [croppedAreaPixels, setCroppedAreaPixels] = useState(null)
-    const [croppedImage, setCroppedImage] = useState(null)
     const [rotation, setRotation] = useState(0)
     const onCropComplete = useCallback((croppedArea, croppedAreaPixels) => {
         setCroppedAreaPixels(croppedAreaPixels)
-      }, [])
+    }, [])
 
     const onFileChange = async (e) => {
         if (e.target.files && e.target.files.length > 0) {
@@ -68,9 +69,39 @@ const AvatarDialog = ({ user, setUser, handleClose, open }) => {
                 croppedAreaPixels,
                 rotation
             )
-            console.log('donee', { croppedImage })
-            setCroppedImage(croppedImage)
-            
+            const metadata = {
+                contentType: 'image/jpeg',
+              };
+            const storageRef = ref(storage, `AVATARS/${user._id}.jpg`);
+            const uploadTask = uploadBytesResumable(storageRef, croppedImage,metadata);
+            //initiates the firebase side uploading 
+            uploadTask.on('state_changed',
+                (snapshot) => {
+                    // Observe state change events such as progress, pause, and resume
+                    // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+                },
+                (error) => {
+                    // Handle unsuccessful uploads
+                },
+                () => {
+                    // Handle successful uploads on complete
+                    // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+                    getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+                        let payload = {avatar:downloadURL}
+                        const data = await profile(payload,user._id)
+                        if(data.status===200){
+                            setUser(data.data);
+                            setImageSrc(user.avatar)
+                            handleClose();
+                        }
+                        setLoading(false);
+
+                    });
+                }
+            );
+
+
+
         } catch (e) {
             console.error(e)
         }
