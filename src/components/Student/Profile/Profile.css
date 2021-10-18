@@ -1,9 +1,14 @@
 .Profile{
     background: #2E414F;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
 }
+
+.Profile::-webkit-scrollbar {
+    display: none;
+}
+/* hide second scrollbar in chrome */
 
 .ProfileContaniner{
     display: flex;
@@ -40,15 +45,21 @@
     align-items: center;
     padding: 10px;
     position: static;
-    width: 577.5px;
+    width: 436px;
     height: 39.64px;
-    background: #00AAE7;
+    /* background: #00AAE7; */
     align-self: stretch;
-    margin: 50px 0px;
+    margin: 50px 60px;
     border: none;
     /* font */
     font-family: Montserrat;
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
+}
+
+@media screen and (min-width: 1625px){
+    .ProfileContaniner{
+        padding-left: 20%;
+    }
 }

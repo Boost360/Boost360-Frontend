@@ -1,9 +1,14 @@
 .StudentHomeMain {
     background: #2E414F;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
 }
+
+.StudentHomeMain::-webkit-scrollbar {
+    display: none;
+}
+/* hide second scrollbar in chrome */
 
 .StudentHomeContainer {
     margin-top: 6%;

@@ -1,0 +1,28 @@
+.crop-container {
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+
+.controls{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.avatar-slider{
+    margin-left: 20px;
+    width: 100px;
+}
+
+.avatar-buttons{
+    display: flex;
+
+}
+
+.avatar-toos{
+    display: flex;
+}
