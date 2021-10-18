@@ -39,7 +39,7 @@ export default function ProfileInfo({ profileInfo, handleChange }) {
                             {...params}
                             label="Nationality"
                             variant="standard"
-                            value={profileInfo.ethnicity}
+                            value={profileInfo.ethnicity}                            
                             sx={{
                                 '& .MuiSvgIcon-root': {
                                     color: "#C2C2C2"
@@ -78,8 +78,8 @@ export default function ProfileInfo({ profileInfo, handleChange }) {
                 <p className="ProfileMustInput">*</p>
                 <p className="ProfileDOBInput">Date of Birth</p>
                 <input
-                    value={profileInfo.dob}
-                    onChange={(e) => { handleChange('dob', e.target.value) }}
+                    value={profileInfo.dob.substring(0, 10)}
+                    onChange={(e) => { handleChange('dob', e.target.value)}}
                     className="ProfileDateSelect"
                     type="date"
                 ></input>
