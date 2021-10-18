@@ -75,7 +75,6 @@ export default function Profile({user,setUser}) {
         if (response.status === 200) {
             
             // response.data.dob = response.data.dob.substring(0, 10)
-            console.log(response.data)
             setUser(response.data)
             setSuccess(true)
             setLoading(false)
