@@ -16,7 +16,7 @@ export default function StudentHome({setUser}){
     const cards = [
         {title: "Profile", icon: <AiOutlineUser />, path:"/student/profile"},
         {title: "Schedule", icon: <AiOutlineProfile />, path:"/student/schedule"}, ,
-        {title: "Result", icon: <AiOutlineCheck />, path:"/student/result"},
+        {title: "Result", icon: <AiOutlineCheck />, path:"/student/results"},
         {title: "Modules", icon: <AiOutlineSnippets />, path:"/student/modules"},
         {title: "Equipment", icon: <AiOutlineWarning />, path:"/student/equipment"},
         {title: "Video library", icon: <AiOutlineVideoCamera />, path:"/student/video-library"},
