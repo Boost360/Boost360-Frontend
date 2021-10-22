@@ -10,6 +10,7 @@ import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
 import Scheduler from "../Student/Schedule/Schedule";
 import StudentModules from "../Student/Modules/StudentModules";
+import Membership from "../Membership/Membership";
 
 /**
  * This is the entry point of front site.
@@ -41,7 +42,7 @@ const Site = () => {
 
             <Route path='/membership'>
                 <NavBar page='Membership'></NavBar>
-                TBD
+                <Membership></Membership>
             </Route>
 
             <Route path='/junior-golf'>
