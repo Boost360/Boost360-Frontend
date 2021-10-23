@@ -11,6 +11,7 @@ import Student from "../Student/Student";
 import Scheduler from "../Student/Schedule/Schedule";
 import StudentModules from "../Student/Modules/StudentModules";
 import Membership from "../Membership/Membership";
+import JuniorGolf from "../JuniorGolf/JuniorGolf";
 
 /**
  * This is the entry point of front site.
@@ -47,7 +48,7 @@ const Site = () => {
 
             <Route path='/junior-golf'>
                 <NavBar page='Junior golf'></NavBar>
-                TBD
+                <JuniorGolf></JuniorGolf>
             </Route>
 
             <Route path='/blog'>
