@@ -18,24 +18,6 @@ const Icon = ({ file }) => {
 export default function Membership() {
   const keypoints = [
     {
-      icon: <Icon file={Icon_swing} />,
-      title: 'Practical Learning',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in molestias error quos eos nemo recusandae accusantium quae officia animi?',
-    },
-
-    {
-      icon: <HiOutlineBadgeCheck className='icon' />,
-      title: 'Rewards',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in molestias error quos eos nemo recusandae accusantium quae officia animi?',
-    },
-
-    {
-      icon: <AiOutlineDollarCircle className='icon' />,
-      title: 'Price',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in molestias error quos eos nemo recusandae accusantium quae officia animi?',
-    },
-
-    {
       icon: <AiTwotoneCalendar className='icon' />,
       title: 'Course Duration',
       description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum expedita, quod saepe quibusdam porro vitae! Officia quasi beatae dolorum aut?',
@@ -71,6 +53,25 @@ export default function Membership() {
       title: 'Coach Now App',
       description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum expedita, quod saepe quibusdam porro vitae! Officia quasi beatae dolorum aut?',
     },
+
+    {
+      icon: <Icon file={Icon_swing} />,
+      title: 'Practical Learning',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in molestias error quos eos nemo recusandae accusantium quae officia animi?',
+    },
+
+    {
+      icon: <HiOutlineBadgeCheck className='icon' />,
+      title: 'Rewards',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in molestias error quos eos nemo recusandae accusantium quae officia animi?',
+    },
+
+    {
+      icon: <AiOutlineDollarCircle className='icon' />,
+      title: 'Price',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in molestias error quos eos nemo recusandae accusantium quae officia animi?',
+    },
+
 
   ];
   return (
