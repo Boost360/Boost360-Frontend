@@ -16,6 +16,10 @@
     display: -webkit-inline-box;
 }
 
+.StudentHomeContainer ul {
+    padding-inline-start: 0px;
+}
+
 /* Normal cards */
 
 .StudentHomeCard {
