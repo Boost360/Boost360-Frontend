@@ -1,0 +1,83 @@
+/* Result */
+.result_container .css-heg063-MuiTabs-flexContainer {
+    display: block!important;
+}
+.result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    color: white!important;
+    font-size: 20px;
+    margin: 20px
+}
+.result_container {
+    background: #2E414F;
+    color: white;
+}
+.result_inner_container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+@media (max-width: 800px) {
+    .result_inner_container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+        margin: unset!important;
+    }
+}
+
+
+/* Result Inner */
+.result_inner_row {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.result_inner_file_icon {
+    width: 15%;
+    text-align: left;
+}
+.result_inner_file_name {
+    width: 35%;
+    text-align: left;
+    padding-top: 20px;
+}
+.result_inner_file_date {
+    width: 35%;
+    text-align: right;
+    padding-top: 20px;
+}
+.result_inner_file_download {
+    width: 15%;
+    text-align: right;
+    padding-top: 20px;
+}
+.result_inner_file_icon svg {
+    fill: transparent;
+    stroke: white;
+    font-size: 60px;
+}
+.result_inner_file_download svg {
+    fill: transparent;
+    stroke: white;
+}
+@media (max-width: 800px) {
+    .result_inner_row {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .result_inner_file_icon{
+        display: none;
+    }
+    .result_inner_file_name {
+        width: 55%;
+    }
+    .result_inner_file_date {
+        width: 30%;
+    }
+    .result_inner_file_download {
+        width: 15%;
+    }
+}

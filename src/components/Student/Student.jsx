@@ -7,6 +7,7 @@ import Module from "./Modules/StudentModules"
 import DevelopmentProgram from "./DevelopmentProgram/DevelopmentProgram";
 import Profile from "./Profile/Profile";
 import VideoLibrary from "./VideoLibrary/VideoLibrary";
+import Result from "./Result/Result"
 
 
 /**
@@ -37,7 +38,7 @@ const Student = ({ user,setUser }) => {
 
             <Route path={`${path}/results`} exact>
                 <NavBar page='Results' user={user}></NavBar>
-                <Module></Module>
+                <Result></Result>
             </Route>
 
             <Route path={`${path}/development-program`} exact>
