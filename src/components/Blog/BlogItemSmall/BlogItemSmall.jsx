@@ -3,13 +3,13 @@ import { useHistory } from 'react-router';
 
 const BlogItemSmall = (props) => {
 
-    let id = props.blogItem.blogId;
+    let id = props.blogItem._id;
     let title = props.blogItem.title;
     let author = props.blogItem.author;
     let date = props.blogItem.date;
     let content = props.blogItem.content;
     content = content.substring(0, 580) + '...';
-    let imageUrl = props.blogItem.imageUrl;
+    let imageUrl = props.blogItem.picture;
 
     const history = useHistory();
 
