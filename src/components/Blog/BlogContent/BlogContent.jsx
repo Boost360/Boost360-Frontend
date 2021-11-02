@@ -3,11 +3,11 @@ import { useParams } from "react-router";
 import { getTheBlog } from '../../../api/blog/blog';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
+import NavBar from "../../NavBar/NavBar";
 
 
 
-
-const BlogContent = (props) => {
+const BlogContent = ({ user, props }) => {
     const { id } = useParams();
     
     const [blog, setBlog] = React.useState([
@@ -20,16 +20,21 @@ const BlogContent = (props) => {
         }
     ]);
 
+    const [BlogTitle, setTitle] = React.useState("Blog Detail")
+
     const [loading, setLoading] = React.useState(true)
 
     React.useEffect(async () => {
         let blogData = await getTheBlog(id);
         setBlog(blogData);
+        setTitle(blogData.title);
+        console.log(blogData.title);
         setLoading(false);
-    });
+    }, []);
 
     return (
         <div>
+            <NavBar page={BlogTitle} user={user}></NavBar>
             {loading ?
             (<div>
                 <Skeleton variant="rectangular" height={500} />
@@ -42,27 +47,27 @@ const BlogContent = (props) => {
             </div>
                 ):
             (<div className=''>
-            <div className='blog_content_image_banner'>
-                <img src={blog.picture}/>
-            </div>
-            <div className='blog_content_main_container'>
-                <div className='blog_content_title'>
-                    {blog.title}
+                <div className='blog_content_image_banner'>
+                    <img src={blog.picture}/>
                 </div>
-                <div className='blog_content_author'>
-                    {blog.author}
+                <div className='blog_content_main_container'>
+                    <div className='blog_content_title'>
+                        {blog.title}
+                    </div>
+                    <div className='blog_content_author'>
+                        {blog.author}
+                    </div>
+                    <div className='blog_content_date'>
+                        {blog.date.substring(0, 10)}
+                    </div>
+                    <div className='blog_content_content'>
+                        {blog.content}
+                    </div>
+                    <div className='blog_content_share'>
+                        share
+                    </div>
                 </div>
-                <div className='blog_content_date'>
-                    {blog.date.substring(0, 10)}
-                </div>
-                <div className='blog_content_content'>
-                    {blog.content}
-                </div>
-                <div className='blog_content_share'>
-                    share
-                </div>
-            </div>
-        </div>)}
+            </div>)}
 
         </div>
     )

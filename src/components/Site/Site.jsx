@@ -50,8 +50,7 @@ const Site = ({ user,setUser }) => {
             </Route>
 
             <Route path='/blog'>
-                <NavBar page='Blog' user={user}></NavBar>
-                <Blog></Blog>
+                <Blog user={user}></Blog>
             </Route>
 
             <Route path='/contact'>

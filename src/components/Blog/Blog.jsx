@@ -7,8 +7,9 @@ import { Route, Switch } from 'react-router';
 import { useRouteMatch } from 'react-router';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
+import NavBar from '../NavBar/NavBar';
 
-const Blog = () => {
+const Blog = ({ user }) => {
     let { path, url } = useRouteMatch();
 
     const [blogs, setBlogs] = React.useState([
@@ -27,11 +28,12 @@ const Blog = () => {
         let blogData = await getBlog();
         setBlogs(blogData);
         setLoading(false);
-    });
+    }, []);
     
     return (
         <div>
             <Route path={path} exact>
+                <NavBar page='Blog' user={user}></NavBar>
                 {
                     loading? (
                         <Stack spacing={1}>
