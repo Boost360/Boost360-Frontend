@@ -44,6 +44,7 @@ const NavBar = ({page,user}) => {
             'Membership' : {path: '/membership', parentPage: null},
             'Junior golf' : {path: '/junior-golf', parentPage: null},
             'Blog' : {path: '/blog', parentPage: null},
+            'Blog Detail' : {path: '/blog/', parentPage: 'Blog'},
             'Language' : {path: '/language', parentPage: null},
             'Student login' : {path: '/login', parentPage: null},
             'Student home' : {path: '/student/home', parentPage: null},
@@ -65,7 +66,7 @@ const NavBar = ({page,user}) => {
     // [12/oct/2021 @Sarah]
 
     // Note: always use setPage() instead of setCurrentPage(). 
-    const [currentPage, setCurrentPage] = useState(pages[page] !== undefined ? page : 'Home');
+    const [currentPage, setCurrentPage] = useState(page);
     const [parentPage, setParentPage] = useState(pages[currentPage].parentPage);
     const [isFold, setIsFold] = useState(currentPage === 'Home' ? false : true);
     const [showLanguageDialog,setShowLanguageDialog] =useState(false);
