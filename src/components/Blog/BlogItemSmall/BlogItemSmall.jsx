@@ -7,6 +7,7 @@ const BlogItemSmall = (props) => {
     let title = props.blogItem.title;
     let author = props.blogItem.author;
     let date = props.blogItem.date;
+    date = date.substring(0, 10);
     let content = props.blogItem.content;
     content = content.substring(0, 580) + '...';
     let imageUrl = props.blogItem.picture;
@@ -14,7 +15,7 @@ const BlogItemSmall = (props) => {
     const history = useHistory();
 
     const navToBlogContent = ()=>{
-        history.push(`/site/blog/${id}`)
+        history.push(`/blog/${id}`)
           
     }
 
