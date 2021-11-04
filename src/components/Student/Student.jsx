@@ -43,7 +43,7 @@ const Student = ({ user,setUser }) => {
 
             <Route path={`${path}/development-program`} exact>
                 <NavBar page='Development program' user={user}></NavBar>
-                <DevelopmentProgram></DevelopmentProgram>
+                <DevelopmentProgram user={user}></DevelopmentProgram>
             </Route>
 
 

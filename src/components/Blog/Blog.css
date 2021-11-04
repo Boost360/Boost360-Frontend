@@ -115,6 +115,8 @@
     font-size: 15px;
     font-weight: 400;
     color: #828282;
+    white-space: pre-wrap;
+    /* white-space here for text could start with a new line like in database */
 }
 .blog_content_share {
     margin-top: 70px;

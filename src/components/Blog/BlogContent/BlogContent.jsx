@@ -60,9 +60,9 @@ const BlogContent = ({ user, props }) => {
                     <div className='blog_content_date'>
                         {blog.date.substring(0, 10)}
                     </div>
-                    <div className='blog_content_content'>
+                    <text className='blog_content_content'>
                         {blog.content}
-                    </div>
+                    </text>
                     <div className='blog_content_share'>
                         share
                     </div>
