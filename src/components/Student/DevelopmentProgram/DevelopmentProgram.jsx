@@ -40,7 +40,7 @@ const DevelopmentProgram = ({user}) => {
             {
                 loading?(
                     <div className='development_program_container'>
-                        <Skeleton variant="rectangular" width={1200} height={800} />
+                        <Skeleton variant="rectangular" height={800} />
                     </div>
 
                 ):(
