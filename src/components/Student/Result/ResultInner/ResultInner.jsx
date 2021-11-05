@@ -1,9 +1,6 @@
 import * as React from 'react';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import GetAppIcon from '@mui/icons-material/GetApp';
-import TableRow from "@mui/material/TableRow";
-import TableCell from "@mui/material/TableCell";
-import Checkbox from "@mui/material/Checkbox";
 import {resultStudent} from '../../../../api/result/result';
 import Skeleton from '@mui/material/Skeleton';
 
@@ -40,7 +37,7 @@ const ResultInner = (props) => {
             {
                 loading ?(
                     <div className='result_inner_container'>
-                        <Skeleton variant="rectangular" height={800} />
+                        <Skeleton variant="rectangular" height={400} />
                     </div>
 
                 ):(
@@ -54,7 +51,7 @@ const ResultInner = (props) => {
                                 {row.fileName}
                             </div>
                             <div className='result_inner_file_date'>
-                                {row.date}
+                                {row.date.substring(0, 10)}
                             </div>
                             <div className='result_inner_file_download'>
                                 <a href={row.fileUrl}>
