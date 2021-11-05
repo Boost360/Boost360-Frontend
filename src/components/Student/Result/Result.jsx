@@ -11,6 +11,7 @@ import ResultInner from "./ResultInner/ResultInner";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
+    
 
     return (
         <div
@@ -43,7 +44,9 @@ function a11yProps(index) {
 }
 
 
-const Result = () => {
+const Result = ({user}) => {
+    const user_id = user._id;
+
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -72,25 +75,25 @@ const Result = () => {
             </Box>
             <div className='result_inner_container'>
                 <TabPanel value={value} index={0}>
-                    <ResultInner resultType={'notice'}/>
+                    <ResultInner resultType={'notice'} user_id={user_id}/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <ResultInner resultType={'swingData'}/>
+                    <ResultInner resultType={'swingData'} user_id={user_id}/>
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    <ResultInner resultType={'equipments'}/>
+                    <ResultInner resultType={'equipments'} user_id={user_id}/>
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                    <ResultInner resultType={'yardages'}/>
+                    <ResultInner resultType={'yardages'} user_id={user_id}/>
                 </TabPanel>
                 <TabPanel value={value} index={4}>
-                    <ResultInner resultType={'progressReports'}/>
+                    <ResultInner resultType={'progressReports'} user_id={user_id}/>
                 </TabPanel>
                 <TabPanel value={value} index={5}>
-                    <ResultInner resultType={'physicalDevelopment'}/>
+                    <ResultInner resultType={'physicalDevelopment'} user_id={user_id}/>
                 </TabPanel>
                 <TabPanel value={value} index={6}>
-                    <ResultInner resultType={'psychologyDevelopment'}/>
+                    <ResultInner resultType={'psychologyDevelopment'} user_id={user_id}/>
                 </TabPanel>
             </div>
 
