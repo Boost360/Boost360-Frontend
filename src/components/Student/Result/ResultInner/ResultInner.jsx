@@ -36,26 +36,38 @@ const ResultInner = (props) => {
 
 
     return (
-        <div className='result_inner_container'>
-            {data.map((row) => (
-                <div className='result_inner_row'>
-                    <div className='result_inner_file_icon'>
-                        <InsertDriveFileIcon/>
+        <div>
+            {
+                loading ?(
+                    <div className='result_inner_container'>
+                        <Skeleton variant="rectangular" height={800} />
                     </div>
-                    <div className='result_inner_file_name'>
-                        {row.fileName}
+
+                ):(
+                    <div className='result_inner_container'>
+                    {data.map((row) => (
+                        <div className='result_inner_row'>
+                            <div className='result_inner_file_icon'>
+                                <InsertDriveFileIcon/>
+                            </div>
+                            <div className='result_inner_file_name'>
+                                {row.fileName}
+                            </div>
+                            <div className='result_inner_file_date'>
+                                {row.date}
+                            </div>
+                            <div className='result_inner_file_download'>
+                                <a href={row.fileUrl}>
+                                    <GetAppIcon/>
+                                </a>
+                            </div>
+                        </div>
+                    ))}
                     </div>
-                    <div className='result_inner_file_date'>
-                        {row.date}
-                    </div>
-                    <div className='result_inner_file_download'>
-                        <a href={row.fileUrl}>
-                            <GetAppIcon/>
-                        </a>
-                    </div>
-                </div>
-            ))}
+                )
+            }
         </div>
+       
     );
 };
 export default ResultInner;
