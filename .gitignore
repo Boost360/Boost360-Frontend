@@ -112,3 +112,4 @@ dist
 
 # Git file
 *.DS_Store
+.vscode/settings.json
