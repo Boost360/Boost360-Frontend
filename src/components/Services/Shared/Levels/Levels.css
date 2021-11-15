@@ -1,0 +1,76 @@
+.levels h1 {
+    font: var(--primary-black);
+    width: 100%;
+    text-align: left;
+}
+
+.levels p {
+    font: var(--paragraph);;
+    text-align: left;
+    line-height: 1.5em;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.level {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.level h1 {
+    font: var(--secondary-bold);
+    font-size: 40px;
+    text-align: left;
+    width: 300px;
+}
+
+.level p {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 100px;
+    max-width: 650px;
+}
+
+
+.level_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+
+    /* Change */
+    align-items: end;
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 30px;
+}
+
+.level_1 h1 {
+    font: var(--secondary-bold);
+    font-size: 40px;
+    text-align: left;
+    width: 300px;
+
+    /* Change */
+    font: var(--secondary-light);
+    font-size: 30px;
+}
+
+.level_1 p {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 100px;
+    max-width: 650px;
+
+    /* Change */
+    padding-bottom: 0px;
+}

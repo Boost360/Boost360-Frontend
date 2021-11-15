@@ -1,0 +1,107 @@
+.gallery .image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    object-fit: cover;
+}
+
+
+#nextImage_Btn {
+    cursor: pointer;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 0;
+    top: 40%;
+    color: var(--white);
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+
+#lastImage_Btn {
+    cursor: pointer;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 0;
+    top: 40%;
+    color: var(--white);
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+
+#nextImage_Btn:hover {
+    transform: scale(1.5);
+}
+
+#lastImage_Btn:hover {
+    transform: scale(1.5);
+}
+
+.slide_out_left {
+    animation: slide-out-left 1s ease;
+}
+
+.slide_out_right {
+    animation: slide-out-right 1s ease;
+}
+
+.slide_in_left {
+    animation: slide-in-left 1s ease;
+    animation-fill-mode: forwards;
+}
+.slide_in_right {
+    animation: slide-in-right 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-out-left {
+    0% {
+        opacity: 1;
+        left: 0;
+    }
+    100% {
+        opacity: 0; 
+        left: -100vw;
+        transform: rotateZ(-30deg);
+    }
+}
+
+@keyframes slide-out-right {
+    0% {
+        opacity: 1;
+        left: 0;
+    }
+    100% {
+        opacity: 0; 
+        left: 100vw;
+        transform: rotateZ(30deg);
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0; 
+        left: -100vw;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0; 
+        left: 100vw;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+

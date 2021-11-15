@@ -1,0 +1,79 @@
+.keypoints {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;    
+    flex-wrap: wrap;
+}
+
+.keypoints h1 {
+    font: var(--primary-black);
+    width: 100%;
+    /* text-align: left; */
+    box-sizing: border-box;
+    /* padding-left: clamp(10px, 10%, 200px); */
+}
+
+.keypoints .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 350px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+    text-align: left;
+    padding: 100px;
+    border-left: 1px solid var(--black);
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .keypoints .price {
+        width: 300px;
+        padding: 20px;
+        border-left: none;
+    }
+}
+
+.keypoint {
+    /* color: var(--background); */
+    /* fill: var(--background); */
+    width: 300px;
+    padding: 100px 50px 100px 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.keypoint h3 {
+    width: 100%;
+    font: var(--secondary-light);
+    text-align: center;
+}
+
+.keypoint p {
+    width: 100%;
+    text-align: left;
+    line-height: 1.7em;
+}
+
+.keypoint .icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    animation: float 5s ease;
+    animation-iteration-count: 1000;
+}
+
+
+@keyframes float {
+    0%{}
+    50%{transform: translateY(-20px);}
+    100% {}
+}

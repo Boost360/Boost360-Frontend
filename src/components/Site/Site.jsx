@@ -10,8 +10,9 @@ import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
 import Scheduler from "../Student/Schedule/Schedule";
 import StudentModules from "../Student/Modules/StudentModules";
-import Membership from "../Membership/Membership";
-import JuniorGolf from "../JuniorGolf/JuniorGolf";
+import Membership from "../Services/Membership/Membership";
+import JuniorGolf from "../Services/JuniorGolf/JuniorGolf";
+import RemoteLearning from "../Services/RemoteLearning/RemoteLearning";
 
 /**
  * This is the entry point of front site.
@@ -49,6 +50,11 @@ const Site = () => {
             <Route path='/junior-golf'>
                 <NavBar page='Junior golf'></NavBar>
                 <JuniorGolf></JuniorGolf>
+            </Route>
+
+            <Route path='/remote-learning'>
+                <NavBar page='Remote learning'></NavBar>
+                <RemoteLearning></RemoteLearning>
             </Route>
 
             <Route path='/blog'>
