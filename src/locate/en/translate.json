@@ -51,27 +51,27 @@
             },
             "Levels": {
                 "h0": "Step by step",
-                "p0": { "0": "The program is made up of 5 levels where each level is built upon the previous one." },
+                "p0": "The program is made up of 5 levels where each level is built upon the previous one.",
                 "levels": {
                     "0": {
                         "h0": "Foundation",
-                        "p0": { "0": "At the beginning, we focus on setting the student up for success by putting all the fundamental learning blocks in place. This includes education around golf swing technique, golf equipment, and on course knowledge." }
+                        "p0": "At the beginning, we focus on setting the student up for success by putting all the fundamental learning blocks in place. This includes education around golf swing technique, golf equipment, and on course knowledge." 
                     },
                     "1": {
                         "h0": "Growth",
-                        "p0": { "0": "Building on a strong foundation, students will learn key check points in the swing, and will be gradually introduced to a more detailed skill set in all areas of the game." }
+                        "p0": "Building on a strong foundation, students will learn key check points in the swing, and will be gradually introduced to a more detailed skill set in all areas of the game." 
                     },
                     "2": {
                         "h0": "Development",
-                        "p0": { "0": "At this level there is a shift to developing students for all on-course situations. Skill development continues; however, it becomes more detailed focused." }
+                        "p0": "At this level there is a shift to developing students for all on-course situations. Skill development continues; however, it becomes more detailed focused." 
                     },
                     "3": {
                         "h0": "Advanced",
-                        "p0": { "0": "The advanced level sees students working more on statistical outcomes. The focus is on reinforcing personal swing form, along with additional specialty skills." }
+                        "p0": "The advanced level sees students working more on statistical outcomes. The focus is on reinforcing personal swing form, along with additional specialty skills." 
                     },
                     "4": {
                         "h0": "High Performance",
-                        "p0": { "0": "The high-performance level is outcome driven, with a significant commitment required to pursue a specific goal, such as a golf scholarship, representative golf, or a professional career in golf." }
+                        "p0": "The high-performance level is outcome driven, with a significant commitment required to pursue a specific goal, such as a golf scholarship, representative golf, or a professional career in golf."
                     }
                 }
             },
@@ -119,6 +119,45 @@
                     }
                 },
                 "link": "Can’t find the answer to your questions? Please contact us."
+            },
+            "addQA": {
+                "en" : {},
+                "ch" : {
+                    "0" : {
+                        "question" : "Is the video swing analysis available in Chinese?",
+                        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Chinese."}
+                    },
+                    "1" : {
+                        "question" : "Are the online learning modules available in Chinese?",
+                        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Chinese."}
+                    },
+                    "2" : {
+                        "question" : "Who will attend the first consultation?",
+                        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Chinese translator (if applicable) will be present on request for you or your parents ease of communication."}
+                    },
+                    "3" : {
+                        "question" : "If I have any questions through the program, is someone available to communicate in Chinese?",
+                        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Chinese speaking contact person will be available throughout the program."}
+                    }
+                },
+                "kr" : {
+                    "0" : {
+                        "question" : "Is the video swing analysis available in Korean?",
+                        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Korean."}
+                    },
+                    "1" : {
+                        "question" : "Are the online learning modules available in Korean?",
+                        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Korean."}
+                    },
+                    "2" : {
+                        "question" : "Who will attend the first consultation?",
+                        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Korean translator (if applicable) will be present on request for you or your parents ease of communication."}
+                    },
+                    "3" : {
+                        "question" : "If I have any questions through the program, is someone available to communicate in Korean?",
+                        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Korean speaking contact person will be available throughout the program."}
+                    }
+                }
             }
         },
 
@@ -187,9 +226,9 @@
                     "7": "If applicable skills test"
                 }
             },
-            "Levels": {
+            "Framework": {
                 "h0": "Our module framework",
-                "levels": {
+                "blocks": {
                     "0": {
                         "h0": "Modules",
                         "p0": { "0": "There are over 70 comprehensive online learning modules." }
@@ -264,6 +303,45 @@
                     }
                 },
                 "link": "Can’t find the answer to your questions? Please link us."
+            },
+            "addQA": {
+                "en" : {},
+                "ch" : {
+                    "0" : {
+                        "question" : "Is the video swing analysis available in Chinese?",
+                        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Chinese."}
+                    },
+                    "1" : {
+                        "question" : "Are the online learning modules available in Chinese?",
+                        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Chinese."}
+                    },
+                    "2" : {
+                        "question" : "Who will attend the first consultation?",
+                        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Chinese translator (if applicable) will be present on request for you or your parents ease of communication."}
+                    },
+                    "3" : {
+                        "question" : "If I have any questions through the program, is someone available to communicate in Chinese?",
+                        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Chinese speaking contact person will be available throughout the program."}
+                    }
+                },
+                "kr" : {
+                    "0" : {
+                        "question" : "Is the video swing analysis available in Korean?",
+                        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Korean."}
+                    },
+                    "1" : {
+                        "question" : "Are the online learning modules available in Korean?",
+                        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Korean."}
+                    },
+                    "2" : {
+                        "question" : "Who will attend the first consultation?",
+                        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Korean translator (if applicable) will be present on request for you or your parents ease of communication."}
+                    },
+                    "3" : {
+                        "question" : "If I have any questions through the program, is someone available to communicate in Korean?",
+                        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Korean speaking contact person will be available throughout the program."}
+                    }
+                }
             }
         },
 

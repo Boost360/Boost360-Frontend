@@ -4,9 +4,10 @@ import Paragraph from '../Paragraph/Paragraph'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md'
 import { HiOutlineArrowRight } from 'react-icons/hi'
 
-
-function QA({ qqwe, link = '../Contact' }) {
-    const QAs = qqwe.QAs;
+// 'addQA' is for situation when you want to selectively display some QAs
+// It uses the same data layout as qAss, and are snapped at the bottom of all QAs.
+function QA({ data, link = '../Contact', addQA=null }) {
+    const QAs = data.QAs;
     
     const Block = ({ question, answer }) => {
         const [isFold, setIsFold] = useState(true);
@@ -14,7 +15,7 @@ function QA({ qqwe, link = '../Contact' }) {
             setIsFold(!isFold);
         }
         return (
-            <div className="block">
+            <div className="qA">
                 <div className="question">
                     <span className="fold_Btn" onClick={handleClick}>{isFold ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</span>
                     {question}
@@ -26,10 +27,11 @@ function QA({ qqwe, link = '../Contact' }) {
         );
     }
     return (
-        <div className='qA'>
-            <h1>{qqwe.h0}</h1>
+        <div className='qAs'>
+            <h1>{data.h0}</h1>
             {Object.keys(QAs ? QAs : {}).map((key) => (<Block question={QAs[key].question} answer={QAs[key].answer} key={key} />))}
-            <h2>{qqwe.link}
+            {Object.keys(addQA ? addQA : {}).map((key) => (<Block question={addQA[key].question} answer={addQA[key].answer} key={'addQA'+key} />))}
+            <h2>{data.link}
                 <a href={link} style={{ color: 'var(--primary)', position: 'relative', left: '30px', top: '5px' }}><HiOutlineArrowRight /></a>
             </h2>
         </div>

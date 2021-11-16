@@ -3,9 +3,14 @@
     padding: 0px;
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
-    font: var(--tertiary-light);
+    font: var(--paragraph);
+    line-height: 1.7em;
     -ms-overflow-style: none; /* IE 11 */
     scrollbar-width: none; /* Firefox 64 */
+}
+
+.services h1 {
+    font: var(--primary-black);
 }
 
 .services .section {

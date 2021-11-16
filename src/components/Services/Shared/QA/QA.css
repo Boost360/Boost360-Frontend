@@ -1,32 +1,32 @@
-.qA h1{
+.qAs h1{
     text-align: left;
     width: 100%;
-    font: var(--primary-black);
 }
 
-.qA .block {
+.qAs .qA {
     width: 100%;
     text-align: left;
     line-height: 1.5em;
     padding-bottom: 50px;
 }
 
-.qA .question {
-    font: var(--paragraph);
-    background-color: rgb(230, 228, 228);
+.qAs .question {
+    font: inherit;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
     padding: 20px 10px 20px 10px;
 }
 
-.qA .answer {
+.qAs .answer {
+    width: 100%;
     position: relative;
-    font: var(--paragraph);
+    font: inherit;
     line-height: 1.5em;
-    opacity: 0.5;
+    opacity: 0.7;
     animation: fade-in 1s ease;
-    
 }
 
-.qA .fold_Btn {
+.qAs .fold_Btn {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -35,7 +35,7 @@
     padding-right: 10px;
 }
 
-.qA h2 {
+.qAs h2 {
     font: var(--secondary-medium);
     width: 100%;
     text-align: left;
@@ -46,4 +46,11 @@
         opacity: 0;
     }
     100% {}
+}
+
+@media screen and (max-width: 768px) {
+    .services h1 {
+        font-size: 45px;
+    }
+    
 }

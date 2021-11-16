@@ -13,14 +13,14 @@
 .intro h1 {
     text-align: left;
     width: 100%;
-    font: var(--primary-black); 
+     
 }
 
 
 
 .intro p {
     width: clamp(250px, 50%, 1000px);
-    font: var(--paragraph);;
+    font: inherit;
     line-height: 1.7em;
     text-align: left;
     animation: fade-in-top 3s ease;

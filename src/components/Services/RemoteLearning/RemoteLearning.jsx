@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 // -----------------------------COMPONENTS-------------------------------
 import Intro from '../Shared/Intro/Intro';
 import HowItWorks from '../Shared/HowItWorks/HowItWorks';
-import Levels from '../Shared/Levels/Levels';
+import Framework from '../Shared/Framework/Framework';
 import Keypoints from '../Shared/Keypoints/Keypoints';
 import QA from '../Shared/QA/QA';
 
@@ -20,10 +20,10 @@ export default function RemoteLearning() {
     return (
         <div className="services">
             <div className="section">
-                <Intro qqwe={remoteLearning.Intro} graphic={Astronaut} />
+                <Intro data={remoteLearning.Intro} graphic={Astronaut} />
             </div>
             <div className="section">
-                <Levels qqwe={remoteLearning.Levels} ver={1}/>
+                <Framework data={remoteLearning.Framework} ver={1}/>
             </div>
             <div className="section" style={{padding:'0px'}}>
                 <Keypoints  heading={remoteLearning.Keypoints.h0} 
@@ -31,10 +31,10 @@ export default function RemoteLearning() {
                             price={remoteLearning.Keypoints.price}/>
             </div>
             <div className="section">
-                <HowItWorks qqwe={remoteLearning.HowItWorks} icon={(<AiOutlineCheckCircle size='25px' style={{position: 'relative', top: '7px', left: '-10px', opacity: '0.7'}}/>)} />
+                <HowItWorks data={remoteLearning.HowItWorks} icon={(<AiOutlineCheckCircle size='25px' style={{position: 'relative', top: '7px', left: '-10px', opacity: '0.7'}}/>)} />
             </div>
             <div className="section">
-                <QA qqwe={remoteLearning.QA}/>
+                <QA data={remoteLearning.QA} addQA={remoteLearning.addQA[i18n.language]}/>
             </div>
         </div>
     )

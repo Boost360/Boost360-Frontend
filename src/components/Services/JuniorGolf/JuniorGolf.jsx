@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 // -----------------------------COMPONENTS-------------------------------
 import Intro from '../Shared/Intro/Intro';
 import HowItWorks from '../Shared/HowItWorks/HowItWorks';
+import Framework from '../Shared/Framework/Framework';
 import Levels from '../Shared/Levels/Levels';
 import Keypoints from '../Shared/Keypoints/Keypoints';
 import Gallery from '../Shared/Gallery/Gallery';
@@ -29,13 +30,13 @@ export default function JuniorGolf() {
     return (
         <div className="services">
             <div className="section">
-                <Intro qqwe={juniorGolf.Intro} graphic={Astronaut} />
+                <Intro data={juniorGolf.Intro} graphic={Astronaut} />
             </div>
             <div className="section">
-                <HowItWorks qqwe={juniorGolf.HowItWorks} icon={null} />
+                <HowItWorks data={juniorGolf.HowItWorks} icon={null} />
             </div>
-            <div className="section">
-                <Levels qqwe={juniorGolf.Levels} />
+            <div className="section" style={{ padding: '0px' }}>
+                <Levels data={juniorGolf.Levels}/>
             </div>
             <div className="section" style={{ padding: '0px' }}>
                 <Keypoints heading={juniorGolf.Keypoints.h0}
@@ -45,7 +46,7 @@ export default function JuniorGolf() {
                 <Gallery images={gallery_images} />
             </div>
             <div className="section">
-                <QA qqwe={juniorGolf.QA} />
+                <QA data={juniorGolf.QA} addQA={juniorGolf.addQA[i18n.language]}/>
             </div>
         </div>
     )

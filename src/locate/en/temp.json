@@ -1,0 +1,18 @@
+"ch" : {
+    "0" : {
+        "question" : "Is the video swing analysis available in Chinese?",
+        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Chinese."}
+    },
+    "1" : {
+        "question" : "Are the online learning modules available in Chinese?",
+        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Chinese."}
+    },
+    "2" : {
+        "question" : "Who will attend the first consultation?",
+        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Chinese translator (if applicable) will be present on request for you or your parents ease of communication."}
+    },
+    "3" : {
+        "question" : "If I have any questions through the program, is someone available to communicate in Chinese?",
+        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Chinese speaking contact person will be available throughout the program."}
+    }
+}

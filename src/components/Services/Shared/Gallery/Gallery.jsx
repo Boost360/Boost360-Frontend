@@ -22,7 +22,6 @@ function Gallery({images}) {
             setImageIndex(newIndex);
             setImageClass('image slide_in_right');
         }, 800);
-        console.log('last image index', newIndex);
     }
 
     return (
