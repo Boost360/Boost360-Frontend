@@ -1,0 +1,20 @@
+.howItWorks h1 {
+    
+    width: 100%;
+    text-align: left;
+}
+.howItWorks .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.howItWorks p {
+    text-align: left;
+    line-height: 1.7em;
+    width: clamp(400px, 45%, 1000px);
+}

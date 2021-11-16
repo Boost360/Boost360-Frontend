@@ -1,0 +1,41 @@
+.services {
+    color: var(--black);
+    padding: 0px;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    font: var(--paragraph);
+    line-height: 1.7em;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+
+.services h1 {
+    font: var(--primary-black);
+}
+
+.services .section {
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    padding-left: clamp(10px, 20%, 200px);
+    padding-right: clamp(10px, 20%, 200px);
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.services .section:nth-child(even) {
+    background-color: var(--text);
+}
+
+
+@media screen and (max-width: 768px) {
+    .services {
+        font-size: 13px;
+    }
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
