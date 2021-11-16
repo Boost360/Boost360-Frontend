@@ -1,8 +1,10 @@
 {
     "translations": {
+        "lang":"en",
         "landing":{
             "enter":"Enter Site",
-            "login":"Student Login"
+            "login":"Student Login",
+            "home":"Student Home"
         },
 
         "contact":{

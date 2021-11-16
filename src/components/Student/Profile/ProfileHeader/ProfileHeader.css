@@ -1,0 +1,51 @@
+.ProfileHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 0px 50px;
+    position: static;
+    width: 441px;
+    height: 200px;
+    margin: 60px 0px;
+}
+
+.ProfileAvatar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 200px;
+    height: 200px;
+    background: whitesmoke;
+    border-radius: 300px;
+}
+
+.ProfileTite{
+    position: static;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 18px;
+    color: #00AAE7;
+    margin: 18px 0px;
+    text-align: left;
+}
+
+.ProfileName{
+    position: static;
+    font-family: Montserrat;
+    font-size: 25px;
+    line-height: 30px;
+    color: #F1F1F1;
+    margin: 18px 0px;
+    background-color: #2E414F;
+    border: none;
+}
+
+.ProfileNameSection{
+    padding-left: 46px;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:  #989c9f;
+ }

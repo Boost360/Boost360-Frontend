@@ -2,57 +2,86 @@ import React, { Component } from 'react';
 import './Blog.css';
 import BlogItemSmall from './BlogItemSmall/BlogItemSmall';
 import BlogContent from './BlogContent/BlogContent';
+import { getBlog } from '../../api/blog/blog';
 import { Route, Switch } from 'react-router';
 import { useRouteMatch } from 'react-router';
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
+import NavBar from '../NavBar/NavBar';
 
-const Blog = () => {
+const Blog = ({ user }) => {
     let { path, url } = useRouteMatch();
 
-    let blogArray = [
+    const [blogs, setBlogs] = React.useState([
         {
-            blogId: '0',
-            title: 'Title',
-            author: 'Author',
-            date: '01/09/2021',
-            content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            imageUrl: 'http://cloverville.co.nz/wp-content/uploads/2021/10/background7-min-min.jpg'
-        },
-        {
-            blogId: '1',
-            title: 'Title',
-            author: 'Author',
-            date: '01/09/2021',
-            content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            imageUrl: 'http://cloverville.co.nz/wp-content/uploads/2021/10/background7-min-min.jpg'
-        },
-        {
-            blogId: '2',
-            title: 'Title',
-            author: 'Author',
-            date: '01/09/2021',
-            content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            imageUrl: 'http://cloverville.co.nz/wp-content/uploads/2021/10/background7-min-min.jpg'
-        },
-        {
-            blogId: '3',
-            title: 'Title',
-            author: 'Author',
-            date: '01/09/2021',
-            content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            imageUrl: 'http://cloverville.co.nz/wp-content/uploads/2021/10/background7-min-min.jpg'
+            title: '',
+            author: '',
+            date: '',
+            content: '',
+            picture: ''
         }
-    ]
+    ]);
 
+    const [loading, setLoading] = React.useState(true)
+
+    React.useEffect(async () => {
+        let blogData = await getBlog();
+        setBlogs(blogData);
+        setLoading(false);
+    }, []);
+    
     return (
         <div>
             <Route path={path} exact>
+                <NavBar page='Blog' user={user}></NavBar>
+                {
+                    loading? (
+                        <Stack spacing={1}>
+                            <div>
+                                <div className="skeletonText">
+                                    <Skeleton variant="rectangular" width={300} height={30} />
+                                    <Skeleton variant="text" />
+                                    <Skeleton variant="text" />
+                                    <Skeleton variant="rectangular" width={400} height={180} />
+                                </div>
+                                <div className="skeletonPic">
+                                    <Skeleton variant="rectangular" width={350} height={280} />
+                                </div>
+                            </div>
+                            <div>
+                                <div className="skeletonText">
+                                    <Skeleton variant="rectangular" width={300} height={30} />
+                                    <Skeleton variant="text" />
+                                    <Skeleton variant="text" />
+                                    <Skeleton variant="rectangular" width={400} height={180} />
+                                </div>
+                                <div className="skeletonPic">
+                                    <Skeleton variant="rectangular" width={350} height={280} />
+                                </div>
+                            </div> 
+                            <div>
+                                <div className="skeletonText">
+                                    <Skeleton variant="rectangular" width={300} height={30} />
+                                    <Skeleton variant="text" />
+                                    <Skeleton variant="text" />
+                                    <Skeleton variant="rectangular" width={400} height={180} />
+                                </div>
+                                <div className="skeletonPic">
+                                    <Skeleton variant="rectangular" width={350} height={280} />
+                                </div>
+                            </div>   
+                        </Stack>
+                    ) :
+                (
                 <div className='blog_container'>
-                    {blogArray.map((blogItem, index) => (
+                    {blogs.map((blogItem, index) => (
                         <div className='blog_small_item_row'>
                             <BlogItemSmall blogItem={blogItem} />
                         </div>
                     ))}
-                </div>
+                </div>)
+                }
+                
             </Route>
 
             <Switch>

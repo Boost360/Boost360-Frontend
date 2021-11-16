@@ -80,11 +80,12 @@
 /* Blog Content */
 .blog_content_image_banner {
     width: 100%;
-    height: 650px;
+    height: 500px;
     overflow: hidden;
 }
 .blog_content_image_banner img {
     width: 100%;
+    margin-top: -5%;
 }
 .blog_content_main_container {
     width: 70%;
@@ -114,6 +115,8 @@
     font-size: 15px;
     font-weight: 400;
     color: #828282;
+    white-space: pre-wrap;
+    /* white-space here for text could start with a new line like in database */
 }
 .blog_content_share {
     margin-top: 70px;
@@ -121,4 +124,27 @@
     font-weight: 400;
     color: #828282;
     margin-bottom: 100px;
+}
+
+/* loading skeleton */
+.skeletonText{
+    float: left;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.skeletonPic{
+    float: right;
+    margin-top: 90px;
+    margin-right: 280px;
+}
+
+.loadingBody{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.loadingInfo{
+    margin: 5px;
 }

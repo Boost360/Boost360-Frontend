@@ -33,7 +33,7 @@ import LanguageDialog from '../Localization/LanguageDialog';
 
 
     
-const NavBar = ({page}) => {
+const NavBar = ({page,user}) => {
     const [pages, setPages] = useState(
         {
             'Home' : {path: '/index', parentPage: null},
@@ -45,8 +45,9 @@ const NavBar = ({page}) => {
             'Membership' : {path: '/membership', parentPage: null},
             'Junior golf' : {path: '/junior-golf', parentPage: null},
             'Blog' : {path: '/blog', parentPage: null},
+            'Blog Detail' : {path: '/blog/', parentPage: 'Blog'},
             'Language' : {path: '/language', parentPage: null},
-            'Student login' : {path: '/student/login', parentPage: null},
+            'Student login' : {path: '/login', parentPage: null},
             'Student home' : {path: '/student/home', parentPage: null},
             'Profile' : {path: '/student/profile', parentPage: 'Student home'},
             'Schedule' : {path: '/student/schedule', parentPage: 'Student home'},
@@ -66,12 +67,11 @@ const NavBar = ({page}) => {
     // [12/oct/2021 @Sarah]
 
     // Note: always use setPage() instead of setCurrentPage(). 
-    const [currentPage, setCurrentPage] = useState(pages[page] !== undefined ? page : 'Home');
+    const [currentPage, setCurrentPage] = useState(page);
     const [parentPage, setParentPage] = useState(pages[currentPage].parentPage);
     const [isFold, setIsFold] = useState(currentPage === 'Home' ? false : true);
     const [showLanguageDialog,setShowLanguageDialog] =useState(false);
     const [language, setLanguage] = useState('english');
-    const [isLogin, setIsLogin] = useState(false);
     const history = useHistory();
 
     const handleOpenLanguageDialog = () =>{
@@ -177,7 +177,7 @@ const NavBar = ({page}) => {
                         Language
                     </span>
                     |
-                    {isLogin ? (<MenuItem page='Student home'/>) : (<MenuItem page='Student login'/>)}
+                    {user ? (<MenuItem page='Student home'/>) : (<MenuItem page='Student login'/>)}
                 </div>
             </div>
             <div className='header' style={currentPage === 'Home' ? {display: 'none'} : {display: 'flex'}}>
