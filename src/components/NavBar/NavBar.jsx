@@ -41,6 +41,7 @@ const NavBar = ({page,user}) => {
             'Contact' : {path: '/contact', parentPage: null},
             'Partners' : {path: '/partners', parentPage: null},
             'Team' : {path: '/team', parentPage: null},
+            'Remote learning' : {path: '/remote-learning', parentPage: null},
             'Membership' : {path: '/membership', parentPage: null},
             'Junior golf' : {path: '/junior-golf', parentPage: null},
             'Blog' : {path: '/blog', parentPage: null},
@@ -164,8 +165,10 @@ const NavBar = ({page,user}) => {
                     |
                     <MenuItem page='Team'/>
                     |
-                    <MenuItem page='Membership'/>
+                    <MenuItem page='Remote learning'/>
                     |
+                    {/* <MenuItem page='Membership'/>
+                    | */}
                     <MenuItem page='Junior golf'/>
                     |
                     <MenuItem page='Blog'/>

@@ -37,19 +37,24 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Poppins:ital,wght@0,300;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,500&family=Poppins:ital,wght@0,300;0,500;1,300&display=swap');
 
 :root {
   /* Fonts */
   --boost-your-performance: italic normal 300 70px "Poppins";
-  --primary-light: normal normal 300 50px "Montserrat";
-  --primary-medium: normal normal 500 50px "Montserrat";
+  --primary-light: normal normal 300 65px "Montserrat";
+  --primary-medium: normal normal 500 65px "Montserrat";
+  --primary-bold: normal normal 700 65px "Montserrat";
+  --primary-black: normal normal 900 65px "Montserrat";
   --secondary-light: normal normal normal 25px "Montserrat";
   --secondary-medium: normal normal 500 25px "Montserrat";
+  --secondary-bold: normal normal 700 25px "Montserrat";
+  --secondary-black: normal normal 900 25px "Montserrat";
   --tertiary-light: normal normal normal 15px "Montserrat";
   --tertiary-medium: normal normal 500 15px "Montserrat";
   --tertiary-bold: normal normal bold 15px "Montserrat";
   --tiny-regular: normal normal normal 10px "Montserrat";
+  --paragraph: normal normal normal 15px "Montserrat";
 
   /* Colors */
   --background:#2E414F;

@@ -1,0 +1,72 @@
+.levels {
+    position: relative;
+    width: 100%;
+    background-image: url('../../../../static/img/Levels_background.svg');
+    background-size: cover;
+    color: var(--background);
+    text-align: left;
+    padding-left: clamp(10px, 4%, 200px);
+    padding-right: clamp(10px, 10%, 200px);
+    color: inherit;
+}
+
+.levels * {
+    position: absolute;
+    transition: top ease 0.2s;
+}
+
+.levels h1 {
+    
+    transition: top linear 0s;
+}
+
+.levels p {
+    font: var(--paragraph);
+    transition: top linear 0s;
+}
+
+
+.levels .level  {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.levels .level h2 {
+    position: relative;
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font: var(--secondary-bold);
+}
+
+.levels .level p {
+    position: relative;
+    width: 60%;
+    font: inherit;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .levels {
+        padding: 0 10px 0 10px;
+    }
+
+    .levels h1 {
+        font-size: 45px;
+    }
+
+    .levels .level h2 {
+        font: var(--tertiary-bold);
+        width: 120px;
+    }
+
+    .levels .level p {
+        font: var(--tiny-regular);
+    }
+}

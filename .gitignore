@@ -108,3 +108,8 @@ dist
 
 #idea
 .idea/
+
+
+# Git file
+*.DS_Store
+.vscode/settings.json

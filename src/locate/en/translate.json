@@ -23,7 +23,425 @@
             "info":"Please choose the language you wish to switch to",
             "cancel":"Cancel",
             "change":"Change"
+        },
+
+        "juniorGolf":{
+            "Intro": {
+                "h0": "",
+                "p0": {
+                    "0": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus aut dolorem. Ut dolore repellat totam quia officia cumque hic eaque nulla vitae quo nemo eligendi, tempora reiciendis dignissimos adipisci dolores eius qui aliquid ex at consequatur doloremque ea. Maxime ipsam repudiandae sint aut nesciunt error temporibus similique at pariatur.",
+                    "1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus aut dolorem. Ut dolore repellat totam quia officia cumque hic eaque nulla vitae quo nemo eligendi, tempora reiciendis dignissimos adipisci dolores eius qui aliquid ex at consequatur doloremque ea. Maxime ipsam repudiandae sint aut nesciunt error temporibus similique at pariatur."
+                }
+            },
+            "HowItWorks": {
+                "h0": "How our JGP works",
+                "p0": {
+                    "0": "The Junior Golf Academy is a structured and goal-oriented program, with a key focus on students’ long-term enjoyment and success.",
+                    "1": "Students are supported through a critical time in both their physical development and golf development.",
+                    "2": "The students will progressively learn all aspects of the golf game as they go through the 5-level development system.",
+                    "3": "With this in-depth combination of teaching skills, physical and mental coaching, our students will have all the tools to succeed."
+                },
+                "p1": {
+                    "0": "The students will be evaluated on the following:",
+                    "1": "- Golf Swing technical Skills",
+                    "2": "- Statistical performance",
+                    "3": "- Physical movement proficiency",
+                    "4": "- Social and mental development",
+                    "5": "- Understanding equipment",
+                    "6": "- On course knowledge"
+                }
+            },
+            "Levels": {
+                "h0": "Step by step",
+                "p0": "The program is made up of 5 levels where each level is built upon the previous one.",
+                "levels": {
+                    "0": {
+                        "h0": "Foundation",
+                        "p0": "At the beginning, we focus on setting the student up for success by putting all the fundamental learning blocks in place. This includes education around golf swing technique, golf equipment, and on course knowledge." 
+                    },
+                    "1": {
+                        "h0": "Growth",
+                        "p0": "Building on a strong foundation, students will learn key check points in the swing, and will be gradually introduced to a more detailed skill set in all areas of the game." 
+                    },
+                    "2": {
+                        "h0": "Development",
+                        "p0": "At this level there is a shift to developing students for all on-course situations. Skill development continues; however, it becomes more detailed focused." 
+                    },
+                    "3": {
+                        "h0": "Advanced",
+                        "p0": "The advanced level sees students working more on statistical outcomes. The focus is on reinforcing personal swing form, along with additional specialty skills." 
+                    },
+                    "4": {
+                        "h0": "High Performance",
+                        "p0": "The high-performance level is outcome driven, with a significant commitment required to pursue a specific goal, such as a golf scholarship, representative golf, or a professional career in golf."
+                    }
+                }
+            },
+            "Keypoints": {
+                "h0": "What's included"
+            },
+            "QA": {
+                "h0": "Asked & Answered",
+                "QAs": {
+                    "0": {
+                        "question": "How are groups selected?",
+                        "answer": { "0": "The factors we consider when selecting a group are your age, social development, skill level and the time/day preference of the parents." }
+                    },
+                    "1": {
+                        "question": "What golf equipment is required for the program?",
+                        "answer": { "0": "At enrollment you will be given a required equipment list for the level of your development. We place an importance on having the correctly fitted equipment as it can impact significantly on swing development. We are happy to assist with having you correctly fitted for your equipment." }
+                    },
+                    "2": {
+                        "question": "Different schools have different term dates, what are dates of the program?",
+                        "answer": { "0": "We set the program dates 6 weeks before the term begins to give parents time to organize their child’s schedule." }
+                    },
+                    "3": {
+                        "question": "Will class continue if it rains?",
+                        "answer": { "0": "If we believe class is unable to proceed outside, adjustments will be made to learn indoors. The decision will be made on the morning of class." }
+                    },
+                    "4": {
+                        "question": "How will I know the location of each class?",
+                        "answer": { "0": "The locations for each class will be set before the term begins. A Schedule be available on the student’s personal portal." }
+                    },
+                    "5": {
+                        "question": "How many learning modules am I required to complete?",
+                        "answer": { "0": "The number of modules and content of the modules will be dependent on your level of development. Each module takes approximately 30 minutes to I hour to complete. No more than one module will be required to complete per week." }
+                    },
+                    "6": {
+                        "question": "Can my child play at Waitakere golf course outside of class time?",
+                        "answer": { "0": "Yes. All students will be a full member of Waitakere Golf Club and we encourage them to practice and play as much as possible. Please note that a booking is required to play on the golf course." }
+                    },
+                    "7": {
+                        "question": "If I miss a lesson can it be caught up?",
+                        "answer": { "0": "Unfortunately, not. However, if there is a place in a class at a time suitable, you will be welcome to participate." }
+                    },
+                    "8": {
+                        "question": "Will I have access to my learning information if I leave the program?",
+                        "answer": { "0": "Absolutely! We understand that you will leave us at some point for a variety of different reasons. We would like you to continue your development, and this is best achieved by your next teacher having a detailed profile of your development history." }
+                    }
+                },
+                "link": "Can’t find the answer to your questions? Please contact us."
+            },
+            "addQA": {
+                "en" : {},
+                "ch" : {
+                    "0" : {
+                        "question" : "Is the video swing analysis available in Chinese?",
+                        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Chinese."}
+                    },
+                    "1" : {
+                        "question" : "Are the online learning modules available in Chinese?",
+                        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Chinese."}
+                    },
+                    "2" : {
+                        "question" : "Who will attend the first consultation?",
+                        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Chinese translator (if applicable) will be present on request for you or your parents ease of communication."}
+                    },
+                    "3" : {
+                        "question" : "If I have any questions through the program, is someone available to communicate in Chinese?",
+                        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Chinese speaking contact person will be available throughout the program."}
+                    }
+                },
+                "kr" : {
+                    "0" : {
+                        "question" : "Is the video swing analysis available in Korean?",
+                        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Korean."}
+                    },
+                    "1" : {
+                        "question" : "Are the online learning modules available in Korean?",
+                        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Korean."}
+                    },
+                    "2" : {
+                        "question" : "Who will attend the first consultation?",
+                        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Korean translator (if applicable) will be present on request for you or your parents ease of communication."}
+                    },
+                    "3" : {
+                        "question" : "If I have any questions through the program, is someone available to communicate in Korean?",
+                        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Korean speaking contact person will be available throughout the program."}
+                    }
+                }
+            }
+        },
+
+        "membership":{
+            "Intro": {
+                "h0": "Academy Membership",
+                "p0": {
+                    "0": "The Membership Program is a three-level golf development program where each level is built upon the previous one.",
+                    "1": "Throughout the program students will progressively develop their knowledge in all areas of the game, including understanding golf equipment, golf course knowledge and all areas of swing technique.",
+                    "2": "The program is structured in a way where students have the resources to learn remotely, or options are available for those who wish to add practical tuition to support their learnings."
+                }
+            },
+            "HowItWorks": {
+                "h0": "How we start",
+                "p0": {
+                    "0": "Step one is to set the student up to get the most out of the program.",
+                    "1": "Rhys will meet the student ideally in person, or by Zoom if the student is Learning remotely. "
+                },
+                "p1": {
+                    "0": "Meet and Greet",
+                    "1": "Setup the Students personal portal",
+                    "2": "Connect the student to the Coach now app",
+                    "3": "Review how to work through the program",
+                    "4": "Review students’ equipment",
+                    "5": "Do a skills screening test"
+                }
+            },
+            "Keypoints": {
+                "h0": "What's included"
+            },
+            "QA": {
+                "h0": "View our Q&A Section",
+                "link": "For answers to frequently asked questions, please click here"
+            },
+            "Tuition": {
+                "h0": "More Tuition Options",
+                "link": "For additional tuition options , please click here"
+            }
+        },
+
+        "remoteLearning":{
+            "Intro": {
+                "h0": "",
+                "p0": {
+                    "0": "In order to maximise your learning opportunity we have created a comprehensive self-learning program. This provides you with the flexibility to learn at your own pace whilst working around other commitments.",
+                    "1": "You will receive a comprehensive toolkit of services, designed to ensure you are fully supported and continually learning the skills required to perfect your technique and knowledge.",
+                    "2": "The program is aligned with our online modular learning system, which includes topic information, video instruction and interactive quizzes to reinforce learning."
+                }
+            },
+            "HowItWorks": {
+                "h0": "How we start",
+                "p0": {
+                    "0": "Prior to the program commencement, we will arrange to meet, preferably in person, or alternatively online. This is a chance to discuss your goals and expected outcomes for the course.",
+                    "1": "We will also take the opportunity to set up the program and teach you how to optimize your learning experience to ensure you get the most from the program.",
+                    "2": "A practical session is also an option (location dependent) to evaluate your current skill level. If this option is not possible , swing video can be forwarded and review by your coach",
+                    "3": "We look forward to meeting you and welcoming you to our program!"
+                },
+                "p1": {
+                    "0": "Meet and greet",
+                    "1": "Set student outcome goals",
+                    "2": "Equipment requirements",
+                    "3": "Review students current level",
+                    "4": "Review the programt",
+                    "5": "Set program schedule",
+                    "6": "Set student login and passwords",
+                    "7": "If applicable skills test"
+                }
+            },
+            "Framework": {
+                "h0": "Our module framework",
+                "blocks": {
+                    "0": {
+                        "h0": "Modules",
+                        "p0": { "0": "There are over 70 comprehensive online learning modules." }
+                    },
+                    "1": {
+                        "h0": "Easy-to-follow Format",
+                        "p0": { "0": "All program information in a clear easy-to-follow format. Each modules contains detailed information, demonstration videos, and interactive quizzes."}
+                    },
+                    "2": {
+                        "h0": "Levels",
+                        "p0": { "0": "Regardless of your level, the modules are formatted to deliver the relevant course information."}
+                    },
+                    "3": {
+                        "h0": "Topics",
+                        "p0": { "0": "All topics are covered within the program modules, including swing technique, golf equipment, and on course knowledge."}
+                    },
+                    "4": {
+                        "h0": "Incentives",
+                        "p0": { "0": "Receive a 20% discount on your next program when you achieve your required marks."}
+                    },
+                    "5": {
+                        "h0": "Language",
+                        "p0": {"0":"The learning modules and voice-over video swing analysis are available in both English and Korean."}
+                    },
+                    "6": {
+                        "h0": "Contact",
+                        "p0": {"0":"For ease of communication for students or parents, we have a person to communicate in both English and Korean."}
+                    },
+                    "7": {
+                        "h0": "Personal tuition",
+                        "p0": {"0":"The module program and the golf swing video analysis is available by in-person instruction from Rhys Ogden. (Location dependent. Extra fees apply)"}
+                    },
+                    "8": {
+                        "h0": "Golf + English",
+                        "p0": {"0":"For those of you wishing to improve your English, this is a great opportunity to do that while improving your golf game!"}
+                    }
+                }
+            },
+            "Keypoints": {
+                "h0": "What's included",
+                "price": {
+                    "description": "The parameters of the online learning program are set at 6 months, to ensure you keep your learning structure, while still learning flexibly at your own pace.",
+                    "title": "Program Price $990"
+                }
+            },
+            "QA": {
+                "h0": "Asked & Answered",
+                "QAs": {
+                    "0": {
+                        "question":"Is the remote learning program suitable for a beginner golfer?",
+                        "answer":{"0":"The program is best suited for a beginner as it can be followed in a methodical and structured way that leads to efficient learning. The program is based around the right information at the right time."}
+                    },
+                    "1": {
+                        "question":"What golf equipment do I need for the program?",
+                        "answer":{"0":"At enrollment you will be advised of the equipment required specific to your program. At the first consultation an appraisal of your current equipment will be undertaken. Having the correctly fitted equipment is essential for your development. It is one of the reasons that equipment is a major topic of the program."}
+                    },
+                    "2": {
+                        "question":"How do I send a swing video to the coach?",
+                        "answer":{"0":"It is a very easy process done through the Coach Now app. A Step-by-step demonstration will be shown at the first consultation."}
+                    },
+                    "3": {
+                        "question":"When will I have completed all 70 modules?",
+                        "answer":{"0":"There are 15 modules on golf equipment and 15 modules on golf course knowledge. We have you review these modules at the beginning of every program as they can give a good understanding of why some swing techniques are necessary. The further 40+ swing technique modules to complete will be dependent on your level and personal development program."}
+                    },
+                    "4": {
+                        "question":"How often can I send a question to the instructor through the Coach Now app?",
+                        "answer":{"0":"The instructors are always available and welcome questions as your development is important to them. However, we do ask that you respect the fact that there are many students under the coach’s guidance."}
+                    },
+                    "5": {
+                        "question":"Will I have access to my learning information if I leave the program?",
+                        "answer":{"0":"Absolutely! We understand that you will leave us at some point for a variety of different reasons. We would like you to continue your development, and this is best achieved by your next teacher having a detailed profile of your development history."}
+                    }
+                },
+                "link": "Can’t find the answer to your questions? Please link us."
+            },
+            "addQA": {
+                "en" : {},
+                "ch" : {
+                    "0" : {
+                        "question" : "Is the video swing analysis available in Chinese?",
+                        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Chinese."}
+                    },
+                    "1" : {
+                        "question" : "Are the online learning modules available in Chinese?",
+                        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Chinese."}
+                    },
+                    "2" : {
+                        "question" : "Who will attend the first consultation?",
+                        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Chinese translator (if applicable) will be present on request for you or your parents ease of communication."}
+                    },
+                    "3" : {
+                        "question" : "If I have any questions through the program, is someone available to communicate in Chinese?",
+                        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Chinese speaking contact person will be available throughout the program."}
+                    }
+                },
+                "kr" : {
+                    "0" : {
+                        "question" : "Is the video swing analysis available in Korean?",
+                        "answer" : {"0" : "Yes. Our video analysis lesson includes a voice-over, which can be delivered in either English or Korean."}
+                    },
+                    "1" : {
+                        "question" : "Are the online learning modules available in Korean?",
+                        "answer" : {"0" : "The online learning modules are delivered in your choice of either English or Korean."}
+                    },
+                    "2" : {
+                        "question" : "Who will attend the first consultation?",
+                        "answer" : {"0" : "Rhys Ogden will attend the first consultation meeting. A Korean translator (if applicable) will be present on request for you or your parents ease of communication."}
+                    },
+                    "3" : {
+                        "question" : "If I have any questions through the program, is someone available to communicate in Korean?",
+                        "answer" : {"0" : "Yes. We understand the importance of communication, either from our students or parents on behalf of our students. A Korean speaking contact person will be available throughout the program."}
+                    }
+                }
+            }
+        },
+
+        "keypoints":{
+            "0": {
+                "title": "Class Length",
+                "description": "The Junior Golf program runs throughout school terms, with the 2022 program commencing on February 5th. Please contact us for a comprehensive program timetable."
+            },
+            "1": {
+                "title": "Class Duration",
+                "description": "Class duration is one hour; however, we require the students to be there 15 minutes early to go through a warmup. This ensures we make the most of our class time.We offer flexibility for students to work around other commitments, with 6 months to complete the course from the beginning of the program."
+            },
+            "2": {
+                "title": "Class Timetable",
+                "description": "We aim to have class times throughout the weekend and on weekends. The timetable will be set 2 months before term begins."
+            },
+            "3": {
+                "title": "Class Numbers",
+                "description": "To make sure we get enough time for each student we limit the class numbers to 6 students per class."
+            },
+            "4": {
+                "title": "Course Location",
+                "description": "We have two locations: Waitakere Golf Course. A quiet location where students develop on-course skills in a stress-free environment. Rutherford College. A spacious environment where we can setup creative learning stations."
+            },
+            "5": {
+                "title": "Assessment Day",
+                "description": "We conduct an assessment day prior to program commencement to ensure the students are at the correct level to get the most from the program."
+            },
+            "6": {
+                "title": "BP Student Login",
+                "description": "Students will be provided with a login to a portal on the BP Golf Academy website, containing their personal progress information. This is only accessible to the student and their coach."
+            },
+            "7": {
+                "title": "Online learning",
+                "description": "Students will have access to online learning modules covering golf equipment, golf course knowledge and swing technique. The modules include topic information, video instruction and interactive quizzes to reinforce learning. (30 minutes per module)"
+            },
+            "8": {
+                "title": "Equipment",
+                "description": "Students will have access to the Coach Now app for easy communication with instructors, sending video analysis and Q&A."
+            },
+            "9": {
+                "title": "Development Plans",
+                "description": "Each student will be given weekly practice tasks with options to complete either at home or at a practice facility."
+            },
+            "10": {
+                "title": "Holiday Program",
+                "description": "Our Academy students will get first option of enrolment for holiday programs. Program options will be made available 6 weeks out from term break."
+            },
+            "11": {
+                "title": "Rewards",
+                "description": "Upon reaching achievement goals, students are incentivized by receiving Titleist and Foot Joy products to the value of $200."
+            },
+            "12": {
+                "title": "Golf uniform pack",
+                "description": "Each student receives a fantastic gift pack, including a foot Joy golf shirt and pants, and a Titleist hat."
+            },
+            "13": {
+                "title": "Golf Course Membership",
+                "description": "At enrolment students will receive a one-year Junior membership at Waitakere Golf Club."
+            },
+            "14": {
+                "title": "Price",
+                "description": "---------------- Term 1 - $645 ---------------- ---------- Other terms - $395 each ---------"
+            },
+            "15": {
+                "title": "Class Duration",
+                "description": "We offer flexibility for students to work around other commitments, with 6 months to complete the course from the beginning of the program."
+            },
+            "16": {
+                "title": "Student Portal",
+                "description": "Students will be provided with a login to a portal on the BP Golf Academy website, containing their personal progress information. This is only accessible to the student and their instructor."
+            },
+            "17": {
+                "title":"Online Learning Modules",
+                "description":"Students will complete 70 online learning modules over the 3 levels. Each module contains detailed information, videos, and interactive quizzes. The modules are structured in a systematic way to encourage students to develop the necessary knowledge and skills at the relevant learning point."
+            },
+            "18": {
+                "title":"Video Swing Analysis",
+                "description":"Students will receive 12 video swing analysis lessons. The videos include detailed analysis and voice-over instruction."
+            },
+            "19": {
+                "title":"Lessons Plan",
+                "description":"Specific to each student, a practice plan will be created that reflects the information from the learning modules and personal swing analysis."
+            },
+            "20": {
+                "title":"Coach Now App",
+                "description":"Students will have access to the Coach Now app for easy communication with instructors, sending video analysis and Q&A."
+            },
+            "21": {
+                "title":"Member Discount",
+                "description":"Academy members and Junior members will receive a discount on additional tuition costs. Please refer the “more tuition” link at the bottom of the page."
+            },
+            "22": {
+                "title":"Price",
+                "description":"---------------------- $990 ---------------------"
+            }
         }
+        
 
     }
 }

@@ -8,6 +8,11 @@ import HomePage from "../HomePage/HomePage"
 import Blog from "../Blog/Blog"
 import ContactUs from "../ContactUs/ContactUs";
 import Student from "../Student/Student";
+import Scheduler from "../Student/Schedule/Schedule";
+import StudentModules from "../Student/Modules/StudentModules";
+import Membership from "../Services/Membership/Membership";
+import JuniorGolf from "../Services/JuniorGolf/JuniorGolf";
+import RemoteLearning from "../Services/RemoteLearning/RemoteLearning";
 import Login from "../Student/Login/Login"
 
 
@@ -40,13 +45,20 @@ const Site = ({ user,setUser }) => {
             </Route>
 
             <Route path='/membership'>
-                <NavBar page='Membership' user={user}></NavBar>
-                TBD
+
+                <NavBar page='Membership'></NavBar>
+                <Membership></Membership>
             </Route>
 
             <Route path='/junior-golf'>
-                <NavBar page='Junior golf' user={user}></NavBar>
-                TBD
+                <NavBar page='Junior golf'></NavBar>
+                <JuniorGolf></JuniorGolf>
+            </Route>
+
+            <Route path='/remote-learning'>
+                <NavBar page='Remote learning'></NavBar>
+                <RemoteLearning></RemoteLearning>
+
             </Route>
 
             <Route path='/blog'>
