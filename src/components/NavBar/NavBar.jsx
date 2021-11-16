@@ -167,8 +167,8 @@ const NavBar = ({page}) => {
                     |
                     <MenuItem page='Remote learning'/>
                     |
-                    <MenuItem page='Membership'/>
-                    |
+                    {/* <MenuItem page='Membership'/>
+                    | */}
                     <MenuItem page='Junior golf'/>
                     |
                     <MenuItem page='Blog'/>
