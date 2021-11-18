@@ -46,17 +46,17 @@ const Site = ({ user,setUser }) => {
 
             <Route path='/membership'>
 
-                <NavBar page='Membership'></NavBar>
+                <NavBar page='Membership' user={user}></NavBar>
                 <Membership></Membership>
             </Route>
 
             <Route path='/junior-golf'>
-                <NavBar page='Junior golf'></NavBar>
+                <NavBar page='Junior golf' user={user}></NavBar>
                 <JuniorGolf></JuniorGolf>
             </Route>
 
             <Route path='/remote-learning'>
-                <NavBar page='Remote learning'></NavBar>
+                <NavBar page='Remote learning' user={user}></NavBar>
                 <RemoteLearning></RemoteLearning>
 
             </Route>
