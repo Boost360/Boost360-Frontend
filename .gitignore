@@ -113,3 +113,5 @@ dist
 # Git file
 *.DS_Store
 .vscode/settings.json
+src/components/.DS_Store
+src/.DS_Store
