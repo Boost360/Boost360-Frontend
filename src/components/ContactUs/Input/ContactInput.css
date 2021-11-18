@@ -67,6 +67,11 @@
     flex: none;
     margin-top: 40px;
 }
+
+.ContactInput *:focus {
+    outline: 1px solid var(--white);
+    color: white;
+}
 /*Contact Input Section finished*/
 
 /* Smaller laptop */

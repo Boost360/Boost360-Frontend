@@ -69,10 +69,20 @@
 }
 
 .ContactInfo-SocialIcon{
-    color: #F1F1F1;
+    color: var(--white);
     margin-bottom: 30px;
     text-align: left;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    gap: 20px;
+}
+
+.ContactInfo-SocialIcon .cIcon {
+    color: var(--white);
+    padding: 4px 4px 3px 4px;
+    border: 1px solid var(--text);
 }
 
 .ContactInfo-SocialIcon p{
@@ -82,10 +92,9 @@
     font-size: 15px;
     line-height: 18px;
     display: flex;
+    height: 100%;
     align-items: center;
     text-align: center;
-    margin-top: 0;
-    margin-left: 15px;
 }
 /*Contact Info Section finished*/
 
