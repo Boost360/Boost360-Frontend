@@ -6,10 +6,10 @@ export default function ContactUsName() {
         <div className="ContactName-section">
             <div className="ContactName-name">
                 <div>
-                    Sleepy
+                    Test
                 </div>
                 <div>
-                    Joe
+                    User
                 </div>
             <p className="nameline"></p>
             </div>
