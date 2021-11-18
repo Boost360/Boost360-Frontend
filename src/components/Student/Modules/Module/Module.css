@@ -57,9 +57,7 @@
 }
 
 .copyLink {
-    /* Issue @00001
-    cursor: pointer;  */
-
+    cursor: pointer; 
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -73,15 +71,11 @@
     color: var(--background);
 }
 
-/* Issue @00001 */
-/* .copyLink:hover {
+
+.copyLink:hover {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.copy {
-    position: relative;
-    top: -1px;
-} */
 
 .link {
     width: 60%;
