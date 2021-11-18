@@ -1,8 +1,9 @@
 import React from "react";
 import "./LandingPage.css";
-import logo from '../../static/img/logo/white.svg';
+import logo from '../../static/img/logo/inner_text_white.svg';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import GolfAnimation from './GolfAnimation'
 
 export default function LandingPage({user}) {
     const { t, i18n } = useTranslation()
@@ -16,6 +17,7 @@ export default function LandingPage({user}) {
 
     return (
         <div className="LandingPage">
+            <GolfAnimation></GolfAnimation>
             <div className="LandingPage-mask">
                 <div className="LandingPageheader">
                     <div className="LandingPageicon">
