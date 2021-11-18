@@ -91,12 +91,12 @@
     width: 200px;
     background-color: white;
     color: #2E414F;
-    text-align: center;
+    text-align: left;
     padding: 10px 10px;
     position: absolute;
     z-index: 9999;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 130px;
+    margin-top: 130px;
 }
 .TeamPage_single_member:hover .TeamPage_tooltip {
     visibility: visible;
