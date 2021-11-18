@@ -19,12 +19,10 @@ export default function LandingPage({user}) {
         <div className="LandingPage">
             <GolfAnimation></GolfAnimation>
             <div className="LandingPage-mask">
-                <div className="LandingPageheader">
+                <div className="buttonArea">
                     <div className="LandingPageicon">
                         <img src={logo} alt="logo" />
                     </div>
-                </div>
-                <div className="buttonArea">
                     <div className="enterButton">
                         <Link className="landingButton" to="/index"><span>{t("landing.enter")}</span></Link>
                         {user? <Link className="landingButton" to="/student/home"><span>{t("landing.home")}</span></Link>:

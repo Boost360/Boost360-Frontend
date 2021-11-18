@@ -1,36 +1,33 @@
 /* Whole page */
 .LandingPage{
-    /* background: url('../../static/img/background8.png')rgba(0,0,0,.4) no-repeat center / cover; */
-
     align-items: center;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-size:100% 100%;
-    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .LandingPage-mask{
     background: rgba(0,0,0,0.4);
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 /* icon */
 .LandingPageicon{
-    width: 100%;
-    height: 50%;
-    display: inline-block;
-    z-index: 100;
+    width: 130px;
+    padding: 10px;
 }
 
 .LandingPageicon img{
-    height: 60%;
-    padding: 6px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    margin-left: 50px;
-    float: left;
+    width: 100%;
+    
 }
 
 .LandingPageheader{
@@ -45,12 +42,13 @@
     flex-direction: column;
     align-items: center;
     position: static;
+    gap: 100px;
 }
 
 .enterButton{
     display: flex;
     justify-content: center;
-    margin: 100px 0px;
+    margin: 0px 0px;
 }
 
 .landingButton{
@@ -104,14 +102,96 @@
     margin: 0px 15px;
 }
 
+
+/* -----------------------Animation--------------------------------- */
+.LandingPageicon {
+    position: relative;
+    opacity: 0;
+    animation: top-enter 2.5s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+.landingButton:nth-child(odd){
+    position: relative;
+    opacity: 0;
+    animation: left-enter 2.5s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+.landingButton:nth-child(even){
+    position: relative;
+    opacity: 0;
+    animation: right-enter 2.5s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+.languagesection a:nth-child(1) {
+    position: relative;
+    opacity: 0;
+    animation: top-enter 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+.languagesection p:nth-child(2) {
+    position: relative;
+    opacity: 0;
+    animation: top-enter 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+}
+.languagesection a:nth-child(3) {
+    position: relative;
+    opacity: 0;
+    animation: top-enter 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+.languagesection p:nth-child(4) {
+    position: relative;
+    opacity: 0;
+    animation: top-enter 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.9s;
+}
+.languagesection a:nth-child(5) {
+    position: relative;
+    opacity: 0;
+    animation: top-enter 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes top-enter {
+    0% {top: 200px; opacity: 0;}
+    50% {top: -50px; opacity: 1;}
+    70% {top: 30px}
+    80% {top: -10px}
+    90% {top: 10px}
+    100% {top: 0px; opacity: 1;}
+}
+
+@keyframes left-enter {
+    0% {right: 500px; opacity: 0;}
+    50% {right: -50px; opacity: 1;}
+    70% {right: 30px}
+    80% {right: -10px}
+    90% {right: 10px}
+    100% {right: 0px; opacity: 1;}
+}
+
+@keyframes right-enter {
+    0% {left: 500px; opacity: 0;}
+    50% {left: -50px; opacity: 1;}
+    70% {left: 30px}
+    80% {left: -10px}
+    90% {left: 10px}
+    100% {left: 0px; opacity: 1;}
+}
+/* ---------------------------------------------------------------- */
+
 @media screen and (max-width: 1025px){
     .LandingPage{
         width: 100%;
         height: 100%;
-        overflow-y: auto;
-    }
-
-    .LandingPage-mask{
         overflow-y: auto;
     }
 
@@ -121,6 +201,9 @@
         margin-top: 30px;
     }
        
+    .buttonArea {
+        gap: 40px;
+    }
     .enterButton{
         flex-direction: column;
         align-items: center;
@@ -144,3 +227,4 @@
         display: none;
     }
 }
+
