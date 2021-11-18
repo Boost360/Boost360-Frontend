@@ -1,6 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
-import logo from '../../static/img/logo.png';
+import logo from '../../static/img/logo/white.svg';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
