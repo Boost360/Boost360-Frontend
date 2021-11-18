@@ -17,7 +17,7 @@ export default function ContactInfo() {
             </div>
             <div className="ContactInfo">
                 <div>{t('contact.email')}</div>
-                <p>cykablyat@123.com</p>
+                <p>testemail@123.com</p>
             </div>
             <div className="ContactInfo">
                 <div>{t('contact.address')}</div>
@@ -28,19 +28,19 @@ export default function ContactInfo() {
                     <div className="ContactInfo-SocialIcon">
                         <AiOutlineWechat />
                         <p>
-                            cyka_blyat
+                            test_wechatid
                         </p>
                     </div>
                     <div className="ContactInfo-SocialIcon">
                         <RiKakaoTalkLine />
                         <p>
-                            cyka_blyat
+                            kakao_talk
                         </p>
                     </div>
                     <div className="ContactInfo-SocialIcon">
                         <FaInstagram />
                         <p>
-                            cyka_blyat
+                            insta
                         </p>
                     </div>
                 </div>
