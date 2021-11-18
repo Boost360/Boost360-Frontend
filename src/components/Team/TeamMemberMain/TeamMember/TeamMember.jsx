@@ -26,7 +26,7 @@ const TeamMember = (props) => {
                 {props.user.tooltip}
             </div>
             <div className='TeamPage_member_avatar'>
-                <img src={props.user.avatar.default}/>
+                <img src={props.user.avatar}/>
             </div>
 
             <div className='TeamPage_name_container'>
