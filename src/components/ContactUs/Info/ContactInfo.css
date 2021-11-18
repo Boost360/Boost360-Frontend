@@ -4,15 +4,11 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    position: static;
     width: 300px;
-    height: 594px;
-    left: 466.5px;
     top: 0px;
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 30px;
 }
 
 .ContactInfo{
@@ -105,11 +101,4 @@
         left: 0;
     }
 
-}
-
-/* iPad */
-@media screen and (max-width: 700px) {
-    .ContactInfo-section{
-        display: none;
-    }
 }
