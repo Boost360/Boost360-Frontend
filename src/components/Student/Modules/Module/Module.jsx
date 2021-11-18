@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import './Module.css'
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Snackbar, Alert } from "@mui/material";
+import LoadingAnimation from './LoadingAnimation'
+
 
 export default function Module({ detail, i }) {
     const [isCopied, setIsCopied] = useState(false);
+    const [redirecting, setRedirecting] = useState(false);
     const onCopy = () => {
         setIsCopied(true);
     }
@@ -12,33 +15,25 @@ export default function Module({ detail, i }) {
         setIsCopied(false);
     }
     const handleClick = () => {
-        // @todo show redirect modal animation 
-        // [12/oct/2021 @Sarah]
-        // window.location.href = detail.link;
+        setRedirecting(true);
+        window.location = detail.link;
     };
     return (
 
-        <div className="module" key={i}>
+        <div className="module" key={i} onClick={handleClick}>
+            {redirecting && <LoadingAnimation/>}
             <Snackbar anchorOrigin={{ 'vertical': 'bottom', 'horizontal': 'center' }} open={isCopied} autoHideDuration={6000} onClose={closeAlert} >
                 <Alert onClose={closeAlert} severity="success" sx={{ width: '100%' }}>
                     Copied to clipboard!
                 </Alert>
             </Snackbar>
 
-            <div className="title"
-                style={{ backgroundColor: detail.color }}
-                onClick={handleClick}
-            >
+            <div className="title" style={{ backgroundColor: detail.color }}>
                 {detail.title}
             </div>
 
             <div className="container">
-                <img
-                    src={detail.icon}
-                    alt={detail.icon}
-                    className="icon"
-                    onClick={handleClick}
-                />
+                <img src={detail.icon} alt={detail.icon} className="icon" />
             </div>
 
             <div className="container">
