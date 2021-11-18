@@ -11,9 +11,6 @@ export default function HomePage() {
         <div className="HomePage">
 
             <div className="HomePagebody">
-                <div className="messageHome">
-                    <p><span>B</span>oost your <span>P</span>erformance</p>
-                </div>
             </div>
 
             <IconContext.Provider value={{ size: "24px" }}>

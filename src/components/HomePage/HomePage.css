@@ -39,18 +39,16 @@
     display: flex;
     align-items: flex-end;
     letter-spacing: 0.01em;
-    color: #ffffff;
+    color: var(--white);
 }
 
-.HomePagebody span{
-    color: #8AE3FF;
-}
 
 .HomePagelink{
     /* The two line belowed make sure that all item in this div will display as row */
     display: flex;
     flex-direction: row;
     padding: 10px;
+    gap: 10px;
 
     /* this two lines of code help div keep bottom */
     position: absolute;
@@ -59,14 +57,14 @@
 
     width: auto;
     height: auto;
-    backdrop-filter: blur(7px);
 
     left: 45%;
 }
 
 .HomeIcon{
-    padding-right: 10px;
-    padding-left: 10px;
+    color: var(--white);
+    padding: 4px 4px 0px 4px;
+    border: 1px solid var(--text);
 }
 
 @media screen and (max-width: 1025px){
