@@ -26,19 +26,19 @@ export default function ContactInfo() {
             <IconContext.Provider value={{ size: "24px" }}>
                 <div className="ContactInfo-Social">
                     <div className="ContactInfo-SocialIcon">
-                        <AiOutlineWechat />
+                        <AiOutlineWechat className='cIcon'/>
                         <p>
                             test_wechatid
                         </p>
                     </div>
                     <div className="ContactInfo-SocialIcon">
-                        <RiKakaoTalkLine />
+                        <RiKakaoTalkLine className='cIcon'/>
                         <p>
                             kakao_talk
                         </p>
                     </div>
                     <div className="ContactInfo-SocialIcon">
-                        <FaInstagram />
+                        <FaInstagram className='cIcon'/>
                         <p>
                             insta
                         </p>

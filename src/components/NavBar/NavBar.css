@@ -22,7 +22,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px 20px;
+    padding: 10px 50px 20px 50px;
 
     position: relative;
     width: 100%;
@@ -69,10 +69,12 @@
 }
 
 .logo {
-    width: clamp(60px, 100%, 150px);
-    height: clamp(60px, 100%, 150px);
-    background-image: url('../../static/img/logo.png');
-    background-size: 100%;
+    width: 60px;
+    height: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-image: url('../../static/img/logo/white.svg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -138,4 +140,10 @@
 .dark .header {
     background-color: var(--primary);
     color: var(--text);
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: 10px;
+    }
 }

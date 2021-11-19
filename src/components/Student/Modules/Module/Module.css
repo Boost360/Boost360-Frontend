@@ -1,5 +1,6 @@
 
 .module {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,8 +24,12 @@
     width: 100%;
 }
 
+.module:hover {
+    position: relative;
+    top: 2px;
+}
+
 .title {
-    cursor: pointer;
     display: flex;
     color: var(--white);
     font: var(--tertiary-light);
@@ -41,10 +46,6 @@
     border-radius: 5px 0px 0px 5px;
 }
 
-.title:hover {
-    position: relative;
-    top: 2px;
-}
 
 .icon {
     position: static;
@@ -57,9 +58,7 @@
 }
 
 .copyLink {
-    /* Issue @00001
-    cursor: pointer;  */
-
+    cursor: pointer; 
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -73,15 +72,11 @@
     color: var(--background);
 }
 
-/* Issue @00001 */
-/* .copyLink:hover {
+
+.copyLink:hover {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.copy {
-    position: relative;
-    top: -1px;
-} */
 
 .link {
     width: 60%;

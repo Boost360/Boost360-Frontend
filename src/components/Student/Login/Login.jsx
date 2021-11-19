@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../static/img/logo-black.png"
+import logo from "../../../static/img/logo/bottom_text_black.svg"
 import './Login.css'
 import { Snackbar, Alert } from "@mui/material";
 import IconButton from '@mui/material/IconButton';

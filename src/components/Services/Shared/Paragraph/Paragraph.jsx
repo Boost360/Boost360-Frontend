@@ -1,12 +1,11 @@
 import React from 'react'
 
 function Paragraph({ json, gap = 1, prefix = null }) {
-    console.log('[Paragraph]json:', json);
     return (
         <p>
             {
                 Object.keys(json ? json : {}).map(key => (
-                    <span>
+                    <span key={key}>
                         {prefix}
                         {json[key]}
                         {gap >= 1 ? (<br />) : null}
