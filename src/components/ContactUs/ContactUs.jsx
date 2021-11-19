@@ -8,13 +8,11 @@ import ContactInput from "./Input/ContactInput";
 export default function ContactUs() {
     return(
         <div className="ContactPage">        
-            <div className="ContactPage-mask">
                 <div className="ContactUsSectionBox">
                     <ContactUsName/>
                     <ContactInfo/>
                     <ContactInput/>
                 </div>
-            </div>
         </div>
     )
 }
