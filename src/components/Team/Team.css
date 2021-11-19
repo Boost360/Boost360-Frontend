@@ -13,7 +13,7 @@
 /* TeamNavigator */
 .TeamPage_navigation_container {
     padding: 10px 0;
-    font-size: 15px;
+    font: var(--paragraph);
     color: #2E414F;
 
 }
@@ -88,7 +88,8 @@
 }
 .TeamPage_tooltip {
     visibility: hidden;
-    width: 200px;
+    width: clamp(200px, 50%, 1000px);
+    line-height: 1.7em;
     background-color: white;
     color: #2E414F;
     text-align: left;
