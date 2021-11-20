@@ -10,16 +10,6 @@
 
 
 
-/* TeamNavigator */
-.TeamPage_navigation_container {
-    padding: 10px 0;
-    font: var(--paragraph);
-    color: #2E414F;
-
-}
-
-
-
 
 /* TeamImageBanner */
 .TeamPage_banner_image {
@@ -28,6 +18,13 @@
     background: url("../../static/img/team-auckland.png");
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font: var(--secondary-light);
 }
 
 
