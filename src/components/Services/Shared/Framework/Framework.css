@@ -50,7 +50,7 @@
 
     /* Change */
     align-items: end;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     margin-bottom: 30px;
 }
 
