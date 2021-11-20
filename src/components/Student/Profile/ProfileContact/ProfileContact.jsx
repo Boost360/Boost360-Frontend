@@ -10,7 +10,7 @@ export default function ProfileContact({profileInfo, handleChange}) {
     
 
     return(
-        <div>
+        <div className="ProfileContactWrapper">
             <div className="ProfileContact">
                 <p className="contactTitle">* Contact</p>
                 <div className="ProfileInputSection">
