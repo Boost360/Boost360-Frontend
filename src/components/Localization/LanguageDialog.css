@@ -1,14 +1,9 @@
 .langDialog {
     padding: 50px;
+    font: var(--tertiary-light);
+    color: var(--background);
 }
 
-.langDialog-text {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 30px;
-}
 
 .langDialog-Buttongroup {
     display: flex;
@@ -29,25 +24,21 @@
     height: 50px;
     background: #C2C2C2;
     /* Theme/white */
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--white);
     box-sizing: border-box;
     margin: 10px;
     /* Inside Auto Layout */
 }
 
 .blue{
-    background: #8AE3FF;
+    background: var(--primary);
 }
 
 .langDialog-Button-text {
     /* Secondary/light */
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 30px;
+
     /* Theme/white */
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .languageSet{
@@ -60,10 +51,6 @@
 }
 
 .languageSet-label {
-    font-family: Montserrat;
-    font-size: 25px;
-    line-height: 30px;
-    color: black;
     margin: 0px 3px;
 }
 
@@ -72,10 +59,7 @@
 }
 
 .languageSet-currentLabel {
-    font-family: Montserrat;
-    font-size: 25px;
-    line-height: 30px;
-    color: #8AE3FF;
+    color: var(--primary);
     margin: 0px 3px;
 }
 
