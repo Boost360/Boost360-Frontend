@@ -34,7 +34,7 @@ const BlogContent = ({ user, props }) => {
 
     return (
         <div>
-            <NavBar page={BlogTitle} user={user}></NavBar>
+
             {loading ?
             (<div>
                 <Skeleton variant="rectangular" height={500} />

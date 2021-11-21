@@ -29,13 +29,22 @@ const Blog = ({ user }) => {
         setBlogs(blogData);
         setLoading(false);
     }, []);
-    
+
     return (
         <div>
-            <Route path={path} exact>
+            
+
+            <Switch>
+
+                <Route path={`${path}/:id`}>
+                    <NavBar page='Blog' user={user}></NavBar>
+                    <BlogContent></BlogContent>
+                </Route>
+
+                <Route path={path} exact>
                 <NavBar page='Blog' user={user}></NavBar>
                 {
-                    loading? (
+                    loading ? (
                         <Stack spacing={1}>
                             <div>
                                 <div className="skeletonText">
@@ -58,7 +67,7 @@ const Blog = ({ user }) => {
                                 <div className="skeletonPic">
                                     <Skeleton variant="rectangular" width={350} height={280} />
                                 </div>
-                            </div> 
+                            </div>
                             <div>
                                 <div className="skeletonText">
                                     <Skeleton variant="rectangular" width={300} height={30} />
@@ -69,24 +78,20 @@ const Blog = ({ user }) => {
                                 <div className="skeletonPic">
                                     <Skeleton variant="rectangular" width={350} height={280} />
                                 </div>
-                            </div>   
+                            </div>
                         </Stack>
                     ) :
-                (
-                <div className='blog_container'>
-                    {blogs.map((blogItem, index) => (
-                        <div className='blog_small_item_row'>
-                            <BlogItemSmall blogItem={blogItem} />
-                        </div>
-                    ))}
-                </div>)
+                        (
+                            <div className='blog_container'>
+                                {blogs.map((blogItem, index) => (
+                                    <div className='blog_small_item_row'>
+                                        <BlogItemSmall blogItem={blogItem} />
+                                    </div>
+                                ))}
+                            </div>)
                 }
-                
+
             </Route>
-
-            <Switch>
-
-                <Route path={`${path}/:id`} children={<BlogContent></BlogContent>} />
 
             </Switch>
 
