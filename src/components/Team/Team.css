@@ -102,3 +102,12 @@
 .TeamPage_badge_display_none {
     display: none;
 }
+
+.team_loading{
+    height: 500px;
+}
+
+.team_loading_avatar {
+    padding: 40px;
+    float: left;
+}
