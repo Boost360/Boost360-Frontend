@@ -77,7 +77,7 @@ const Site = ({ user,setUser }) => {
             <Route path='/login' exact>
                 {user ? <Redirect to="/student/home" /> :
                     <div>
-                        <NavBar page='Student login' user={user}></NavBar>
+                        <NavBar page='Login' user={user}></NavBar>
                         <Login setUser={setUser}></Login>
                     </div>}
 

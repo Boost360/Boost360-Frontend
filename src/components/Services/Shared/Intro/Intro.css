@@ -8,12 +8,17 @@
     flex-grow: 0;
     flex-shrink: 0;
     gap: 0;
+    z-index: 1;
 }
 
 .intro h1 {
     text-align: left;
     width: 100%;
-     
+    animation: fade-in-left 3s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
 }
 
 
@@ -27,6 +32,8 @@
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
     opacity: 0;
+    z-index: 3;
+    
 }
 
 .intro img {
@@ -40,9 +47,14 @@
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
     opacity: 0;
+    z-index: 2;
 }
 
 
+@keyframes fade-in-left {
+    100%{opacity: 1;}
+    0%{transform: translateX(-500px); opacity: 1;}
+}
 
 @keyframes fade-in-top {
     100%{opacity: 1;}
@@ -54,5 +66,3 @@
     100%{opacity: 1;}
     0%{transform: translateY(500px); opacity: 1;}
 }
-
-

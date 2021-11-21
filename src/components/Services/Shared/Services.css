@@ -21,8 +21,8 @@
     min-height: 100vh;
     padding-left: clamp(10px, 20%, 200px);
     padding-right: clamp(10px, 20%, 200px);
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 150px;
+    padding-top: 50px;
 }
 
 .services .section:nth-child(even) {

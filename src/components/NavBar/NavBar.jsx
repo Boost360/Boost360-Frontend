@@ -1,7 +1,9 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import './NavBar.css';
-import {useHistory} from 'react-router';
-import {AiOutlineMenu, AiOutlineArrowLeft, AiOutlineArrowUp} from 'react-icons/ai';
+import { useHistory } from 'react-router';
+import { AiOutlineMenu, AiOutlineArrowLeft } from 'react-icons/ai';
+import { BiWorld } from 'react-icons/bi';
+import { FaUserCircle } from 'react-icons/fa';
 import LanguageDialog from '../Localization/LanguageDialog';
 
 
@@ -9,17 +11,12 @@ import LanguageDialog from '../Localization/LanguageDialog';
 //
 // menu:   bold current page or bold it's parent page IF specified
 //         switch 'student login' to 'student home'   IF user is logged in
-//         fold NavBar                                IF page resets except for 'Home' page
-//
-// header: display page name                          IF page resets
-//         use arrow-up icon                          IF it's unfolded
-//         use arrow-back icon                        IF parent page is not null
-//         use menu icon                              IF parent page is null
-//         hide header if                             IF at 'Home' page
+//         display page name                          IF if on a subpage (parent page not null)
+//         use left arrow icon                        IF on on a subpage
+//         use menu icon                              IF on mobile
 //
 // icon:   set to parent page                         IF left-arrow is clicked
-//         fold menu                                  IF up-arrow is clicked
-//         unfold menu                                IF menu-icon is clicked
+//         open mobile menu                           IF menu icon is clicked
 //
 // color:  set menu and header to transparent background
 //         && add top shadow to entire NavBar and remove 
@@ -27,36 +24,34 @@ import LanguageDialog from '../Localization/LanguageDialog';
 //         set header to primary color background and 
 //         light text                                 IF at 'Student home' or its subpages
 // 
-// @todo folding animation
-// @todo refactor
 // [24/sep/2021 @Sarah]
 
 
-    
-const NavBar = ({page,user}) => {
+
+const NavBar = ({ page, user, header = null }) => {
     const [pages, setPages] = useState(
         {
-            'Home' : {path: '/index', parentPage: null},
-            'About' : {path: '/about', parentPage: null},
-            'Contact' : {path: '/contact', parentPage: null},
-            'Partners' : {path: '/partners', parentPage: null},
-            'Team' : {path: '/team', parentPage: null},
-            'Remote learning' : {path: '/remote-learning', parentPage: null},
-            'Membership' : {path: '/membership', parentPage: null},
-            'Junior golf' : {path: '/junior-golf', parentPage: null},
-            'Blog' : {path: '/blog', parentPage: null},
-            'Blog Detail' : {path: '/blog/', parentPage: 'Blog'},
-            'Language' : {path: '/language', parentPage: null},
-            'Student login' : {path: '/login', parentPage: null},
-            'Student home' : {path: '/student/home', parentPage: null},
-            'Profile' : {path: '/student/profile', parentPage: 'Student home'},
-            'Schedule' : {path: '/student/schedule', parentPage: 'Student home'},
-            'Results' : {path: '/student/results', parentPage: 'Student home'},
-            'Modules' : {path: '/student/modules', parentPage: 'Student home'},
-            'Equipment' : {path: '/student/equipment', parentPage: 'Student home'},
-            'Video library' : {path: '/student/video-library', parentPage: 'Student home'},
-            'Development program' : {path: '/student/development-program', parentPage: 'Student home'}
-        } 
+            'Home': { path: '/index', parentPage: null },
+            'About': { path: '/about', parentPage: null },
+            'Contact': { path: '/contact', parentPage: null },
+            'Partners': { path: '/partners', parentPage: null },
+            'Team': { path: '/team', parentPage: null },
+            'Remote learning': { path: '/remote-learning', parentPage: null },
+            'Membership': { path: '/membership', parentPage: null },
+            'Junior golf': { path: '/junior-golf', parentPage: null },
+            'Blog': { path: '/blog', parentPage: null },
+            'Blog Detail': { path: '/blog/', parentPage: 'Blog' },
+            'Language': { path: '/language', parentPage: null },
+            'Login': { path: '/login', parentPage: null },
+            'Student home': { path: '/student/home', parentPage: null },
+            'Profile': { path: '/student/profile', parentPage: 'Student home' },
+            'Schedule': { path: '/student/schedule', parentPage: 'Student home' },
+            'Results': { path: '/student/results', parentPage: 'Student home' },
+            'Modules': { path: '/student/modules', parentPage: 'Student home' },
+            'Equipment': { path: '/student/equipment', parentPage: 'Student home' },
+            'Video library': { path: '/student/video-library', parentPage: 'Student home' },
+            'Development program': { path: '/student/development-program', parentPage: 'Student home' }
+        }
     );
     // This code finds the matched page given the current path. 
     // If not find, set NavBar to home page style. 
@@ -69,22 +64,21 @@ const NavBar = ({page,user}) => {
     // Note: always use setPage() instead of setCurrentPage(). 
     const [currentPage, setCurrentPage] = useState(page);
     const [parentPage, setParentPage] = useState(pages[currentPage].parentPage);
-    const [isFold, setIsFold] = useState(currentPage === 'Home' ? false : true);
-    const [showLanguageDialog,setShowLanguageDialog] =useState(false);
+    const [showLanguageDialog, setShowLanguageDialog] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
     const [language, setLanguage] = useState('english');
     const history = useHistory();
 
-    const handleOpenLanguageDialog = () =>{
+    const handleOpenLanguageDialog = () => {
         setShowLanguageDialog(true);
     }
 
-    const handleCloseLanguageDialog = () =>{
+    const handleCloseLanguageDialog = () => {
         setShowLanguageDialog(false);
     }
-        
+
     const setPage = (page) => {
         if (pages[page] !== undefined) {
-            page === 'Home' ? setIsFold(false) : setIsFold(true);
             setCurrentPage(page);
             setParentPage(pages[page].parentPage);
             history.push(pages[page].path);
@@ -103,90 +97,72 @@ const NavBar = ({page,user}) => {
         }
     }
 
-    const getHeaderText = () => {
-        if (currentPage === 'Partners') {
-            return 'Our Valued Partners';
-        } else if (currentPage === 'Team') {
-            return language === 'english' ? 'New Zealand Team' : 'South Korea Team';
-        } else {
-            return currentPage;
-        }
-    };
-
-    const goBack = () => {
-        setPage(parentPage);
-    };
-
-    const fold = () => {
-        setIsFold(true);
-    }
-
-    const unfold = () => {
-        setIsFold(false);
-    }
-
-    const MenuItem = ({page}) => {
+    const MenuItem = ({ page, children, className = "menuItem" }) => {
         const handleClick = () => {
             setPage(page);
         };
         return (
             <span key={page}
                 onClick={handleClick}
-                className="menuItem"
+                className={className}
                 style={(currentPage === page || parentPage === page) ? { font: "var(--tertiary-bold)" } : {}}
             >
-                {page}
+                {children ? children : page}
             </span>
         );
     };
-
-    const MenuIcon = () => {
-        if (parentPage !== null) {
-            return (<AiOutlineArrowLeft className='icon' key={0} onClick={goBack}/>);
-        } else if (isFold) {
-            return (<AiOutlineMenu className='icon'key={0} onClick={unfold}/>);
-        } else {
-            return (<AiOutlineArrowUp className='icon'key={0} onClick={fold}/>);
-        }
-    }    
-        
-    return (
-        <div className={getNavbarClassName()}>
-            <div className="menu" style={isFold ? {display: 'none'} : {display: 'flex'}}>
-                <div className="logo"></div>
-                <div className="menuItems">
-                    <MenuItem page='Home'/>
-                    |
-                    {/* <MenuItem page='About'/>
-                    | */}
-                    <MenuItem page='Contact'/>
-                    |
-                    <MenuItem page='Partners'/>
-                    |
-                    <MenuItem page='Team'/>
-                    |
-                    <MenuItem page='Remote learning'/>
-                    |
-                    {/* <MenuItem page='Membership'/>
-                    | */}
-                    <MenuItem page='Junior golf'/>
-                    |
-                    <MenuItem page='Blog'/>
-                    |
-                    <span className="menuItem" onClick={handleOpenLanguageDialog}>
-                        Language
-                    </span>
-                    |
-                    {user ? (<MenuItem page='Student home'/>) : (<MenuItem page='Student login'/>)}
-                </div>
+    const MobileMenu = () => {
+        return <div className="menuItems-mobile-wrapper" onClick={closeMobileMenu}>
+            <div className="menuItems-mobile">
+                <MenuItem page='Remote learning' className="menuItem-mobile" />
+                <MenuItem page='Junior golf' className="menuItem-mobile" />
+                <MenuItem page='Blog' className="menuItem-mobile" />
+                <MenuItem page='Team' className="menuItem-mobile" />
+                <MenuItem page='Partners' className="menuItem-mobile" />
+                <MenuItem page='Contact' className="menuItem-mobile" />
             </div>
-            <div className='header' style={currentPage === 'Home' ? {display: 'none'} : {display: 'flex'}}>
-                <MenuIcon/>
-                <div className="header-text">{getHeaderText()}</div>
-            </div>
-            <LanguageDialog open={showLanguageDialog} handleClose={handleCloseLanguageDialog}></LanguageDialog>
         </div>
-    );
-}
+    };
 
-export default NavBar;
+    const DesktopMenu = () => {
+        return <div className="menuItems-middle">
+            <MenuItem page='Remote learning' />
+            <MenuItem page='Junior golf' />
+            <MenuItem page='Blog' />
+            <MenuItem page='Team' />
+            <MenuItem page='Partners' />
+            <MenuItem page='Contact' />
+        </div>
+    };
+
+
+
+    const goBack = () => { setPage(parentPage); };
+    const openMobileMenu = () => { setMobileMenu(true); }
+    const closeMobileMenu = () => { setMobileMenu(false); }
+    const LogoIcon = () => <span className='logoWrapper'><MenuItem page='Home'><div className="logo"></div></MenuItem></span>;
+    const MenuIcon = () => <span className="menuIconWrapper"><AiOutlineMenu className='menuIcon icon' onClick={openMobileMenu} /></span>;
+    const LeftIcon = () => <span className="leftIconWrapper"><AiOutlineArrowLeft className='leftIcon icon' onClick={goBack} /></span>;
+
+        return (
+            <div className={getNavbarClassName()}>
+                <div className="menu">
+                    {parentPage === null && <MenuIcon />}
+                    {parentPage !== null && <LeftIcon />}
+                    {parentPage === null && <LogoIcon />}
+                    {parentPage !== null && <span className='header'>{currentPage}</span>}
+                    {parentPage === null && <DesktopMenu />}
+                    <div className="menuItems-left">
+                        <BiWorld className='icon' onClick={handleOpenLanguageDialog} />
+                        {user ? (<MenuItem page='Student home'> <FaUserCircle className='icon' /></MenuItem>) : (<MenuItem page='Login' />)}
+                    </div>
+                </div>
+
+                {/* ----------------------------HIDDEN------------------------------- */}
+                <LanguageDialog open={showLanguageDialog} handleClose={handleCloseLanguageDialog}></LanguageDialog>
+                {mobileMenu && <MobileMenu></MobileMenu>}
+            </div>
+        );
+    }
+
+    export default NavBar;

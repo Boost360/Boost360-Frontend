@@ -27,7 +27,7 @@
 
         "juniorGolf":{
             "Intro": {
-                "h0": "",
+                "h0": "Junior Golf Academy",
                 "p0": {
                     "0": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus aut dolorem. Ut dolore repellat totam quia officia cumque hic eaque nulla vitae quo nemo eligendi, tempora reiciendis dignissimos adipisci dolores eius qui aliquid ex at consequatur doloremque ea. Maxime ipsam repudiandae sint aut nesciunt error temporibus similique at pariatur.",
                     "1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus aut dolorem. Ut dolore repellat totam quia officia cumque hic eaque nulla vitae quo nemo eligendi, tempora reiciendis dignissimos adipisci dolores eius qui aliquid ex at consequatur doloremque ea. Maxime ipsam repudiandae sint aut nesciunt error temporibus similique at pariatur."
@@ -202,7 +202,7 @@
 
         "remoteLearning":{
             "Intro": {
-                "h0": "",
+                "h0": "Remote Learning",
                 "p0": {
                     "0": "In order to maximise your learning opportunity we have created a comprehensive self-learning program. This provides you with the flexibility to learn at your own pace whilst working around other commitments.",
                     "1": "You will receive a comprehensive toolkit of services, designed to ensure you are fully supported and continually learning the skills required to perfect your technique and knowledge.",
