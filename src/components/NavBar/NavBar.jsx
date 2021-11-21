@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './NavBar.css';
 import { useHistory } from 'react-router';
 import { AiOutlineMenu, AiOutlineArrowLeft } from 'react-icons/ai';
+import Avatar from '@mui/material/Avatar';
 import { BiWorld } from 'react-icons/bi';
 import { FaUserCircle } from 'react-icons/fa';
 import LanguageDialog from '../Localization/LanguageDialog';
-
+import Tooltip from '@mui/material/Tooltip';
 
 // BEHAVIORS        
 //
@@ -144,25 +145,33 @@ const NavBar = ({ page, user, header = null }) => {
     const MenuIcon = () => <span className="menuIconWrapper"><AiOutlineMenu className='menuIcon icon' onClick={openMobileMenu} /></span>;
     const LeftIcon = () => <span className="leftIconWrapper"><AiOutlineArrowLeft className='leftIcon icon' onClick={goBack} /></span>;
 
-        return (
-            <div className={getNavbarClassName()}>
-                <div className="menu">
-                    {parentPage === null && <MenuIcon />}
-                    {parentPage !== null && <LeftIcon />}
-                    {parentPage === null && <LogoIcon />}
-                    {parentPage !== null && <span className='header'>{currentPage}</span>}
-                    {parentPage === null && <DesktopMenu />}
-                    <div className="menuItems-left">
-                        <BiWorld className='icon' onClick={handleOpenLanguageDialog} />
-                        {user ? (<MenuItem page='Student home'> <FaUserCircle className='icon' /></MenuItem>) : (<MenuItem page='Login' />)}
-                    </div>
+    return (
+        <div className={getNavbarClassName()}>
+            <div className="menu">
+                {parentPage === null && <MenuIcon />}
+                {parentPage !== null && <LeftIcon />}
+                {parentPage === null && <LogoIcon />}
+                {parentPage !== null && <span className='header'>{currentPage}</span>}
+                {parentPage === null && <DesktopMenu />}
+                <div className="menuItems-left">
+                    <BiWorld className='icon' onClick={handleOpenLanguageDialog} />
+                    {user ? (
+                        <MenuItem page='Student home'>
+                            <Tooltip title="Student Home">
+                                <Avatar alt={user.firstName} src={user.avatar} sx={{width:24,height:24}}/>
+                            </Tooltip>
+                        </MenuItem>
+
+
+                    ) : (<MenuItem page='Login' />)}
                 </div>
-
-                {/* ----------------------------HIDDEN------------------------------- */}
-                <LanguageDialog open={showLanguageDialog} handleClose={handleCloseLanguageDialog}></LanguageDialog>
-                {mobileMenu && <MobileMenu></MobileMenu>}
             </div>
-        );
-    }
 
-    export default NavBar;
+            {/* ----------------------------HIDDEN------------------------------- */}
+            <LanguageDialog open={showLanguageDialog} handleClose={handleCloseLanguageDialog}></LanguageDialog>
+            {mobileMenu && <MobileMenu></MobileMenu>}
+        </div>
+    );
+}
+
+export default NavBar;
