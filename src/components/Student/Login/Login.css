@@ -6,8 +6,6 @@
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-
-    border: 1px solid red;
 }
 
 .login-logo {
