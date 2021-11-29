@@ -42,7 +42,7 @@
     flex-direction: column;
     align-items: center;
     position: static;
-    gap: 100px;
+    gap: 70px;
 }
 
 .enterButton{
@@ -54,7 +54,7 @@
 .landingButton{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 16px;
     background: rgba(32, 32, 32, 0);
     border: 1px solid #F1F1F1;
     margin-right: 30%;
@@ -62,16 +62,15 @@
 }
 
 .landingButton:hover{
-    background: rgba(32, 32, 32, 0.4);
+    background: var(--primary);
 }
 
 
 .landingButton span{
     width: 199px;
-    font-family: Montserrat;
-    font-size: 25px;
-    color: #F1F1F1;
-    margin: 0px 10px;
+    font: var(--tertiary-light);
+    color: white;
+    margin: 0px 10px; 
 }
 
 .languagesection{
@@ -82,10 +81,9 @@
 }
 
 .languagesection a{
-    font-family: Montserrat;
-    font-size: 25px;
+    font: var(--tertiary-light);
     line-height: 30px;
-    color: #F1F1F1;
+    color: var(--inactive);
     margin: 0px 20px;
 }
 
@@ -96,12 +94,14 @@
 
 
 .languagesection p{
-    width: 30px;
-    border: 1px solid #F1F1F1;
+    width: 20px;
+    border: 1px solid var(--inactive);
     transform: rotate(-90deg);
     margin: 0px 15px;
 }
-
+.languagesection .highlight {
+    color: var(--primary);
+}
 
 /* -----------------------Animation--------------------------------- */
 .LandingPageicon {
@@ -162,28 +162,16 @@
 }
 @keyframes top-enter {
     0% {top: 200px; opacity: 0;}
-    50% {top: -50px; opacity: 1;}
-    70% {top: 30px}
-    80% {top: -10px}
-    90% {top: 10px}
     100% {top: 0px; opacity: 1;}
 }
 
 @keyframes left-enter {
     0% {right: 500px; opacity: 0;}
-    50% {right: -50px; opacity: 1;}
-    70% {right: 30px}
-    80% {right: -10px}
-    90% {right: 10px}
     100% {right: 0px; opacity: 1;}
 }
 
 @keyframes right-enter {
     0% {left: 500px; opacity: 0;}
-    50% {left: -50px; opacity: 1;}
-    70% {left: 30px}
-    80% {left: -10px}
-    90% {left: 10px}
     100% {left: 0px; opacity: 1;}
 }
 /* ---------------------------------------------------------------- */

@@ -106,7 +106,7 @@ const Login = ({ setUser }) => {
 
                 <div className="login-input">
 
-                    <FormControl sx={{ width: '568px' }} variant="standard">
+                    <FormControl sx={{ width: '100%' }} variant="standard">
                         <InputLabel htmlFor="standard-adornment-password">Emaile</InputLabel>
                         <Input
                             id="standard-adornment-password"
@@ -119,7 +119,7 @@ const Login = ({ setUser }) => {
 
                 <div className="login-input">
 
-                    <FormControl sx={{ width: '568px' }} variant="standard">
+                    <FormControl sx={{ width: '100%' }} variant="standard">
                         <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
                         <Input
                             id="standard-adornment-password"

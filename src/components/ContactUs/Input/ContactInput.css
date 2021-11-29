@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    width: 300px;
+    width: 250px;
     top: 0px;
     flex: none;
     order: 2;
@@ -29,10 +29,10 @@
     align-items: center;
     padding: 0px;
     position: static;
-    width: 290px;
+    width: 240px;
     height: 38px;
     background: rgba(0, 0, 0, 0.3);
-    margin-top: 40px;
+    margin-top: 10px;
     padding-left: 10px;
 }
 
@@ -42,10 +42,10 @@
     align-items: center;
     padding: 0px;
     position: static;
-    width: 290px;
+    width: 240px;
     height: 200px;
     background: rgba(0, 0, 0, 0.3);
-    margin-top: 40px;
+    margin-top: 10px;
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -57,12 +57,12 @@
     align-items: flex-start;
     padding: 10px;
     position: static;
-    width: 300px;
+    width: 250px;
     height: 38px;
     background: #00AAE7;
     color: #F1F1F1;
     flex: none;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .ContactInput *:focus {

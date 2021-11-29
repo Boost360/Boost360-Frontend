@@ -16,8 +16,8 @@ export default function Levels({ data }) {
     // 2. set container height to (number of children) * viewport height, plus an additional viewport
     const viewport = 1500;
     const container_height = viewport * children_final.length + viewport;
-    // 3. set children start position, evenly distributed with a half-viewport-offset
-    const children_init = children_final.map((final, i) => viewport * (i + 0.5));
+    // 3. set children start position, evenly distributed to the top of every viewport
+    const children_init = children_final.map((final, i) => viewport * (i + 0));
     // simple function to optimise calculation
     const clamp = (a, value, b) => {
         if (value < a) { return a; }
