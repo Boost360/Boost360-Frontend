@@ -16,7 +16,7 @@ import Astronaut from '../../../static/img/Astronaut.png'
 
 export default function RemoteLearning() {
     const { t, i18n } = useTranslation();
-    const remoteLearning = t('remoteLearning', {returnObjects: true });
+    const remoteLearning = t('remoteLearning', {returnObjects: true }); // All text content is stored in translation file
     return (
         <div className="services">
             <div className="section">
@@ -31,7 +31,7 @@ export default function RemoteLearning() {
                             price={remoteLearning.Keypoints.price}/>
             </div>
             <div className="section">
-                <HowItWorks data={remoteLearning.HowItWorks} icon={(<AiOutlineCheckCircle size='25px' style={{position: 'relative', top: '7px', left: '-10px', opacity: '0.7'}}/>)} />
+                <HowItWorks data={remoteLearning.HowItWorks} icon={(<AiOutlineCheckCircle size='25px' style={{color: 'var(--primary)', position: 'relative', top: '7px', left: '-10px', opacity: '0.7'}}/>)} />
             </div>
             <div className="section">
                 <QA data={remoteLearning.QA} addQA={remoteLearning.addQA[i18n.language]}/>

@@ -34,7 +34,7 @@
                 }
             },
             "HowItWorks": {
-                "h0": "How our JGP works",
+                "h0": "How our JGA works",
                 "p0": {
                     "0": "The Junior Golf Academy is a structured and goal-oriented program, with a key focus on students’ long-term enjoyment and success.",
                     "1": "Students are supported through a critical time in both their physical development and golf development.",
@@ -253,11 +253,11 @@
                     },
                     "5": {
                         "h0": "Language",
-                        "p0": {"0":"The learning modules and voice-over video swing analysis are available in both English and Korean."}
+                        "p0": {"0":"The learning modules and voice-over video swing analysis are available in English, Korean and Chinese."}
                     },
                     "6": {
                         "h0": "Contact",
-                        "p0": {"0":"For ease of communication for students or parents, we have a person to communicate in both English and Korean."}
+                        "p0": {"0":"For ease of communication for students or parents, we have a person to communicate in English, Korean and Chinese."}
                     },
                     "7": {
                         "h0": "Personal tuition",
@@ -304,7 +304,7 @@
                         "answer":{"0":"Absolutely! We understand that you will leave us at some point for a variety of different reasons. We would like you to continue your development, and this is best achieved by your next teacher having a detailed profile of your development history."}
                     }
                 },
-                "link": "Can’t find the answer to your questions? Please link us."
+                "link": "Can’t find the answer to your questions? Please contact us."
             },
             "addQA": {
                 "en" : {},
@@ -394,7 +394,7 @@
             },
             "11": {
                 "title": "Rewards",
-                "description": "Upon reaching achievement goals, students are incentivized by receiving Titleist and Foot Joy products to the value of $200."
+                "description": "Upon reaching achievement goals, students are incentivized by receiving a 20% discount on the next program."
             },
             "12": {
                 "title": "Golf uniform pack",
@@ -434,7 +434,7 @@
             },
             "21": {
                 "title":"Member Discount",
-                "description":"Academy members and Junior members will receive a discount on additional tuition costs. Please refer the “more tuition” link at the bottom of the page."
+                "description":"Academy members will receive a discount on additional tuition costs from Rhys Ogden and the Performance instructors."
             },
             "22": {
                 "title":"Price",
