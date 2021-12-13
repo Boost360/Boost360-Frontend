@@ -12,6 +12,7 @@ import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import { login } from "../../../api/login/login";
 import { useHistory } from 'react-router-dom'
 import LoadingButton from '@mui/lab/LoadingButton';
+import { useTranslation } from "react-i18next";
 
 /**
  * Student Login Page
@@ -39,6 +40,7 @@ const theme = createTheme({
 });
 
 const Login = ({ setUser }) => {
+    const { t, i18n } = useTranslation();
 
     const [values, setValues] = React.useState({
         id: '',
@@ -97,7 +99,7 @@ const Login = ({ setUser }) => {
 
             <Snackbar anchorOrigin={{ 'vertical': 'bottom', 'horizontal': 'center' }} open={error} autoHideDuration={6000} onClose={handleClose} >
                 <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-                    Invalid email or password!
+                    {t("login.invalid")}
                 </Alert>
             </Snackbar>
 
@@ -107,7 +109,7 @@ const Login = ({ setUser }) => {
                 <div className="login-input">
 
                     <FormControl sx={{ width: '100%' }} variant="standard">
-                        <InputLabel htmlFor="standard-adornment-password">Emaile</InputLabel>
+                        <InputLabel htmlFor="standard-adornment-password">{t("login.email")}</InputLabel>
                         <Input
                             id="standard-adornment-password"
                             value={values.id}
@@ -120,7 +122,7 @@ const Login = ({ setUser }) => {
                 <div className="login-input">
 
                     <FormControl sx={{ width: '100%' }} variant="standard">
-                        <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+                        <InputLabel htmlFor="standard-adornment-password">{t("login.password")}</InputLabel>
                         <Input
                             id="standard-adornment-password"
                             type={values.showPassword ? 'text' : 'password'}
@@ -155,13 +157,13 @@ const Login = ({ setUser }) => {
                         fullWidth={true}
                         color="blue"
                     >
-                        Login
+                        {t("login.login")}
                     </LoadingButton>
                 </ThemeProvider>
             </div>
 
             <div className="login-forgotten">
-                forgotten your password ?
+                {t("login.forgotten")}
             </div>
 
         </div>
