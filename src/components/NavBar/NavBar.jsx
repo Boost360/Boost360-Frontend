@@ -7,11 +7,12 @@ import { BiWorld } from 'react-icons/bi';
 import { FaUserCircle } from 'react-icons/fa';
 import LanguageDialog from '../Localization/LanguageDialog';
 import Tooltip from '@mui/material/Tooltip';
+import { useTranslation } from "react-i18next";
 
 // BEHAVIORS        
 //
 // menu:   bold current page or bold it's parent page IF specified
-//         switch 'student login' to 'student home'   IF user is logged in
+//         switch 'student login' to 'Student-home'   IF user is logged in
 //         display page name                          IF if on a subpage (parent page not null)
 //         use left arrow icon                        IF on on a subpage
 //         use menu icon                              IF on mobile
@@ -23,13 +24,14 @@ import Tooltip from '@mui/material/Tooltip';
 //         && add top shadow to entire NavBar and remove 
 //         border effect                              IF at 'Home' or 'Contact' page
 //         set header to primary color background and 
-//         light text                                 IF at 'Student home' or its subpages
+//         light text                                 IF at 'Student-home' or its subpages
 // 
 // [24/sep/2021 @Sarah]
 
 
 
 const NavBar = ({ page, user, header = null }) => {
+    const { t, i18n } = useTranslation();
     const [pages, setPages] = useState(
         {
             'Home': { path: '/index', parentPage: null },
@@ -37,21 +39,21 @@ const NavBar = ({ page, user, header = null }) => {
             'Contact': { path: '/contact', parentPage: null },
             'Partners': { path: '/partners', parentPage: null },
             'Team': { path: '/team', parentPage: null },
-            'Remote learning': { path: '/remote-learning', parentPage: null },
+            'Remote-learning': { path: '/remote-learning', parentPage: null },
             'Membership': { path: '/membership', parentPage: null },
-            'Junior golf': { path: '/junior-golf', parentPage: null },
+            'Junior-golf': { path: '/junior-golf', parentPage: null },
             'Blog': { path: '/blog', parentPage: null },
-            'Blog Detail': { path: '/blog/', parentPage: 'Blog' },
+            'Blog-Detail': { path: '/blog/', parentPage: 'Blog' },
             'Language': { path: '/language', parentPage: null },
             'Login': { path: '/login', parentPage: null },
-            'Student home': { path: '/student/home', parentPage: null },
-            'Profile': { path: '/student/profile', parentPage: 'Student home' },
-            'Schedule': { path: '/student/schedule', parentPage: 'Student home' },
-            'Results': { path: '/student/results', parentPage: 'Student home' },
-            'Modules': { path: '/student/modules', parentPage: 'Student home' },
-            'Equipment': { path: '/student/equipment', parentPage: 'Student home' },
-            'Video library': { path: '/student/video-library', parentPage: 'Student home' },
-            'Development program': { path: '/student/development-program', parentPage: 'Student home' }
+            'Student-home': { path: '/student/home', parentPage: null },
+            'Profile': { path: '/student/profile', parentPage: 'Student-home' },
+            'Schedule': { path: '/student/schedule', parentPage: 'Student-home' },
+            'Results': { path: '/student/results', parentPage: 'Student-home' },
+            'Modules': { path: '/student/modules', parentPage: 'Student-home' },
+            'Equipment': { path: '/student/equipment', parentPage: 'Student-home' },
+            'Video-library': { path: '/student/video-library', parentPage: 'Student-home' },
+            'Development-program': { path: '/student/development-program', parentPage: 'Student-home' }
         }
     );
     // This code finds the matched page given the current path. 
@@ -91,7 +93,7 @@ const NavBar = ({ page, user, header = null }) => {
     const getNavbarClassName = () => {
         if (currentPage === 'Home') {
             return "navBar transparent cover";
-        } else if (parentPage === 'Student home' || currentPage === 'Student home') {
+        } else if (parentPage === 'Student-home' || currentPage === 'Student-home') {
             return "navBar dark";
         } else {
             return "navBar light";
@@ -108,15 +110,15 @@ const NavBar = ({ page, user, header = null }) => {
                 className={className}
                 style={(currentPage === page || parentPage === page) ? { font: "var(--tertiary-bold)" } : {}}
             >
-                {children ? children : page}
+                {children ? children : t(`navbar.${page}`)}
             </span>
         );
     };
     const MobileMenu = () => {
         return <div className="menuItems-mobile-wrapper" onClick={closeMobileMenu}>
             <div className="menuItems-mobile">
-                <MenuItem page='Remote learning' className="menuItem-mobile" />
-                <MenuItem page='Junior golf' className="menuItem-mobile" />
+                <MenuItem page='Remote-learning' className="menuItem-mobile" />
+                <MenuItem page='Junior-golf' className="menuItem-mobile" />
                 <MenuItem page='Blog' className="menuItem-mobile" />
                 <MenuItem page='Team' className="menuItem-mobile" />
                 <MenuItem page='Partners' className="menuItem-mobile" />
@@ -127,8 +129,8 @@ const NavBar = ({ page, user, header = null }) => {
 
     const DesktopMenu = () => {
         return <div className="menuItems-middle">
-            <MenuItem page='Remote learning' />
-            <MenuItem page='Junior golf' />
+            <MenuItem page='Remote-learning' />
+            <MenuItem page='Junior-golf' />
             <MenuItem page='Blog' />
             <MenuItem page='Team' />
             <MenuItem page='Partners' />
@@ -156,7 +158,7 @@ const NavBar = ({ page, user, header = null }) => {
                 <div className="menuItems-left">
                     <BiWorld className='icon' onClick={handleOpenLanguageDialog} />
                     {user ? (
-                        <MenuItem page='Student home'>
+                        <MenuItem page='Student-home'>
                             <Tooltip title="Student Home">
                                 <Avatar alt={user.firstName} src={user.avatar} sx={{width:24,height:24}}/>
                             </Tooltip>

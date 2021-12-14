@@ -51,12 +51,12 @@ const Site = ({ user,setUser }) => {
             </Route>
 
             <Route path='/junior-golf'>
-                <NavBar page='Junior golf' user={user}></NavBar>
+                <NavBar page='Junior-golf' user={user}></NavBar>
                 <JuniorGolf></JuniorGolf>
             </Route>
 
             <Route path='/remote-learning'>
-                <NavBar page='Remote learning' user={user}></NavBar>
+                <NavBar page='Remote-learning' user={user}></NavBar>
                 <RemoteLearning></RemoteLearning>
 
             </Route>

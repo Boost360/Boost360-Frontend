@@ -24,6 +24,99 @@
             "cancel":"Cancel",
             "change":"Change"
         },
+        "login": {
+            "login":"Login",
+            "email":"Email",
+            "password":"Password",
+            "forgotten": "forgotten your password?",
+            "invalid": "Invalid email or password!"
+        },
+        "navbar":{
+            "Home": "Home",
+            "About": "About",
+            "Contact": "Contact",
+            "Partners" :"Partners",
+            "Team": "Team",
+            "Remote-learning": "Remote learning",
+            "Membership": "Membership",
+            "Junior-golf": "Junior golf",
+            "Blog": "Blog",
+            "Blog-Detail": "Blog detail",
+            "Language": "Language",
+            "Login": "Login",
+            "Student-home": "Student home",
+            "Profile": "Profile",
+            "Schedule": "Schedule",
+            "Results": "Results",
+            "Modules": "Modules",
+            "Equipment": "Equipment",
+            "Video-library": "Video library",
+            "Development-program":"Development program"
+        },
+
+        "team" : {
+            "rhys" : {
+                "p0" : {
+                    "0": "A PGA golf professional for 23 years, Rhys Ogden is the founder of BP Golf Academy and the Head of Instruction.",
+                    "1":"After completing his PGA traineeship at Mt Maunganui Golf Club, he taught high performance junior golfers in South Korea. This strengthened his coaching ability by immersing himself in another culture, with different learning styles, communication, and key outcomes.",
+                    "2":"Over the next 12 years, he would hold the positions of Head Golf Professional, lecturer, and Golf Paper Leader at Auckland University of Technology (AUT).",
+                    "3":"During his time at AUT, Rhys developed and delivered the golf curriculum for the University. He was fortunate enough to have learnt from many leading sporting coaches and specialists, and this combined knowledge and experience has helped to shape the curriculum that BP Golf Academy delivers today."
+                }
+            }
+        },
+
+        "partners" : {
+            "0" : {
+                "company":"T1",
+                "p0": {
+                    "0" : ""
+                },
+                "link":""
+            },
+            "1" : {
+                "company":"FJ",
+                "p0": {
+                    "0" : ""
+                },
+                "link":""
+            },
+            
+            "2": {
+                "company":"GOLF TECHNOLOGIES",
+                "p0": {
+                    "0" : "Golf Technologies constantly strive to bring you the latest innovations in golf technology, keeping you ahead of the competition. We have all witnessed the change technology has brought to our everyday lives, we are fortunate to bring these advancements to the golfer. The end result being that you learn better and quicker."
+                },
+                "link":"https://www.footjoy.com"
+            },
+            "3" : {
+                "company":"AD",
+                "p0": {
+                    "0" : ""
+                },
+                "link":""
+            },
+            "4" : {
+                "company": "WATIAKERE GOLF CLUB",
+                "p0": {
+                    "0" : "Waitakere golf course is in a peaceful and picturesque setting amongst the Waitakere Rangers, where you can enjoy the sights and sounds of nature just 30-minutes form Auckland’s city centre. The golf course offers a unique layout where each hole has its own characteristics and can challenge golfers of all levels."
+                },
+                "link" : "https://www.waitakeregolf.kiwi"
+            },
+            "5" : {
+                "company":"SPC",
+                "p0": {
+                    "0" : ""
+                },
+                "link":""
+            },
+            "6" : {
+                "company":"RGT",
+                "p0": {
+                    "0" : ""
+                },
+                "link":""
+            }
+        },
 
         "juniorGolf":{
             "Intro": {
