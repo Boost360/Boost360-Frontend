@@ -22,7 +22,7 @@ const Student = ({ user,setUser }) => {
         <div>
 
             <Route path={`${path}/home`} exact>
-                <NavBar page='Student home' user={user}></NavBar>
+                <NavBar page='Student-home' user={user}></NavBar>
                 <Home setUser={setUser}></Home>
             </Route>
 
@@ -42,7 +42,7 @@ const Student = ({ user,setUser }) => {
             </Route>
 
             <Route path={`${path}/development-program`} exact>
-                <NavBar page='Development program' user={user}></NavBar>
+                <NavBar page='Development-program' user={user}></NavBar>
                 <DevelopmentProgram user={user}></DevelopmentProgram>
             </Route>
 
@@ -54,7 +54,7 @@ const Student = ({ user,setUser }) => {
 
 
             <Route path={`${path}/video-library`} exact>
-                <NavBar page='Video library' user={user}></NavBar>
+                <NavBar page='Video-library' user={user}></NavBar>
                 <VideoLibrary></VideoLibrary>
             </Route>
 
