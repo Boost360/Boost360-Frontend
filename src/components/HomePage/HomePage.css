@@ -1,5 +1,4 @@
-.HomePage{
-    background: url('../../static/img/background8.png')no-repeat center / cover;
+.HomePage {
     align-items: center;
     position: absolute;
     width: 100vw;
@@ -9,8 +8,15 @@
     z-index: 0;
     position:absolute;
     top:0
+}
 
-
+.HomePage video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .HomePagebody{
