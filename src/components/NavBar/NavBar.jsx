@@ -91,7 +91,7 @@ const NavBar = ({ page, user, header = null }) => {
     }
 
     const getNavbarClassName = () => {
-        if (currentPage === 'Home') {
+        if (currentPage === '') {
             return "navBar transparent cover";
         } else if (parentPage === 'Student-home' || currentPage === 'Student-home') {
             return "navBar dark";

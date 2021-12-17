@@ -10,6 +10,7 @@
     width: 100%;
     height: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--text);
     
     /* This relates to the stacking issue with Student Module page */
     /* Issue @00002 [12/oct/2021 @Sarah] */
@@ -29,7 +30,7 @@
     height: 65px;
 
     background: var(--primary);
-    color: var(--text);
+    color: inherit;
     font: var(--tertiary-light);
 }
 
@@ -187,8 +188,9 @@
     position:absolute;
 }
 
-.light {
-    background-color: var(--text);
+.light .menu {
+    background-color: #0c2e6e;
+    /* background-color: var(--background); */
 }
 
 /* When at the 'Home' page or 'Contact' page */
@@ -196,16 +198,20 @@
     background: rgba(0, 0, 0, 0);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
 }
-
 .transparent .menu {
-    background-color:rgba(0, 0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.4);
     color: var(--text);
 }
 
+/* .transparent .logo {
+    background-image: url('../../static/img/logo/black.svg');
+} */
+
 
 /* When at the 'Student home' page or its subpages */
-.dark {
-    background-color: var(--text);
+.dark .menu {
+    background-color: var(--primary);
+    /* background-color: var(--background); */
 }
 
 
