@@ -33,17 +33,17 @@ export default function JuniorGolf() {
                 <Intro data={juniorGolf.Intro} graphic={Astronaut} />
             </div>
             <div className="section">
-                <HowItWorks data={juniorGolf.HowItWorks} icon={null} />
+                <Gallery images={gallery_images} />
             </div>
+            {/* <div className="section">
+                <HowItWorks data={juniorGolf.HowItWorks} icon={null} />
+            </div> */}
             <div className="section" style={{ padding: '0px' }}>
                 <Levels data={juniorGolf.Levels}/>
             </div>
             <div className="section" style={{ padding: '0px' }}>
                 <Keypoints heading={juniorGolf.Keypoints.h0}
                     select={[0, 1, 2, 3, 4, 5, 16, 7, 20, 9, 10, 21, 12, 13, 14]}/>
-            </div>
-            <div className="section">
-                <Gallery images={gallery_images} />
             </div>
             <div className="section">
                 <QA data={juniorGolf.QA} addQA={juniorGolf.addQA[i18n.language]}/>
