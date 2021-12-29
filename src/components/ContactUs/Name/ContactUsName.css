@@ -36,7 +36,7 @@
     width: 80px;
     opacity: 0.6;
     /* Theme/secondary */
-    border: 4px solid #8AE3FF;
+    border: 4px solid var(--white);
     /* Inside Auto Layout */
     margin: 20px 0px;
 }
