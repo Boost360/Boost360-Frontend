@@ -57,9 +57,11 @@
   --paragraph: normal normal normal 15px "Montserrat";
 
   /* Colors */
-  --background:#2E414F;
-  --text: #F1F1F1;
-  --primary: #00AAE7;
+  --background2:#101b33;
+  --background:#0c2e6e;
+  --text: #dddddd;
+  /* --primary: #00AAE7; */
+  --primary: #0c2e6e;
   --secondary: #8AE3FF;
   --inactive: #C2C2C2;
   --error: #EE8700;
@@ -80,4 +82,3 @@
   --gray: #828282;
   --black: #000000;
 }
-
