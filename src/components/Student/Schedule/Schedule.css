@@ -9,5 +9,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2E414F;
+    background-color: var(--background2);
 }

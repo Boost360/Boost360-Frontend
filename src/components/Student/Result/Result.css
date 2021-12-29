@@ -8,7 +8,7 @@
     margin: 20px
 }
 .result_container {
-    background: #2E414F;
+    background: var(--background2);
     color: white;
     height: 100vh;
 }

@@ -1,5 +1,5 @@
 .StudentHomeMain {
-    background: #2E414F;
+    background: var(--background2);
     width: 100%;
     height: 100vh;
     overflow-y: auto;
