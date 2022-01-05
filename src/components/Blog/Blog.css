@@ -37,7 +37,7 @@
 .blog_small_item_title {
     font-size: 25px;
     line-height: 40px;
-    color: #2E414F;
+    color: var(--background);
 }
 .blog_small_item_author {
     font-size: 15px;
@@ -96,7 +96,7 @@
     margin-top: 100px;
     font-size: 25px;
     font-weight: 400;
-    color: #00AAE7;
+    color: var(--primary);
 }
 .blog_content_author {
     margin-top: 10px;

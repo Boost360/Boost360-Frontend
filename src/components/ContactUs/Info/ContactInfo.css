@@ -1,5 +1,5 @@
 /*Contact Info Section start*/
-.ContactInfo-section{
+.ContactInfo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,21 +11,21 @@
     flex-grow: 0;
 }
 
-.ContactInfo{
+.ContactInfo-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     position: static;
     width: 250px;
-    height: 76px;
+    height: auto;
     left: 0px;
     top: 256px;
     flex: none;
     margin-bottom: 20px;
 }
 
-.ContactInfo div{
+.ContactInfo-section div{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -38,12 +38,13 @@
     text-align: left;
 }
 
-.ContactInfo p{
+.ContactInfo-section p{
+    text-align: left;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 23px;
     display: flex;
     align-items: center;
     color: #F1F1F1;

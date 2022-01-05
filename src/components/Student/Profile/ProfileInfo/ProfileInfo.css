@@ -36,8 +36,8 @@
     border-top:0px;
     border-left:0px;
     border-right:0px;
-    background: #2E414F;
-    color: #F1F1F1;
+    background: var(--background2);
+    color: var(--text);
     /* in the input section, put color will change the color of user input text */
 }
 
@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #8AE3FF;
+    color: inherit;
     margin: 10px 0px;
 }
 
@@ -66,7 +66,7 @@
     flex: none;
     margin: 0px 18px;
     border: 0.5px solid #C2C2C2;
-    background: #2E414F;
+    background: var(--background2);
 
     font-family: Montserrat;
     font-style: normal;
@@ -87,17 +87,17 @@
 .ProfileDateSelect{
     width: 295.5px;
     margin-left: 18px;
-    background: #2E414F;
+    background: var(--background2);
     border: 0.5px solid #C2C2C2;
     height: 33px;
-    color: #F1F1F1;
+    color: var(--text);
     padding-left: 10px;
 }
 
 .ProfileDOBInput{
     width: 130px;
     font-size: 15px;
-    color: #F1F1F1;
+    color: var(--text);
 }
 
 /* Hide Calendar Icon In Chrome */

@@ -58,7 +58,7 @@
 }
 .TeamPage_member_avatar, .TeamPage_member_name {
     margin-bottom: 30px;
-    color: #2E414F;
+    color: var(--background);
     font-size: 25px;
     line-height: 25px;
 
@@ -78,7 +78,7 @@
 }
 .TeamPage_member_role {
     font-size: 15px;
-    color: #2E414F;
+    color: var(--background);
 }
 .TeamPage_single_member:hover .TeamPage_member_avatar img{
     box-shadow: 10px 10px 100px rgba(75, 211, 255, 0.3), -10px -10px 100px rgba(75, 211, 255, 0.2);
@@ -88,7 +88,7 @@
     width: clamp(200px, 50%, 1000px);
     line-height: 1.7em;
     background-color: white;
-    color: #2E414F;
+    color: var(--background);
     text-align: left;
     padding: 10px 10px;
     position: absolute;

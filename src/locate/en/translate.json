@@ -6,17 +6,31 @@
             "login":"Student Login",
             "home":"Student Home"
         },
-
-        "contact":{
-            "mobile":"Mobile",
-            "email":"Email",
-            "address":"Address",
-            "address-content":"123 Newtown rd, Auckland",
-            "info":"If you have any questions about our services, please fill in the box below, we are happy to help.",
-            "name":"Name",
-            "msg":"Message",
-            "send":"Send"
-
+        "contact": {
+            "name" : {
+              "first-name": "Rhys",
+              "last-name": "Odgen"
+            },
+            "info" : {
+                "mobile":"Mobile",
+                "email":"Email",
+                "address":"Address",
+                "mobile-content": "(+64) 021 1863 793",
+                "email-content": "rhys@bpgolfacademy.com",
+                "address-content": "Waitakere Golf Club, 35 Falls Road, Waitakere, Bethells Beach (0781), Auckland, New Zealand",
+                "wechat-id" : "BPgolfacademy",
+                "kakao-id" : "BPgolfacademy2",
+                "instagram-id" : "bpgolfacademy"
+            },
+            "input" : {
+              "info": "If you have any questions about our services, please fill in the box below, we are happy to help.",
+              "name":"Name",
+              "msg":"Message",
+              "send":"Send",
+              "alert-success" : "We have received your message and will reply as soon as possible!",
+              "alert-missing" : "Please fill in all information!",
+              "alert-error" : "Internal error, please try other mean of contact"
+            }
         },
         
         "language":{
@@ -122,8 +136,22 @@
             "Intro": {
                 "h0": "Junior Golf Academy",
                 "p0": {
-                    "0": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus aut dolorem. Ut dolore repellat totam quia officia cumque hic eaque nulla vitae quo nemo eligendi, tempora reiciendis dignissimos adipisci dolores eius qui aliquid ex at consequatur doloremque ea. Maxime ipsam repudiandae sint aut nesciunt error temporibus similique at pariatur.",
-                    "1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus aut dolorem. Ut dolore repellat totam quia officia cumque hic eaque nulla vitae quo nemo eligendi, tempora reiciendis dignissimos adipisci dolores eius qui aliquid ex at consequatur doloremque ea. Maxime ipsam repudiandae sint aut nesciunt error temporibus similique at pariatur."
+                    "0": "The Junior Golf Academy is a structured and goal-oriented program, with a key focus on students’ long-term enjoyment and success.",
+                    "1": "",
+                    "2": "Students are supported through a critical time in both their physical development and golf development.",
+                    "3": "",
+                    "4": "The students will progressively learn all aspects of the golf game as they go through the 5-level development system.",
+                    "5": "",
+                    "6": "With this in-depth combination of teaching skills, physical and mental coaching, our students will have all the tools to succeed.",
+                    "7": "",
+                    "8": "",
+                    "9": "The students will be evaluated on the following:",
+                    "10": "- Golf Swing technical Skills",
+                    "11": "- Statistical performance",
+                    "12": "- Physical movement proficiency",
+                    "13": "- Social and mental development",
+                    "14": "- Understanding equipment",
+                    "15": "- On course knowledge"
                 }
             },
             "HowItWorks": {
@@ -298,8 +326,12 @@
                 "h0": "Remote Learning",
                 "p0": {
                     "0": "In order to maximise your learning opportunity we have created a comprehensive self-learning program. This provides you with the flexibility to learn at your own pace whilst working around other commitments.",
-                    "1": "You will receive a comprehensive toolkit of services, designed to ensure you are fully supported and continually learning the skills required to perfect your technique and knowledge.",
-                    "2": "The program is aligned with our online modular learning system, which includes topic information, video instruction and interactive quizzes to reinforce learning."
+                    "1": "",
+                    "2": "",
+                    "3": "You will receive a comprehensive toolkit of services, designed to ensure you are fully supported and continually learning the skills required to perfect your technique and knowledge.",
+                    "4": "",
+                    "5": "",
+                    "6": "The program is aligned with our online modular learning system, which includes topic information, video instruction and interactive quizzes to reinforce learning."
                 }
             },
             "HowItWorks": {

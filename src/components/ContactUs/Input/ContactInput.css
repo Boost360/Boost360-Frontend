@@ -34,6 +34,7 @@
     background: rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     padding-left: 10px;
+    color: var(--text);
 }
 
 .ContactInput textarea{
@@ -48,21 +49,22 @@
     margin-top: 10px;
     padding-left: 10px;
     padding-top: 10px;
+    color: var(--text);
 }
 
 .ContactInput button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
     padding: 10px;
     position: static;
     width: 250px;
     height: 38px;
-    background: #00AAE7;
+    background: rgba(0,0,0,0);
+    border: 1px solid var(--white);
     color: #F1F1F1;
     flex: none;
     margin-top: 10px;
+}
+.ContactInput button:hover {
+    background-color: var(--primary);
 }
 
 .ContactInput *:focus {

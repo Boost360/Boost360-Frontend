@@ -1,5 +1,5 @@
 .development_program_container{
-    background: #2E414F;
+    background: var(--background);
     padding: 100px 10% 100px 10%;
     height: 100vh;
     overflow-y: auto;

@@ -88,7 +88,7 @@ a {
 .left_column {
     margin-left: 15%;
     font-size: 25px;
-    color:#2E414F;
+    color:var(--background);
     text-align: left;
 }
 .title_underlined {
@@ -97,7 +97,7 @@ a {
 }
 .paragraph {
     font-size: 15px;
-    color: #2E414F;
+    color: var(--background);
     font-weight: 400;
     line-height: 30px;
     text-align: left;

@@ -1,6 +1,6 @@
 .studentModules {
     position: relative;
-    background: var(--background);
+    background: var(--background2);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

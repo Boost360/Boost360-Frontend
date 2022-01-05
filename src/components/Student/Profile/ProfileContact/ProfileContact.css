@@ -26,7 +26,7 @@
     font-size: 25px;
     line-height: 30px;
     text-align: center;
-    color: #F1F1F1;
+    color: var(--text);
     flex: none;
     align-self: stretch;
     margin: 0;
