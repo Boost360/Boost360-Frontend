@@ -8,8 +8,8 @@
       },
       "contact": {
         "name" : {
-          "first-name": "氏",
-          "last-name": "姓"
+          "first-name": "中文",
+          "last-name": "客服"
         },
         "info" : {
             "mobile": "手机",
