@@ -25,6 +25,7 @@
         "input" : {
           "info": "문의 사항이 있으면 아래에 남겨주세요.",
           "name": "이름",
+          "email": "Email",
           "msg": "메세지",
           "send": "보내기",
           "alert-success" : "We have received your message and will reply as soon as possible!",
