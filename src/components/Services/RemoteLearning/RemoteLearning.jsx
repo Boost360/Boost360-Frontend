@@ -20,7 +20,7 @@ export default function RemoteLearning() {
     return (
         <div className="services">
             <div className="section">
-                <Intro data={remoteLearning.Intro} graphic={Golfer} graphicStyle={{filter: 'hue-rotate(210deg) saturate(70%)',width: '60%', height: '60%', right: '-100px', bottom: '130px'}} />
+                <Intro data={remoteLearning.Intro} graphic={Golfer} graphicStyle={{filter: 'hue-rotate(210deg) saturate(70%)', width: '60%', height: 'auto', right: '-5%', bottom: '0%', zIndex: '-4'}} />
             </div>
             <div className="section">
                 <Framework data={remoteLearning.Framework} ver={1}/>
