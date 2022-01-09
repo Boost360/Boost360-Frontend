@@ -77,10 +77,16 @@
 }
 
 .ContactInfo-SocialIcon .cIcon {
+    cursor: pointer;
     color: var(--white);
     padding: 4px 4px 3px 4px;
     border: 1px solid var(--text);
 }
+
+.ContactInfo-SocialIcon .cIcon:hover {
+    filter: contrast(0.4);
+}
+
 
 .ContactInfo-SocialIcon p{
     font-family: Montserrat;
