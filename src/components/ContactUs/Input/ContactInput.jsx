@@ -47,35 +47,35 @@ export default function ContactInput() {
 
             <Snackbar anchorOrigin={{'vertical':'bottom','horizontal':'center'}} open={success} autoHideDuration={6000} onClose={handleClose}  >
                 <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                    We have received your message and will reply as soon as possible!
+                    {t('contact.input.alert-success')}
                 </Alert>
             </Snackbar>
             <Snackbar anchorOrigin={{'vertical':'bottom','horizontal':'center'}} open={error} autoHideDuration={6000} onClose={handleClose} >
                 <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-                    Error!
+                    {t('contact.input.alert-error')}
                 </Alert>
             </Snackbar>
 
             <Snackbar anchorOrigin={{'vertical':'bottom','horizontal':'center'}}  open={notFillAll} autoHideDuration={6000} onClose={handleClose} >
                 <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-                    Please fill in all information!
+                    {t('contact.input.alert-missing')}
                 </Alert>
             </Snackbar>
 
             <div className="ContactInput-info">
-                <p>{t('contact.info')}</p>
+                <p>{t('contact.input.info')}</p>
             </div>
 
             <div className="ContactInput">
-                <input {...register("name")} placeholder={t('contact.name')}></input>
-                <input {...register("email")} placeholder={t('contact.email')}></input>
-                <textarea {...register("msg")} placeholder={t('contact.msg')}></textarea>
+                <input {...register("name")} placeholder={t('contact.input.name')}></input>
+                <input {...register("email")} placeholder={t('contact.input.email')}></input>
+                <textarea {...register("msg")} placeholder={t('contact.input.msg')}></textarea>
                 <LoadingButton
                     onClick={handleSubmit(onSubmit)}
                     loading={loading}
                     variant="contained"
                 >
-                    {t('contact.send')}
+                    {t('contact.input.send')}
                 </LoadingButton>
 
             </div>

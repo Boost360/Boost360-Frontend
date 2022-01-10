@@ -27,7 +27,7 @@
     font-family: Montserrat;
     font-size: 15px;
     line-height: 18px;
-    color: #00AAE7;
+    color: var(--secondary);
     margin: 18px 0px;
     text-align: left;
 }
@@ -45,7 +45,7 @@
     line-height: 30px;
     color: #F1F1F1;
     margin: 18px 0px;
-    background-color: #2E414F;
+    background: var(--background2);
     border: none;
 }
 

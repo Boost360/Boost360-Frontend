@@ -1,5 +1,4 @@
-.HomePage{
-    background: url('../../static/img/background8.png')no-repeat center / cover;
+.HomePage {
     align-items: center;
     position: absolute;
     width: 100vw;
@@ -7,10 +6,18 @@
     background-size: cover;
     overflow:hidden;
     z-index: 0;
-    position:absolute;
-    top:0
+    top:0;    
+}
 
-
+.HomePage video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .HomePagebody{
@@ -18,12 +25,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    position: static;
-    width: auto;
-    height: 70%;
-    left: 10px;
-    top: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .messageHome{
@@ -50,13 +53,13 @@
     padding: 12px 0 12px 0;
     gap: 30px;
     /* this two lines of code help div keep bottom */
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0, 0, 0.5);
+    background: rgba(0,0,0,0.4);
 }
 
 .HomeIcon{

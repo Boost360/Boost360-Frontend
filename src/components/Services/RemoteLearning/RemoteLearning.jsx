@@ -11,7 +11,7 @@ import QA from '../Shared/QA/QA';
 
 // -----------------------------ICON / IMAGE-------------------------------
 import { AiOutlineCheckCircle } from 'react-icons/ai';
-import Astronaut from '../../../static/img/Astronaut.png'
+import Golfer from '../../../static/img/RemoteLearning_background.png';
 
 
 export default function RemoteLearning() {
@@ -20,7 +20,7 @@ export default function RemoteLearning() {
     return (
         <div className="services">
             <div className="section">
-                <Intro data={remoteLearning.Intro} graphic={Astronaut} />
+                <Intro data={remoteLearning.Intro} graphic={Golfer} graphicStyle={{filter: 'hue-rotate(210deg) saturate(70%)',width: '60%', height: '60%', right: '-100px', bottom: '130px'}} />
             </div>
             <div className="section">
                 <Framework data={remoteLearning.Framework} ver={1}/>

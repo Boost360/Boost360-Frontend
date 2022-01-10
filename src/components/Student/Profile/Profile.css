@@ -1,5 +1,5 @@
 .Profile{
-    background: #2E414F;
+    background: var(--background2);
     width: 100vw;
     height: auto;
     overflow-x: hidden;

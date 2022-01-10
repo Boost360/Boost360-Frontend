@@ -29,6 +29,9 @@
     margin: 10px;
     /* Inside Auto Layout */
 }
+.langDialog-Button:hover {
+    filter: contrast(0.8);
+}
 
 .blue{
     background: var(--primary);
@@ -59,7 +62,7 @@
 }
 
 .languageSet-currentLabel {
-    color: var(--primary);
+    color: var(--secondary);
     margin: 0px 3px;
 }
 

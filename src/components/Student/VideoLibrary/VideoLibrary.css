@@ -1,6 +1,6 @@
 /* Video Library */
 .video_library_container {
-    background: #2E414F;
+    background: var(--background2);
     padding: 50px 5%;
     width: 90%;
     display: inline-block;
@@ -12,7 +12,7 @@
 }
 @media (max-width: 800px) {
     .video_library_container {
-        background: #2E414F;
+        background: var(--background2);
         padding: 50px 2.5%;
         width: 95%;
         display: inline-block;

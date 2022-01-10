@@ -10,37 +10,41 @@ export default function ContactInfo() {
     const { t, i18n } = useTranslation();
 
     return(
-        <div className="ContactInfo-section">
-            <div className="ContactInfo">
-                <div>{t('contact.mobile')}</div>
-                <p>0211231232</p>
+        <div className="ContactInfo">
+            <div className="ContactInfo-section">
+                <div>{t('contact.info.mobile')}</div>
+                <p>{t('contact.info.mobile-content')}</p>
             </div>
-            <div className="ContactInfo">
-                <div>{t('contact.email')}</div>
-                <p>testemail@123.com</p>
+            <div className="ContactInfo-section">
+                <div>{t('contact.info.email')}</div>
+                <p>{t('contact.info.email-content')}</p>
             </div>
-            <div className="ContactInfo">
-                <div>{t('contact.address')}</div>
-                <p>{t('contact.address-content')}</p>
+            <div className="ContactInfo-section">
+                <div>{t('contact.info.address')}</div>
+                <p>{t('contact.info.address-content')}</p>
             </div>
             <IconContext.Provider value={{ size: "24px" }}>
                 <div className="ContactInfo-Social">
-                    <div className="ContactInfo-SocialIcon">
-                        <AiOutlineWechat className='cIcon'/>
-                        <p>
-                            test_wechatid
-                        </p>
-                    </div>
-                    <div className="ContactInfo-SocialIcon">
-                        <RiKakaoTalkLine className='cIcon'/>
-                        <p>
-                            kakao_talk
-                        </p>
-                    </div>
+                    {(i18n.language === 'ch' || i18n.language === 'en') && // display wechat when lang is chinese or english
+                        <div className="ContactInfo-SocialIcon">
+                            <AiOutlineWechat className='cIcon'/>
+                            <p>
+                                {t('contact.info.wechat-id')}
+                            </p>
+                        </div>
+                    }
+                    {(i18n.language === 'kr' || i18n.language === 'en') && // display wechat when lang is korean or english
+                        <div className="ContactInfo-SocialIcon">
+                            <RiKakaoTalkLine className='cIcon'/>
+                            <p>
+                                {t('contact.info.kakao-id')}
+                            </p>
+                        </div>
+                    }
                     <div className="ContactInfo-SocialIcon">
                         <FaInstagram className='cIcon'/>
                         <p>
-                            insta
+                            {t('contact.info.instagram-id')}
                         </p>
                     </div>
                 </div>

@@ -14,8 +14,7 @@ import Membership from "../Services/Membership/Membership";
 import JuniorGolf from "../Services/JuniorGolf/JuniorGolf";
 import RemoteLearning from "../Services/RemoteLearning/RemoteLearning";
 import Login from "../Student/Login/Login"
-
-
+import PageTransition from "../PageTransition/PageTransition"
 /**
  * This is the entry point of front site.
  * @Author Zach
@@ -25,49 +24,63 @@ const Site = ({ user,setUser }) => {
     return (
         <div>
             <Route path='/index' exact>
-                <NavBar page='Home' user={user}></NavBar>
-                <HomePage></HomePage>
+                    <NavBar page='Home' user={user}></NavBar>
+                    <HomePage></HomePage>
             </Route>
 
             <Route path='/about'>
-                <NavBar page='About' user={user}></NavBar>
-                <AboutUs></AboutUs>
+                <PageTransition>
+                    <NavBar page='About' user={user}></NavBar>
+                    <AboutUs></AboutUs>
+                </PageTransition>
             </Route>
 
             <Route path='/partners'>
-                <NavBar page='Partners' user={user}></NavBar>
-                <Partner></Partner>
+                <PageTransition>
+                    <NavBar page='Partners' user={user}></NavBar>
+                    <Partner></Partner>
+                </PageTransition>
             </Route>
 
             <Route path='/team'>
-                <NavBar page='Team' user={user}></NavBar>
-                <Team></Team>
+                <PageTransition>
+                    <NavBar page='Team' user={user}></NavBar>
+                    <Team></Team>
+                </PageTransition>
             </Route>
 
             <Route path='/membership'>
-
-                <NavBar page='Membership' user={user}></NavBar>
-                <Membership></Membership>
+                <PageTransition>
+                    <NavBar page='Membership' user={user}></NavBar>
+                    <Membership></Membership>
+                </PageTransition>
             </Route>
 
             <Route path='/junior-golf'>
-                <NavBar page='Junior-golf' user={user}></NavBar>
-                <JuniorGolf></JuniorGolf>
+                <PageTransition>
+                    <NavBar page='Junior-golf' user={user}></NavBar>
+                    <JuniorGolf></JuniorGolf>
+                </PageTransition>
             </Route>
 
             <Route path='/remote-learning'>
-                <NavBar page='Remote-learning' user={user}></NavBar>
-                <RemoteLearning></RemoteLearning>
-
+                <PageTransition>
+                    <NavBar page='Remote-learning' user={user}></NavBar>
+                    <RemoteLearning></RemoteLearning>
+                </PageTransition>
             </Route>
 
             <Route path='/blog'>
-                <Blog user={user}></Blog>
+                <PageTransition>
+                    <Blog user={user}></Blog>
+                </PageTransition>
             </Route>
 
             <Route path='/contact'>
-                <NavBar page='Contact' user={user}></NavBar>
-                <ContactUs></ContactUs>
+                <PageTransition>
+                    <NavBar page='Contact' user={user}></NavBar>
+                    <ContactUs></ContactUs>
+                </PageTransition>
             </Route>
 
             <Route path='/student'>
@@ -77,8 +90,10 @@ const Site = ({ user,setUser }) => {
             <Route path='/login' exact>
                 {user ? <Redirect to="/student/home" /> :
                     <div>
-                        <NavBar page='Login' user={user}></NavBar>
-                        <Login setUser={setUser}></Login>
+                        <PageTransition>
+                            <NavBar page='Login' user={user}></NavBar>
+                            <Login setUser={setUser}></Login>
+                        </PageTransition>
                     </div>}
 
             </Route>

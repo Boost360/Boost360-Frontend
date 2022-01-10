@@ -31,7 +31,7 @@ const Blog = ({ user }) => {
     }, []);
 
     return (
-        <div>
+        <div style={{backgroundColor: 'var(--text)'}}>
             
 
             <Switch>
@@ -90,7 +90,6 @@ const Blog = ({ user }) => {
                                 ))}
                             </div>)
                 }
-
             </Route>
 
             </Switch>
