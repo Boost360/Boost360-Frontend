@@ -8,8 +8,8 @@
       },
       "contact": {
         "name" : {
-          "first-name": "First Name",
-          "last-name": "Last Name"
+          "first-name": "한국인",
+          "last-name": "고객 서비스"
         },
         "info" : {
             "mobile": "휴대폰번호",
@@ -25,6 +25,7 @@
         "input" : {
           "info": "문의 사항이 있으면 아래에 남겨주세요.",
           "name": "이름",
+          "email": "Email",
           "msg": "메세지",
           "send": "보내기",
           "alert-success" : "We have received your message and will reply as soon as possible!",

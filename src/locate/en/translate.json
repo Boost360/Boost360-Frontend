@@ -9,7 +9,7 @@
         "contact": {
             "name" : {
               "first-name": "Rhys",
-              "last-name": "Odgen"
+              "last-name": "Ogden"
             },
             "info" : {
                 "mobile":"Mobile",
@@ -25,6 +25,7 @@
             "input" : {
               "info": "If you have any questions about our services, please fill in the box below, we are happy to help.",
               "name":"Name",
+              "email": "Email",
               "msg":"Message",
               "send":"Send",
               "alert-success" : "We have received your message and will reply as soon as possible!",

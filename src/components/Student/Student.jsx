@@ -7,14 +7,15 @@ import Module from "./Modules/StudentModules"
 import DevelopmentProgram from "./DevelopmentProgram/DevelopmentProgram";
 import Profile from "./Profile/Profile";
 import VideoLibrary from "./VideoLibrary/VideoLibrary";
-import Result from "./Result/Result"
+import Result from "./Result/Result";
+import PageTransition from "../PageTransition/PageTransition";
 
 
 /**
  * This is the entry point of Student Home.
  * @Author Zach
  */
-const Student = ({ user,setUser }) => {
+const Student = ({ user, setUser }) => {
     let { path, url } = useRouteMatch();
     const history = useHistory();
 
@@ -22,40 +23,54 @@ const Student = ({ user,setUser }) => {
         <div>
 
             <Route path={`${path}/home`} exact>
-                <NavBar page='Student-home' user={user}></NavBar>
-                <Home setUser={setUser}></Home>
+                <PageTransition>
+                    <NavBar page='Student-home' user={user}></NavBar>
+                    <Home setUser={setUser}></Home>
+                </PageTransition>
             </Route>
 
             <Route path={`${path}/schedule`} exact>
-                <NavBar page='Schedule' user={user}></NavBar>
-                <Schedule></Schedule>
+                <PageTransition>
+                    <NavBar page='Schedule' user={user}></NavBar>
+                    <Schedule></Schedule>
+                </PageTransition>
             </Route>
 
             <Route path={`${path}/modules`} exact>
-                <NavBar page='Modules' user={user}></NavBar>
-                <Module></Module>
+                <PageTransition>
+                    <NavBar page='Modules' user={user}></NavBar>
+                    <Module></Module>
+                </PageTransition>
             </Route>
 
             <Route path={`${path}/results`} exact>
-                <NavBar page='Results' user={user}></NavBar>
-                <Result user={user}></Result>
+                <PageTransition>
+                    <NavBar page='Results' user={user}></NavBar>
+                    <Result user={user}></Result>
+                </PageTransition>
             </Route>
 
             <Route path={`${path}/development-program`} exact>
-                <NavBar page='Development-program' user={user}></NavBar>
-                <DevelopmentProgram user={user}></DevelopmentProgram>
+                <PageTransition>
+                    <NavBar page='Development-program' user={user}></NavBar>
+                    <DevelopmentProgram user={user}></DevelopmentProgram>
+                </PageTransition>
             </Route>
 
 
             <Route path={`${path}/profile`} exact>
-                <NavBar page='Profile' user={user}></NavBar>
-                <Profile user={user} setUser={setUser}></Profile>
+                <PageTransition>
+                    <NavBar page='Profile' user={user}></NavBar>
+                    <Profile user={user} setUser={setUser}></Profile>
+                </PageTransition>
             </Route>
 
 
             <Route path={`${path}/video-library`} exact>
-                <NavBar page='Video-library' user={user}></NavBar>
-                <VideoLibrary></VideoLibrary>
+                <PageTransition>
+                    <NavBar page='Video-library' user={user}></NavBar>
+                    <VideoLibrary></VideoLibrary>
+                </PageTransition>
             </Route>
 
         </div>
