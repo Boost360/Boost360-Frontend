@@ -46,6 +46,11 @@
     cursor: pointer;
 }
 
+.StudentHomeCardBoarder:hover {
+    box-shadow: 5px 5px 50px rgba(46, 131, 160, 0.2), -5px -5px 50px rgba(46, 131, 160, 0.2);
+}
+
+
 .StudentHomeCardText {
     /* Tertiary/light */
     font-family: Montserrat;
