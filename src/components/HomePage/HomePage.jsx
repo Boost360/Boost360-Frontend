@@ -6,6 +6,7 @@ import { RiKakaoTalkLine } from 'react-icons/ri';
 import { FaInstagram } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import Background_webm from '../../static/img/Home_background.webm';
+import Background_png from '../../static/img/Home_background.png';
 import WechatModal from "../WechatModal/WechatModal";
 
 export default function HomePage() {
@@ -18,7 +19,10 @@ export default function HomePage() {
     const [showWechat, setShowWechat] = useState(false);
     return (
         <div className="HomePage">
-            <video id='background_video' src={Background_webm} autoPlay loop playsInline muted></video>
+            <video id='background_video' poster={Background_png} autoPlay loop playsInline muted>
+                <source src={Background_webm} type="video/webm"/>
+            </video>
+            {/* <video id='background_video' src={Background_webm} autoPlay loop playsInline muted></video> */}
             <IconContext.Provider value={{ size: "24px" }}>
                 <div className="HomePagelink">
                     <div className="HomeIcon">
