@@ -63,9 +63,13 @@
 }
 
 .HomeIcon{
+    cursor: pointer;
     color: var(--white);
     padding: 4px 4px 0px 4px;
     border: 1px solid var(--text);
+}
+.HomeIcon:hover {
+    filter: contrast(0.6);
 }
 
 @media screen and (max-width: 1025px){

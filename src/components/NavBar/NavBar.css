@@ -14,7 +14,7 @@
     
     /* This relates to the stacking issue with Student Module page */
     /* Issue @00002 [12/oct/2021 @Sarah] */
-    z-index: 10; 
+    z-index: 100; 
 }
 
 .menu {
@@ -91,7 +91,7 @@
     opacity: 0;
 }
 
-.menuItems-mobile {
+.menuItems-mobile { 
     height: 100%;
     width: 80%;
     background-color: var(--primary);
@@ -101,6 +101,7 @@
     justify-content: start;
     align-items: center;
     box-shadow: 6px 0px 5px rgba(0, 0, 0, 0.25);
+    z-index: 100;
 }
 .menuItem-mobile {
     cursor: pointer;
@@ -182,7 +183,7 @@
 /* -------------------------- STYLING FRO SOME SPECIAL PAGES ------------------------------- */
 
 .cover{
-    z-index: 1;
+    z-index: 99;
     position:absolute;
 }
 

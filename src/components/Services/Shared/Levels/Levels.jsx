@@ -6,19 +6,17 @@ import './Levels.css'
 export default function Levels({ data }) {
     // ---------------------------- SET UP -------------------------------
     const [scrollY, setScrollY] = useState(0);
-    // 0. define the final position of all children elements at the end of scroll
-    //    these numbers are chosen by experiment
-    const levels = data.levels;
-    const temp = [70, 200];
-    const children_final = temp.concat(Object.keys(levels).map((key, i) => i * 100 + 250));
-    // 1. get reference of the container and children
     const container = useRef();
-    // 2. set container height to (number of children) * viewport height, plus an additional viewport
+    const levels = data.levels;
+    // Position for each child
+    const temp = [30, 150];
+    const positions = temp.concat(Object.keys(levels).map((key, i) => i * 100 + 200));
+    // Container height 
     const viewport = 1500;
-    const container_height = viewport * children_final.length + viewport;
-    // 3. set children start position, evenly distributed to the top of every viewport
-    const children_init = children_final.map((final, i) => viewport * (i + 0));
-    // simple function to optimise calculation
+    const container_height = viewport * positions.length + viewport;
+    // Defines the position scroller need to pass to display each child
+    const pass = positions.map((final, i) => viewport * (i + 0) + 1);
+    // Simple function to optimise calculation
     const clamp = (a, value, b) => {
         if (value < a) { return a; }
         else if (value > b) { return b; }
@@ -37,17 +35,9 @@ export default function Levels({ data }) {
 
 
 
-    // -------------------------------- MAIN LOGIC --------------------------------
-    // 6. let children watch scrollY, and update themself accrodingly
-    //   now = max(initial, scrollY + final)
-    const children_now = useMemo(
-        () => {
-            return children_final.map((final, i) => clamp(children_init[i], scrollY + final), container_height);
-        },
-        [scrollY],
-    )
+    // -------------------------------- SCROLL POSITION --------------------------------
     const handleScroll = () => {
-        // 5.set scrollY state in eventhandler (If it passes the 2nd-last viewport. don't update!)
+        // Set scrollY state in eventhandler (If it passes the 2nd-last viewport. don't update!)
         try {
             setScrollY(clamp(0, -container.current.getBoundingClientRect().top, container_height - viewport));
         } catch (e) {
@@ -56,10 +46,10 @@ export default function Levels({ data }) {
     };
 
     useEffect(() => {
-        // 7. bind handleScroll to the scroll eventlistener of container
+        // Bind handleScroll to the scroll eventlistener of container
         document.addEventListener('scroll', handleScroll);
         return () => {
-            // 8. remove event listeners before unmount
+            // Remove event listeners before unmount
             document.removeEventListener('scroll', handleScroll);
         }
     }, []);
@@ -73,9 +63,9 @@ export default function Levels({ data }) {
 
 
     // -------------------------------- INNER COMPOENNT --------------------------------
-    const Level = ({ heading, description, index }) => {
+    const Level = ({show, heading, description, style}) => {
         return (
-            <div className='level' style={{top: children_now[index].toString() + 'px'}}>
+            show && <div className='level' style={style}>
                 <h2>{heading}</h2>
                 <p>{description}</p>
             </div>
@@ -85,13 +75,13 @@ export default function Levels({ data }) {
     
     return (
         <div className="levels" ref={container} style={{ height: container_height.toString() + 'px' }}>
-            <h1 style={{ top: children_now[0].toString() + 'px' }}>{data.h0}</h1>
-            <p style={{ top: children_now[1].toString() + 'px' }}>{data.p0}</p>
+            {scrollY >= pass[0] && <h1 style={{ top: positions[0].toString() + 'px' }}>{data.h0}</h1>}
+            {scrollY >= pass[1] && <p style={{ top: positions[1].toString() + 'px' }}>{data.p0}</p>}
             {Object.values(levels).map((value, i) =>
-                <Level  heading={value.h0} 
+                <Level  show={scrollY >= pass[i + 2]}
+                        heading={value.h0} 
                         description={value.p0} 
-                        key={i + 2} 
-                        index ={i + 2}/>
+                        style={{top: positions[i + 2].toString() + 'px'}}/>
             )}
         </div>
     )

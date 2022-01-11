@@ -11,12 +11,11 @@
 }
 
 .levels * {
-    position: absolute;
+    position: fixed;
     transition: top ease 0.2s;
 }
 
 .levels h1 {
-    
     transition: top linear 0s;
 }
 
