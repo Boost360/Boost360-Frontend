@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import GolfAnimation from './GolfAnimation';
 import Background_png from '../../static/img/Landing_background.png';
+import Background_mp4 from '../../static/img/Landing_background.mp4';
 import Background_webm from '../../static/img/Landing_background.webm';
 
 export default function LandingPage({user}) {
@@ -21,6 +22,7 @@ export default function LandingPage({user}) {
         <div className="LandingPage">
             <video poster={Background_png} autoPlay loop playsInline muted>
                 <source src={Background_webm} type="video/webm"/>
+                <source src={Background_mp4} type="video/mp4"/>
             </video>
             {/* <GolfAnimation></GolfAnimation> */}
             <div className="LandingPage-mask">
