@@ -636,6 +636,58 @@
           "title": "Price",
           "description": "---------------------- $990 ---------------------"
         }
-      }
+      },
+      "team" : {
+        "nzTeam" : "New Zealand Team",
+        "nzLocation" : "Auckland",
+        "krTeam" : "Korean Team",
+        "krLocation" : "Seoul",
+        "nzMembers" : {
+            "0" : {
+                "avatar" : "0",
+                "name" : "Rhys Ogden1",
+                "roleBadge" : "../../static/img/partner.png",
+                "role" : "Founder / Head Professional",
+                "description" : {
+                    "0" : "A PGA golf professional for 23 years, Rhys Ogden is the founder of BP Golf Academy and the Head of Instruction.",
+                    "1" : "After completing his PGA traineeship at Mt Maunganui Golf Club, he taught high performance junior golfers in South Korea. This strengthened his coaching ability by immersing himself in another culture, with different learning styles, communication, and key outcomes.",
+                    "2" : "Over the next 12 years, he would hold the positions of Head Golf Professional, lecturer, and Golf Paper Leader at Auckland University of Technology (AUT).",
+                    "3" : "During his time at AUT, Rhys developed and delivered the golf curriculum for the University. He was fortunate enough to have learnt from many leading sporting coaches and specialists, and this combined knowledge and experience has helped to shape the curriculum that BP Golf Academy delivers today."
+                }
+            },
+            "1" : {
+                "avatar" : "../../static/img/partner.png",
+                "name" : "Member 2",
+                "role" : "xxxxxxxx",
+                "description" : {
+                    "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
+                    "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
+                    "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
+                }
+            }
+        },
+        "krMembers" : {
+            "0" : {
+                "avatar" : "../../static/img/partner.png",
+                "name" : "korean Member",
+                "role" : "xxxxxxxxx",
+                "description" : {
+                    "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
+                    "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
+                    "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
+                }
+            },
+            "1" : {
+                "avatar" : "../../static/img/partner.png",
+                "name" : "korean Member",
+                "role" : "xxxxxxxxx",
+                "description" : {
+                    "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
+                    "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
+                    "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
+                }
+            }
+        }
+    }
     }
   }

@@ -1,113 +1,101 @@
-/* Global */
+.team {
+    color: var(--background);
+    background: var(--text);
+    border: 1px solid rgba(0,0,0,0)
+}
 
+.team .tab_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 100vw;
+    height: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 0;
+}
 
+.team .tab_container div {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 0;
+    text-align: center;
+    line-height: 30px;
+}
+.team .tab_container div:hover{
+    filter: contrast(0.9);
+}
+.team .tab_container .active {
+    background: var(--text);
+}
+.team .tab_container .inactive {
+    background: var(--white);
+}
 
-
-
-/* Team */
-
-
-
-
-
-
-/* TeamImageBanner */
-.TeamPage_banner_image {
-    width: 100%;
-    height: 200px;
-    background: url("../../static/img/team-auckland.png");
-    background-position: center;
-    background-size: cover;
-
+.team .members {
+    padding-bottom: 200px;
+}
+.team .member {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    color: var(--white);
-    font: var(--secondary-light);
+    align-items: start;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 0;
+    margin: clamp(10px, 14%, 1000px);
+    border-bottom: 2px solid rgb(192, 192, 192);
+    flex-wrap: wrap;
+    padding-bottom: 80px;
 }
-
-
-
-
-
-/* TeamMemberMain */
-.TeamPage_main_container {
-    width: 80%;
-    background: #F1F1F1;
-    padding: 100px 10% 0 10%;
-    display: inline-block;
+.team .member .left {
+    width: clamp(250px, 43%, 1000px);
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0;
 }
-.TeamPage_single_member_container {
-    width: 19%;
-    padding: 0 3% 100px 3%;
-    float: left;
-}
-@media (max-width:600px) {
-    .TeamPage_single_member_container {
-        width: 100%;
-    }
-}
-
-
-
-
-/* TeamMember */
-.TeamPage_single_member {
-    width: 100%;
-}
-.TeamPage_member_avatar, .TeamPage_member_name {
-    margin-bottom: 30px;
-    color: var(--background);
-    font-size: 25px;
+.team .member .right {
+    width: clamp(250px, 43%, 1000px);
+    order: 1;
+    text-align: left;
     line-height: 25px;
-
 }
-.TeamPage_member_avatar img{
-    width: 80%;
+.team .member img {
+    width: 160px;
+    background: white;
     border-radius: 50%;
 }
-.TeamPage_name_container {
-    display: inline-flex;
+.team .member .left .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font: var(--secondary-bold);
 }
-.TeamPage_name_container .TeamPage_member_badge {
-    margin-left: 10px;
+.team .member .left .name img {
+    width: 30px;
 }
-.TeamPage_member_badge img {
-    height: 25px;
+.team .member .left h2 {
+    font: var(--tertiary-light)
 }
-.TeamPage_member_role {
-    font-size: 15px;
-    color: var(--background);
-}
-.TeamPage_single_member:hover .TeamPage_member_avatar img{
-    box-shadow: 10px 10px 100px rgba(75, 211, 255, 0.3), -10px -10px 100px rgba(75, 211, 255, 0.2);
-}
-.TeamPage_tooltip {
-    visibility: hidden;
-    width: clamp(200px, 50%, 1000px);
-    line-height: 1.7em;
-    background-color: white;
-    color: var(--background);
-    text-align: left;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 9999;
-    margin-left: 130px;
-    margin-top: 130px;
-}
-.TeamPage_single_member:hover .TeamPage_tooltip {
-    visibility: visible;
-}
-.TeamPage_badge_display_none {
-    display: none;
-}
-
-.team_loading{
-    height: 500px;
-}
-
-.team_loading_avatar {
-    padding: 40px;
-    float: left;
+/* alternateing left/right layout  */
+@media screen and (min-width: 600px){
+    .team .members .member:nth-child(even) .left {
+        order: 1;
+        align-items: end;
+    }
+    .team .members .member:nth-child(even) .right {
+        order: 0;
+    }
 }
