@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Team.css'
 import Paragraph from '../Services/Shared/Paragraph/Paragraph'
 import {useTranslation} from 'react-i18next'
-import avatar from '../../static/img/avatar00.png'
+import rhys from '../../static/img/RhysOgden.png'
 import avatar_placeholder from '../../static/img/avatar.png'
 import badge from '../../static/img/partner.png'
 
@@ -11,10 +11,10 @@ function Member({member}) {
         <div className="member">
             <div className="left">
                 {/* TODO can not decode string path to image */}
-                {member.avatar === '0' ? <img src={avatar} alt={member.name}/> : <img src={avatar_placeholder} alt={member.name}/> }
+                {member.avatar === '0' ? <img src={rhys} alt={member.name}/> : <img src={avatar_placeholder} alt={member.name}/> }
                 <div className="name">
                     <p>{member.name}</p> 
-                    {member.badge && <img src={badge} alt={`${member.name} badge`} />}
+                    {member.roleBadge && <img src={badge} alt={`${member.name} badge`} />}
                 </div>
                 <h2>{member.role}</h2>
             </div>
