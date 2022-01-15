@@ -11,11 +11,10 @@
 
 .HomePage video{
     object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 95vw;
+    height: auto;
+    justify-content: center;
+    margin-top: clamp(10px, 10vw, 50px);
     pointer-events: none;
     z-index: -1;
 }

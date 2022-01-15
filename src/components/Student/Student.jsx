@@ -23,10 +23,8 @@ const Student = ({ user, setUser }) => {
         <div>
 
             <Route path={`${path}/home`} exact>
-                <PageTransition>
                     <NavBar page='Student-home' user={user}></NavBar>
                     <Home setUser={setUser}></Home>
-                </PageTransition>
             </Route>
 
             <Route path={`${path}/schedule`} exact>
