@@ -19,6 +19,10 @@ import { useTranslation } from "react-i18next";
  * 
  * @author Zach Wang
  * @date 2021/10/5 
+ * 
+ * changes:
+ * @date 2022/01/15
+ * 
  */
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -78,10 +82,18 @@ const Login = ({ setUser }) => {
         let loginPayload = { email: values.id, password: values.password };
         let response = await login(loginPayload);
         if (response.status === 200) {
-            localStorage.setItem("token", response.data.token)
-            setUser(response.data.user)
-            setLoading(false)
-            history.push('/student/home')
+            if (response.data.user.type == "student") {
+                localStorage.setItem("token", response.data.token)
+                setUser(response.data.user)
+                setLoading(false)
+                history.push('/student/home')
+
+            } else {
+                setError(true)
+                setLoading(false)
+
+            }
+
 
         } else {
             setError(true)
