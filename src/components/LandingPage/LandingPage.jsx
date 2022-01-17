@@ -20,10 +20,10 @@ export default function LandingPage({user}) {
 
     return (
         <div className="LandingPage">
-            <video poster={Background_png} autoPlay loop playsInline muted>
+            {/* <video poster={Background_png} autoPlay loop playsInline muted>
                 <source src={Background_webm} type="video/webm"/>
                 <source src={Background_mp4} type="video/mp4"/>
-            </video>
+            </video> */}
             {/* <GolfAnimation></GolfAnimation> */}
             <div className="LandingPage-mask">
                 <div className="buttonArea">
