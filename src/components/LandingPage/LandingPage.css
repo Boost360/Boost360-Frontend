@@ -5,7 +5,9 @@
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: black;
+    background: url('../../static/img/background9.png');
+    background-size: cover;
+    background-position: bottom;
 }
 .LandingPage video {
     object-fit: cover;
@@ -17,7 +19,7 @@
 }
 
 .LandingPage-mask{
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0);
     width: 100%;
     height: 100%;
     display: flex;
@@ -64,21 +66,23 @@
     display: flex;
     align-items: center;
     padding: 16px;
-    background: rgba(32, 32, 32, 0);
-    border: 1px solid #F1F1F1;
+    background: rgba(0,0,0,0);
+    border: 1px solid var(--white);
     margin-right: 30%;
     margin-left: 30%;
+    color: var(--white);
 }
 
 .landingButton:hover{
-    background: var(--primary);
+    background: var(--white);
+    color: var(--black);
 }
 
 
 .landingButton span{
     width: 199px;
     font: var(--tertiary-light);
-    color: white;
+    color: inherit;
     margin: 0px 10px; 
 }
 
@@ -97,19 +101,21 @@
 }
 
 .languagesection a:hover{
-    color: #8AE3FF;
+    color: var(--white);
     cursor: pointer;
 }
 
 
 .languagesection p{
     width: 20px;
-    border: 1px solid var(--inactive);
+    border: 1px solid var(--white);
     transform: rotate(-90deg);
     margin: 0px 15px;
+    color: var(--primary);
 }
 .languagesection .highlight {
-    color: var(--primary);
+    color: var(--white);
+    font: var(--tertiary-bold);
 }
 
 /* -----------------------Animation--------------------------------- */
@@ -119,6 +125,7 @@
     animation: top-enter 2.5s ease;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
+    color: var(--white);
 }
 .landingButton:nth-child(odd){
     position: relative;
