@@ -1,7 +1,8 @@
 /* Default NavBar layout and colors */
 .navBar {
     position: sticky;
-    top: 0px;
+    position: -webkit-sticky;
+    top: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

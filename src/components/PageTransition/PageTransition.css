@@ -7,7 +7,6 @@
     background: var(--primary);
     animation-fill-mode: backwards;
     animation: cover-enter 0.8s ease-in-out;
-    overflow-y: scroll;
     z-index: 1000;
 }
 
