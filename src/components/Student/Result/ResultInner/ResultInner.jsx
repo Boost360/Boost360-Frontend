@@ -1,6 +1,7 @@
 import * as React from 'react';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
-import GetAppIcon from '@mui/icons-material/GetApp';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import FileDownloadOffIcon from '@mui/icons-material/FileDownloadOff';
 import {resultStudent} from '../../../../api/result/result';
 import Skeleton from '@mui/material/Skeleton';
 
@@ -8,14 +9,12 @@ const ResultInner = (props) => {
 
     const expr = props.resultType;
     const student = props.user_id;
-
-    const[data, setData] = React.useState([
-        {
-            fileName: '',
-            fileUrl: '',
-            date: ''
-        }
-    ]);
+    // Display 6 empty rows by default
+    const[data, setData] = React.useState(Array(6).fill({
+        fileName: '-',
+        fileUrl: '',
+        date: 'xx/xx/xxxx'
+    }));
 
     const [loading, setLoading] = React.useState(true);
 
@@ -27,7 +26,8 @@ const ResultInner = (props) => {
                 listData.push(resultData.data[i])
             }
         }
-        setData(listData);
+        // If there is no content, we DONT update rows and use default empty rows
+        if (listData.length > 0) setData(listData);
         setLoading(false);
     }, []);
 
@@ -45,7 +45,7 @@ const ResultInner = (props) => {
                     {data.map((row) => (
                         <div className='result_inner_row'>
                             <div className='result_inner_file_icon'>
-                                <InsertDriveFileIcon/>
+                                <InsertDriveFileIcon sx={{width: '30px'}}/>
                             </div>
                             <div className='result_inner_file_name'>
                                 {row.fileName}
@@ -54,9 +54,11 @@ const ResultInner = (props) => {
                                 {row.date.substring(0, 10)}
                             </div>
                             <div className='result_inner_file_download'>
-                                <a href={row.fileUrl}>
-                                    <GetAppIcon/>
-                                </a>
+                                {row.fileUrl ? 
+                                    <a href={row.fileUrl}><FileDownloadIcon/></a>
+                                    :
+                                    <span><FileDownloadOffIcon/></span>
+                                }
                             </div>
                         </div>
                     ))}
