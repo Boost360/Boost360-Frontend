@@ -51,7 +51,7 @@ const NavBar = ({ page, user, header = null }) => {
             'Schedule': { path: '/student/schedule', parentPage: 'Student-home' },
             'Results': { path: '/student/results', parentPage: 'Student-home' },
             'Modules': { path: '/student/modules', parentPage: 'Student-home' },
-            'Equipment': { path: '/student/equipment', parentPage: 'Student-home' },
+            'Lesson': { path: '/student/lesson', parentPage: 'Student-home' },
             'Video-library': { path: '/student/video-library', parentPage: 'Student-home' },
             'Development-program': { path: '/student/development-program', parentPage: 'Student-home' }
         }
