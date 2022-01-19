@@ -67,16 +67,7 @@
         "Video-library": "教学视频库",
         "Development-program": "教学计划"
       },
-      "team": {
-        "rhys": {
-          "p0": {
-            "0": "Rhys Ogden，BP高尔夫学院的创始人兼教学主管，新西兰职业高尔夫协会成员（PGA），拥有23年的职业高尔夫生涯。",
-            "1": "在Mt Maunganui高尔夫俱乐部结束新西兰职业高尔夫协会(PGA)的培训后，Rhys前往韩国进行高尔夫教学，培养出了一批优秀的青少年高尔夫选手。通过这种跨文化的教学实践，他的教学能力极具增强，并在这种不同文化、学习风格及跨语言沟通中，取得了显著的教学成果。",
-            "2": "在其后的12年里，Rhys回到新西兰，在奥克兰理工大学(AUT)担纲高尔夫专业领头人、教授、高尔夫学术教研组组长。",
-            "3": "在AUT期间，Rhys研发了一系列高尔夫专业课程，也很幸运地与众多顶级教练和体育专家相互交流，这些知识与经验的结合，共同成就了BP高尔夫学院提供给大家的课程。"
-          }
-        }
-      },
+
       "partners": {
         "0": {
           "company": null,
@@ -647,23 +638,19 @@
                 "avatar" : "0",
                 "name" : "Rhys Ogden",
                 "roleBadge" : "../../static/img/partner.png",
-                "role" : "Founder / Director of Instruction",
-                "description" : {
-                    "0" : "A PGA golf professional for 23 years, Rhys Ogden is the founder of BP Golf Academy and the Head of Instruction.",
-                    "1" : "After completing his PGA traineeship at Mt Maunganui Golf Club, he taught high performance junior golfers in South Korea. This strengthened his coaching ability by immersing himself in another culture, with different learning styles, communication, and key outcomes.",
-                    "2" : "Over the next 12 years, he would hold the positions of Head Golf Professional, lecturer, and Golf Paper Leader at Auckland University of Technology (AUT).",
-                    "3" : "During his time at AUT, Rhys developed and delivered the golf curriculum for the University. He was fortunate enough to have learnt from many leading sporting coaches and specialists, and this combined knowledge and experience has helped to shape the curriculum that BP Golf Academy delivers today."
+                "role" : "创始人 / 教学主管",
+                "description": {
+                  "0": "Rhys Ogden，BP高尔夫学院的创始人兼教学主管，新西兰职业高尔夫协会成员（PGA），拥有23年的职业高尔夫生涯。",
+                  "1": "在Mt Maunganui高尔夫俱乐部结束新西兰职业高尔夫协会(PGA)的培训后，Rhys前往韩国进行高尔夫教学，培养出了一批优秀的青少年高尔夫选手。通过这种跨文化的教学实践，他的教学能力极具增强，并在这种不同文化、学习风格及跨语言沟通中，取得了显著的教学成果。",
+                  "2": "在其后的12年里，Rhys回到新西兰，在奥克兰理工大学(AUT)担纲高尔夫专业领头人、教授、高尔夫学术教研组组长。",
+                  "3": "在AUT期间，Rhys研发了一系列高尔夫专业课程，也很幸运地与众多顶级教练和体育专家相互交流，这些知识与经验的结合，共同成就了BP高尔夫学院提供给大家的课程。"
                 }
             },
             "1" : {
                 "avatar" : "../../static/img/partner.png",
-                "name" : "Member 2",
-                "role" : "xxxxxxxx",
-                "description" : {
-                    "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
-                    "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
-                    "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
-                }
+                "name" : "待定",
+                "role" : "职位",
+                "description" : ""
             }
         },
         "krMembers" : {
@@ -671,23 +658,19 @@
             "avatar" : "0",
             "name" : "Rhys Ogden",
             "roleBadge" : "../../static/img/partner.png",
-            "role" : "Founder / Director of Instruction",
-            "description" : {
-                "0" : "A PGA golf professional for 23 years, Rhys Ogden is the founder of BP Golf Academy and the Head of Instruction.",
-                "1" : "After completing his PGA traineeship at Mt Maunganui Golf Club, he taught high performance junior golfers in South Korea. This strengthened his coaching ability by immersing himself in another culture, with different learning styles, communication, and key outcomes.",
-                "2" : "Over the next 12 years, he would hold the positions of Head Golf Professional, lecturer, and Golf Paper Leader at Auckland University of Technology (AUT).",
-                "3" : "During his time at AUT, Rhys developed and delivered the golf curriculum for the University. He was fortunate enough to have learnt from many leading sporting coaches and specialists, and this combined knowledge and experience has helped to shape the curriculum that BP Golf Academy delivers today."
+            "role" : "创始人 / 教学主管",
+            "description": {
+              "0": "Rhys Ogden，BP高尔夫学院的创始人兼教学主管，新西兰职业高尔夫协会成员（PGA），拥有23年的职业高尔夫生涯。",
+              "1": "在Mt Maunganui高尔夫俱乐部结束新西兰职业高尔夫协会(PGA)的培训后，Rhys前往韩国进行高尔夫教学，培养出了一批优秀的青少年高尔夫选手。通过这种跨文化的教学实践，他的教学能力极具增强，并在这种不同文化、学习风格及跨语言沟通中，取得了显著的教学成果。",
+              "2": "在其后的12年里，Rhys回到新西兰，在奥克兰理工大学(AUT)担纲高尔夫专业领头人、教授、高尔夫学术教研组组长。",
+              "3": "在AUT期间，Rhys研发了一系列高尔夫专业课程，也很幸运地与众多顶级教练和体育专家相互交流，这些知识与经验的结合，共同成就了BP高尔夫学院提供给大家的课程。"
             }
         },
             "1" : {
                 "avatar" : "../../static/img/partner.png",
                 "name" : "korean Member",
                 "role" : "xxxxxxxxx",
-                "description" : {
-                    "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
-                    "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
-                    "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
-                }
+                "description" : ""
             }
         }
       }
