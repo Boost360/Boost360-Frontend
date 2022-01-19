@@ -12,8 +12,8 @@
 
 /* Navigation */
 .partner_page_navigation_container {
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    position: -webkit-fixed;
     /* navBar height is 65px */
     top: 65px; 
     padding: 25px 0 25px 0;
