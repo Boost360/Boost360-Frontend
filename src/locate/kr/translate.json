@@ -67,16 +67,7 @@
         "Video-library": "동영상 자료",
         "Development-program": "Development program"
       },
-      "team": {
-        "rhys": {
-          "p0": {
-            "0": "Rhys Ogden은 23년 경력의 PGA이며 BP Golf Academy의  창립자이자 Head of Instructor입니다.",
-            "1": "Mt. Maunganui Golf Club에서 PGA 교육과정을  마친 후, 한국에서 실력파 주니어 골퍼들을 가르쳤습니다. 이러한 경험을 바탕으로 다른 학습 스타일, 커뮤니케이션, 주요 결과물을 통해 다른 문화를 경험���으로써 코칭 능력을 강화시켰습니다.",
-            "2": "그 후12년 동안Auckland University of Technology (AUT)골프학과에서 헤드 골프프로로서 강의를 했으면 Golf Paper Leader로서 근무하는 동안 학과를 위한 골프 커리큘럼을 개발하고 제공하였습니다.",
-            "3": "많은 최고의 스포츠 코치들과 전문가들로부터 지도를 받았고, 이러한 지식과 경험이 합쳐져 오늘날 BP Golf Academy가 제공하는 커리큘럼을 형성하는 데 도움이 되었습니다."
-          }
-        }
-      },
+
       "partners": {
         "0": {
           "company": null,
@@ -649,21 +640,17 @@
                 "roleBadge" : "../../static/img/partner.png",
                 "role" : "Founder / Director of Instruction",
                 "description" : {
-                    "0" : "A PGA golf professional for 23 years, Rhys Ogden is the founder of BP Golf Academy and the Head of Instruction.",
-                    "1" : "After completing his PGA traineeship at Mt Maunganui Golf Club, he taught high performance junior golfers in South Korea. This strengthened his coaching ability by immersing himself in another culture, with different learning styles, communication, and key outcomes.",
-                    "2" : "Over the next 12 years, he would hold the positions of Head Golf Professional, lecturer, and Golf Paper Leader at Auckland University of Technology (AUT).",
-                    "3" : "During his time at AUT, Rhys developed and delivered the golf curriculum for the University. He was fortunate enough to have learnt from many leading sporting coaches and specialists, and this combined knowledge and experience has helped to shape the curriculum that BP Golf Academy delivers today."
-                }
+                    "0": "Rhys Ogden은 23년 경력의 PGA이며 BP Golf Academy의  창립자이자 Head of Instructor입니다.",
+                    "1": "Mt. Maunganui Golf Club에서 PGA 교육과정을  마친 후, 한국에서 실력파 주니어 골퍼들을 가르쳤습니다. 이러한 경험을 바탕으로 다른 학습 스타일, 커뮤니케이션, 주요 결과물을 통해 다른 문화를 경험 으로써 코칭 능력을 강화시켰습니다.",
+                    "2": "그 후12년 동안Auckland University of Technology (AUT)골프학과에서 헤드 골프프로로서 강의를 했으면 Golf Paper Leader로서 근무하는 동안 학과를 위한 골프 커리큘럼을 개발하고 제공하였습니다.",
+                    "3": "많은 최고의 스포츠 코치들과 전문가들로부터 지도를 받았고, 이러한 지식과 경험이 합쳐져 오늘날 BP Golf Academy가 제공하는 커리큘럼을 형성하는 데 도움이 되었습니다."
+                  }
             },
             "1" : {
                 "avatar" : "../../static/img/partner.png",
-                "name" : "Member 2",
-                "role" : "xxxxxxxx",
-                "description" : {
-                    "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
-                    "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
-                    "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
-                }
+                "name" : "TBD",
+                "role" : "역할",
+                "description" : ""
             }
         },
         "krMembers" : {
@@ -673,21 +660,17 @@
             "roleBadge" : "../../static/img/partner.png",
             "role" : "Founder / Director of Instruction",
             "description" : {
-                "0" : "A PGA golf professional for 23 years, Rhys Ogden is the founder of BP Golf Academy and the Head of Instruction.",
-                "1" : "After completing his PGA traineeship at Mt Maunganui Golf Club, he taught high performance junior golfers in South Korea. This strengthened his coaching ability by immersing himself in another culture, with different learning styles, communication, and key outcomes.",
-                "2" : "Over the next 12 years, he would hold the positions of Head Golf Professional, lecturer, and Golf Paper Leader at Auckland University of Technology (AUT).",
-                "3" : "During his time at AUT, Rhys developed and delivered the golf curriculum for the University. He was fortunate enough to have learnt from many leading sporting coaches and specialists, and this combined knowledge and experience has helped to shape the curriculum that BP Golf Academy delivers today."
+              "0": "Rhys Ogden은 23년 경력의 PGA이며 BP Golf Academy의  창립자이자 Head of Instructor입니다.",
+              "1": "Mt. Maunganui Golf Club에서 PGA 교육과정을  마친 후, 한국에서 실력파 주니어 골퍼들을 가르쳤습니다. 이러한 경험을 바탕으로 다른 학습 스타일, 커뮤니케이션, 주요 결과물을 통해 다른 문화를 경험 으로써 코칭 능력을 강화시켰습니다.",
+              "2": "그 후12년 동안Auckland University of Technology (AUT)골프학과에서 헤드 골프프로로서 강의를 했으면 Golf Paper Leader로서 근무하는 동안 학과를 위한 골프 커리큘럼을 개발하고 제공하였습니다.",
+              "3": "많은 최고의 스포츠 코치들과 전문가들로부터 지도를 받았고, 이러한 지식과 경험이 합쳐져 오늘날 BP Golf Academy가 제공하는 커리큘럼을 형성하는 데 도움이 되었습니다."
             }
           },
             "1" : {
                 "avatar" : "../../static/img/partner.png",
-                "name" : "korean Member",
-                "role" : "xxxxxxxxx",
-                "description" : {
-                    "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
-                    "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
-                    "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
-                }
+                "name" : "TBD",
+                "role" : "역할",
+                "description" : ""
             }
         }
       }

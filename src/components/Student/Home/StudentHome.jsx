@@ -8,17 +8,18 @@ import { AiOutlineUser } from 'react-icons/ai';
 import { AiOutlineProfile } from 'react-icons/ai';
 import { AiOutlineCheck } from 'react-icons/ai';
 import { AiOutlineSnippets } from 'react-icons/ai';
-import { AiOutlineWarning } from 'react-icons/ai';
+import { AiTwotoneCalendar } from 'react-icons/ai';
 import { AiOutlineVideoCamera } from 'react-icons/ai';
+import { BsBook } from 'react-icons/bs';
 
 
 export default function StudentHome({setUser}){
     const cards = [
         {title: "Profile", icon: <AiOutlineUser />, path:"/student/profile"},
-        {title: "Schedule", icon: <AiOutlineProfile />, path:"/student/schedule"}, ,
+        {title: "Schedule", icon: <AiTwotoneCalendar />, path:"/student/schedule"}, ,
         {title: "Result", icon: <AiOutlineCheck />, path:"/student/results"},
-        {title: "Modules", icon: <AiOutlineSnippets />, path:"/student/modules"},
-        {title: "Equipment", icon: <AiOutlineWarning />, path:"/student/equipment"},
+        {title: "Modules", icon: <BsBook />, path:"/student/modules"},
+        {title: "Lesson", icon: <AiOutlineProfile />, path:"/student/lesson"},
         {title: "Video library", icon: <AiOutlineVideoCamera />, path:"/student/video-library"},
         {title: "Development Program", icon: <AiOutlineSnippets />, path: '/student/development-program'},
     ]

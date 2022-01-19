@@ -3,7 +3,6 @@ import { useParams } from "react-router";
 import { getTheBlog } from '../../../api/blog/blog';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
-import NavBar from "../../NavBar/NavBar";
 
 
 
@@ -24,6 +23,16 @@ const BlogContent = ({ user, props }) => {
 
     const [loading, setLoading] = React.useState(true)
 
+    const handleShare = () => {
+        if (navigator.share) {
+            const temp = {title: blog.title, url: window.location.href};
+            navigator.share({
+                title: blog.title, 
+                url: window.location.href
+            }).then().catch(console.error);
+        }
+    }
+
     React.useEffect(async () => {
         let blogData = await getTheBlog(id);
         setBlog(blogData);
@@ -31,7 +40,7 @@ const BlogContent = ({ user, props }) => {
         console.log(blogData.title);
         setLoading(false);
     }, []);
-
+    
     return (
         <div>
 
@@ -63,8 +72,8 @@ const BlogContent = ({ user, props }) => {
                     <text className='blog_content_content'>
                         {blog.content}
                     </text>
-                    <div className='blog_content_share'>
-                        share
+                    <div className='blog_content_share' onClick={handleShare}>
+                        {navigator.share ? 'share' : ''}
                     </div>
                 </div>
             </div>)}

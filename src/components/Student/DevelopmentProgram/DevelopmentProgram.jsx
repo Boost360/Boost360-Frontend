@@ -15,8 +15,8 @@ import Skeleton from '@mui/material/Skeleton';
 
 const DevelopmentProgram = ({user}) => {
     const student_id = user._id;
-
-    const [rows, setRow] = React.useState([
+    // Display 6 empty rows by default
+    const [rows, setRow] = React.useState(Array(6).fill(
         {
             session: '',
             date: '',
@@ -25,13 +25,14 @@ const DevelopmentProgram = ({user}) => {
             file: '',
             complete: false
         }
-    ]);
+    ));
 
     const [loading, setLoading] = React.useState(true)
 
     React.useEffect(async () => {
         let devData = await devProgramStudent(student_id);
-        setRow(devData.data);
+        // If there is no content, we DONT update rows and use default empty rows
+        if (devData.data.length > 0) setRow(devData.data);
         setLoading(false);
     }, []);
 
@@ -70,7 +71,13 @@ const DevelopmentProgram = ({user}) => {
                                             <TableCell align="center">{row.date.substring(0, 10)}</TableCell>
                                             <TableCell align="center">{row.topic}</TableCell>
                                             <TableCell align="center">{row.learningReference}</TableCell>
-                                            <TableCell align="center"><a href={row.file} className='development_program_file_icon'><InsertDriveFileIcon/></a></TableCell>
+                                            <TableCell align="center">
+                                                {row.file ? 
+                                                    <a href={row.file} className='development_program_file_icon'><InsertDriveFileIcon/></a>
+                                                    :
+                                                    ''
+                                                }
+                                            </TableCell>
                                             <TableCell align="center">{row.completed?<Checkbox disabled checked /> : <Checkbox  disabled />}</TableCell>
                                         </TableRow>
                                     ))}

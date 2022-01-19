@@ -30,9 +30,12 @@
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    width: 100%;
+    width: 90vw;
     flex-grow: 0;
     flex-shrink: 0;
+    background: #b2c5ee;
+    border-radius: 10px;
+    padding-left: 10px;
 }
 
 .levels .level h2 {
@@ -45,9 +48,28 @@
 
 .levels .level p {
     position: relative;
-    width: 60%;
+    width: 100%;
     font: inherit;
 }
+
+/* Level colors */
+.levels .level:nth-child(3) {
+    background: linear-gradient(90deg, rgb(255, 254, 187) 0%, rgba(255,255,255,1) 100%) ;
+}
+.levels .level:nth-child(4) {
+    background: linear-gradient(90deg, rgb(253, 174, 174) 0%, rgba(255,255,255,1) 100%) ;
+}
+.levels .level:nth-child(5) {
+    background: linear-gradient(90deg, rgb(255, 228, 187) 0%, rgba(255,255,255,1) 100%) ;
+}
+.levels .level:nth-child(6) {
+    background: linear-gradient(90deg, rgb(192, 255, 179) 0%, rgba(255,255,255,1) 100%) ;
+}
+.levels .level:nth-child(7) {
+    background: linear-gradient(90deg, rgb(187, 187, 187) 0%, rgba(255,255,255,1) 100%) ;
+}
+
+
 
 
 

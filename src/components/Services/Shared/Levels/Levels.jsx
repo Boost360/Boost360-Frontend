@@ -10,7 +10,7 @@ export default function Levels({ data }) {
     const levels = data.levels;
     // Position for each child
     const temp = [30, 150];
-    const positions = temp.concat(Object.keys(levels).map((key, i) => i * 100 + 200));
+    const positions = temp.concat(Object.keys(levels).map((key, i) => i * 100 + 210));
     // Container height 
     const viewport = 1500;
     const container_height = viewport * positions.length + viewport;

@@ -588,13 +588,9 @@
                 },
                 "1" : {
                     "avatar" : "../../static/img/partner.png",
-                    "name" : "Member 2",
-                    "role" : "xxxxxxxx",
-                    "description" : {
-                        "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
-                        "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
-                        "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
-                    }
+                    "name" : "TBD",
+                    "role" : "role",
+                    "description" : ""
                 }
             },
             "krMembers" : {
@@ -612,13 +608,9 @@
                 },
                 "1" : {
                     "avatar" : "../../static/img/partner.png",
-                    "name" : "korean Member",
-                    "role" : "xxxxxxxxx",
-                    "description" : {
-                        "0" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores minima laboriosam, eaque saepe dolore impedit odio voluptates porro quidem cum ipsam accusantium tempora unde neque recusandae quibusdam sint minus vero tempore maiores. Beatae possimus qui accusamus quae pariatur non? Numquam repellendus tenetur dolores dolor! Ex veniam laudantium blanditiis sapiente, animi porro cumque suscipit molestias id. Beatae non, provident sint voluptatibus quasi pariatur, enim quod inventore repellat earum eligendi consectetur eos, possimus molestias cumque eaque fugiat. Nobis accusantium mollitia esse, numquam officia sed quidem excepturi deleniti iste dolor. Deleniti laborum, ad modi provident amet perspiciatis aliquid.",
-                        "1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini",
-                        "2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium fuga libero temporibus asperiores mini"
-                    }
+                    "name" : "TBD",
+                    "role" : "role",
+                    "description" : ""
                 }
             }
         }

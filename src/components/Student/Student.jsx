@@ -9,6 +9,7 @@ import Profile from "./Profile/Profile";
 import VideoLibrary from "./VideoLibrary/VideoLibrary";
 import Result from "./Result/Result";
 import PageTransition from "../PageTransition/PageTransition";
+import Lesson from "./Lesson/Lesson";
 
 
 /**
@@ -68,6 +69,13 @@ const Student = ({ user, setUser }) => {
                 <PageTransition>
                     <NavBar page='Video-library' user={user}></NavBar>
                     <VideoLibrary></VideoLibrary>
+                </PageTransition>
+            </Route>
+
+            <Route path={`${path}/lesson`} exact>
+                <PageTransition>
+                    <NavBar page='Lesson' user={user}></NavBar>
+                    <Lesson user={user}></Lesson>
                 </PageTransition>
             </Route>
 

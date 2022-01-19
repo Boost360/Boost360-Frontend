@@ -91,6 +91,8 @@
     width: 70%;
     margin-left: 15%;
     text-align: left;
+    background: var(--text);
+    min-height: 300px;
 }
 .blog_content_title {
     margin-top: 100px;
@@ -119,11 +121,17 @@
     /* white-space here for text could start with a new line like in database */
 }
 .blog_content_share {
+    cursor: pointer;
     margin-top: 70px;
     font-size: 15px;
     font-weight: 400;
     color: #828282;
     margin-bottom: 100px;
+}
+.blog_content_share:hover {
+    position: relative;
+    color: var(--primary);
+    top: -3px;
 }
 
 /* loading skeleton */
