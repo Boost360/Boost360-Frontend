@@ -8,6 +8,8 @@
     background: url('../../static/img/background9.png');
     background-size: cover;
     background-position: bottom;
+    animation: clear 3s ease;
+    animation-fill-mode: forwards;
 }
 .LandingPage video {
     object-fit: cover;
@@ -176,6 +178,10 @@
     animation: top-enter 2s ease;
     animation-fill-mode: forwards;
     animation-delay: 2s;
+}
+@keyframes clear{
+    0% {filter: blur(10px);}
+    100% {filter: blur(0);}
 }
 @keyframes top-enter {
     0% {top: 200px; opacity: 0;}
