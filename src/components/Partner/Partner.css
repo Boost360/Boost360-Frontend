@@ -14,11 +14,12 @@
 .partner_page_navigation_container {
     position: sticky;
     position: -webkit-sticky;
-    top: 0px;
+    /* navBar height is 65px */
+    top: 65px; 
     padding: 25px 0 25px 0;
     width: 100%;
     background: white;
-    z-index: 300;
+    z-index: 50;
 }
 .navigation_partner_image_container {
     width: 5%;
