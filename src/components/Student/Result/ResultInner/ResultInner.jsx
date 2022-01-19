@@ -45,7 +45,7 @@ const ResultInner = (props) => {
                     {data.map((row) => (
                         <div className='result_inner_row'>
                             <div className='result_inner_file_icon'>
-                                <InsertDriveFileIcon sx={{width: '30px'}}/>
+                                <InsertDriveFileIcon sx={{width: '30px'}} />
                             </div>
                             <div className='result_inner_file_name'>
                                 {row.fileName}

@@ -5,12 +5,12 @@
 .result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
     color: var(--text)!important;
     font-size: 20px;
-    margin: 20px
+    margin: 20px;
 }
 .result_container {
     background: var(--background2);
     color: white;
-    height: 100vh;
+    height: auto;
 }
 .result_inner_container {
     width: 80%;
@@ -60,7 +60,8 @@
 .result_inner_file_icon svg {
     fill: transparent;
     stroke: white;
-    font-size: 60px;
+    font-size: 35px;
+    padding-top: 20px;
 }
 .result_inner_file_download svg {
     fill: var(--inactive);
