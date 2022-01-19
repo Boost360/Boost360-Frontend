@@ -1,34 +1,31 @@
 import React from 'react'
 import '../Team.css'
-import Paragraph from '../../Services/Shared/Paragraph/Paragraph'
-import rhys from '../../../static/img/RhysOgden.png'
-import avatar_placeholder from '../../../static/img/avatar.png'
 import badge from '../../../static/img/partner.png'
-import Skeleton from '@mui/material/Skeleton'
 
 
-function Member({member}) {
-    // Register member name and avatar source here :
-    const images = {
-        "Rhys Ogden" : rhys
-    };
-    const avatar = images[member.name] ? images[member.name] : avatar_placeholder;
+function Member({ member, lang }) {
+
     return (
         <div className="member">
             <div className="left">
-                <img src={avatar} alt={member.name} />
+                <img src={member.avatar} alt={member.name} />
                 <div className="name">
-                    <p>{member.name}</p> 
-                    {member.roleBadge && <img src={badge} alt={`${member.name} badge`} />}
+                    <p>{member.name}</p>
+                    {member.PGA && <img src={badge} alt={`${member.name} badge`} />}
                 </div>
                 <h2>{member.role}</h2>
             </div>
             <div className="right">
-                {member.description ? 
-                    <Paragraph json={member.description} gap={2}></Paragraph>
-                    :
-                    <Skeleton variant="rectangular" height={300} />
-                }
+                <p style={{ whiteSpace: 'pre-wrap' }}>
+                    {(() => {
+                        switch (lang) {
+                            case "en": return  member.description ;
+                            case "ch": return (member.description_ch && member.description);
+                            case "kr": return (member.description_kr && member.description_kr);
+                            default: return member.description;
+                        }
+                    })()}
+                </p>
             </div>
         </div>
     )
