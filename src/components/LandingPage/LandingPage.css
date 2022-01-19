@@ -74,8 +74,9 @@
 }
 
 .landingButton:hover{
-    background: var(--white);
-    color: var(--black);
+    /* background: var(--text);
+    color: var(--black); */
+    transform: scale(1.1);
 }
 
 
