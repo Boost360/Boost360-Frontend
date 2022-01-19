@@ -3,10 +3,10 @@ import "./LandingPage.css";
 import logo from '../../static/img/logo/bottom_text_white.svg';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import GolfAnimation from './GolfAnimation';
-import Background_png from '../../static/img/Landing_background.png';
-import Background_mp4 from '../../static/img/Landing_background.mp4';
-import Background_webm from '../../static/img/Landing_background.webm';
+// import GolfAnimation from './GolfAnimation';
+// import Background_png from '../../static/img/Landing_background.png';
+// import Background_mp4 from '../../static/img/Landing_background.mp4';
+// import Background_webm from '../../static/img/Landing_background.webm';
 
 export default function LandingPage({user}) {
     const { t, i18n } = useTranslation()

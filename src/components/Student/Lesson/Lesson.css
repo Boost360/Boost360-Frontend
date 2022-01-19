@@ -1,0 +1,39 @@
+.lesson_container{
+    background: var(--background2);
+    padding: 10px 10% 100px 10%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.lesson_program {
+    color: var(--text);
+    text-align: left;
+    padding-bottom: 5px;
+}
+.lesson_program h1 {    
+    font: var(--primary-bold);
+}
+
+
+.lesson_program h2 {    
+    font: var(--tertiary-light);
+}
+.lesson_header {
+    background: white;
+}
+.lesson_table .lesson_row:nth-child(odd) {
+    background: rgb(221, 220, 220);
+}
+.lesson_row {
+    background: #F1F1F1;
+    text-align: left;
+}
+.lesson_file_icon svg {
+    fill: white;
+    stroke: black;
+}
+@media (max-width: 800px) {
+    .lesson_container{
+        padding: 50px 5% 50px 5%;
+    }
+}

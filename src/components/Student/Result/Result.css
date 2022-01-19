@@ -3,25 +3,26 @@
     display: block!important;
 }
 .result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-    color: white!important;
+    color: var(--text)!important;
     font-size: 20px;
-    margin: 20px
+    margin: 20px;
 }
 .result_container {
     background: var(--background2);
     color: white;
-    height: 100vh;
+    height: auto;
 }
 .result_inner_container {
     width: 80%;
     margin-left: 10%;
-    margin-top: 30px;
+    margin-bottom: 200px;
 }
 @media (max-width: 800px) {
     .result_inner_container {
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
+        font-size: 15px;
     }
     .result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
         margin: unset!important;
@@ -34,11 +35,12 @@
     font-size: 20px;
     display: flex;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .result_inner_file_icon {
     width: 15%;
     text-align: left;
+    color: white;
 }
 .result_inner_file_name {
     width: 35%;
@@ -58,11 +60,15 @@
 .result_inner_file_icon svg {
     fill: transparent;
     stroke: white;
-    font-size: 60px;
+    font-size: 35px;
+    padding-top: 20px;
 }
 .result_inner_file_download svg {
-    fill: transparent;
-    stroke: white;
+    fill: var(--inactive);
+    cursor: pointer;
+}
+.result_inner_file_download svg:hover {
+    fill: white;
 }
 @media (max-width: 800px) {
     .result_inner_row {
