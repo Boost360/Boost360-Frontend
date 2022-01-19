@@ -6,9 +6,9 @@ import { RiKakaoTalkLine } from 'react-icons/ri';
 import { FaInstagram } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import WechatModal from "../WechatModal/WechatModal";
-import Background_webm from '../../static/img/Home_background.webm';
-import Background_mp4 from '../../static/img/Home_background.mp4';
-import Background_png from '../../static/img/Home_background.png';
+// import Background_webm from '../../static/img/Home_background.webm';
+// import Background_mp4 from '../../static/img/Home_background.mp4';
+// import Background_png from '../../static/img/Home_background.png';
 
 export default function HomePage() {
     // useEffect(() => {
