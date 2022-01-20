@@ -41,7 +41,6 @@
 
 .team .members {
     padding-bottom: 200px;
-    margin-top: -100px;
 }
 .team .member {
     display: flex;
@@ -51,7 +50,10 @@
     flex-grow: 0;
     flex-shrink: 0;
     gap: 0;
-    margin: clamp(10px, 14%, 1000px);
+    margin-left: clamp(10px, 14%, 1000px);
+    margin-right: clamp(10px, 14%, 1000px);
+    margin-top: clamp(10px, 9%, 1000px);
+    margin-bottom: clamp(10px, 9%, 1000px);
     border-bottom: 2px solid rgb(192, 192, 192);
     flex-wrap: wrap;
     padding-bottom: 80px;
