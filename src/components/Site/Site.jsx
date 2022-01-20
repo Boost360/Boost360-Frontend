@@ -13,8 +13,11 @@ import StudentModules from "../Student/Modules/StudentModules";
 import Membership from "../Services/Membership/Membership";
 import JuniorGolf from "../Services/JuniorGolf/JuniorGolf";
 import RemoteLearning from "../Services/RemoteLearning/RemoteLearning";
+import Screening from "../Services/Screening/Screening";
+import Coaching from "../Services/Coaching/Coaching";
 import Login from "../Student/Login/Login"
 import PageTransition from "../PageTransition/PageTransition"
+
 /**
  * This is the entry point of front site.
  * @Author Zach
@@ -24,8 +27,10 @@ const Site = ({ user,setUser }) => {
     return (
         <div>
             <Route path='/index' exact>
-                    <NavBar page='Home' user={user}></NavBar>
-                    <HomePage></HomePage>
+                    {/* <NavBar page='Home' user={user}></NavBar>
+                    <HomePage></HomePage> */}
+                    <NavBar page='Remote-learning' user={user}></NavBar>
+                    <RemoteLearning></RemoteLearning>
             </Route>
 
             <Route path='/about'>
@@ -67,6 +72,20 @@ const Site = ({ user,setUser }) => {
                 <PageTransition>
                     <NavBar page='Remote-learning' user={user}></NavBar>
                     <RemoteLearning></RemoteLearning>
+                </PageTransition>
+            </Route>
+
+            <Route path='/screening'>
+                <PageTransition>
+                    <NavBar page='Screening' user={user}></NavBar>
+                    <Screening></Screening>
+                </PageTransition>
+            </Route>
+
+            <Route path='/coaching'>
+                <PageTransition>
+                    <NavBar page='Coaching' user={user}></NavBar>
+                    <Coaching></Coaching>
                 </PageTransition>
             </Route>
 

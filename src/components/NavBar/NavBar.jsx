@@ -42,6 +42,8 @@ const NavBar = ({ page, user, header = null }) => {
             'Remote-learning': { path: '/remote-learning', parentPage: null },
             'Membership': { path: '/membership', parentPage: null },
             'Junior-golf': { path: '/junior-golf', parentPage: null },
+            'Coaching' : {path: '/coaching', parentPage: null},
+            'Screening' : {path: '/screening', parentPage: null},
             'Blog': { path: '/blog', parentPage: null },
             'Blog-Detail': { path: '/blog/', parentPage: 'Blog' },
             'Language': { path: '/language', parentPage: null },
@@ -120,6 +122,8 @@ const NavBar = ({ page, user, header = null }) => {
                 <MenuItem page='Contact' className="menuItem-mobile" />
                 <MenuItem page='Remote-learning' className="menuItem-mobile" />
                 <MenuItem page='Junior-golf' className="menuItem-mobile" />
+                <MenuItem page='Screening' className="menuItem-mobile" />
+                <MenuItem page='Coaching' className="menuItem-mobile" />
                 <MenuItem page='Team' className="menuItem-mobile" />
                 <MenuItem page='Partners' className="menuItem-mobile" />
                 <MenuItem page='Blog' className="menuItem-mobile" />
@@ -132,6 +136,8 @@ const NavBar = ({ page, user, header = null }) => {
             <MenuItem page='Contact' />
             <MenuItem page='Remote-learning' />
             <MenuItem page='Junior-golf' />
+            <MenuItem page='Screening' />
+            <MenuItem page='Coaching' />
             <MenuItem page='Team' />
             <MenuItem page='Partners' />
             <MenuItem page='Blog' />
@@ -143,7 +149,7 @@ const NavBar = ({ page, user, header = null }) => {
     const goBack = () => { setPage(parentPage); };
     const openMobileMenu = () => { setMobileMenu(true); }
     const closeMobileMenu = () => { setMobileMenu(false); }
-    const LogoIcon = () => <span className='logoWrapper'><MenuItem page='Home'><div className="logo"></div></MenuItem></span>;
+    const LogoIcon = () => <span className='logoWrapper'><MenuItem page='Remote-learning'><div className="logo"></div></MenuItem></span>;
     const MenuIcon = () => <span className="menuIconWrapper"><AiOutlineMenu className='menuIcon icon' onClick={openMobileMenu} /></span>;
     const LeftIcon = () => <span className="leftIconWrapper"><AiOutlineArrowLeft className='leftIcon icon' onClick={goBack} /></span>;
 
