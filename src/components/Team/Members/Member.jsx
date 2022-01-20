@@ -19,9 +19,9 @@ function Member({ member, lang }) {
                 <p style={{ whiteSpace: 'pre-wrap' }}>
                     {(() => {
                         switch (lang) {
-                            case "en": return  member.description ;
-                            case "ch": return (member.description_ch && member.description);
-                            case "kr": return (member.description_kr && member.description_kr);
+                            case "en": return member.description;
+                            case "ch": return (!member.description_ch ? member.description : member.description_ch);
+                            case "kr": return (!member.description_kr ? member.description : member.description_kr);
                             default: return member.description;
                         }
                     })()}
