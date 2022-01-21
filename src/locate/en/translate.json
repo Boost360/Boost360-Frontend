@@ -71,17 +71,6 @@
             "Development-program":"Development program"
         },
 
-        "team" : {
-            "rhys" : {
-                "p0" : {
-                    "0": "A PGA golf professional for 23 years, Rhys Ogden is the founder of BP Golf Academy and the Head of Instruction.",
-                    "1":"After completing his PGA traineeship at Mt Maunganui Golf Club, he taught high performance junior golfers in South Korea. This strengthened his coaching ability by immersing himself in another culture, with different learning styles, communication, and key outcomes.",
-                    "2":"Over the next 12 years, he would hold the positions of Head Golf Professional, lecturer, and Golf Paper Leader at Auckland University of Technology (AUT).",
-                    "3":"During his time at AUT, Rhys developed and delivered the golf curriculum for the University. He was fortunate enough to have learnt from many leading sporting coaches and specialists, and this combined knowledge and experience has helped to shape the curriculum that BP Golf Academy delivers today."
-                }
-            }
-        },
-
         "partners" : {
             "0" : {
                 "company":"T1",
@@ -138,24 +127,7 @@
         "juniorGolf":{
             "Intro": {
                 "h0": "Junior Golf Academy",
-                "p0": {
-                    "0": "The Junior Golf Academy is a structured and goal-oriented program, with a key focus on students’ long-term enjoyment and success.",
-                    "1": "",
-                    "2": "Students are supported through a critical time in both their physical development and golf development.",
-                    "3": "",
-                    "4": "The students will progressively learn all aspects of the golf game as they go through the 5-level development system.",
-                    "5": "",
-                    "6": "With this in-depth combination of teaching skills, physical and mental coaching, our students will have all the tools to succeed.",
-                    "7": "",
-                    "8": "",
-                    "9": "The students will be evaluated on the following:",
-                    "10": "- Golf Swing technical Skills",
-                    "11": "- Statistical performance",
-                    "12": "- Physical movement proficiency",
-                    "13": "- Social and mental development",
-                    "14": "- Understanding equipment",
-                    "15": "- On course knowledge"
-                }
+                "content": "The Junior Golf Academy is a structured and goal-oriented program, with a key focus on students’ long-term enjoyment and success.\n\nStudents are supported through a critical time in both their physical development and golf development.\n\nThe students will progressively learn all aspects of the golf game as they go through the 5-level development system.\n\nWith this in-depth combination of teaching skills, physical and mental coaching, our students will have all the tools to succeed.\n\n\nThe students will be evaluated on the following:\n• \tGolf Swing technical Skills\n• \tStatistical performance\n• \tPhysical movement proficiency\n• \tSocial and mental development\n• \tUnderstanding equipment\n• \tOn course knowledge"
             },
             "HowItWorks": {
                 "h0": "How our JGA works",
@@ -327,15 +299,7 @@
         "remoteLearning":{
             "Intro": {
                 "h0": "Remote Learning",
-                "p0": {
-                    "0": "In order to maximise your learning opportunity we have created a comprehensive self-learning program. This provides you with the flexibility to learn at your own pace whilst working around other commitments.",
-                    "1": "",
-                    "2": "",
-                    "3": "You will receive a comprehensive toolkit of services, designed to ensure you are fully supported and continually learning the skills required to perfect your technique and knowledge.",
-                    "4": "",
-                    "5": "",
-                    "6": "The program is aligned with our online modular learning system, which includes topic information, video instruction and interactive quizzes to reinforce learning."
-                }
+                "content": "In order to maximise your learning opportunity we have created a comprehensive self-learning program. This provides you with the flexibility to learn at your own pace whilst working around other commitments.\n\nYou will receive a comprehensive toolkit of services, designed to ensure you are fully supported and continually learning the skills required to perfect your technique and knowledge.\n\nThe program is aligned with our online modular learning system, which includes topic information, video instruction and interactive quizzes to reinforce learning."
             },
             "HowItWorks": {
                 "h0": "How we start",
@@ -569,7 +533,153 @@
                 "description":"---------------------- $990 ---------------------"
             }
         },
-        
+        "screening": {
+            "Intro" : {
+              "h0" : "Screening",
+              "content" : "Our screening process is in place to get a detailed account of the students current level. It underpins the development plan by setting a benchmark from which goals and development comparisons can be made.\n\nThe more information the coach has about the student, the better the development plan and learning efficiency.",
+              "note" : "Screening service will be available in South Korea from May 1st 2022"
+            },
+            "Swing" : {
+              "h0" : "Swing Technique Screening",
+              "description" : "We use the latest in golf swing analysis technology to get a detailed understanding of each golfer’s swing form. Specifically, the data will help to identify specific areas where changes can be made to produce the desired ball flight.",
+              "duration" : {
+                "label" : "Duration : ",
+                "time" : "1 Hour"
+              },
+              "outcome" : {
+                "h0" : "Screening outcomes : ",
+                "points" : {
+                  "0" : "Identify strengths and weaknesses.",
+                  "1" : "Understand how to create the desired ball flight.",
+                  "2" : "The distance the ball travels for each club."
+                }
+              },
+              "summary" : "At the conclusion of the screening a report will be available that includes all data collected. The report will also contain recommended areas of development.",
+              "price" : "$ 149"
+          
+            },
+            "Club" : {
+              "h0" : "Club Fitting",
+              "description" : "To maximise correct swing technique, it is important to have correctly fitted equipment. \n\nThroughout the process we gather information so we can fit equipment to your specific game and the common environments that you participate.\n\nState of the art analysis technology will be used in the process to analyze the most specific dynamics of the golf club and shot results.",
+              "duration" : {
+                "label" : "Duration : ",
+                "time" : "1.5 Hours"
+              },
+              "outcome" : {
+                "h0" : "Screening outcomes : ",
+                "points" : {
+                  "0" : "Assess current equipment.",
+                  "1" : "Educate you on equipment specifications.",
+                  "2" : "Recommendations for current equipment alterations, or new equipment options."
+                }
+              },
+              "summary" : "A detailed equipment specification report will be available to you. This is a great reference to have for the consistency of future fitting sessions.",
+              "price" : "$ 149"
+          
+            },
+            "Movement" : {
+              "h0" : "Movement Screening",
+              "description" : "Movement screening is based around the body and swing connection. The movement screening will allow the golf coach to identify the most efficient way for you to swing according to your body functionality.\n\nAUT Millennium Sports Performance Clinic will uses state of the art assessment technology from leaders in the sports performance field to deliver our movement screenings.\n\nThe screening options begin with balance and movement competency, with further options for advanced athletes, assessing dynamic strength, body composition and nutrition.",
+              "outcome" : {
+                "h0" : "Screening outcomes : ",
+                "points" : {
+                  "0" : "Identify areas where injury may occur.",
+                  "1" : "Identify areas of limitations for development.",
+                  "2" : "Benchmarking for development."
+                }
+              },
+              "summary" : "At the conclusion of the screening a report will be available that identifies areas with limitations, along with a movement development plan.",
+              "price" : "$ PROGRAM DEPENDENT"
+          
+            },
+            "QA": {
+              "h0": "Asked & Answered",
+              "QAs": {
+                  "0": {
+                      "question": "Golf analysis technology looks too confusing to me. Do I need all this data?",
+                      "answer": { "0": "The golf analysis technology produces a large and detailed amount of data. This data is more for the coach than the student. Our coaches will only relay the data that will benefit your development. Our personal view is to gain as much information as possible and keep it as simple as possible for you." }
+                  },
+                  "1": {
+                      "question": "Do I need to know all the data terminology?",
+                      "answer": { "0": "This is not a requirement as the coach will educate you on the terms specific to your development. However, learning and understanding the data terms and meanings can only increase your comfort with technology and understanding swing technique." }
+                  },
+                  "2": {
+                      "question": "Is club fitting suitable for beginner golfers?",
+                      "answer": { "0": "Yes. There are essential elements of the golf club that must suit the individual to allow for correct swing motion, and that applies to golfers of all levels. It is also important to note that the purpose of the fitting session between a beginner and advanced golfer is quite different." }
+                  },
+                  "3": {
+                      "question": "Can my current clubs be fitted for me?",
+                      "answer": { "0": "Yes. Adjustments can be made by way of reshafting, regripping and lie / loft adjustments." }
+                  },
+                  "4": {
+                      "question": "Why is it important for the coach to know how I move?",
+                      "answer": { "0": "It will inform the coach of your physical areas of limitation, and will help to determine the method applied to develop your swing. If the movement limitations are unable to be developed, the coach will create a swing form around those limitations." }
+                  }
+              },
+              "link": "Can’t find the answer to your questions? Please contact us."
+            }
+        },
+        "coaching" : {
+        "Intro" : {
+            "h0" : "Coaching"
+        },
+        "Instructors" : {
+            "Rhys" : {
+            "name" : "RHYS OGDEN",
+            "badge" : "0",
+            "role" : "Director of Instructor",
+            "priceTable" : {
+                "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+                "rows" : [
+                ["GUEST", "$140", "$650", "$1200"],
+                ["", "", "", ""],
+                ["MEMBER", "$110", "$500", "$900"]
+                ]
+            }
+            },
+            "TBA" : {
+            "name" : "TBA",
+            "role" : "Performance Instructor",
+            "description" : "The Performance Instructors provide an exclusive service to our BP Golf Academy members. Our Performance Instructors are in the process of completing their Masters in Human Movement and Sport Psychology, so they will bring a unique perspective to the learning process, and add a further level of understanding.",
+            "priceTable" : {
+                "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+                "rows" : [
+                ["MEMBER ONLY", "$70", "$300", "$500"]
+                ]
+            }
+            }
+        },
+        "QA" : {
+            "h0" : "Asked and Answered",
+            "QAs" : {
+            "0" : {
+                "question" : "What is the location of the lesson?",
+                "answer" : {"0" : "Waitakere Golf Course, Auckland."}
+            },
+            "1" : {
+                "question" : "How do I qualify for a member price?",
+                "answer" : {"0" : "You must be one of the following :\n- Remote program member\n- Junior Academy member\n- Waitakere Golf Course member"}
+            },
+            "2" : {
+                "question" : "What is the price for 2 or more students per lesson?",
+                "answer" : {"0" : "For each additional student, add 20% to the price stated."}
+            },
+            "3" : {
+                "question" : "What is the price for a non-member learning with a member?",
+                "answer" : {"0" : "We view you as a guest of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
+            },
+            "4" : {
+                "question" : "Do the lesson packages have an expiry date?",
+                "answer" : {"0" : "Yes. One year from the purchase date."}
+            },
+            "5" : {
+                "question" : "Do you offer gift certificates?",
+                "answer" : {"0" : "Yes, we can provide a nicely presented lesson voucher in either a digital format or in hardcopy."}
+            }
+            },
+            "link" : "Can’t find the answer to your questions? Please contact us."
+        }
+        },
         "team" : {
             "nzTeam" : "New Zealand Team",
             "nzLocation" : "Auckland",

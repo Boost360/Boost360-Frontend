@@ -1,0 +1,41 @@
+.instructor {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 20px;
+}
+.instructor .top_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 300px;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 0;
+}
+.instructor .top_container hr {
+    width: 100px;
+    text-align: left;
+}
+.instructor .top_container h1 {
+    font: var(--secondary-medium);
+}
+.instructor .top_container img {
+    width: 50px;
+    padding: 15px 0px 0 10px;
+}
+.instructor .location span:nth-child(1){
+    font: var(--secondary-medium);
+    padding-right: 10px;
+}
+.instructor .description {
+    white-space: pre-wrap;
+}
