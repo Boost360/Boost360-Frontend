@@ -10,7 +10,7 @@
 .result_container {
     background: var(--background2);
     color: white;
-    height: auto;
+    height: 100vh;
 }
 .result_inner_container {
     width: 80%;

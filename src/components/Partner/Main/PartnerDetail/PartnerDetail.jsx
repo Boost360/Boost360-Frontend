@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import partner_logo from '../../../../static/img/partner.png'
+import React from 'react';
 import {useTranslation} from 'react-i18next'
 
 const PartnerDetail = ({partner}) => {
