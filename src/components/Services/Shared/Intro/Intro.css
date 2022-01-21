@@ -9,6 +9,19 @@
     flex-shrink: 0;
     gap: 0;
     z-index: 1;
+    white-space: pre-wrap;
+}
+
+.intro * {
+    width: clamp(250px, 50%, 1000px);
+    line-height: 1.7em;
+    text-align: left;
+    animation: fade-in-top 3s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 3;
+    white-space: pre-wrap;
 }
 
 .intro h1 {
@@ -18,23 +31,8 @@
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
     opacity: 0;
-    
 }
 
-
-
-.intro p {
-    width: clamp(250px, 50%, 1000px);
-    font: inherit;
-    line-height: 1.7em;
-    text-align: left;
-    animation: fade-in-top 3s ease;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    z-index: 3;
-    
-}
 
 .intro img {
     width: 120%;
@@ -50,15 +48,28 @@
     z-index: 2;
 }
 
+.intro-noGraphic {
+    text-align: left;
+    white-space: pre-wrap;
+}
+.intro-noGraphic h1 {
+    text-align: center;
+}
+.intro-noGraphic h3 {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 100px;
+}
 
 @keyframes fade-in-left {
     100%{opacity: 1;}
-    0%{transform: translateX(-500px); opacity: 1;}
+    0%{transform: translateX(-500px); opacity: 0;}
 }
 
 @keyframes fade-in-top {
     100%{opacity: 1;}
-    0%{transform: translateY(-500px); opacity: 1;}
+    0%{transform: translateY(-300px); opacity: 0;}
     
 }
 
