@@ -10,7 +10,7 @@ const ResultInner = (props) => {
     const expr = props.resultType;
     const student = props.user_id;
     // Display 6 empty rows by default
-    const[data, setData] = React.useState(Array(6).fill({
+    const[data, setData] = React.useState(Array(1).fill({
         fileName: '-',
         fileUrl: '',
         date: 'xx/xx/xxxx'
@@ -26,6 +26,7 @@ const ResultInner = (props) => {
                 listData.push(resultData.data[i])
             }
         }
+        
         // If there is no content, we DONT update rows and use default empty rows
         if (listData.length > 0) setData(listData);
         setLoading(false);
@@ -41,8 +42,11 @@ const ResultInner = (props) => {
                     </div>
 
                 ):(
+                    
                     <div className='result_inner_container'>
+                    {console.log(data)}
                     {data.map((row) => (
+                        
                         <div className='result_inner_row'>
                             <div className='result_inner_file_icon'>
                                 <InsertDriveFileIcon sx={{width: '30px'}} />
@@ -51,7 +55,7 @@ const ResultInner = (props) => {
                                 {row.fileName}
                             </div>
                             <div className='result_inner_file_date'>
-                                {row.date.substring(0, 10)}
+                                {row.fileUrl ? row.createdAt.substring(0, 10):'xx/xx/xxxx'}
                             </div>
                             <div className='result_inner_file_download'>
                                 {row.fileUrl ? 
