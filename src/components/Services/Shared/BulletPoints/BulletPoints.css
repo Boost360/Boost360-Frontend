@@ -1,0 +1,13 @@
+.bulletPoint {
+    font: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+}
+
+.bulletPoint span {
+    font-size: 40px;
+    font-weight: 500px;
+    padding: 0 10px 0 10px;
+    position: relative;
+    top: 7px;
+}

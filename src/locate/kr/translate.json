@@ -122,24 +122,7 @@
       "juniorGolf": {
         "Intro": {
           "h0": "Junior Golf Academy",
-          "p0": {
-            "0": "Junior Golf Academy는 체계적이고 목표 지향적인 프로그램으로 장기적으로 학생들의 즐거움과 성공에 중점을 두고 있으며",
-            "1": "",
-            "2": "학생들은 신체 발달과 골프 실력 향상에 있어 중요한 시기를 통해 지원을 받게 됩니다.",
-            "3": "",
-            "4": "또한, 학생들은 5단계 개발시스템을 거치면서 점차적으로 골프경기의 모든 측면을 배우게 될 것입니다.",
-            "5": "",
-            "6": "이렇게 깊이 있는 교수법과 신체적, 정신적 코칭의 조합으로 학생들이 성공할 수 있는 모든 도구를 갖추게 될 것입니다.",
-            "7": "",
-            "8": "",
-            "9": "평가내용",
-            "10": "- 골프 스윙 기술",
-            "11": "- 통계자료",
-            "12": "- null",
-            "13": "- 사회적 정신적 발달사항",
-            "14": "- 장비 이해",
-            "15": "- 코스 지식"
-          }
+          "content": "Junior Golf Academy는 체계적이고 목표 지향적인 프로그램으로 장기적으로 학생들의 즐거움과 성공에 중점을 두고 있으며\n\n학생들은 신체 발달과 골프 실력 향상에 있어 중요한 시기를 통해 지원을 받게 됩니다.\n\n또한, 학생들은 5단계 개발시스템을 거치면서 점차적으로 골프경기의 모든 측면을 배우게 될 것입니다.\n\n이렇게 깊이 있는 교수법과 신체적, 정신적 코칭의 조합으로 학생들이 성공할 수 있는 모든 도구를 갖추게 될 것입니다.\n\n\n평가내용\n • \t  골프 스윙 기술\n • \t  통계자료\n • \t  null\n • \t  사회적 정신적 발달사항\n • \t  장비 이해\n • \t  코스 지식"
         },
         "HowItWorks": {
           "h0": "How our JGA works",
@@ -342,15 +325,7 @@
       "remoteLearning": {
         "Intro": {
           "h0": "원격 학습",
-          "p0": {
-            "0": "학습 기회를 극대화하기 위해 포괄적인  self-learning program을 마련했습니다. 이를 통해 자신만의 속도에 맞춰 학습할 수 있는 유연성을 확보할 수 있습니다.",
-            "2": "",
-            "3": "",
-            "4": "충분한 지원과 함께 기술과 지식을 완벽하게 소화하는 데 필요한 기술을 지속적으로 습득할 수 있도록 설계된 포괄적인 서비스 툴킷이 제공됩니다.",
-            "5": "",
-            "6": "",
-            "7": "이 프로그램은 온라인 모듈러 학습 시스템과 연계되어 있으며, 학습 강화를 위한 주제 정보, 비디오 교육 및 대화형 퀴즈가 포함되어 있습니다."
-          }
+          "content": "학습 기회를 극대화하기 위해 포괄적인 self-learning program을 마련했습니다. 이를 통해 자신만의 속도에 맞춰 학습할 수 있는 유연성을 확보할 수 있습니다.\n\n\n충분한 지원과 함께 기술과 지식을 완벽하게 소화하는 데 필요한 기술을 지속적으로 습득할 수 있도록 설계된 포괄적인 서비스 툴킷이 제공됩니다.\n\n\n이 프로그램은 온라인 모듈러 학습 시스템과 연계되어 있으며, 학습 강화를 위한 주제 정보, 비디오 교육 및 대화형 퀴즈가 포함되어 있습니다."
         },
         "HowItWorks": {
           "h0": "How we start",
@@ -673,6 +648,57 @@
                 "description" : ""
             }
         }
+      },
+      "coaching" : {
+        "Intro" : {
+          "h0" : "Coaching"
+          },
+          "Instructors" : {
+            "Rhys" : {
+              "name" : "RHYS OGDEN",
+              "badge" : "0",
+              "role" : "Director of Instructor",
+              "description" : "Rhys will periodically be in South Korea. During that period, if you wish to meet Rhys in person to discuss any learning opportunities, you are welcome to contact him directly or alternatively contact our Korean information service to make an appointment.\n\nSchedule details yet to be determined. Dates will be displayed on the BP Golf Academy Website."
+            },
+            "TBA" : {
+              "name" : "TBA",
+              "role" : "Senior Instructor",
+              "locationLabel" : "Location : ",
+              "location" : "Seoul, Korean",
+              "priceTable" : {
+                "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+                "rows" : [
+                  ["MEMBER ONLY", "$ TBA", "$ TBA", "$ TBA"]
+                ]
+              }
+            }
+          },
+          "QA" : {
+            "h0" : "Asked and Answered",
+            "QAs" : {
+              "0" : {
+                "question" : "How do I qualify for a member price?",
+                "answer" : {"0" : "You must be one of the following :\n- Remote program member\n- Junior Academy member"}
+              },
+              "1" : {
+                "question" : "What is the price for 2 or more students per lesson?",
+                "answer" : {"0" : "For each additional student, add 20% to the price stated."}
+              },
+              "2" : {
+                "question" : "What is the price for a non-member learning with a member?",
+                "answer" : {"0" : "We view you as a guest of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
+              },
+              "3" : {
+                "question" : "Do the lesson packages have an expiry date?",
+                "answer" : {"0" : "Yes. One year from the purchase date."}
+              },
+              "4" : {
+                "question" : "Do you offer gift certificates?",
+                "answer" : {"0" : "Yes, we can provide a nicely presented lesson voucher in either a digital format or in hardcopy."}
+              }
+            },
+            "link" : "Can’t find the answer to your questions? Please contact us."
+          }
       }
     }
   }

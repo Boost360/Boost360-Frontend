@@ -1,0 +1,51 @@
+.sreeningSession {
+    text-align: left;
+    white-space: pre-wrap;
+} 
+
+.sreeningSession .outcome {
+    opacity: 0.7;
+}
+
+.sreeningSession .duration {
+    font: var(--tertiary-bold);
+}
+
+.sreeningSession .bottom_container {
+    margin-top: 50px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sreeningSession .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: clamp(10px, 10%, 1000px);
+    flex-wrap: wrap;
+}
+.sreeningSession .logos img {
+    width: 40px;
+    padding: 15px 50px 15px 50px;
+}
+
+.sreeningSession .price {
+    width: auto;
+    padding: 10px 25px 0px 25px;
+    border-top: 5px solid black;
+    text-align: center;
+    font: var(--secondary-bold);
+    flex-grow: 0;
+}
+

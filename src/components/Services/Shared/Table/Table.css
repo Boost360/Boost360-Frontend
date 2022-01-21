@@ -1,0 +1,27 @@
+.bpTable {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.bpTable th {
+    height: 60px;
+}
+.bpTable tr:nth-child(even){
+    background: var(--inactive);
+    height: 80px;
+}
+.bpTable tr:nth-child(odd){
+    height: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .bpTable {
+        font-size: 13px;
+    }
+    .bpTable tr:nth-child(even){
+        height: 60px;
+    }
+    .bpTable tr:nth-child(odd){
+        height: 20px;
+    }
+}

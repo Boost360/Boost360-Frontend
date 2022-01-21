@@ -24,6 +24,7 @@
     line-height: 1.5em;
     opacity: 0.7;
     animation: fade-in 1s ease;
+    white-space: pre-wrap;
 }
 
 .qAs .fold_Btn {
