@@ -200,11 +200,11 @@
 }
 .transparent .menu {
     background-color:rgba(0, 0, 0, 0);
-    color: var(--black);
+    color: var(--primary);
 }
 
 .transparent .logo {
-    background-image: url('../../static/img/logo/black.svg');
+    background-image: url('../../static/img/logo/blue.svg');
 }
 
 
