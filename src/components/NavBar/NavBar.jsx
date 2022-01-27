@@ -149,7 +149,7 @@ const NavBar = ({ page, user, header = null }) => {
     const goBack = () => { setPage(parentPage); };
     const openMobileMenu = () => { setMobileMenu(true); }
     const closeMobileMenu = () => { setMobileMenu(false); }
-    const LogoIcon = () => <span className='logoWrapper'><MenuItem page='Home'><div className="logo"></div></MenuItem></span>;
+    const LogoIcon = () => <span className='logoWrapper'><MenuItem page='Remote-learning'><div className="logo"></div></MenuItem></span>;
     const MenuIcon = () => <span className="menuIconWrapper"><AiOutlineMenu className='menuIcon icon' onClick={openMobileMenu} /></span>;
     const LeftIcon = () => <span className="leftIconWrapper"><AiOutlineArrowLeft className='leftIcon icon' onClick={goBack} /></span>;
 
