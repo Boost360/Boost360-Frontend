@@ -2,8 +2,7 @@ import React, {useState} from 'react'
 import './Team.css'
 import {useTranslation} from 'react-i18next'
 import Members from './Members/Members'
-import Tab from './Tab/Tab'
-import { retrieveAllTeams } from '../../api/team/team'
+import Tab from '../Tab/Tab'
 
 function Team() {
     const [tab, setTab] = useState(0);
