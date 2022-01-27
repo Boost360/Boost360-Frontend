@@ -31,7 +31,7 @@ export default function LandingPage({user}) {
                         <img src={logo} alt="logo" />
                     </div>
                     <div className="enterButton">
-                        <Link className="landingButton" to="/index"><span>{t("landing.enter")}</span></Link>
+                        <Link className="landingButton" to="/remote-learning"><span>{t("landing.enter")}</span></Link>
                         {user? <Link className="landingButton" to="/student/home"><span>{t("landing.home")}</span></Link>:
                          <Link className="landingButton" to="/login"><span>{t("landing.login")}</span></Link>}
                        

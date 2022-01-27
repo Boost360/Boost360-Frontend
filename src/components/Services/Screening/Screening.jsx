@@ -18,7 +18,28 @@ import background8 from '../../../static/img/background8.png';
 function Screening() {
   const [t, i18n] = useTranslation();
   const screening = t('screening', {returnObjects: true});
-  const gallery_images = [background8, background5, background6, background7, background4];
+  const gallery_images = [
+    {
+        image: background8,
+        caption: "description" 
+    }, 
+    {
+        image: background7,
+        caption: "description" 
+    }, 
+    {
+        image: background6,
+        caption: "description" 
+    }, 
+    {
+        image: background5,
+        caption: "description" 
+    }, 
+    {
+        image: background4,
+        caption: "description" 
+    }, 
+  ]
   const logos = [];
   return (
     <div className="services">

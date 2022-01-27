@@ -5,18 +5,11 @@ import { AiOutlineWechat } from 'react-icons/ai';
 import { RiKakaoTalkLine } from 'react-icons/ri';
 import { FaInstagram } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import { GrLinkedinOption } from "react-icons/gr";
 import WechatModal from "../WechatModal/WechatModal";
-// import Background_webm from '../../static/img/Home_background.webm';
-// import Background_mp4 from '../../static/img/Home_background.mp4';
-// import Background_png from '../../static/img/Home_background.png';
+import Golfer from '../../static/img/RemoteLearning_background.png';
 
 export default function HomePage() {
-    // useEffect(() => {
-    //     // set background video playback speed before mount
-    //     document.getElementById('background_video').playbackRate = '1.8';
-    //     return () => {
-    //     }
-    // }, [])
     const [showWechat, setShowWechat] = useState(false);
     return (
         <div className="HomePage">
@@ -24,6 +17,12 @@ export default function HomePage() {
                 <source src={Background_webm} type="video/webm"/>
                 <source src={Background_mp4} type="video/mp4"/>
             </video> */}
+
+            <div className="HomePageBody"> 
+                <h1><em>B</em>oost <br /> <em>P</em>erformance</h1>
+                <img src={Golfer} alt="BP golf academy golfer" />
+            </div>
+
             
             <IconContext.Provider value={{ size: "24px" }}>
                 <div className="HomePagelink">
@@ -35,6 +34,9 @@ export default function HomePage() {
                     </div>
                     <div className="HomeIcon">
                         <FaInstagram onClick={() => window.location = 'https://instagram.com/bpgolfacademy?utm_medium=copy_link'} />
+                    </div>
+                    <div className="HomeIcon">
+                        <GrLinkedinOption onClick={() => window.location = ''} />
                     </div>
                 </div>
             </IconContext.Provider>

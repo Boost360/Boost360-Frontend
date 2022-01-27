@@ -94,27 +94,27 @@ const Content = withStyles(styles, { name: 'Content' })(({
 const Schedule = () => {
 
   const data = [
-    {
-      title: "Golf Class 1",
-      startDate: new Date(2021, 9, 23, 9, 30),
-      endDate: new Date(2021, 9, 23, 11, 30),
-      location: "Bucklands Beach Golf Club",
-      type: '1'
-    },
-    {
-      title: "Golf Class 2",
-      startDate: new Date(2021, 9, 12, 9, 30),
-      endDate: new Date(2021, 9, 12, 11, 30),
-      location: "Bucklands Beach Golf Club",
-      type: '2'
-    },
-    {
-      title: "Golf Class 3",
-      startDate: new Date(2021, 9, 15, 9, 30),
-      endDate: new Date(2021, 9, 15, 11, 30),
-      location: "Bucklands Beach Golf Club",
-      type: '3'
-    }
+    // {
+    //   title: "Golf Class 1",
+    //   startDate: new Date(2021, 9, 23, 9, 30),
+    //   endDate: new Date(2021, 9, 23, 11, 30),
+    //   location: "Bucklands Beach Golf Club",
+    //   type: '1'
+    // },
+    // {
+    //   title: "Golf Class 2",
+    //   startDate: new Date(2021, 9, 12, 9, 30),
+    //   endDate: new Date(2021, 9, 12, 11, 30),
+    //   location: "Bucklands Beach Golf Club",
+    //   type: '2'
+    // },
+    // {
+    //   title: "Golf Class 3",
+    //   startDate: new Date(2021, 9, 15, 9, 30),
+    //   endDate: new Date(2021, 9, 15, 11, 30),
+    //   location: "Bucklands Beach Golf Club",
+    //   type: '3'
+    // }
   ]
 
 
