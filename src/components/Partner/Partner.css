@@ -34,6 +34,7 @@
 .navigation_partner_image_container:hover {
     cursor: pointer;
 }
+
 @media (max-width:600px) {
     .navigation_container {
         display: none;
@@ -68,7 +69,7 @@
     margin-bottom: 50px;
 }
 .partner_detail_logo_container img {
-    width: 100px;
+    width: clamp(100px, 10%, 180px);
 }
 .partner_detail_website_link_container {
     margin-top: 30px;
@@ -92,4 +93,11 @@
     margin-top: 140px;
     padding-left: 110px;
     padding-right: 110px;
+}
+
+
+
+/* Customized asjustment: Golf Technologies Logo */
+.navigation_partner_image_container:nth-child(6) {
+    width: 10%;
 }
