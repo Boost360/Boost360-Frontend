@@ -20,7 +20,8 @@
                 "address-content": "Waitakere Golf Club, 35 Falls Road, Waitakere, Bethells Beach (0781), Auckland, New Zealand",
                 "wechat-id" : "BPgolfacademy",
                 "kakao-id" : "BPgolfacademy2",
-                "instagram-id" : "bpgolfacademy"
+                "instagram-id" : "bpgolfacademy",
+                "linkedin-id" : "bpgolfacademy"
             },
             "input" : {
               "info": "If you have any questions about our services, please fill in the box below, we are happy to help.",
@@ -537,7 +538,7 @@
             "Intro" : {
               "h0" : "Screening",
               "content" : "Our screening process is in place to get a detailed account of the students current level. It underpins the development plan by setting a benchmark from which goals and development comparisons can be made.\n\nThe more information the coach has about the student, the better the development plan and learning efficiency.",
-              "note" : "Screening service will be available in South Korea from May 1st 2022"
+              "note" : ""
             },
             "Swing" : {
               "h0" : "Swing Technique Screening",
@@ -620,65 +621,117 @@
             }
         },
         "coaching" : {
-        "Intro" : {
-            "h0" : "Coaching"
-        },
-        "Instructors" : {
-            "Rhys" : {
-            "name" : "RHYS OGDEN",
-            "badge" : "0",
-            "role" : "Director of Instructor",
-            "priceTable" : {
-                "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
-                "rows" : [
-                ["GUEST", "$140", "$650", "$1200"],
-                ["", "", "", ""],
-                ["MEMBER", "$110", "$500", "$900"]
-                ]
-            }
+            "Intro" : {
+                "h0" : "Coaching"
             },
-            "TBA" : {
-            "name" : "TBA",
-            "role" : "Performance Instructor",
-            "description" : "The Performance Instructors provide an exclusive service to our BP Golf Academy members. Our Performance Instructors are in the process of completing their Masters in Human Movement and Sport Psychology, so they will bring a unique perspective to the learning process, and add a further level of understanding.",
-            "priceTable" : {
-                "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
-                "rows" : [
-                ["MEMBER ONLY", "$70", "$300", "$500"]
-                ]
-            }
-            }
-        },
-        "QA" : {
-            "h0" : "Asked and Answered",
-            "QAs" : {
-            "0" : {
-                "question" : "What is the location of the lesson?",
-                "answer" : {"0" : "Waitakere Golf Course, Auckland."}
+            "Tab" : {
+                "nzTeam" : "New Zealand Team",
+                "nzLocation" : "Auckland",
+                "krTeam" : "Korean Team",
+                "krLocation" : "Seoul, Gangnam, Bandung"
             },
-            "1" : {
-                "question" : "How do I qualify for a member price?",
-                "answer" : {"0" : "You must be one of the following :\n- Remote program member\n- Junior Academy member\n- Waitakere Golf Course member"}
+            "Instructors" : {
+                "Rhys" : {
+                "name" : "RHYS OGDEN",
+                "badge" : "0",
+                "role" : "Director of Instructor",
+                "priceTable" : {
+                    "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+                    "rows" : [
+                    ["GUEST", "$140", "$650", "$1200"],
+                    ["", "", "", ""],
+                    ["MEMBER", "$110", "$500", "$900"]
+                    ]
+                }
+                },
+                "TBA" : {
+                "name" : "TBA",
+                "role" : "Performance Instructor",
+                "description" : "The Performance Instructors provide an exclusive service to our BP Golf Academy members. Our Performance Instructors are in the process of completing their Masters in Human Movement and Sport Psychology, so they will bring a unique perspective to the learning process, and add a further level of understanding.",
+                "priceTable" : {
+                    "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+                    "rows" : [
+                    ["MEMBER ONLY", "$70", "$300", "$500"]
+                    ]
+                }
+                }
             },
-            "2" : {
-                "question" : "What is the price for 2 or more students per lesson?",
-                "answer" : {"0" : "For each additional student, add 20% to the price stated."}
+            "QA" : {
+                "h0" : "Asked and Answered",
+                "QAs" : {
+                "0" : {
+                    "question" : "What is the location of the lesson?",
+                    "answer" : {"0" : "Waitakere Golf Course, Auckland."}
+                },
+                "1" : {
+                    "question" : "How do I qualify for a member price?",
+                    "answer" : {"0" : "You must be one of the following :\n- Remote program member\n- Junior Academy member\n- Waitakere Golf Course member"}
+                },
+                "2" : {
+                    "question" : "What is the price for 2 or more students per lesson?",
+                    "answer" : {"0" : "For each additional student, add 20% to the price stated."}
+                },
+                "3" : {
+                    "question" : "What is the price for a non-member learning with a member?",
+                    "answer" : {"0" : "We view you as a guest of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
+                },
+                "4" : {
+                    "question" : "Do the lesson packages have an expiry date?",
+                    "answer" : {"0" : "Yes. One year from the purchase date."}
+                },
+                "5" : {
+                    "question" : "Do you offer gift certificates?",
+                    "answer" : {"0" : "Yes, we can provide a nicely presented lesson voucher in either a digital format or in hardcopy."}
+                }
+                },
+                "link" : "Can’t find the answer to your questions? Please contact us."
             },
-            "3" : {
-                "question" : "What is the price for a non-member learning with a member?",
-                "answer" : {"0" : "We view you as a guest of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
-            },
-            "4" : {
-                "question" : "Do the lesson packages have an expiry date?",
-                "answer" : {"0" : "Yes. One year from the purchase date."}
-            },
-            "5" : {
-                "question" : "Do you offer gift certificates?",
-                "answer" : {"0" : "Yes, we can provide a nicely presented lesson voucher in either a digital format or in hardcopy."}
-            }
-            },
-            "link" : "Can’t find the answer to your questions? Please contact us."
-        }
+            "KrInstructors" : {
+                "Rhys" : {
+                  "name" : "RHYS OGDEN",
+                  "badge" : "0",
+                  "role" : "Director of Instructor",
+                  "description" : "Rhys will periodically be in South Korea. During that period, if you wish to meet Rhys in person to discuss any learning opportunities, you are welcome to contact him directly or alternatively contact our Korean information service to make an appointment.\n\nSchedule details yet to be determined. Dates will be displayed on the BP Golf Academy Website."
+                },
+                "TBA" : {
+                  "name" : "TBA",
+                  "role" : "Senior Instructor",
+                  "locationLabel" : "Location : ",
+                  "location" : "Seoul, Korean",
+                  "priceTable" : {
+                    "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+                    "rows" : [
+                      ["MEMBER ONLY", "$ TBA", "$ TBA", "$ TBA"]
+                    ]
+                  }
+                }
+              },
+            "KrQA" : {
+                "h0" : "Asked and Answered",
+                "QAs" : {
+                  "0" : {
+                    "question" : "How do I qualify for a member price?",
+                    "answer" : {"0" : "You must be one of the following :\n- Remote program member\n- Junior Academy member"}
+                  },
+                  "1" : {
+                    "question" : "What is the price for 2 or more students per lesson?",
+                    "answer" : {"0" : "For each additional student, add 20% to the price stated."}
+                  },
+                  "2" : {
+                    "question" : "What is the price for a non-member learning with a member?",
+                    "answer" : {"0" : "We view you as a guest of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
+                  },
+                  "3" : {
+                    "question" : "Do the lesson packages have an expiry date?",
+                    "answer" : {"0" : "Yes. One year from the purchase date."}
+                  },
+                  "4" : {
+                    "question" : "Do you offer gift certificates?",
+                    "answer" : {"0" : "Yes, we can provide a nicely presented lesson voucher in either a digital format or in hardcopy."}
+                  }
+                },
+                "link" : "Can’t find the answer to your questions? Please contact us."
+              }
         },
         "team" : {
             "nzTeam" : "New Zealand Team",
@@ -700,8 +753,8 @@
                 },
                 "1" : {
                     "avatar" : "../../static/img/partner.png",
-                    "name" : "TBD",
-                    "role" : "role",
+                    "name" : "TBA",
+                    "role" : "Performance instructor",
                     "description" : ""
                 }
             },
@@ -720,8 +773,8 @@
                 },
                 "1" : {
                     "avatar" : "../../static/img/partner.png",
-                    "name" : "TBD",
-                    "role" : "role",
+                    "name" : "TBA",
+                    "role" : "Performance instructor",
                     "description" : ""
                 }
             }
