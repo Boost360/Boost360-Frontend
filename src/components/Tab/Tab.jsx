@@ -1,5 +1,6 @@
 import React from 'react'
 import './Tab.css'
+import { useTranslation } from 'react-i18next'
 // OVERVIEW : A two-tab navigator to switch between NZ team's content and Korean team.
 // CURRANT USAGE : Team.jsx, Coaching.jsx
 // PROPS EXAMPLE:
