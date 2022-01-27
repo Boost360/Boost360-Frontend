@@ -1,36 +1,51 @@
-import React, { useState } from 'react'
-import './Gallery.css'
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
+import React from 'react';
+import { Carousel } from 'react-carousel-minimal';
 
 
 function Gallery({images}) {
-    const [imageIndex, setImageIndex] = useState(0);
-    const [imageClass, setImageClass] = useState('image');
-    const nextImage = () => {
-        let newIndex = (imageIndex + 1) % images.length;
-        setImageClass('image slide_out_right');
-        setTimeout(() => {
-            setImageIndex(newIndex);
-            setImageClass('image slide_in_left');
-        }, 800);
-    }
-    const lastImage = () => {
-        let newIndex = (imageIndex - 1) % images.length;
-        newIndex = (newIndex < 0) ? newIndex + images.length : newIndex;
-        setImageClass('image slide_out_left');
-        setTimeout(() => {
-            setImageIndex(newIndex);
-            setImageClass('image slide_in_right');
-        }, 800);
-    }
-
-    return (
-        <div className="gallery">
-            <img src={images[imageIndex]} alt={images[imageIndex]} className={imageClass} />
-            <MdKeyboardArrowLeft id='lastImage_Btn' onClick={lastImage} />
-            <MdKeyboardArrowRight id='nextImage_Btn' onClick={nextImage} />
+    const captionStyle = {
+        fontSize: '2em',
+        fontWeight: 'normal',
+        display: 'none'
+      }
+      const slideNumberStyle = {
+        fontSize: '20px',
+        fontWeight: 'bold',
+      }
+      const containerStyle = {
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        width: '100vw',
+        height: '100vh'
+      }
+      return (
+        <div style={containerStyle}>
+          <Carousel
+            data={images}
+            time={3000}
+            width="100vw"
+            height="100vh"
+            captionStyle={captionStyle}
+            radius="10px"
+            slideNumber={false}
+            slideNumberStyle={slideNumberStyle}
+            captionPosition="bottom"
+            automatic={true}
+            dots={true}
+            pauseIconColor="white"
+            pauseIconSize="40px"
+            slideBackgroundColor="darkgrey"
+            slideImageFit="cover"
+            thumbnails={false}
+            thumbnailWidth="100px"
+            style={{
+              textAlign: "center",
+              maxHeight: "100%"
+            }}
+          />
         </div>
-    )
+      );
 }
 
-export default Gallery
+export default Gallery;

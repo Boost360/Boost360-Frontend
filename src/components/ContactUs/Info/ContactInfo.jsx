@@ -3,6 +3,7 @@ import './ContactInfo.css';
 import { AiOutlineWechat } from 'react-icons/ai';
 import { RiKakaoTalkLine } from 'react-icons/ri';
 import { FaInstagram } from "react-icons/fa";
+import { GrLinkedinOption } from "react-icons/gr";
 import { IconContext } from "react-icons/lib";
 import { useTranslation } from "react-i18next";
 import WechatModal from "../../WechatModal/WechatModal";
@@ -48,10 +49,16 @@ export default function ContactInfo() {
                             {t('contact.info.instagram-id')}
                         </p>
                     </div>
+                    <div className="ContactInfo-SocialIcon">
+                        <GrLinkedinOption className='cIcon' onClick={() => window.location = '/'} />
+                        <p>
+                            {t('contact.info.linkedin-id')}
+                        </p>
+                    </div>
                 </div>
             </IconContext.Provider>
 
-            {showWechat && <WechatModal handleClose={() => setShowWechat(false)}></WechatModal>}
+            {showWechat && <WechatModal handleClose={() => setShowWechat(false)} chinese={i18n.language === 'ch'}></WechatModal>}
         </div>
     )
 }

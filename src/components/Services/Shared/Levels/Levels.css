@@ -54,19 +54,20 @@
 
 /* Level colors */
 .levels .level:nth-child(3) {
-    background: linear-gradient(90deg, rgb(255, 254, 187) 0%, rgba(255,255,255,1) 100%) ;
+    background: linear-gradient(90deg, rgb(255, 232, 28) 0%, rgba(255,255,255,1) 100%) ;
 }
 .levels .level:nth-child(4) {
-    background: linear-gradient(90deg, rgb(253, 174, 174) 0%, rgba(255,255,255,1) 100%) ;
+    background: linear-gradient(90deg, rgb(250, 38, 38) 0%, rgba(255,255,255,1) 100%) ;
 }
 .levels .level:nth-child(5) {
-    background: linear-gradient(90deg, rgb(255, 228, 187) 0%, rgba(255,255,255,1) 100%) ;
+    background: linear-gradient(90deg, rgb(255, 148, 9) 0%, rgba(255,255,255,1) 100%) ;
 }
 .levels .level:nth-child(6) {
-    background: linear-gradient(90deg, rgb(192, 255, 179) 0%, rgba(255,255,255,1) 100%) ;
+    background: linear-gradient(90deg, rgb(34, 202, 48) 0%, rgba(255,255,255,1) 100%) ;
 }
 .levels .level:nth-child(7) {
-    background: linear-gradient(90deg, rgb(187, 187, 187) 0%, rgba(255,255,255,1) 100%) ;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(255,255,255,1) 100%) ;
+    color: var(--white);
 }
 
 

@@ -27,10 +27,8 @@ const Site = ({ user,setUser }) => {
     return (
         <div>
             <Route path='/index' exact>
-                    {/* <NavBar page='Home' user={user}></NavBar>
-                    <HomePage></HomePage> */}
-                    <NavBar page='Remote-learning' user={user}></NavBar>
-                    <RemoteLearning></RemoteLearning>
+                <NavBar page='Home' user={user}></NavBar>
+                <HomePage></HomePage>
             </Route>
 
             <Route path='/about'>

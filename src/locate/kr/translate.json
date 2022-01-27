@@ -20,7 +20,8 @@
             "address-content": "Waitakere Golf Club, 35 Falls Road, Waitakere, Bethells Beach (0781), Auckland, New Zealand",
             "wechat-id" : "BPgolfacademy2",
             "kakao-id" : "BPgolfacademy2",
-            "instagram-id" : "bpgolfacademy"
+            "instagram-id" : "bpgolfacademy",
+            "linkedin-id" : "bpgolfacademy"
         },
         "input" : {
           "info": "문의 사항이 있으면 아래에 남겨주세요.",
@@ -52,6 +53,8 @@
         "Partners": "Partners",
         "Team": "Team",
         "Remote-learning": "원격수업",
+        "Screening": "스크리닝",
+        "Coaching": "코칭",
         "Membership": "맴버쉽",
         "Junior-golf": "주니어 골프",
         "Blog": "블로그",
@@ -603,6 +606,230 @@
           "description": "---------------------- $990 ---------------------"
         }
       },
+      "screening": {
+        "Intro": {
+          "h0": "스크리닝(SCREENING)",
+          "content": "현재 학생들의 레벨에 대한 자세한 설명을 얻기 위한 스크리닝 서비스(screening service )가 마련되어 있습니다. 이 서비스는 목표와 발전을 위해 비교를 할 수 있는 벤치마크를 설정함으로써 개발 계획을 뒷받침합니다. 코치는 학생에 대한 정보가 많을수록 발전 계획과 학습의 효율성이 향상됩니다.",
+          "noteDiscard": "한국에서의 스크리닝 서비스는 2022년 5월 1일부터 가능합니다."
+        },
+        "Swing": {
+          "h0": "스윙 테크닉 스크리닝 (SWING TECHNIQUE SCREENING)",
+          "description": "골프 선수의 스윙 자세를 자세히 이해하기 위해 최신 골프 스윙 분석 기술을 사용합니다. 구체적으로 이 데이터는 원하는 볼 플라이를 생성하기 위해 변경이 가능한 특정 영역을 식별하는 데 도움이 될 것이다.",
+          "duration": {
+            "label": "시간 : ",
+            "time": "1 시간"
+          },
+          "outcome": {
+            "h0": "스크리닝(Screening) 결과:",
+            "points": {
+              "0": "강점과 약점을 식별",
+              "1": "현재 볼 플라이가 어떻게 이루어지는지 이해",
+              "2": "각 클럽에 따라 볼이 이동하는 거리"
+            }
+          },
+          "summary": "스크리닝(screening)이 끝나면 수집된 모든 데이터가 포함된 보고서가 제공됩니다. 보고서에는 추천된 발전 분야도 포함할 것이다.",
+          "price": "$ 149"
+        },
+        "Club": {
+          "h0": "클럽 피팅 (CLUB FITTING)",
+          "description": "정확한 스윙 기술을 극대화하기 위해서는 올바른 장비를 갖추는 것이 중요합니다. 이 프로세스 전반에 걸쳐 정보를 수집하여 사용자의 특정 스윙 형태, 플레이 스타일 및 환경에 맞춰 장비를 최대화할 수 있습니다. 이 과정에서 골프채의 가장 구체적인 역동성과 샷 결과를 전달하기 위해 최첨단 분석 기술이 활용될 예정입니다.",
+          "duration": {
+            "label": "시간 : ",
+            "time": "1시간 30분"
+          },
+          "outcome": {
+            "h0": "스크리닝(Screening) 결과:",
+            "points": {
+              "0": "현재 장비 평가",
+              "1": "학생 장비 사양에 대한 교육",
+              "2": "현재 장비 개조 또는 새 장비 옵션에 대한 장비 권장 사항"
+            }
+          },
+          "summary": "학생에게는 자세한 장비 사양에 관한 보고서가 제공될 예정으로 이는 향후 피팅 세션의 일관성을 위한 큰 혜택입니다.",
+          "price": "$ 149"
+        },
+        "Movement": {
+          "h0": "무브먼트 스크리닝(MOVEMENT SCREENING)",
+          "description": "무브먼트 스크리닝은 바디 스윙 연결부를 중심으로 이루어집니다. 이것은 골퍼가 자신의 신체 기능에 따라 스윙을 할 수 있는 가장 효율적인 방법을 알아내는 데 도움이 될 것입니다. AUT 밀레니엄 스포츠 퍼포먼스 클리닉은 스포츠 퍼포먼스 분야 리더들의 최첨단 평가 기술을 활용할 예정입니다.",
+          "outcome": {
+            "h0": "스크리닝(Screening) 결과:",
+            "points": {
+              "0": "부상 발생 가능  부위 식별",
+              "1": "개발 제한 영역 식별",
+              "2": "향후 목표를 위한 벤치마킹"
+            }
+          },
+          "summary": "스크리닝이 끝나면 무브먼스 향샹을 위한 계회과 함께 한계가 있는 부분을 파악한 보고서가 나옵니다. 스크리닝 옵션은 균형과 움직임 능력으로 시작되며, 역동적인 힘의 분배와 체성분, 영양을 평가하는 추가 선택권이 주어집니다.",
+          "price": "$ 프로그램마다 상이"
+        },
+        "QA": {
+          "h0": "질문과 답변",
+          "QAs": {
+            "0": {
+              "question": "골프 분석 기술이 너무 혼란스러워 보여요. 제가 이 모든 자료가 필요한가요?",
+              "answer": {
+                "0": "골프 기술은 상세하고 많은 양의 데이터를 만들어냅니다. 이 데이터는 학생보다는 코치를 위한 것입니다. 코치는 학생들의 발전에 도움이 되는 자료만 제공할 것입니다. 최대한 많은 정보를 얻은 후, 학생에게 가장 간단한 형태로 필요한 정보를 전달하는 것입니다."
+              }
+            },
+            "1": {
+              "question": "모든 데이터 용어를 알아야 하나요?",
+              "answer": {
+                "0": "코치가 당신의 실력향상 조건에 대해 교육할 것이기 때문에 요구 사항이 아닙니다. 하지만, 데이터 용어와 의미를 배우고 이해하는 것은 점점 더 보편화 되어가는 기술에 대해 좀더 쉽게 받아 들일수 있도록 만들어 줄 수 있습니다."
+              }
+            },
+            "2": {
+              "question": "골프 초보자에게 클럽 피팅이 적합한가요?",
+              "answer": {
+                "0": "네, 클럽 피팅은 모든 레벨의 골퍼들에게 혜택을 줄 수 있습니다. 초보 골퍼와 중상급 골퍼의 피팅 목적과 세션은 많이 다릅니다. 정확한 스윙 모션이 가능하려면 개인에게 꼭 맞는 골프클럽의 필수 요소들이 있고 그 요소들은 모든 골퍼에게 중요합니다."
+              }
+            },
+            "3": {
+              "question": "제가 현재 사용하고 있는 클럽을 저에게 적합하게 피팅할 수 있나요?",
+              "answer": {
+                "0": "네, 할 수 있어요. 리샤프트 조정, 리그립핑 및 라이/로프트 조정을 통해 피팅 할 수 있습니다."
+              }
+            },
+            "4": {
+              "question": "코치가 내가 어떻게 움직이는지 아는 것이 왜 중요합니까?",
+              "answer": {
+                "0": "코치에게 당신의 신체적 한계를 알려줄 것이고, 이것은 당신의 스윙을 발전시키기 위해 적용되는 방법을 결정할 것입니다. 무브먼트 제한을 개발할 수 없는 경우 코치는 이러한 제한을 중심으로 스윙 양식을 만듭니다."
+              }
+            }
+          },
+          "link": "답변을 찾을수 없다면 개인적으로 문의 바랍니다."
+        }
+      },
+      "coaching": {
+        "Intro": {
+          "h0": "코칭"
+        },
+        "Tab" : {
+          "nzTeam" : "New Zealand Team",
+          "nzLocation" : "Auckland",
+          "krTeam" : "Korean Team",
+          "krLocation" : "Seoul, Gangnam, Bandung"
+        },
+        "Instructors" : {
+          "Rhys" : {
+          "name" : "RHYS OGDEN",
+          "badge" : "0",
+          "role" : "운영자",
+          "priceTable" : {
+              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "rows" : [
+              ["GUEST", "$140", "$650", "$1200"],
+              ["", "", "", ""],
+              ["MEMBER", "$110", "$500", "$900"]
+              ]
+          }
+          },
+          "TBA" : {
+          "name" : "TBA",
+          "role" : "Performance Instructor",
+          "description" : "The Performance Instructors provide an exclusive service to our BP Golf Academy members. Our Performance Instructors are in the process of completing their Masters in Human Movement and Sport Psychology, so they will bring a unique perspective to the learning process, and add a further level of understanding.",
+          "priceTable" : {
+              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "rows" : [
+              ["MEMBER ONLY", "$70", "$300", "$500"]
+              ]
+          }
+          }
+      },
+      "QA" : {
+          "h0": "질문과 답변",
+          "QAs": {
+            "0" : {
+              "question" : "What is the location of the lesson?",
+              "answer" : {"0" : "Waitakere Golf Course, Auckland."}
+            },
+            "1": {
+              "question": "회원가격 조건은 어떻게 되나요?",
+              "answer" : {"0" : "다음 중 한가지만 해당하면 됩니다 :\n- 원격 프로그램 맴버\n- 주니어 아카데미 회원\n- Waitakere Golf Course member"}
+            },
+            "2": {
+              "question": "2명 이상의 수강료는 얼마입니까?",
+              "answer": {
+                "0": "추가 학생 한 명당 20% 추가 하시면 됩니다."
+              }
+            },
+            "3": {
+              "question": "비회원이 멤버와 함께 학습하는 비용은 얼마인가요?",
+              "answer": {
+                "0": "초대하신 맴버는 회원 요금을 적용합니다. 단, 회원가격을 받기 위해서는 그룹당 최소 1명의 학생이 회원으로 가입해야 합니다."
+              }
+            },
+            "4": {
+              "question": "레슨 패키지에는 만료일이 있나요?",
+              "answer": {
+                "0": "네,지불일로부터 1년입니다."
+              }
+            },
+            "5": {
+              "question": "강습 바우처를 제공하나요?",
+              "answer": {
+                "0": "네, 디지털 형식이나 자격증 형태로 레슨 바우처를 제공해드릴 수 있습니다."
+              }
+            }
+          },
+          "link": "답변을 찾을수 없다면 개인적으로 문의 바랍니다."
+      },
+        "KrInstructors": {
+          "Rhys": {
+            "name": "RHYS OGDEN",
+            "badge": "0",
+            "role": "운영자",
+            "description": "\"Rhys는 주기적으로 한국을 방문할 계획입니다. 그 기간 동안 Rhys를 직접 만나 어떤 학습 기회가 있는지 의논하고 싶다면 직접 연락하거나  한국 정보 서비스 담당자에게 연락하여 약속을 잡으면 된다.\r\n\r\n일정 세부 사항은 아직 결정되지 않았습니다. 날짜는 BP 골프 아카데미 웹사이트에 업데이트 됩니다.\""
+          },
+          "TBA": {
+            "name": "TBA",
+            "role": "시니어 강사",
+            "locationLabel": "장소 :",
+            "location": "서울, 대한민국",
+            "priceTable" : {
+              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "rows" : [
+                ["MEMBER ONLY", "$ TBA", "$ TBA", "$ TBA"]
+              ]
+            }
+          }
+        },
+        "KrQA": {
+          "h0": "질문과 답변",
+          "QAs": {
+            "0": {
+              "question": "회원가격 조건은 어떻게 되나요?",
+              "answer": {
+                "0": "다음 중 한가지만 해당하면 됩니다 :\n    - 원격 프로그램 맴버\n    - 주니어 아카데미 회원"
+              }
+            },
+            "1": {
+              "question": "2명 이상의 수강료는 얼마입니까?",
+              "answer": {
+                "0": "추가 학생 한 명당 20% 추가 하시면 됩니다."
+              }
+            },
+            "2": {
+              "question": "비회원이 멤버와 함께 학습하는 비용은 얼마인가요?",
+              "answer": {
+                "0": "초대하신 맴버는 회원 요금을 적용합니다. 단, 회원가격을 받기 위해서는 그룹당 최소 1명의 학생이 회원으로 가입해야 합니다."
+              }
+            },
+            "3": {
+              "question": "레슨 패키지에는 만료일이 있나요?",
+              "answer": {
+                "0": "네,지불일로부터 1년입니다."
+              }
+            },
+            "4": {
+              "question": "강습 바우처를 제공하나요?",
+              "answer": {
+                "0": "네, 디지털 형식이나 자격증 형태로 레슨 바우처를 제공해드릴 수 있습니다."
+              }
+            }
+          },
+          "link": "답변을 찾을수 없다면 개인적으로 문의 바랍니다."
+        }
+      },
       "team" : {
         "nzTeam" : "New Zealand Team",
         "nzLocation" : "Auckland",
@@ -623,8 +850,8 @@
             },
             "1" : {
                 "avatar" : "../../static/img/partner.png",
-                "name" : "TBD",
-                "role" : "역할",
+                "name" : "TBA",
+                "role" : "Performance instructor",
                 "description" : ""
             }
         },
@@ -643,62 +870,12 @@
           },
             "1" : {
                 "avatar" : "../../static/img/partner.png",
-                "name" : "TBD",
-                "role" : "역할",
+                "name" : "TBA",
+                "role" : "Performance instructor",
                 "description" : ""
             }
         }
-      },
-      "coaching" : {
-        "Intro" : {
-          "h0" : "Coaching"
-          },
-          "Instructors" : {
-            "Rhys" : {
-              "name" : "RHYS OGDEN",
-              "badge" : "0",
-              "role" : "Director of Instructor",
-              "description" : "Rhys will periodically be in South Korea. During that period, if you wish to meet Rhys in person to discuss any learning opportunities, you are welcome to contact him directly or alternatively contact our Korean information service to make an appointment.\n\nSchedule details yet to be determined. Dates will be displayed on the BP Golf Academy Website."
-            },
-            "TBA" : {
-              "name" : "TBA",
-              "role" : "Senior Instructor",
-              "locationLabel" : "Location : ",
-              "location" : "Seoul, Korean",
-              "priceTable" : {
-                "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
-                "rows" : [
-                  ["MEMBER ONLY", "$ TBA", "$ TBA", "$ TBA"]
-                ]
-              }
-            }
-          },
-          "QA" : {
-            "h0" : "Asked and Answered",
-            "QAs" : {
-              "0" : {
-                "question" : "How do I qualify for a member price?",
-                "answer" : {"0" : "You must be one of the following :\n- Remote program member\n- Junior Academy member"}
-              },
-              "1" : {
-                "question" : "What is the price for 2 or more students per lesson?",
-                "answer" : {"0" : "For each additional student, add 20% to the price stated."}
-              },
-              "2" : {
-                "question" : "What is the price for a non-member learning with a member?",
-                "answer" : {"0" : "We view you as a guest of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
-              },
-              "3" : {
-                "question" : "Do the lesson packages have an expiry date?",
-                "answer" : {"0" : "Yes. One year from the purchase date."}
-              },
-              "4" : {
-                "question" : "Do you offer gift certificates?",
-                "answer" : {"0" : "Yes, we can provide a nicely presented lesson voucher in either a digital format or in hardcopy."}
-              }
-            },
-            "link" : "Can’t find the answer to your questions? Please contact us."
-          }
-      }
     }
   }
+}
+  

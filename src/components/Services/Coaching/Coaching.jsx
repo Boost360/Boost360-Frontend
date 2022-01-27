@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Coaching.css'
 import { useTranslation } from 'react-i18next'
 import Instructor from '../Shared/Instructor/Instructor'
@@ -6,24 +6,32 @@ import Intro from '../Shared/Intro/Intro'
 import QA from '../Shared/QA/QA'
 import Golfer from '../../../static/img/RemoteLearning_background.png'
 import badge from '../../../static/img/partner.png'
+import Tab from '../../Tab/Tab'
 
 
 function Coaching() {
   const [t, i18n] = useTranslation();
   const coaching = t('coaching', {returnObjects: true});
+  const [tab, setTab] = useState(0);
+  const isKr = i18n.language === "kr";
   return (
     <div className="services">
       <div className="section">
         <Intro data={coaching.Intro} graphic={Golfer} graphicStyle={{filter: 'hue-rotate(280deg) saturate(70%)', width: '60%', height: 'auto', right: '-5%', bottom: '0%', zIndex: '-4'}}></Intro>
       </div>
+      {isKr && 
+        <div style={{background: 'var(--white)'}}>
+          <Tab tab={tab} setTab={setTab} data={coaching.Tab}/>
+        </div>
+      }
       <div className="section">
-        <Instructor data={coaching.Instructors.Rhys} badge={badge}></Instructor>
+        <Instructor data={tab === 0 ? coaching.Instructors.Rhys : coaching.KrInstructors.Rhys} badge={badge}></Instructor>
       </div>
       <div className="section">
-        <Instructor data={coaching.Instructors.TBA}></Instructor>
+        <Instructor data={tab === 0 ? coaching.Instructors.TBA : coaching.KrInstructors.TBA}></Instructor>
       </div>
       <div className="section">
-        <QA data={coaching.QA}></QA>
+        <QA data={tab === 0 ? coaching.QA : coaching.KrQA}></QA>
       </div>
     </div>
   )
