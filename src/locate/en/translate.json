@@ -538,7 +538,7 @@
             "Intro" : {
               "h0" : "Screening",
               "content" : "Our screening process is in place to get a detailed account of the students current level. It underpins the development plan by setting a benchmark from which goals and development comparisons can be made.\n\nThe more information the coach has about the student, the better the development plan and learning efficiency.",
-              "note" : ""
+              "noteDiscard" : "Screening service will be available in South Korea from May 1st 2022"
             },
             "Swing" : {
               "h0" : "Swing Technique Screening",
@@ -684,7 +684,7 @@
                     "answer" : {"0" : "Yes, we can provide a nicely presented lesson voucher in either a digital format or in hardcopy."}
                 }
                 },
-                "link" : "Can’t find the answer to your questions? Please contact us."
+                "link" : "Can‘t find the answer to your questions? Please contact us."
             },
             "KrInstructors" : {
                 "Rhys" : {

@@ -53,10 +53,10 @@
         "Partners": "合作伙伴",
         "Team": "团队成员",
         "Remote-learning": "远程教学",
+        "Screening": "技能检测",
+        "Coaching": "私人教练",
         "Membership": "会员",
         "Junior-golf": "青少年高尔夫",
-        "Screening": "Screening",
-        "Coaching": "Coaching",
         "Blog": "博客",
         "Blog-Detail": "博客内容",
         "Language": "语言",
@@ -232,7 +232,7 @@
               }
             }
           },
-          "link": "找不到您想问的问题与答案? 欢迎与我们联系。"
+          "link": "找不到您想问的问题与答案? 欢迎与我们联系。"
         },
         "addQA": {
           "ch": {
@@ -606,11 +606,249 @@
           "description": 990
         }
       },
+      "screening": {
+        "Intro": {
+          "h0": "技能检测",
+          "content": "我们提供专业的技能检测配套服务，针对学生目前的水平，建立一个详尽的档案，设定科学的学习基准，制定合理的学习计划，并可得到学习成果的对比。\n教练对学生的了解程度越高，则有助于制定更合理的学习计划，以及最大程度地提高学生的学习效率。",
+          "noteDiscard": "在韩国的学生可从2022年5月1日起获得技能检测服务"
+        },
+        "Swing": {
+          "h0": "高尔夫挥杆技能检测",
+          "description": "我们使用最先进的高尔夫挥杆分析技术，准确了解学生挥杆动作细节。这些精确的数据，有助于确定每一个动作领域的特定情况，进行准确提升，产生最理想的击球效果。",
+          "duration": {
+            "label": "时长 : ",
+            "time": "1 小时"
+          },
+          "outcome": {
+            "h0": "检测成果:",
+            "points": {
+              "0": "评估学生挥杆动作中的强项与弱项",
+              "1": "让学生理解如何可以达到理想的击球结果",
+              "2": "让学生理解不同球杆的击球距离"
+            }
+          },
+          "summary": "检测结束后，学生将得到一份报告，包括检测所收集到的关于该学生挥杆动作的所有细节与数据，以及建议加强与改进的动作领域。",
+          "price": "$ 149"
+        },
+        "Club": {
+          "h0": "球杆适用性检测",
+          "description": "为最大限度地提升挥杆技术，配备正确而适用的装备是十分重要的。\n在检测过程中，我们通过收集信息，帮您匹配最适合您特定挥杆习惯与方式的装备。\n我们使用最先进的分析技术，分析出最适合您的高尔夫球杆，以获得最佳击球结果。",
+          "duration": {
+            "label": "时长 : ",
+            "time": "1.5 小时"
+          },
+          "outcome": {
+            "h0": "检测成果:",
+            "points": {
+              "0": "对学生的现有装备进行评估",
+              "1": "对学生进行装备规格的系统教学",
+              "2": "对学生装备选配做出建议"
+            }
+          },
+          "summary": "将为学生提供一份详尽的适用装备报告，在学生配备装备的一贯性和适用性上，将会有很大帮助。",
+          "price": "$ 149"
+        },
+        "Movement": {
+          "h0": "运动检测",
+          "description": "运动检测是基于挥杆时身体摆动方式进行的。运动检测将有利于教练基于学生的运动特点，帮助学生确定最有效的挥杆方式。\nAUT大学体育学院运动实战研究所，将提供来自体育领域领军人物最先进的评估技术。\n运动检测从平衡能力和运动能力开始，还可进一步为需要深入检测的运动员提供动态力量、身体成分与营养的高级选项。",
+          "outcome": {
+            "h0": "检测成果:",
+            "points": {
+              "0": "•评估可能发生损伤的身体部位",
+              "1": "•评估运动开发的局限性领域",
+              "2": "•为未来的训练目标制定基准"
+            }
+          },
+          "summary": "检测结束后，将为学生提供一份报告，评估学生运动开发的局限性领域，制定动作训练计划。",
+          "price": "$ 因课程计划而定"
+        },
+        "QA": {
+          "h0": "常见问题与回答",
+          "QAs": {
+            "0": {
+              "question": "高尔夫技术分析，对我来说会很复杂吗? \n我需要所有这些检测数据吗?",
+              "answer": {
+                "0": "高尔夫技术检测产生大量详尽的数据，这些数据更大程度上是为了提供给教练而不是学生。我们的教练会基于这些数据来指导教学，教练会获取尽可能多的信息，而在需要向学生适当传递时，则会以最浅显易懂的形式进行。"
+              }
+            },
+            "1": {
+              "question": "我需要理解所有的数据术语吗?",
+              "answer": {
+                "0": "这不是必要条件，因为教练会对学生进行具体的教学以提升技能。然而，更好地学习和理解数据术语，有助于今后的高尔夫学习，因为会越来越多地接触到这些术语。"
+              }
+            },
+            "2": {
+              "question": "球杆的适用性适合初学者吗?",
+              "answer": {
+                "0": "是的，球杆的适用性有益于任何级别的高尔夫球手。对于高尔夫初学者和高级球手来说，球杆适用性的目的和阶段是完全不同的。高尔夫球杆会有基本参数，以此调节适用性，组成正确挥杆动作的要素之一，这些要素对每个高尔夫球手都是十分重要的。"
+              }
+            },
+            "3": {
+              "question": "我可以使用我现有的球杆，并让它们适合我吗?",
+              "answer": {
+                "0": "可以，我们可以通过一系列调整与重塑，帮你提高适用性。"
+              }
+            },
+            "4": {
+              "question": "为什么教练了解我的运动详情很重要?",
+              "answer": {
+                "0": "这有助于教练了解学生身体运动上的局限性，以此确定最适合学生技能提升的挥杆方式。如果这些运动局限性无法通过训练得到突破，教练将为学生设计避开这些局限的挥杆方式。"
+              }
+            }
+          },
+          "link": "找不到您想问的问题与答案? 欢迎与我们联系。"
+        }
+      },
+      "coaching": {
+        "Intro": {
+          "h0": "私人教练"
+        },
+        "Tab" : {
+          "nzTeam" : "新西兰团队",
+          "nzLocation" : "奥克兰",
+          "krTeam" : "韩国团队",
+          "krLocation" : "首尔，江南，万隆"
+        },
+        "Instructors": {
+          "Rhys": {
+            "name": "RHYS OGDEN",
+            "badge": "0",
+            "role": "Director of Instructor",
+            "priceTable" : {
+              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "rows" : [
+              ["GUEST", "$140", "$650", "$1200"],
+              ["", "", "", ""],
+              ["MEMBER", "$110", "$500", "$900"]
+              ]
+            },
+              "rows": {
+                "0": {
+                  "0": "GUEST",
+                  "1": "$140",
+                  "2": "$650",
+                  "3": "$1200"
+                },
+                "1": {
+                  "0": "-",
+                  "1": "-",
+                  "2": "-",
+                  "3": "-"
+                },
+                "2": {
+                  "0": "MEMBER",
+                  "1": "$110",
+                  "2": "$500",
+                  "3": "$900"
+                }
+              }
+            },
+          "TBA": {
+            "name": "TBA",
+            "role": "辅导教练",
+            "description": "我们的辅导教练，将为BP高尔夫学院的学生提供极具特色的服务。\n这些辅导教练都是运动科学与心理学的在读硕士研究生，他们将为整个学习过程带来前沿与独特的视角，提升学生对于高尔夫运动理解的深度、层次与高度。",
+            "priceTable" : {
+              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "rows" : [
+              ["MEMBER ONLY", "$70", "$300", "$500"]
+              ]
+          }
+          }
+        },
+        "QA": {
+          "h0": "常见问题与回答",
+          "QAs": {
+            "0": {
+              "question": "高尔夫课程的学习场地在哪里？",
+              "answer": {
+                "0": "Waitakere高尔夫球场"
+              }
+            },
+            "1": {
+              "question": "如何有资格获得会员价格?",
+              "answer": {
+                "0": "满足以下情况之一即可: \n-远程课程学员\n-青少年高尔夫学院学员\n-Waitakere高尔夫球场会员"
+              }
+            },
+            "2": {
+              "question": "一节课有2名或以上学生同时上课，学费价格是多少?",
+              "answer": {
+                "0": "每增加一名学生，每节课的总价仅增加原价的20%。"
+              }
+            },
+            "3": {
+              "question": "一名非会员的学生，与一名会员学生同时上课，非会员学生的学费价格是多少?",
+              "answer": {
+                "0": "非会员学生可作为会员学生的客人，同样以会员价进行学习。\n为了满足会员价的条件，每组学员至少要有一名学生是会员。"
+              }
+            },
+            "4": {
+              "question": "课程套餐具有有效期吗?",
+              "answer": {
+                "0": "有的，有效期为自购买日起一年。"
+              }
+            },
+            "5": {
+              "question": "可以提供“课程礼券”吗?",
+              "answer": {
+                "0": "可以，我们可以为您提供设计精美的“课程礼券”，并可选择电子版或实体版的形式。"
+              }
+            }
+          },
+          "link": "找不到您想问的问题与答案? 欢迎与我们联系。"
+        },
+        "KrInstructors" : {
+          "Rhys" : {
+            "name" : "RHYS OGDEN",
+            "badge" : "0",
+            "role" : "Director of Instructor",
+            "description" : "Rhys will periodically be in South Korea. During that period, if you wish to meet Rhys in person to discuss any learning opportunities, you are welcome to contact him directly or alternatively contact our Korean information service to make an appointment.\n\nSchedule details yet to be determined. Dates will be displayed on the BP Golf Academy Website."
+          },
+          "TBA" : {
+            "name" : "TBA",
+            "role" : "Senior Instructor",
+            "locationLabel" : "Location : ",
+            "location" : "Seoul, Korean",
+            "priceTable" : {
+              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "rows" : [
+                ["MEMBER ONLY", "$ TBA", "$ TBA", "$ TBA"]
+              ]
+            }
+          }
+        },
+        "KrQA" : {
+          "h0" : "Asked and Answered",
+          "QAs" : {
+            "0" : {
+              "question" : "How do I qualify for a member price?",
+              "answer" : {"0" : "You must be one of the following :\n- Remote program member\n- Junior Academy member"}
+            },
+            "1" : {
+              "question" : "What is the price for 2 or more students per lesson?",
+              "answer" : {"0" : "For each additional student, add 20% to the price stated."}
+            },
+            "2" : {
+              "question" : "What is the price for a non-member learning with a member?",
+              "answer" : {"0" : "We view you as a guest of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
+            },
+            "3" : {
+              "question" : "Do the lesson packages have an expiry date?",
+              "answer" : {"0" : "Yes. One year from the purchase date."}
+            },
+            "4" : {
+              "question" : "Do you offer gift certificates?",
+              "answer" : {"0" : "Yes, we can provide a nicely presented lesson voucher in either a digital format or in hardcopy."}
+            }
+          },
+          "link" : "Can’t find the answer to your questions? Please contact us."
+        }
+      },
       "team" : {
-        "nzTeam" : "New Zealand Team",
-        "nzLocation" : "Auckland",
-        "krTeam" : "Korean Team",
-        "krLocation" : "Seoul",
+        "nzTeam" : "新西兰团队",
+        "nzLocation" : "奥克兰",
+        "krTeam" : "韩国团队",
+        "krLocation" : "首尔",
         "nzMembers" : {
             "0" : {
                 "avatar" : "0",
@@ -627,7 +865,7 @@
             "1" : {
                 "avatar" : "../../static/img/partner.png",
                 "name" : "待定",
-                "role" : "职位",
+                "role" : "辅导教练",
                 "description" : ""
             }
         },
@@ -653,4 +891,4 @@
         }
       }
     }
-  }
+}
