@@ -39,4 +39,6 @@
     background: inherit;
     box-shadow: inset 5px -3px 10px rgba(0, 0, 0, 0.15);
     filter: contrast(0.4);
+    color:rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.1);
 }
