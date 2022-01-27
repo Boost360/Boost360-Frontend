@@ -23,7 +23,7 @@ function Gallery({images}) {
         <div style={containerStyle}>
           <Carousel
             data={images}
-            time={4000}
+            time={3000}
             width="100vw"
             height="100vh"
             captionStyle={captionStyle}

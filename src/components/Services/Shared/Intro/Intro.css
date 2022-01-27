@@ -28,6 +28,9 @@
     text-align: left;
     width: 100%;
     opacity: 1;
+    animation: none;
+    animation-delay: none;
+    animation-fill-mode: none;
 }
 
 
