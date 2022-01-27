@@ -43,9 +43,10 @@
 .sreeningSession .price {
     width: auto;
     padding: 10px 25px 0px 25px;
-    border-top: 5px solid black;
+    border-top: 4px solid black;
     text-align: center;
     font: var(--secondary-bold);
+    font-size: 21px;
     flex-grow: 0;
 }
 
