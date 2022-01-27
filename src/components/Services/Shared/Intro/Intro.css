@@ -27,10 +27,7 @@
 .intro h1 {
     text-align: left;
     width: 100%;
-    animation: fade-in-left 3s ease;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
+    opacity: 1;
 }
 
 
