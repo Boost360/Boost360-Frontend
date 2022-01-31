@@ -75,7 +75,7 @@
     margin-top: 30px;
     width: 100%;
     text-align: right;
-    color: var(--primary);
+    color: var(--black);
     text-decoration: underline #8AE3FF;
 }
 .partner_detail_website_link_container:hover {
@@ -100,4 +100,6 @@
 /* Customized asjustment: Golf Technologies Logo */
 .navigation_partner_image_container:nth-child(6) {
     width: 10%;
+    position: relative;
+    top: -20px;
 }
