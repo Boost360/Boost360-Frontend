@@ -19,9 +19,9 @@
             "email-content": "rhys@bpgolfacademy.com",
             "address-content": "Waitakere Golf Club, 35 Falls Road, Waitakere, Bethells Beach (0781), Auckland, New Zealand",
             "wechat-id" : "BPgolfacademy",
-            "kakao-id" : "BPgolfacademy2",
+            "kakao-id" : "BPgolfacademy",
             "instagram-id" : "bpgolfacademy",
-            "linkedin-id" : "bpgolfacademy"
+            "linkedin-id" : "Rhys Ogden"
         },
         "input" : {
           "info": "如果您对我们的服务有任何疑问，请填写以下表格，我们很乐意为您服务。",
@@ -812,8 +812,10 @@
             "priceTable" : {
               "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
               "rows" : [
-                ["MEMBER ONLY", "$ TBA", "$ TBA", "$ TBA"]
-              ]
+                ["GUEST", "$TBA", "$TBA", "$TBA"],
+                ["", "", "", ""],
+                ["MEMBER ONLY", "$TBA", "$TBA", "$TBA"]
+                ]
             }
           }
         },

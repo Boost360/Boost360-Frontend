@@ -6,11 +6,13 @@ import { FaInstagram } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { IconContext } from "react-icons/lib";
 import { useTranslation } from "react-i18next";
-import WechatModal from "../../WechatModal/WechatModal";
+import WechatModal from "../../QRModal/WechatModal";
+import KakaotalkModal from "../../QRModal/KakaotalkModal";
 
 export default function ContactInfo() {
     const { t, i18n } = useTranslation();
     const [showWechat, setShowWechat] = useState(false);
+    const [showKakaotalk, setShowKakaotalk] = useState(false);
     return (
         <div className="ContactInfo">
             <div className="ContactInfo-section">
@@ -35,9 +37,9 @@ export default function ContactInfo() {
                             </p>
                         </div>
                     }
-                    {(i18n.language === 'kr' || i18n.language === 'en') && // display wechat when lang is korean or english
+                    {(i18n.language === 'kr' || i18n.language === 'en') && // display kakaotalk when lang is korean or english
                         <div className="ContactInfo-SocialIcon">
-                            <RiKakaoTalkLine className='cIcon' onClick={() => window.location = ''} />
+                            <RiKakaoTalkLine className='cIcon' onClick={() => setShowKakaotalk(true)}  />
                             <p>
                                 {t('contact.info.kakao-id')}
                             </p>
@@ -50,7 +52,7 @@ export default function ContactInfo() {
                         </p>
                     </div>
                     <div className="ContactInfo-SocialIcon">
-                        <GrLinkedinOption className='cIcon' onClick={() => window.location = '/'} />
+                        <GrLinkedinOption className='cIcon' onClick={() => window.location = 'https://www.linkedin.com/in/rhys-ogden-0197b522b/'} />
                         <p>
                             {t('contact.info.linkedin-id')}
                         </p>
@@ -58,7 +60,8 @@ export default function ContactInfo() {
                 </div>
             </IconContext.Provider>
 
-            {showWechat && <WechatModal handleClose={() => setShowWechat(false)} chinese={i18n.language === 'ch'}></WechatModal>}
+            {showWechat && <WechatModal handleClose={() => setShowWechat(false)} lang={i18n.language}></WechatModal>}
+            {showKakaotalk && <KakaotalkModal handleClose={() => setShowKakaotalk(false)} lang={i18n.language}></KakaotalkModal>}
         </div>
     )
 }
