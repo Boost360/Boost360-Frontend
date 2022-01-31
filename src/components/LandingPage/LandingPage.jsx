@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./LandingPage.css";
-import logo from '../../static/img/logo/bottom_text_white.svg';
+import logo from '../../static/img/logo/bottom_text_blue.svg';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 // import GolfAnimation from './GolfAnimation';
