@@ -30,12 +30,13 @@
 
 .HomePageBody h1 {
     position: relative;
-    font: var(--primary-bold);
+    font: var(--boost-performance);
     width: 100%;
-    padding-left: clamp(20px, 20%, 1000px);
+    padding-left: clamp(20px, 10%, 1000px);
     text-align: left;
-    font-size: clamp(20px, 7vw, 70px);
-    letter-spacing: 0.05em;
+    /* font-size: clamp(20px, 10vw, 90px); */
+    /* letter-spacing: 0.1em; */
+    /* font-weight: 1000px; */
     /* animation: fade-in-top 3s ease;
     animation-delay: 0.5s;
     animation-fill-mode: forwards; */
@@ -43,16 +44,19 @@
 
 
 .HomePageBody h1 em {
-    color: rgb(30, 30, 179);   
+    font: var(--boost-performance);
+    font-size: 160px;
+    color: rgb(85, 85, 85);   
 }
 
 .HomePageBody img {
-    width: clamp(400px, 70%, 1300px);
+    width: clamp(300px, 55%, 1000px);
     height: auto;
     position: absolute;
-    right: -120px;
-    top: clamp(180px, 20vh, 200px);
+    right: -20px;
+    top: clamp(100px, 15vh, 130px);
     object-fit: cover;
+    filter: hue-rotate(200deg);
     /* animation: fade-in-rotate 3s ease;
     animation-delay: 0.5s;
     animation-fill-mode: forwards; */
@@ -91,7 +95,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(158, 158, 158, 1);
     /* animation: fade-in-bottom 3s ease;
     animation-delay: 0.6s; */
     animation-fill-mode: forwards;
