@@ -34,7 +34,7 @@ const NavBar = ({ page, user, header = null }) => {
     const { t, i18n } = useTranslation();
     const [pages, setPages] = useState(
         {
-            'Home': { path: '/index', parentPage: null },
+            'Home': { path: '/home', parentPage: null },
             'About': { path: '/about', parentPage: null },
             'Contact': { path: '/contact', parentPage: null },
             'Partners': { path: '/partners', parentPage: null },
