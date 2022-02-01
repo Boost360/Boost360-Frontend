@@ -26,7 +26,7 @@ const Site = ({ user,setUser }) => {
     let { path, url } = useRouteMatch();
     return (
         <div>
-            <Route path='/index' exact>
+            <Route path='/home' exact>
                 <NavBar page='Home' user={user}></NavBar>
                 <HomePage></HomePage>
             </Route>
