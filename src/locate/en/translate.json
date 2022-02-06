@@ -622,7 +622,8 @@
         },
         "coaching" : {
             "Intro" : {
-                "h0" : "Coaching"
+                "h0" : "Coaching",
+                "content" : "Our instruction is structure based.\n\nBeginning by establishing a solid foundation, you will develop your game in a highly organized way.\n\nUsing evidence-based principles, we formulate a swing specific to your individual movement patterns and game preference.\n\nFrom within your skill set, we encourage creativity and shot making while still maintaining core swing principles. \n\nWe place a priority on understanding individual learning styles and adapting the knowledge and learning process to each student. \n\nUltimately the goal of our instruction is for you to develop your golf game in the most efficient way possible."
             },
             "Tab" : {
                 "nzTeam" : "New Zealand Team",
