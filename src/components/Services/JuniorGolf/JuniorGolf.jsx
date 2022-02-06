@@ -12,7 +12,7 @@ import Gallery from '../Shared/Gallery/Gallery';
 import QA from '../Shared/QA/QA';
 
 // -----------------------------IMAGE / ICON------------------------------
-import Golfer from '../../../static/img/RemoteLearning_background.png'
+import Golfer from '../../../static/img/Junior_background.png'
 import background4 from '../../../static/img/background4.png';
 import background5 from '../../../static/img/background5.png';
 import background6 from '../../../static/img/background6.png';
@@ -51,7 +51,7 @@ export default function JuniorGolf() {
     return (
         <div className="services">
             <div className="section">
-                <Intro data={juniorGolf.Intro} graphic={Golfer} graphicStyle={{filter: 'hue-rotate(10deg) saturate(70%)', width: '60%', height: 'auto', right: '-5%', bottom: '0%', zIndex: '-4'}} />
+                <Intro data={juniorGolf.Intro} graphic={Golfer} graphicStyle={{width: '35%', height: 'auto', right: '10%', bottom: '30%', zIndex: '-4'}} />
             </div>
             <div className="section">
                 <Gallery images={gallery_images} />
