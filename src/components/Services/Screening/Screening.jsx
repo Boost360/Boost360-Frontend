@@ -7,7 +7,7 @@ import QA from '../Shared/QA/QA'
 import ScreeningSession from '../Shared/ScreeningSession/ScreeningSession'
 
 // -----------------------------IMAGE------------------------------
-import Golfer from '../../../static/img/RemoteLearning_background.png';
+import Golfer from '../../../static/img/Screening_background.png';
 import background4 from '../../../static/img/background4.png';
 import background5 from '../../../static/img/background5.png';
 import background6 from '../../../static/img/background6.png';
@@ -44,7 +44,7 @@ function Screening() {
   return (
     <div className="services">
       <div className="section">
-        <Intro data={screening.Intro} graphic={Golfer} graphicStyle={{filter: 'hue-rotate(170deg) saturate(70%)', width: '60%', height: 'auto', right: '-5%', bottom: '0%', zIndex: '-4'}} ></Intro>
+        <Intro data={screening.Intro} graphic={Golfer} graphicStyle={{width: '30%', height: 'auto', right: '13%', bottom: '5%', zIndex: '-4'}} ></Intro>
       </div>
       <div className="section">
         <ScreeningSession data={screening.Swing}></ScreeningSession>
