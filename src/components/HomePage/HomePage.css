@@ -32,9 +32,9 @@
     position: relative;
     font: var(--boost-performance);
     width: 100%;
-    padding-left: clamp(20px, 10%, 1000px);
+    padding-left: clamp(20px, 15%, 1000px);
     text-align: left;
-    /* font-size: clamp(20px, 10vw, 90px); */
+    font-size: clamp(20px, 7vw, 150px);
     /* letter-spacing: 0.1em; */
     /* font-weight: 1000px; */
     /* animation: fade-in-top 3s ease;
@@ -45,12 +45,12 @@
 
 .HomePageBody h1 em {
     font: var(--boost-performance);
-    font-size: 160px;
+    font-size: clamp(20px, 9vw, 150px);
     color: rgb(85, 85, 85);   
 }
 
 .HomePageBody img {
-    width: clamp(300px, 55%, 1000px);
+    width: clamp(300px, 50%, 1000px);
     height: auto;
     position: absolute;
     right: -20px;
