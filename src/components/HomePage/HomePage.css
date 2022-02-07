@@ -50,11 +50,6 @@
     right: -100px;
     top: -10px;
     object-fit: cover;
-    /* filter: hue-rotate(200deg); */
-    /* animation: fade-in-rotate 3s ease;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards; */
-    z-index: -1;
     transform-origin: center;
     opacity: 30%;
 }
