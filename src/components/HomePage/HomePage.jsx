@@ -21,7 +21,7 @@ export default function HomePage() {
             </video> */}
 
             <div className="HomePageBody"> 
-                <h1><em>B</em>oost <br /> <em>P</em>erformance</h1>
+                <h1><em>Boost</em> <br /> Performance</h1>
                 <img src={Golfer} alt="BP golf academy golfer" />
             </div>
 

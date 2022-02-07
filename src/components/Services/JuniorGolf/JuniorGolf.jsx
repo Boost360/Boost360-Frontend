@@ -51,7 +51,7 @@ export default function JuniorGolf() {
     return (
         <div className="services">
             <div className="section">
-                <Intro data={juniorGolf.Intro} graphic={Golfer} graphicStyle={{width: '35%', height: 'auto', right: '10%', bottom: '30%', zIndex: '-4'}} />
+                <Intro data={juniorGolf.Intro} graphic={Golfer} graphicStyle={{width: '40%', height: 'auto', right: '9%', bottom: '20%', zIndex: '-4'}} />
             </div>
             <div className="section">
                 <Gallery images={gallery_images} />

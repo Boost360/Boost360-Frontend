@@ -44,7 +44,7 @@ function Screening() {
   return (
     <div className="services">
       <div className="section">
-        <Intro data={screening.Intro} graphic={Golfer} graphicStyle={{width: '30%', height: 'auto', right: '13%', bottom: '5%', zIndex: '-4'}} ></Intro>
+        <Intro data={screening.Intro} graphic={Golfer} graphicStyle={{width: '40%', height: 'auto', right: '10%', bottom: '5%', zIndex: '-4'}} ></Intro>
       </div>
       <div className="section">
         <ScreeningSession data={screening.Swing}></ScreeningSession>

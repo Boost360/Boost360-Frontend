@@ -7,17 +7,11 @@
     overflow:hidden;
     z-index: 0;
     top:0;    
+    background: var(--background4);
+    animation: expand 1s cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
+    
 }
-
-/* .HomePage video{
-    object-fit: cover;
-    width: 95vw;
-    height: auto;
-    justify-content: center;
-    margin-top: clamp(10px, 10vw, 50px);
-    pointer-events: none;
-    z-index: -1;
-} */
 
 .HomePageBody{
     display: flex;
@@ -34,9 +28,8 @@
     width: 100%;
     padding-left: clamp(20px, 15%, 1000px);
     text-align: left;
-    font-size: clamp(20px, 7vw, 150px);
-    /* letter-spacing: 0.1em; */
-    /* font-weight: 1000px; */
+    font-size: clamp(20px, 7vw, 150px); 
+    color: var(--inactive);
     /* animation: fade-in-top 3s ease;
     animation-delay: 0.5s;
     animation-fill-mode: forwards; */
@@ -46,22 +39,24 @@
 .HomePageBody h1 em {
     font: var(--boost-performance);
     font-size: clamp(20px, 9vw, 150px);
-    color: rgb(85, 85, 85);   
+    color: var(--white);
+    
 }
 
 .HomePageBody img {
-    width: clamp(300px, 50%, 1000px);
+    width: 1100px;
     height: auto;
     position: absolute;
-    right: -20px;
-    top: clamp(100px, 15vh, 130px);
+    right: -100px;
+    top: -10px;
     object-fit: cover;
-    filter: hue-rotate(200deg);
+    /* filter: hue-rotate(200deg); */
     /* animation: fade-in-rotate 3s ease;
     animation-delay: 0.5s;
     animation-fill-mode: forwards; */
     z-index: -1;
     transform-origin: center;
+    opacity: 30%;
 }
 
 
@@ -95,7 +90,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: rgba(158, 158, 158, 1);
+    background: var(--background3);
     /* animation: fade-in-bottom 3s ease;
     animation-delay: 0.6s; */
     animation-fill-mode: forwards;
@@ -103,12 +98,12 @@
 
 .HomeIcon{
     cursor: pointer;
-    color: var(--white);
+    color: var(--gray);
     padding: 4px 4px 0px 4px;
-    border: 1px solid var(--text);
+    border: 1px solid var(--gray);
 }
 .HomeIcon:hover {
-    filter: contrast(0.6);
+    color: var(--white);
 }
 
 @keyframes fade-in-bottom {
@@ -121,4 +116,16 @@
         width: 100%;
         height: 100%;
     }
+
+    .HomePage img{
+        width: 100px;
+        height: auto;
+    }
+}
+
+@keyframes expand {
+    0% {clip-path: circle(100px at center);}
+    30% {clip-path: circle(100px at center);}
+    95% {clip-path: circle(100vh at center);}
+    100% {clip-path: none;}
 }
