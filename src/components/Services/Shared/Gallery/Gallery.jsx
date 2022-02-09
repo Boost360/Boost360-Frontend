@@ -27,7 +27,7 @@ function Gallery({images}) {
             width="100vw"
             height="100vh"
             captionStyle={captionStyle}
-            radius="10px"
+            radius="0px"
             slideNumber={false}
             slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"

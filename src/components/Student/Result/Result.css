@@ -4,7 +4,7 @@
 }
 .result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
     color: var(--text)!important;
-    font-size: 20px;
+    font: var(--tertiary-medium);
     margin: 20px;
 }
 .result_container {
@@ -23,10 +23,6 @@
         margin-left: 0;
         margin-top: 10px;
         font-size: 15px;
-    }
-    .result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-        margin: unset!important;
-        color: var(--text)!important;
     }
 }
 
