@@ -19,9 +19,9 @@
             "email-content": "rhys@bpgolfacademy.com",
             "address-content": "Waitakere Golf Club, 35 Falls Road, Waitakere, Bethells Beach (0781), Auckland, New Zealand",
             "wechat-id" : "BPgolfacademy",
-            "kakao-id" : "BPgolfacademy2",
+            "kakao-id" : "BPgolfacademy",
             "instagram-id" : "bpgolfacademy",
-            "linkedin-id" : "bpgolfacademy"
+            "linkedin-id" : "Rhys Ogden"
         },
         "input" : {
           "info": "如果您对我们的服务有任何疑问，请填写以下表格，我们很乐意为您服务。",
@@ -701,7 +701,8 @@
       },
       "coaching": {
         "Intro": {
-          "h0": "私人教练"
+          "h0": "私人教练",
+          "content" : "我们的教学是以科学的体系为基础的。\n\n从一开始便以高度系统化的方式，帮助学生建立扎实的基础。  \n\n基于每个学生个体的实际运动数据、运动模式与运动偏好，我们将专门设计最适合每位学生的挥杆模式。  \n\n在每个学生最适合的技能组合范围内，保持核心挥杆模式的基础上，我们也鼓励学生创造性的发挥。  \n\n基于对每个学生学习特点的充分理解，我们将设计与制定适合每个学生的知识顺序与学习过程，这是我们教学的首要原则。  \n\n我们的终极目标，是带领每一位学生以最有效的方式方法来发展高尔夫球技。"
         },
         "Tab" : {
           "nzTeam" : "新西兰团队",
@@ -812,8 +813,10 @@
             "priceTable" : {
               "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
               "rows" : [
-                ["MEMBER ONLY", "$ TBA", "$ TBA", "$ TBA"]
-              ]
+                ["GUEST", "$TBA", "$TBA", "$TBA"],
+                ["", "", "", ""],
+                ["MEMBER ONLY", "$TBA", "$TBA", "$TBA"]
+                ]
             }
           }
         },
