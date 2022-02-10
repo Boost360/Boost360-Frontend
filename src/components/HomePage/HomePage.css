@@ -30,6 +30,7 @@
     text-align: left;
     font-size: clamp(20px, 7vw, 150px); 
     color: var(--inactive);
+    z-index: 5;
     /* animation: fade-in-top 3s ease;
     animation-delay: 0.5s;
     animation-fill-mode: forwards; */
@@ -51,7 +52,8 @@
     top: -10px;
     object-fit: cover;
     transform-origin: center;
-    opacity: 30%;
+    opacity: 20%;
+    /* filter: blur(4px); */
 }
 
 
@@ -119,8 +121,6 @@
         right: auto;
         bottom: 0px;
         top: auto;
-        transform-origin: center;
-        opacity: 30%;
     }
 }
 
