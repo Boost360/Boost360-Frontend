@@ -22,7 +22,7 @@ export default function HomePage() {
 
             <div className="HomePageBody"> 
                 <h1><em>Boost</em> <br /> Performance</h1>
-                <img src={Golfer} alt="BP golf academy golfer" style={{opacity: '40%'}}/>
+                <img src={Golfer} alt="BP golf academy golfer" style={{opacity: '30%'}}/>
             </div>
 
             

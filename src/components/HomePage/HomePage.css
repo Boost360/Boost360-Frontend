@@ -53,7 +53,7 @@
     object-fit: cover;
     transform-origin: center;
     opacity: 20%;
-    /* filter: blur(4px); */
+    filter: blur(3px);
 }
 
 
