@@ -52,7 +52,8 @@
     top: -10px;
     object-fit: cover;
     transform-origin: center;
-    opacity: 20%;
+    filter: brightness(1.2);
+    /* opacity: 80%; */
     /* filter: blur(3px); */
 }
 
