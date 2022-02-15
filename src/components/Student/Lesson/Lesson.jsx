@@ -43,8 +43,10 @@ const Lesson = ({user}) => {
 
 
     const stringifyDate = (date) => {
-        const option = {day: '2-digit', month: 'short', year: 'numeric'};
-        return date.toLocaleString('en-AU', option).substring(0, 20);
+        if  (date) {
+            const option = {day: '2-digit', month: 'short', year: 'numeric'};
+            return date.toLocaleString('en-AU', option).substring(0, 20);
+        }
     }
 
     return (
@@ -58,9 +60,9 @@ const Lesson = ({user}) => {
                 ):(
                     <div className='lesson_container'>
                         <div className="lesson_program">
-                            <h1>{`Program : ${program.type}`}</h1>
+                            <h1>{`Program : ${program.type ? program.type : ''}`}</h1>
                             <h2>{`Enroled on : ${program.enrolDate ? stringifyDate(program.enrolDate) : ''}`}</h2>
-                            <h2>{`Lessons paid : ${program.quantity}`}</h2>
+                            <h2>{`Lessons paid : ${program.quantity ? program.quantity : ''}`}</h2>
                         </div>
                         <TableContainer component={Paper}>
                             <Table sx={{ minWidth: 650 }} aria-label="simple table">

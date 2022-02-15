@@ -47,6 +47,7 @@
 .team .member img {
     width: 200px;
     height: 200px;
+    object-fit: cover;
     background: rgba(0,0,0,0);
     border-radius: 50%;
 }
