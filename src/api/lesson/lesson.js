@@ -71,6 +71,6 @@ export async function lesson(id) {
 
 
     // TO BE DELETED
-    return {data: mockData, status: 200}
+    return {data: {program: {type: '', enrolDate: null, quantity: null}, rows: []}, status: 200}
 
 }
