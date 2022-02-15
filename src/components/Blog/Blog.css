@@ -33,6 +33,8 @@
 }
 .blog_small_item_right_col img{
     width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 .blog_small_item_title {
     font-size: 25px;
