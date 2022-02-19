@@ -87,7 +87,7 @@
     top: 0;
     height: 100vh;
     width: 100%;
-    animation: slide-in-left 1s ease;
+    animation: navbar 1s ease;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -121,7 +121,7 @@
     filter: contrast(0.6);
 }
 
-@keyframes slide-in-left {
+@keyframes navbar {
     0% {left: -100%}
     100% {left: 0; opacity: 1}
 }
