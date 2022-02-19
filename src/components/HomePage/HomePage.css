@@ -52,13 +52,14 @@
 
 .HomePageBody img {
     position: fixed;
-    left: -30px;
+    left: 0px;
     top: 0px;
-    width: 1000px;
-    height: auto;
+    width: auto;
+    height: 100vh;
     object-fit: cover;
     transform-origin: center;
     fill: var(--primary);
+    z-index: 4;
 }
 
 
@@ -121,7 +122,7 @@
     }
 
     .HomePageBody {
-        animation-delay: 1s;
+        animation-delay: 2s;
     }
 
     .HomePage .golfer{
