@@ -54,7 +54,7 @@
 
 .HomePageBody img {
     position: fixed;
-    left: 0px;
+    left: -1px;
     top: 0px;
     width: auto;
     height: 100vh;
