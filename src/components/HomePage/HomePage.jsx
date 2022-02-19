@@ -8,7 +8,8 @@ import { IconContext } from "react-icons/lib";
 import { GrLinkedinOption } from "react-icons/gr";
 import WechatModal from "../QRModal/WechatModal";
 import KakaotalkModal from "../QRModal/KakaotalkModal";
-import Golfer from '../../static/img/Home_background.png';
+import Trapezium from '../../static/img/Home_background.svg';
+import Golfer from '../../static/img/Golfer.png';
 
 export default function HomePage() {
     const [showWechat, setShowWechat] = useState(false);
@@ -19,10 +20,10 @@ export default function HomePage() {
                 <source src={Background_webm} type="video/webm"/>
                 <source src={Background_mp4} type="video/mp4"/>
             </video> */}
-
+            <img className="golfer" src={Golfer} alt=""/>
             <div className="HomePageBody"> 
                 <h1><em>Boost</em> <br /> Performance</h1>
-                <img src={Golfer} alt="BP golf academy golfer" style={{opacity: '30%'}}/>
+                <img src={Trapezium} alt=""/>
             </div>
 
             
