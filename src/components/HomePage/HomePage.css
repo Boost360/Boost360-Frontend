@@ -62,6 +62,7 @@
     transform-origin: center;
     fill: var(--primary);
     z-index: 4;
+    filter: hue-rotate(230deg);
 }
 
 
