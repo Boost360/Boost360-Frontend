@@ -4,7 +4,7 @@ import BulletPoints from '../BulletPoints/BulletPoints';
 
 function ScreeningSession({ data, logos = [] }) {
   return (
-    <div className="sreeningSession">
+    <div className="screeningSession">
 
       {data.h0 && <h1>{data.h0}</h1>}
 
