@@ -90,7 +90,7 @@ const Site = ({ user,setUser }) => {
 
             <Route path='/programs'>
                 <PageTransition>
-                    <NavBar page='Coaching' user={user}></NavBar>
+                    <NavBar page='Programs' user={user}></NavBar>
                     <Programs></Programs>
                 </PageTransition>
             </Route>
