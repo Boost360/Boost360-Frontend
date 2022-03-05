@@ -15,6 +15,7 @@ import JuniorGolf from "../Services/JuniorGolf/JuniorGolf";
 import RemoteLearning from "../Services/RemoteLearning/RemoteLearning";
 import Screening from "../Services/Screening/Screening";
 import Coaching from "../Services/Coaching/Coaching";
+import Programs from "../Services/Programs/Programs";
 import Login from "../Student/Login/Login"
 import PageTransition from "../PageTransition/PageTransition"
 
@@ -84,6 +85,13 @@ const Site = ({ user,setUser }) => {
                 <PageTransition>
                     <NavBar page='Coaching' user={user}></NavBar>
                     <Coaching></Coaching>
+                </PageTransition>
+            </Route>
+
+            <Route path='/programs'>
+                <PageTransition>
+                    <NavBar page='Programs' user={user}></NavBar>
+                    <Programs></Programs>
                 </PageTransition>
             </Route>
 
