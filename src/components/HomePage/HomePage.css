@@ -10,18 +10,6 @@
     background: var(--white);    
 }
 
-.HomePage .golfer {
-    filter: hue-rotate(200deg);
-    width: 130vh;
-    height: auto;
-    position: fixed;
-    bottom: -4vh;
-    right: -11vw;
-    animation: slide-in-right 2s ease-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
 .HomePageBody{
     display: flex;
     flex-direction: column;
@@ -62,9 +50,19 @@
     transform-origin: center;
     fill: var(--primary);
     z-index: 4;
-    filter: hue-rotate(230deg);
 }
 
+.HomePage .golfer {
+    width: 130vh;
+    height: auto;
+    position: fixed;
+    bottom: -4vh;
+    right: -11vw;
+    animation: slide-in-right 2s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    filter: hue-rotate(200deg);
+}
 
 .messageHome{
     position: static;

@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import NavBar from "../NavBar/NavBar";
 import './HomePage.css';
 import { AiOutlineWechat } from 'react-icons/ai';
 import { RiKakaoTalkLine } from 'react-icons/ri';
@@ -16,10 +15,6 @@ export default function HomePage() {
     const [showKakaotalk, setShowKakaotalk] = useState(false);
     return (
         <div className="HomePage">
-            {/* <video id='background_video' poster={Background_png} autoPlay loop playsInline muted>
-                <source src={Background_webm} type="video/webm"/>
-                <source src={Background_mp4} type="video/mp4"/>
-            </video> */}
             <img className="golfer" src={Golfer} alt=""/>
             <div className="HomePageBody"> 
                 <h1><em>Boost</em> <br /> Performance</h1>
