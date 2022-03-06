@@ -119,28 +119,28 @@ const NavBar = ({ page, user, header = null }) => {
     const MobileMenu = () => {
         return <div className="menuItems-mobile-wrapper" onClick={closeMobileMenu}>
             <div className="menuItems-mobile">
-                <MenuItem page='Contact' className="menuItem-mobile" />
-                <MenuItem page='Screening' className="menuItem-mobile" />
-                <MenuItem page='Coaching' className="menuItem-mobile" />
                 <MenuItem page='Remote-learning' className="menuItem-mobile" />
                 <MenuItem page='Junior-golf' className="menuItem-mobile" />
+                <MenuItem page='Screening' className="menuItem-mobile" />
+                <MenuItem page='Coaching' className="menuItem-mobile" />
                 <MenuItem page='Team' className="menuItem-mobile" />
                 <MenuItem page='Partners' className="menuItem-mobile" />
                 <MenuItem page='Blog' className="menuItem-mobile" />
+                <MenuItem page='Contact' className="menuItem-mobile" />
             </div>
         </div>
     };
 
     const DesktopMenu = () => {
         return <div className="menuItems-middle">
-            <MenuItem page='Contact' />
-            <MenuItem page='Screening' />
-            <MenuItem page='Coaching' />
             <MenuItem page='Remote-learning' />
             <MenuItem page='Junior-golf' />
+            <MenuItem page='Screening' />
+            <MenuItem page='Coaching' />
             <MenuItem page='Team' />
             <MenuItem page='Partners' />
             <MenuItem page='Blog' />
+            <MenuItem page='Contact' />
         </div>
     };
 

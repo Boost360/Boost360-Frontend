@@ -1,17 +1,17 @@
-.sreeningSession {
+.screeningSession {
     text-align: left;
     white-space: pre-wrap;
 } 
 
-.sreeningSession .outcome {
+.screeningSession .outcome {
     opacity: 0.7;
 }
 
-.sreeningSession .duration {
+.screeningSession .duration {
     font: var(--tertiary-bold);
 }
 
-.sreeningSession .bottom_container {
+.screeningSession .bottom_container {
     margin-top: 50px; 
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@
     flex-wrap: wrap;
 }
 
-.sreeningSession .logos {
+.screeningSession .logos {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -35,12 +35,12 @@
     gap: clamp(10px, 10%, 1000px);
     flex-wrap: wrap;
 }
-.sreeningSession .logos img {
+.screeningSession .logos img {
     width: 40px;
     padding: 15px 50px 15px 50px;
 }
 
-.sreeningSession .price {
+.screeningSession .price {
     width: auto;
     padding: 10px 25px 0px 25px;
     border-top: 4px solid black;

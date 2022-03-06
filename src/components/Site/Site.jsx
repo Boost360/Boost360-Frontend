@@ -15,6 +15,7 @@ import JuniorGolf from "../Services/JuniorGolf/JuniorGolf";
 import RemoteLearning from "../Services/RemoteLearning/RemoteLearning";
 import Screening from "../Services/Screening/Screening";
 import Coaching from "../Services/Coaching/Coaching";
+import Programs from "../Services/RemoteLearning/Programs/Programs";
 import Login from "../Student/Login/Login"
 import PageTransition from "../PageTransition/PageTransition"
 

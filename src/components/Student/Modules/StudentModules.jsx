@@ -1,29 +1,32 @@
 import React from 'react'
 import './StudentModules.css'
-import Icon_swing from '../../../static/icon/swing.svg';
-import Icon_flag from '../../../static/icon/flag.svg';
-import Icon_irons from '../../../static/icon/irons.svg';
 import Module from './Module/Module';
+import Equipment_en from '../../../static/img/Programs/Equipment_en.jpg'
+import Course_en from '../../../static/img/Programs/Course_en.jpg'
+import SwingShort_en from '../../../static/img/Programs/SwingShort_en.jpg'
+import SwingLong_en from '../../../static/img/Programs/SwingLong_en.jpg'
 
 export default function StudentModules() {
     const module_details = [
         {
-            title: 'Golf Equipment',
-            icon: Icon_irons,
+            title: 'BP Golf Equipment',
             link: 'https://id.articulate.com/',
-            color: 'var(--palette1)'
+            img: Equipment_en
         },
         {
-            title: 'Golf Course Knowledge',
-            icon: Icon_flag,
+            title: 'BP The Golf Course',
             link: 'https://id.articulate.com/',
-            color: 'var(--palette2)'
+            img: Course_en
         },
         {
-            title: 'Golf Swing Technique',
-            icon: Icon_swing,
+            title: 'BP Building your Short Game',
             link: 'https://id.articulate.com/',
-            color: 'var(--palette3)'
+            img: SwingShort_en
+        },
+        {
+            title: 'BP Building your Long Game',
+            link: 'https://id.articulate.com/',
+            img: SwingLong_en
         }
     ];
 

@@ -58,6 +58,7 @@
             "Junior-golf": "Junior golf",
             "Screening": "Screening",
             "Coaching": "Coaching",
+            "Programs": "Modules",
             "Blog": "Blog",
             "Blog-Detail": "Blog detail",
             "Language": "Language",
@@ -736,6 +737,76 @@
                 "link" : "Can’t find the answer to your questions? Please contact us."
               }
         },
+        "programs": {
+            "h0": "Learning Programs",
+            "Equipment": {
+              "title": "Introduction to Golf Equipment",
+              "modules": "10 MODULES",
+              "outcome": {
+                "h0": "LEARNING OUTCOMES",
+                "points": {
+                  "0": "Familiarise yourself with parts of the golf club and their importance.",
+                  "1": "Find out which equipment is required for specific skill levels.",
+                  "2": "Learn how equipment can impact your performance.",
+                  "3": "Understand the relationship between equipment and golf course conditions.",
+                  "4": "Learn how equipment can impact your swing technique.",
+                  "5": "Understand the importance of golf club fitting.",
+                  "6": "Be knowledgeable and confident when purchasing equipment and know how to ask the right questions."
+                }
+              },
+              "price" : "Modules Only Option - $295"
+            },
+            "Course": {
+              "title": "Golf Course Knowledge",
+              "modules": "10 MODULES",
+              "outcome": {
+                "h0": "LEARNING OUTCOMES",
+                "points": {
+                  "0": "Learn on-course terminology.",
+                  "1": "Understand how to participate in a social setting on the golf course, including rules and etiquette.",
+                  "2": "Lean how to score, including the various types of golf games.",
+                  "3": "Be confident participating in competitions.",
+                  "4": "Understand the golf handicap system.",
+                  "5": "Get the most out of your score through strategy and shot selection."
+                }
+              },
+              "price" : "Modules Only Option - $295"
+            },
+            "SwingShort": {
+              "title": "Golf Swing Technique - Short Game",
+              "modules": "28 MODULES",
+              "outcome": {
+                "h0": "LEARNING OUTCOMES",
+                "h1": "Irons / Fairway Woods / Driver",
+                "points": {
+                  "0": "Swing Setup – Create a strong swing foundation.",
+                  "1": "Motion – Understand how each body part moves throughout the swing.",
+                  "2": "Key Swing Position – Execute key swing positions.",
+                  "3": "Swing Sequence – Develop a dynamic swing motion.",
+                  "4": "Golf Club Dynamics – Understand how the golf club moves through impact including key data.",
+                  "5": "Specialty Shots – Make swing adjustments to play slopes/lies/shot shaping."
+                }
+              },
+              "price" : "Modules Only Option - $495\nMembership Program - $995"
+            },
+            "SwingLong": {
+              "title": "Golf Swing Technique - Long Game",
+              "modules": "22 MODULES",
+              "outcome": {
+                "h0": "LEARNING OUTCOMES",
+                "h1": "Chipping / Pitching / Wedge Game / Bunker Shots / Putting",
+                "points": {
+                  "0": "Execute swing technique for the specific shot types",
+                  "1": "Understand where to play the various shot types.",
+                  "2": "Control your shot distance.",
+                  "3": "Selecting the correct shot type to play.",
+                  "4": "Have a consistent pre-shot routine.",
+                  "5": "Adjust technique for specialty shots, including lies and slopes."
+                }
+              },
+              "price" : "Modules Only Option - $595\nMembership Program - $995"
+            }
+          },
         "team" : {
             "nzTeam" : "New Zealand Team",
             "nzLocation" : "Auckland",
