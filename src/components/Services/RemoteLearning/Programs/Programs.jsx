@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import './Programs.css'
 import { useTranslation } from 'react-i18next'
 import Program from './Program/Program'
-import LoadingAnimation from '../../Shared/LoadingAnimation'
 import Equipment_en from '../../../../static/img/Programs/Equipment_en.jpg'
 import Equipment_ch from '../../../../static/img/Programs/Equipment_ch.jpg'
 import Equipment_kr from '../../../../static/img/Programs/Equipment_kr.jpg'
@@ -22,7 +21,6 @@ import SwingLong_kr from '../../../../static/img/Programs/SwingLong_kr.jpg'
 function Programs() {
   const [t, i18n] = useTranslation();
   const programs = t('programs', {returnObjects: true});
-  const [loading, setLoading] = useState(true);
   const covers = {
     "Equipment" : {
       "en": Equipment_en,
@@ -47,7 +45,6 @@ function Programs() {
   };
   return (
     <div>
-      {loading && <LoadingAnimation />}
       <div className="section">
         <h1 style={{textAlign: 'left'}}>{programs.h0}</h1>
         <Program data={programs.Equipment} img={covers.Equipment[i18n.language]}/>
@@ -61,7 +58,6 @@ function Programs() {
       <div className="section">
         <Program data={programs.SwingLong} img={covers.SwingLong[i18n.language]}/>
       </div>
-      {loading && setLoading(false)}
     </div>
   )
 }
