@@ -1,6 +1,6 @@
 import React from 'react'
 import './Program.css'
-import BulletPoints from '../../Shared/BulletPoints/BulletPoints'
+import BulletPoints from '../../../Shared/BulletPoints/BulletPoints'
 
 function Program({ data, img = '', logos = []}) {
   return (

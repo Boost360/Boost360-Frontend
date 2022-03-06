@@ -8,6 +8,7 @@ import HowItWorks from '../Shared/HowItWorks/HowItWorks';
 import Framework from '../Shared/Framework/Framework';
 import Keypoints from '../Shared/Keypoints/Keypoints';
 import QA from '../Shared/QA/QA';
+import Programs from './Programs/Programs';
 
 // -----------------------------ICON / IMAGE-------------------------------
 import { AiOutlineCheckCircle } from 'react-icons/ai';
@@ -25,6 +26,7 @@ export default function RemoteLearning() {
             <div className="section">
                 <Framework data={remoteLearning.Framework} ver={1}/>
             </div>
+            <Programs />
             <div className="section" style={{padding:'0px'}}>
                 <Keypoints  heading={remoteLearning.Keypoints.h0} 
                             select={[16,17,18,19,20,11,21]}

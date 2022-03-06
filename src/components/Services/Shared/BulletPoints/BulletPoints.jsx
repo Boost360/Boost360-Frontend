@@ -5,11 +5,10 @@ function BulletPoints({data}) {
   return (
       <div>
           {Object.values(data ? data : {}).map((line, i) => 
-            <span className="bulletPoint">
+            <div className="bulletPoint">
                 <span>•</span>
-                {line}
-                <br/>
-            </span>
+                {`${line}\n\n`}
+            </div>
           )}
       </div>
   );

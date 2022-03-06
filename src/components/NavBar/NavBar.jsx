@@ -44,9 +44,6 @@ const NavBar = ({ page, user, header = null }) => {
             'Junior-golf': { path: '/junior-golf', parentPage: null },
             'Coaching' : {path: '/coaching', parentPage: null},
             'Screening' : {path: '/screening', parentPage: null},
-            // Programs page was renamed to Modules in translation file 
-            // Check path ../locale/en/translation.json
-            'Programs' : {path: '/programs', parentPage: null},
             'Blog': { path: '/blog', parentPage: null },
             'Blog-Detail': { path: '/blog/', parentPage: 'Blog' },
             'Language': { path: '/language', parentPage: null },
@@ -124,7 +121,6 @@ const NavBar = ({ page, user, header = null }) => {
             <div className="menuItems-mobile">
                 <MenuItem page='Remote-learning' className="menuItem-mobile" />
                 <MenuItem page='Junior-golf' className="menuItem-mobile" />
-                <MenuItem page='Programs' className="menuItem-mobile" />
                 <MenuItem page='Screening' className="menuItem-mobile" />
                 <MenuItem page='Coaching' className="menuItem-mobile" />
                 <MenuItem page='Team' className="menuItem-mobile" />
@@ -139,7 +135,6 @@ const NavBar = ({ page, user, header = null }) => {
         return <div className="menuItems-middle">
             <MenuItem page='Remote-learning' />
             <MenuItem page='Junior-golf' />
-            <MenuItem page='Programs' />
             <MenuItem page='Screening' />
             <MenuItem page='Coaching' />
             <MenuItem page='Team' />
