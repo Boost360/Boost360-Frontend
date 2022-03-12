@@ -27,6 +27,12 @@ export default function RemoteLearning() {
                 <Framework data={remoteLearning.Framework} ver={1}/>
             </div>
             <Programs />
+
+            {/* This page uses css 'nth-child(odd)' to alter background colors. 
+            In order to make the Keypoint section a white background, we 
+            insert a dummy section beforehand to make it at an odd number. */}
+            <div className="section" style={{display: 'none'}}></div>
+
             <div className="section" style={{padding:'0px'}}>
                 <Keypoints  heading={remoteLearning.Keypoints.h0} 
                             select={[16,17,18,19,20,11,21]}

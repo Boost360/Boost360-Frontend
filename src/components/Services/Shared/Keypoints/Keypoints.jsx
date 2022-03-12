@@ -72,8 +72,8 @@ function Keypoints({heading=null, select=null, price=null }) {
             
             {price == null ? null : (
                 <div className="price">
-                    <p>{price.description}</p>
                     <h2>{price.title}</h2>
+                    <p>{price.description}</p>
                 </div>)
             }
         </div>
