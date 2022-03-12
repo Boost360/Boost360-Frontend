@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: start;    
     flex-wrap: wrap;
+    padding-top: 50px;
 }
 
 .keypoints h1 {
@@ -60,6 +61,7 @@
     width: 100%;
     text-align: left;
     line-height: 1.7em;
+    white-space: pre-wrap;
 }
 
 .keypoint .icon {

@@ -129,7 +129,7 @@
         "juniorGolf":{
             "Intro": {
                 "h0": "Junior Golf Academy",
-                "content": "The Junior Golf Academy is a structured and goal-oriented program, with a key focus on students’ long-term enjoyment and success.\n\nStudents are supported through a critical time in both their physical development and golf development.\n\nThe students will progressively learn all aspects of the golf game as they go through the 5-level development system.\n\nWith this in-depth combination of teaching skills, physical and mental coaching, our students will have all the tools to succeed.\n\n\nThe students will be evaluated on the following:\n• \tGolf Swing technical Skills\n• \tStatistical performance\n• \tPhysical movement proficiency\n• \tSocial and mental development\n• \tUnderstanding equipment\n• \tOn course knowledge"
+                "content": "The Junior Golf Academy is a structured and goal-oriented program, with a key focus on students’ long-term enjoyment and success.\n\nStudents are supported through a critical time in both their physical development and golf development.\n\nThe students will progressively learn all aspects of the golf game as they go through the 5-level development system.\n\nWith this in-depth combination of teaching skills, physical and mental coaching, our students will have all the tools to succeed.\n\n\nThe students will be evaluated on the following:\n• \tGolf swing technical skills\n• \tStatistical performance\n• \tPhysical movement proficiency\n• \tSocial and mental development\n• \tUnderstanding equipment\n• \tOn course knowledge"
             },
             "HowItWorks": {
                 "h0": "How our JGA works",
@@ -141,7 +141,7 @@
                 },
                 "p1": {
                     "0": "The students will be evaluated on the following:",
-                    "1": "- Golf Swing technical Skills",
+                    "1": "- Golf swing technical skills",
                     "2": "- Statistical performance",
                     "3": "- Physical movement proficiency",
                     "4": "- Social and mental development",
@@ -199,11 +199,11 @@
                     },
                     "4": {
                         "question": "How will I know the location of each class?",
-                        "answer": { "0": "The locations for each class will be set before the term begins. A Schedule be available on the student’s personal portal." }
+                        "answer": { "0": "The locations for each class will be set before the term begins. A schedule be available on the student’s personal portal." }
                     },
                     "5": {
                         "question": "How many learning modules am I required to complete?",
-                        "answer": { "0": "The number of modules and content of the modules will be dependent on your level of development. Each module takes approximately 30 minutes to I hour to complete. No more than one module will be required to complete per week." }
+                        "answer": { "0": "The number of modules and content of the modules will be dependent on your level of development. Each module takes approximately 30 minutes to I hour to complete."}
                     },
                     "6": {
                         "question": "Can my child play at Waitakere golf course outside of class time?",
@@ -316,7 +316,7 @@
                     "1": "Set student outcome goals",
                     "2": "Equipment requirements",
                     "3": "Review students current level",
-                    "4": "Review the programt",
+                    "4": "Review the program",
                     "5": "Set program schedule",
                     "6": "Set student login and passwords",
                     "7": "If applicable skills test"
@@ -327,11 +327,11 @@
                 "blocks": {
                     "0": {
                         "h0": "Modules",
-                        "p0": { "0": "There are over 70 comprehensive online learning modules." }
+                        "p0": { "0": "There are 70 comprehensive online learning modules." }
                     },
                     "1": {
-                        "h0": "Easy-to-follow Format",
-                        "p0": { "0": "All program information in a clear easy-to-follow format. Each modules contains detailed information, demonstration videos, and interactive quizzes."}
+                        "h0": "Easy-to-Follow Format",
+                        "p0": { "0": "All program information in a clear easy-to-follow format. Modules contains detailed information, demonstration videos, and interactive quizzes."}
                     },
                     "2": {
                         "h0": "Levels",
@@ -339,11 +339,11 @@
                     },
                     "3": {
                         "h0": "Topics",
-                        "p0": { "0": "All topics are covered within the program modules, including swing technique, golf equipment, and on course knowledge."}
+                        "p0": { "0": "Topics covered in the Remote Learning Program include Golf Equipment, The Golf Course, Building your Golf Swing and Building your Short Game."}
                     },
                     "4": {
                         "h0": "Incentives",
-                        "p0": { "0": "Receive a 20% discount on your next program when you achieve your required marks."}
+                        "p0": { "0": "Receive a 10% discount on your next program when you achieve your required marks."}
                     },
                     "5": {
                         "h0": "Language",
@@ -354,7 +354,7 @@
                         "p0": {"0":"For ease of communication for students or parents, we have a person to communicate in English, Korean and Chinese."}
                     },
                     "7": {
-                        "h0": "Personal tuition",
+                        "h0": "Personal Tuition",
                         "p0": {"0":"The module program and the golf swing video analysis is available by in-person instruction from Rhys Ogden. (Location dependent. Extra fees apply)"}
                     },
                     "8": {
@@ -366,8 +366,8 @@
             "Keypoints": {
                 "h0": "What's included",
                 "price": {
-                    "description": "The parameters of the online learning program are set at 6 months, to ensure you keep your learning structure, while still learning flexibly at your own pace.",
-                    "title": "Program Price $990"
+                    "title": "Modules Only Option",
+                    "description": "This option allows the student access to the online modules only, specific to the selected program."
                 }
             },
             "QA": {
@@ -386,14 +386,10 @@
                         "answer":{"0":"It is a very easy process done through the Coach Now app. A Step-by-step demonstration will be shown at the first consultation."}
                     },
                     "3": {
-                        "question":"When will I have completed all 70 modules?",
-                        "answer":{"0":"There are 15 modules on golf equipment and 15 modules on golf course knowledge. We have you review these modules at the beginning of every program as they can give a good understanding of why some swing techniques are necessary. The further 40+ swing technique modules to complete will be dependent on your level and personal development program."}
-                    },
-                    "4": {
                         "question":"How often can I send a question to the instructor through the Coach Now app?",
                         "answer":{"0":"The instructors are always available and welcome questions as your development is important to them. However, we do ask that you respect the fact that there are many students under the coach’s guidance."}
                     },
-                    "5": {
+                    "4": {
                         "question":"Will I have access to my learning information if I leave the program?",
                         "answer":{"0":"Absolutely! We understand that you will leave us at some point for a variety of different reasons. We would like you to continue your development, and this is best achieved by your next teacher having a detailed profile of your development history."}
                     }
@@ -444,11 +440,11 @@
         "keypoints":{
             "0": {
                 "title": "Class Length",
-                "description": "The Junior Golf program runs throughout school terms, with the 2022 program commencing on February 5th. Please contact us for a comprehensive program timetable."
+                "description": "The Junior Academy Program runs throughout school terms. Please contact us for a comprehensive program timetable."
             },
             "1": {
                 "title": "Class Duration",
-                "description": "Class duration is one hour; however, we require the students to be there 15 minutes early to go through a warmup. This ensures we make the most of our class time.We offer flexibility for students to work around other commitments, with 6 months to complete the course from the beginning of the program."
+                "description": "Class duration is one hour; however, we require the students to be there 15 minutes early to go through a warmup. This ensures we make the most of our class time."
             },
             "2": {
                 "title": "Class Timetable",
@@ -488,11 +484,11 @@
             },
             "11": {
                 "title": "Rewards",
-                "description": "Upon reaching achievement goals, students are incentivized by receiving a 20% discount on the next program."
+                "description": "Upon reaching achievement goals, students are incentivized by receiving a 10% discount on the next program."
             },
             "12": {
-                "title": "Golf uniform pack",
-                "description": "Each student receives a fantastic gift pack, including a foot Joy golf shirt and pants, and a Titleist hat."
+                "title": "Student Pack",
+                "description": "At the commencement of the program, each student will receive a gift pack."
             },
             "13": {
                 "title": "Golf Course Membership",
@@ -500,7 +496,7 @@
             },
             "14": {
                 "title": "Price",
-                "description": "---------------- Term 1 - $645 ---------------- ---------- Other terms - $395 each ---------"
+                "description": "\t\t\tTerm 1 - $645 \t\t\n\t\tOther terms - $395 each \t"
             },
             "15": {
                 "title": "Class Duration",
@@ -512,7 +508,7 @@
             },
             "17": {
                 "title":"Online Learning Modules",
-                "description":"Students will complete 70 online learning modules over the 3 levels. Each module contains detailed information, videos, and interactive quizzes. The modules are structured in a systematic way to encourage students to develop the necessary knowledge and skills at the relevant learning point."
+                "description":"Module contains detailed information, videos, and interactive quizzes. The modules are structured in a systematic way to encourage students to develop the necessary knowledge and skills at the relevant learning point.\nThe parameters of the online learning program are set at 6 months, to ensure you keep your learning structure, while still learning flexibly at your own pace."
             },
             "18": {
                 "title":"Video Swing Analysis",
@@ -528,11 +524,11 @@
             },
             "21": {
                 "title":"Member Discount",
-                "description":"Academy members will receive a discount on additional tuition costs from Rhys Ogden and the Performance instructors."
+                "description":"Academy members will receive a discount on additional coaching services from Rhys Ogden and the Performance Instructors."
             },
             "22": {
                 "title":"Price",
-                "description":"---------------------- $990 ---------------------"
+                "description":"\t\t\t$990 \t\t\t"
             }
         },
         "screening": {
@@ -557,7 +553,7 @@
                 }
               },
               "summary" : "At the conclusion of the screening a report will be available that includes all data collected. The report will also contain recommended areas of development.",
-              "price" : "$ 149"
+              "price" : "$ 150"
           
             },
             "Club" : {
@@ -576,12 +572,12 @@
                 }
               },
               "summary" : "A detailed equipment specification report will be available to you. This is a great reference to have for the consistency of future fitting sessions.",
-              "price" : "$ 149"
+              "price" : "$ 150"
           
             },
             "Movement" : {
               "h0" : "Movement Screening",
-              "description" : "Movement screening is based around the body and swing connection. The movement screening will allow the golf coach to identify the most efficient way for you to swing according to your body functionality.\n\nAUT Millennium Sports Performance Clinic will uses state of the art assessment technology from leaders in the sports performance field to deliver our movement screenings.\n\nThe screening options begin with balance and movement competency, with further options for advanced athletes, assessing dynamic strength, body composition and nutrition.",
+              "description" : "Movement screening is based around the body and swing connection. The movement screening will allow the golf coach to identify the most efficient way for you to swing according to your body functionality.\n\nThe screening options begin with balance and movement competency, with further options for advanced athletes, assessing dynamic strength, body composition and nutrition.",
               "outcome" : {
                 "h0" : "Screening outcomes : ",
                 "points" : {
@@ -636,7 +632,7 @@
                 "Rhys" : {
                 "name" : "RHYS OGDEN",
                 "badge" : "0",
-                "role" : "Director of Instructor",
+                "role" : "Director of Instruction",
                 "priceTable" : {
                     "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
                     "rows" : [
@@ -662,12 +658,12 @@
                 "h0" : "Asked and Answered",
                 "QAs" : {
                 "0" : {
-                    "question" : "What is the location of the lesson?",
+                    "question" : "Where is the location of the lesson?",
                     "answer" : {"0" : "Waitakere Golf Course, Auckland."}
                 },
                 "1" : {
                     "question" : "How do I qualify for a member price?",
-                    "answer" : {"0" : "You must be one of the following :\n- Remote program member\n- Junior Academy member\n- Waitakere Golf Course member"}
+                    "answer" : {"0" : "You must be one of the following :\n- RemoteLlearning Program Member\n- Junior Academy member\n- Waitakere Golf Course member\n- Rutherford College Students and Staff"}
                 },
                 "2" : {
                     "question" : "What is the price for 2 or more students per lesson?",
@@ -738,7 +734,7 @@
               }
         },
         "programs": {
-            "h0": "Learning Programs",
+            "h0": "Learning programs",
             "Equipment": {
               "title": "Introduction to Golf Equipment",
               "modules": "10 MODULES",
@@ -754,7 +750,7 @@
                   "6": "Be knowledgeable and confident when purchasing equipment and know how to ask the right questions."
                 }
               },
-              "price" : "Modules Only Option - $295"
+              "price" : "Modules Only Option  $295"
             },
             "Course": {
               "title": "Golf Course Knowledge",
@@ -770,14 +766,14 @@
                   "5": "Get the most out of your score through strategy and shot selection."
                 }
               },
-              "price" : "Modules Only Option - $295"
+              "price" : "Modules Only Option  $295"
             },
             "SwingShort": {
               "title": "Golf Swing Technique - Short Game",
               "modules": "28 MODULES",
               "outcome": {
                 "h0": "LEARNING OUTCOMES",
-                "h1": "Irons / Fairway Woods / Driver",
+                "h1": "Chipping / Pitching / Wedge Game / Bunker Shots / Putting",
                 "points": {
                   "0": "Swing Setup – Create a strong swing foundation.",
                   "1": "Motion – Understand how each body part moves throughout the swing.",
@@ -787,16 +783,16 @@
                   "5": "Specialty Shots – Make swing adjustments to play slopes/lies/shot shaping."
                 }
               },
-              "price" : "Modules Only Option - $495\nMembership Program - $995"
+              "price" : "Modules Only Option   $495\n\nMembership Program  $995"
             },
             "SwingLong": {
               "title": "Golf Swing Technique - Long Game",
               "modules": "22 MODULES",
               "outcome": {
                 "h0": "LEARNING OUTCOMES",
-                "h1": "Chipping / Pitching / Wedge Game / Bunker Shots / Putting",
+                "h1": "Irons / Fairway Woods / Driver",
                 "points": {
-                  "0": "Execute swing technique for the specific shot types",
+                  "0": "Execute swing technique for the specific shot types.",
                   "1": "Understand where to play the various shot types.",
                   "2": "Control your shot distance.",
                   "3": "Selecting the correct shot type to play.",
@@ -804,7 +800,7 @@
                   "5": "Adjust technique for specialty shots, including lies and slopes."
                 }
               },
-              "price" : "Modules Only Option - $595\nMembership Program - $995"
+              "price" : "Modules Only Option   $595\n\nMembership Program  $995"
             }
           },
         "team" : {
