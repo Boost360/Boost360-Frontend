@@ -32,6 +32,10 @@
     line-height: 1.5em;
 }
 
+.keypoints .price h2 {
+    font-size: 35px;
+}
+
 @media screen and (max-width: 768px) {
     .keypoints .price {
         width: 300px;

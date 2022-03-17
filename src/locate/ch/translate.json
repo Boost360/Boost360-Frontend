@@ -16,7 +16,7 @@
             "email": "邮箱",
             "address": "地址",
             "mobile-content": "(+64)  021 931 244",
-            "email-content": "rhys@bpgolfacademy.com",
+            "email-content": "info@bpgolfacademy.com",
             "address-content": "Waitakere Golf Club, 35 Falls Road, Waitakere, Bethells Beach (0781), Auckland, New Zealand",
             "wechat-id" : "BPgolfacademy",
             "kakao-id" : "BPgolfacademy",
@@ -410,7 +410,7 @@
           }
         },
         "Keypoints": {
-          "h0": "包含内容",
+          "h0": "会员套餐",
           "price": {
             "title": "只选择模块",
             "description": "仅允许学生访问与所选课程相关的在线模块。"
@@ -566,7 +566,7 @@
         },
         "14": {
           "title": "价格",
-          "description": "\t\t\t阶段1  $645\t\t\n\t\t其他阶段——$395\t\t"
+          "description": "\t\t\t阶段1  NZ $645\t\t\n\t\t其他阶段  NZ $395\t\t"
         },
         "15": {
           "title": "上课时间",
@@ -623,7 +623,7 @@
             }
           },
           "summary": "检测结束后，学生将得到一份报告，包括检测所收集到的关于该学生挥杆动作的所有细节与数据，以及建议加强与改进的动作领域。",
-          "price": "$ 150"
+          "price": "NZ $150"
         },
         "Club": {
           "h0": "球杆适用性检测",
@@ -641,7 +641,7 @@
             }
           },
           "summary": "将为学生提供一份详尽的适用装备报告，在学生配备装备的一贯性和适用性上，将会有很大帮助。",
-          "price": "$ 150"
+          "price": "NZ $150"
         },
         "Movement": {
           "h0": "运动检测",
@@ -655,7 +655,7 @@
             }
           },
           "summary": "检测结束后，将为学生提供一份报告，评估学生运动开发的局限性领域，制定动作训练计划。",
-          "price": "$ 因课程计划而定"
+          "price": "因课程计划而定"
         },
         "QA": {
           "h0": "常见问题与回答",
@@ -709,21 +709,21 @@
           "Rhys": {
             "name": "RHYS OGDEN",
             "badge": "0",
-            "role": "Director of Instructor",
+            "role": "教学主任",
             "priceTable" : {
-              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "header" : ["", "1小时课程", "5 x 1小时课程", "10 x 1小时课程"],
               "rows" : [
-              ["GUEST", "$140", "$650", "$1200"],
+              ["非会员", "NZ $140", "NZ $650", "NZ $1200"],
               ["", "", "", ""],
-              ["MEMBER", "$110", "$500", "$900"]
+              ["会员", "NZ $110", "NZ $500", "NZ $900"]
               ]
             },
               "rows": {
                 "0": {
-                  "0": "GUEST",
-                  "1": "$140",
-                  "2": "$650",
-                  "3": "$1200"
+                  "0": "非会员",
+                  "1": "NZ $140",
+                  "2": "NZ $650",
+                  "3": "NZ $1200"
                 },
                 "1": {
                   "0": "-",
@@ -732,10 +732,10 @@
                   "3": "-"
                 },
                 "2": {
-                  "0": "MEMBER",
-                  "1": "$110",
-                  "2": "$500",
-                  "3": "$900"
+                  "0": "会员价",
+                  "1": "NZ $110",
+                  "2": "NZ $500",
+                  "3": "NZ $900"
                 }
               }
             },
@@ -744,9 +744,9 @@
             "role": "辅导教练",
             "description": "我们的辅导教练，将为BP高尔夫学院的学生提供极具特色的服务。\n这些辅导教练都是运动科学与心理学的在读硕士研究生，他们将为整个学习过程带来前沿与独特的视角，提升学生对于高尔夫运动理解的深度、层次与高度。",
             "priceTable" : {
-              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "header" : ["", "1小时课程", "5 x 1小时课程", "10 x 1小时课程"],
               "rows" : [
-              ["MEMBER ONLY", "$70", "$300", "$500"]
+              ["会员价", "NZ $70", "NZ $300", "NZ $500"]
               ]
           }
           }
@@ -763,7 +763,7 @@
             "1": {
               "question": "如何有资格获得会员价格?",
               "answer": {
-                "0": "满足以下情况之一即可: \n-远程学习课程学员\n-青少年高尔夫学院学员\n-Waitakere高尔夫球场会员、n-Rutherford College的学生和老师"
+                "0": "满足以下情况之一即可: \n-远程学习课程学员\n-青少年高尔夫学院学员\n-Waitakere高尔夫球场会员\n-Rutherford College的学生和老师"
               }
             },
             "2": {
@@ -797,7 +797,7 @@
           "Rhys" : {
             "name" : "RHYS OGDEN",
             "badge" : "0",
-            "role" : "Director of Instructor",
+            "role" : "教学主任",
             "description" : "Rhys will periodically be in South Korea. During that period, if you wish to meet Rhys in person to discuss any learning opportunities, you are welcome to contact him directly or alternatively contact our Korean information service to make an appointment.\n\nSchedule details yet to be determined. Dates will be displayed on the BP Golf Academy Website."
           },
           "TBA" : {
@@ -806,11 +806,11 @@
             "locationLabel" : "Location : ",
             "location" : "Seoul, Korean",
             "priceTable" : {
-              "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
+              "header" : ["", "1小时课程", "5 x 1小时课程", "10 x 1小时课程"],
               "rows" : [
-                ["GUEST", "$TBA", "$TBA", "$TBA"],
+                ["非会员", "NZ $TBA", "NZ $TBA", "NZ $TBA"],
                 ["", "", "", ""],
-                ["MEMBER ONLY", "$TBA", "$TBA", "$TBA"]
+                ["会员价", "NZ $TBA", "NZ $TBA", "NZ $TBA"]
                 ]
             }
           }
@@ -828,7 +828,7 @@
             },
             "2" : {
               "question" : "What is the price for a non-member learning with a member?",
-              "answer" : {"0" : "We view you as a guest of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
+              "answer" : {"0" : "We view you as a 非会员 of the member so you will be charged at the members rate.\nIn order to qualify for members pricing, at least one student per group is required to be a member."}
             },
             "3" : {
               "question" : "Do the lesson packages have an expiry date?",
@@ -858,8 +858,7 @@
               "5": "了解高尔夫球杆配件的重要性。",
               "6": "学习采购高尔夫装备时的必备知识，知道如何提出正确的问题。"
             }
-          },
-          "price" : "只购买课程  $295"
+          }
         },
         "Course": {
           "title": "高尔夫球场知识",
@@ -875,7 +874,7 @@
               "5": "通过策略与击球方式的选择，获得最多的分数。"
             }
           },
-          "price" : "只购买课程  $295"
+          "price" : "高尔夫球具简介 + 高尔夫球场知识 NZ $495"
         },
         "SwingShort": {
           "title": "挥杆技术——短击",
@@ -892,7 +891,7 @@
               "5": "特定击球——调整挥杆方式以适应斜坡/球落点位置/击球塑型。"
             }
           },
-          "price" : "只购买课程  $495\n\n会员价  $995"
+          "price" : "只购买课程  NZ $495\n\n会员价  NZ $995"
         },
         "SwingLong": {
           "title": "挥杆技术——长击",
@@ -909,7 +908,7 @@
               "5": "调整以适应特定击球位置，包括球落点位置和斜坡。"
             }
           },
-          "price" : "只购买课程  $595\n\n会员价  $995"
+          "price" : "只购买课程  NZ $595\n\n会员价  NZ $995"
         }
       },
       "team" : {

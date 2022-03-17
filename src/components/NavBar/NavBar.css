@@ -10,8 +10,8 @@
     padding: 0px;
     width: 100%;
     height: auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: var(--text);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: rgb(190, 190, 190);
     
     /* This relates to the stacking issue with Student Module page */
     /* Issue @00002 [12/oct/2021 @Sarah] */
@@ -101,12 +101,12 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    box-shadow: 6px 0px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 0px 5px rgba(0, 0, 0, 0.15);
     z-index: 100;
 }
 .menuItem-mobile {
     cursor: pointer;
-    color: var(--text);
+    color: rgb(190, 190, 190);
     width: 100%;
     text-align: center;
     padding: 20px 0px 20px 0px;

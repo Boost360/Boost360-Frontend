@@ -23,7 +23,7 @@ function Program({ data, img = '', logos = []}) {
         <div className="logos">
           {logos && logos.map((logo, i) => <img src={logo} alt={logo}/>)}
         </div>
-        <div className='price'><hr/>{data.price}</div>
+        {data.price && <div className='price'><hr/>{data.price}</div>}
       </div>
       <br />
     </div>
