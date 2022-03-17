@@ -33,8 +33,10 @@
     padding: 50px 5% 20px 5%;
 }
 .video_library_image_container {
+    cursor: pointer;
     height: 150px;
     background-size: cover;
+    background-position: center;
 }
 .video_library_image_container svg {
     stroke: white;
@@ -43,7 +45,7 @@
     font-size: 50px;
 }
 .video_library_image_container svg:hover {
-    stroke: purple;
+    transform: scale(1.1);
 }
 .video_library_title_container div, .video_library_date_container div {
     width: 50%;
