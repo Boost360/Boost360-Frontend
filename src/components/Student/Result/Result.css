@@ -5,6 +5,7 @@
 .result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
     font: var(--tertiary-medium);
     margin: 20px;
+    color: white!important;
 }
 .result_container {
     background: var(--background2);
