@@ -413,7 +413,7 @@
           "h0": "What's included",
           "price": {
             "description": "온라인 학습 프로그램의 유지기간은 6개월로 정하여 학습 구조를 지키면서도 자신만의 속도에 맞춰 유연하게 학습할 수 있도록 한다.",
-            "title": "Program Price $990"
+            "title": "Program Price NZ $990"
           }
         },
         "QA": {
@@ -566,7 +566,7 @@
         },
         "14": {
           "title": "Price",
-          "description": "\t\t\tTerm 1 - $645 \t\t\n\t\tOther terms - $395 each \t"
+          "description": "\t\t\tTerm 1 - NZ $645 \t\t\n\t\tOther terms - NZ $395 each \t"
         },
         "15": {
           "title": "Class Duration",
@@ -598,7 +598,7 @@
         },
         "22": {
           "title": "Price",
-          "description": "\t\t\t$990 \t\t\t"
+          "description": "\t\t\tNZ $990 \t\t\t"
         }
       },
       "screening": {
@@ -623,7 +623,7 @@
             }
           },
           "summary": "스크리닝(screening)이 끝나면 수집된 모든 데이터가 포함된 보고서가 제공됩니다. 보고서에는 추천된 발전 분야도 포함할 것이다.",
-          "price": "$ 150"
+          "price": "NZ $150"
         },
         "Club": {
           "h0": "클럽 피팅 (CLUB FITTING)",
@@ -641,7 +641,7 @@
             }
           },
           "summary": "학생에게는 자세한 장비 사양에 관한 보고서가 제공될 예정으로 이는 향후 피팅 세션의 일관성을 위한 큰 혜택입니다.",
-          "price": "$ 150"
+          "price": "NZ $150"
         },
         "Movement": {
           "h0": "무브먼트 스크리닝(MOVEMENT SCREENING)",
@@ -655,7 +655,7 @@
             }
           },
           "summary": "스크리닝이 끝나면 무브먼스 향샹을 위한 계회과 함께 한계가 있는 부분을 파악한 보고서가 나옵니다. 스크리닝 옵션은 균형과 움직임 능력으로 시작되며, 역동적인 힘의 분배와 체성분, 영양을 평가하는 추가 선택권이 주어집니다.",
-          "price": "$ 프로그램마다 상이"
+          "price": "NZ $프로그램마다 상이"
         },
         "QA": {
           "h0": "질문과 답변",
@@ -713,9 +713,9 @@
           "priceTable" : {
               "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
               "rows" : [
-              ["GUEST", "$140", "$650", "$1200"],
+              ["GUEST", "NZ $140", "NZ $650", "NZ $1200"],
               ["", "", "", ""],
-              ["MEMBER", "$110", "$500", "$900"]
+              ["MEMBER", "NZ $110", "NZ $500", "NZ $900"]
               ]
           }
           },
@@ -726,7 +726,7 @@
           "priceTable" : {
               "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
               "rows" : [
-              ["MEMBER ONLY", "$70", "$300", "$500"]
+              ["MEMBER ONLY", "NZ $70", "NZ $300", "NZ $500"]
               ]
           }
           }
@@ -785,9 +785,9 @@
             "priceTable" : {
               "header" : ["", "1 Hours Lesson", "5 x 1 Hour lessons", "10 x 1 Hour lessons"],
               "rows" : [
-                ["GUEST", "$TBA", "$TBA", "$TBA"],
+                ["GUEST", "NZ $TBA", "NZ $TBA", "NZ $TBA"],
                 ["", "", "", ""],
-                ["MEMBER ONLY", "$TBA", "$TBA", "$TBA"]
+                ["MEMBER ONLY", "NZ $TBA", "NZ $TBA", "NZ $TBA"]
                 ]
             }
           }
@@ -845,8 +845,7 @@
               "5": "골프 클럽 피팅의 중요성을 이해합니다.",
               "6": "장비를 구입할 때는 지식과 자신감을 가지고 올바른 질문을 할 줄 알아야 합니다."
             }
-          },
-          "price" : "Modules Only Option  $295"
+          }
         },
         "Course": {
           "title": "골프 코스  지식",
@@ -862,7 +861,7 @@
               "5": "전략과 샷 선택을 통해 점수를 최대한 활용합니다."
             }
           },
-          "price" : "Modules Only Option  $295"
+          "price" : "골프 장비 소개 + 골프 코스 지식 NZ $495"
         },
         "SwingShort": {
           "title": "골프 스윙 테크닉 - 숏게임",
@@ -879,7 +878,7 @@
               "5": "스페셜 샷 - 슬로프/볼라이/샷 쉐이핑에 맞게 스윙을 조정합니다."
             }
           },
-          "price" : "Modules Only Option  $495\n\nMembership Program  $995"
+          "price" : "Modules Only Option  NZ $495\n\nMembership Program  NZ $995"
         },
         "SwingLong": {
           "title": "골프 스윙 테크닉 - 롱게임",
@@ -896,7 +895,7 @@
               "5": "볼 라이와 경사를 포함한 특수 샷에 대한 기술을 조정합니다."
             }
           },
-          "price" : "Modules Only Option  $595\n\nMembership Program  $995"
+          "price" : "Modules Only Option  NZ $595\n\nMembership Program  NZ $995"
         }
       },
       "team" : {

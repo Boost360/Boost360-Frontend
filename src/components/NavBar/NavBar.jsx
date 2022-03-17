@@ -110,7 +110,7 @@ const NavBar = ({ page, user, header = null }) => {
             <span key={page}
                 onClick={handleClick}
                 className={className}
-                style={(currentPage === page || parentPage === page) ? { font: "var(--tertiary-bold)" } : {}}
+                style={(currentPage === page || parentPage === page) ? { color: "white", font: "var(--tertiary-bold)" } : {}}
             >
                 {children ? children : t(`navbar.${page}`)}
             </span>
@@ -125,7 +125,7 @@ const NavBar = ({ page, user, header = null }) => {
                 <MenuItem page='Coaching' className="menuItem-mobile" />
                 <MenuItem page='Team' className="menuItem-mobile" />
                 <MenuItem page='Partners' className="menuItem-mobile" />
-                <MenuItem page='Blog' className="menuItem-mobile" />
+                {/* <MenuItem page='Blog' className="menuItem-mobile" /> */}
                 <MenuItem page='Contact' className="menuItem-mobile" />
             </div>
         </div>
@@ -139,7 +139,7 @@ const NavBar = ({ page, user, header = null }) => {
             <MenuItem page='Coaching' />
             <MenuItem page='Team' />
             <MenuItem page='Partners' />
-            <MenuItem page='Blog' />
+            {/* <MenuItem page='Blog' /> */}
             <MenuItem page='Contact' />
         </div>
     };

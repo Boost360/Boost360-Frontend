@@ -364,7 +364,7 @@
                 }
             },
             "Keypoints": {
-                "h0": "What's included",
+                "h0": "Membership Program",
                 "price": {
                     "title": "Modules Only Option",
                     "description": "This option allows the student access to the online modules only, specific to the selected program."
@@ -456,7 +456,7 @@
             },
             "4": {
                 "title": "Course Location",
-                "description": "We have two locations: Waitakere Golf Course. A quiet location where students develop on-course skills in a stress-free environment. Rutherford College. A spacious environment where we can setup creative learning stations."
+                "description": "We have two locations: Waitakere Golf Course. A quiet location where students develop on-course skills in a stress-free environment. Rutherford College, a spacious environment where we can setup creative learning stations."
             },
             "5": {
                 "title": "Assessment Day",
@@ -663,7 +663,7 @@
                 },
                 "1" : {
                     "question" : "How do I qualify for a member price?",
-                    "answer" : {"0" : "You must be one of the following :\n- RemoteLlearning Program Member\n- Junior Academy member\n- Waitakere Golf Course member\n- Rutherford College Students and Staff"}
+                    "answer" : {"0" : "You must be one of the following :\n- RemoteLlearning Program Member\n- Junior Academy member\n- Waitakere Golf Course member\n- Rutherford College students and staff"}
                 },
                 "2" : {
                     "question" : "What is the price for 2 or more students per lesson?",
@@ -749,8 +749,7 @@
                   "5": "Understand the importance of golf club fitting.",
                   "6": "Be knowledgeable and confident when purchasing equipment and know how to ask the right questions."
                 }
-              },
-              "price" : "Modules Only Option  $295"
+              }
             },
             "Course": {
               "title": "Golf Course Knowledge",
@@ -766,7 +765,7 @@
                   "5": "Get the most out of your score through strategy and shot selection."
                 }
               },
-              "price" : "Modules Only Option  $295"
+              "price" : "Golf Equipment + The Golf Course  $495"
             },
             "SwingShort": {
               "title": "Golf Swing Technique - Short Game",
