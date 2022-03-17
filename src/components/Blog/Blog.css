@@ -6,7 +6,6 @@
 .blog_small_item_row {
     margin-top: 100px;
     padding-bottom: 100px;
-    border-bottom: 1px solid #C2C2C2;
 }
 @media (max-width: 800px) {
     .blog_container {

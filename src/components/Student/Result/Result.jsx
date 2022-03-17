@@ -108,7 +108,7 @@ const Result = ({user}) => {
 
     return (
         <Box className='result_container' sx={{ width: '100%' }}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider', color: '#9eb1dc' }}>
                 <Tabs
                     value={value}
                     onChange={handleChange}

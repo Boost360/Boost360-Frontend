@@ -7,61 +7,61 @@ import VideoLibraryItem from "./VideoLibraryItem/VideoLibraryItem";
 const data = [
     {
         id:1,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:2,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:3,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:4,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:5,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:6,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:7,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:8,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:9,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
     {
         id:10,
-        image_url:'http://snackforest.online/wp-content/uploads/2021/10/background5-1.jpg',
+        image_url:'https://i.niupic.com/images/2022/03/17/9WEx.png',
         title: 'title',
         date: '2021/10/03'
     },
