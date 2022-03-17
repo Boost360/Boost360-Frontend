@@ -7,6 +7,14 @@
     margin: 20px;
     color: white!important;
 }
+
+.result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    color: white;
+}
+.MuiTab-root {
+    color: white;
+}
+
 .result_container {
     background: var(--background2);
     color: white;
