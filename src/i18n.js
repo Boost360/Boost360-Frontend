@@ -15,7 +15,7 @@ i18n
         ch: languageCH
     },
     /* default language when load the website in browser */
-    lng: "en",
+    // lng: "en",
     /* When react i18next not finding any language to as default in borwser */
     fallbackLng: "en",
     /* debugger For Development environment */
