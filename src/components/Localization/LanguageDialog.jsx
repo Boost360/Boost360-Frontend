@@ -10,9 +10,8 @@ import { useTranslation } from "react-i18next";
  */
 
 const LanguageDialog = ({ open, handleClose }) => {
-  const [currentLang, setCurrentLang] = React.useState("en")
   const { t, i18n } = useTranslation();
-
+  const [currentLang, setCurrentLang] = React.useState(i18n.language);
   /**
    * 
    * @param {String} lang  "EN" = English  "CH" = Chinese "KR" = Korean
