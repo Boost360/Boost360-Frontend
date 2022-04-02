@@ -412,8 +412,8 @@
         "Keypoints": {
           "h0": "What's included",
           "price": {
-            "description": "온라인 학습 프로그램의 유지기간은 6개월로 정하여 학습 구조를 지키면서도 자신만의 속도에 맞춰 유연하게 학습할 수 있도록 한다.",
-            "title": "Program Price NZ $990"
+            "description": "이 옵션은 선택한 프로그램에 한해 온라인 모듈만 접근할 수 있습니다.",
+            "title": "모듈 고객만 옵션 제공"
           }
         },
         "QA": {
@@ -573,7 +573,7 @@
           "description": "프로그램 시작부터 6개월 동안 과정을 이수할 수 있습니다."
         },
         "16": {
-          "title": "학생웹포털",
+          "title": "학생 포털, 학생 사이트",
           "description": "수강생에게는 개인 진도 정보가 담긴 BP Golf Academy 홈페이지 포털 로그인이 제공됩니다. 학생과 강사만 액세스할 수 있습니다."
         },
         "17": {
@@ -589,11 +589,11 @@
           "description": "학생 개개인에 따라 학습 module의 정보와 개인 스윙분석이 반영된 연습계획이 작성됩니다."
         },
         "20": {
-          "title": "코치나우어플",
+          "title": "코치 나우 웹",
           "description": "학생들은 강사들과 쉽게 소통하고, 영상 분석 및 질의 응답을 보낼 수 있도록 Coach Now app을 이용할 수 있게 됩니다."
         },
         "21": {
-          "title": "멤버 할인",
+          "title": "멤버 디스카운트",
           "description": "수강 회원들은 Rhys Ogden과 강사들로부터 추가 수업료를 할인 받을 수 있습니다."
         },
         "22": {
@@ -722,7 +722,7 @@
           "TBA" : {
           "name" : "TBA",
           "role" : " 소속프로",
-          "description" : "The Performance Instructors provide an exclusive service to our BP Golf Academy members. Our Performance Instructors are in the process of completing their Masters in Human Movement and Sport Psychology, so they will bring a unique perspective to the learning process, and add a further level of understanding.",
+          "description" : "저희 아카데미의 소속프로들은 아카데미 회원님들에게만 전담 서비스를 제공해드립니다. 저희 아카데미의 소속프로들은 인체역학과 스포츠 심리학을 전공하고 있습니다. 이를 바탕으로 회원님들께 특별한 시각으로 다가가는 학습과정을 제공해드리며 깊게 이해할 수 있도록 도와 드립니다.",
           "priceTable" : {
               "header" : ["", "1 시간 수업", "1 시간 수업 x 5번", "1 시간 수업 x 10번"],
               "rows" : [
@@ -909,7 +909,7 @@
                 "roleBadge" : "../../static/img/partner.png",
                 "role" : "대표 원장",
                 "description" : {
-                    "0": "Rhys Ogden은 23년 경력의 PGA이며 BP Golf Academy의  창립자이자 Head of Instructor입니다.",
+                    "0": "Rhys Ogden은 23년 경력의 PGA이며 BP Golf Academy의  창립자이자 Head of Instruction입니다.",
                     "1": "Mt. Maunganui Golf Club에서 PGA 교육과정을  마친 후, 한국에서 실력파 주니어 골퍼들을 가르쳤습니다. 이러한 경험을 바탕으로 다른 학습 스타일, 커뮤니케이션, 주요 결과물을 통해 다른 문화를 경험 으로써 코칭 능력을 강화시켰습니다.",
                     "2": "그 후12년 동안Auckland University of Technology (AUT)골프학과에서 헤드 골프프로로서 강의를 했으면 Golf Paper Leader로서 근무하는 동안 학과를 위한 골프 커리큘럼을 개발하고 제공하였습니다.",
                     "3": "많은 최고의 스포츠 코치들과 전문가들로부터 지도를 받았고, 이러한 지식과 경험이 합쳐져 오늘날 BP Golf Academy가 제공하는 커리큘럼을 형성하는 데 도움이 되었습니다."
@@ -929,7 +929,7 @@
             "roleBadge" : "../../static/img/partner.png",
             "role" : "대표 원장",
             "description" : {
-              "0": "Rhys Ogden은 23년 경력의 PGA이며 BP Golf Academy의  창립자이자 Head of Instructor입니다.",
+              "0": "Rhys Ogden은 23년 경력의 PGA이며 BP Golf Academy의  창립자이자 Head of Instruction입니다.",
               "1": "Mt. Maunganui Golf Club에서 PGA 교육과정을  마친 후, 한국에서 실력파 주니어 골퍼들을 가르쳤습니다. 이러한 경험을 바탕으로 다른 학습 스타일, 커뮤니케이션, 주요 결과물을 통해 다른 문화를 경험 으로써 코칭 능력을 강화시켰습니다.",
               "2": "그 후12년 동안Auckland University of Technology (AUT)골프학과에서 헤드 골프프로로서 강의를 했으면 Golf Paper Leader로서 근무하는 동안 학과를 위한 골프 커리큘럼을 개발하고 제공하였습니다.",
               "3": "많은 최고의 스포츠 코치들과 전문가들로부터 지도를 받았고, 이러한 지식과 경험이 합쳐져 오늘날 BP Golf Academy가 제공하는 커리큘럼을 형성하는 데 도움이 되었습니다."
