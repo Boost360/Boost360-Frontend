@@ -1,5 +1,4 @@
 import './App.css';
-import './Icon.css';
 import Site from './components/Site/Site';
 import LandingPage from './components/LandingPage/LandingPage';
 import React from 'react'
