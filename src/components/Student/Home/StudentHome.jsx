@@ -19,8 +19,8 @@ export default function StudentHome({setUser}){
         {title: "Schedule", icon: <AiTwotoneCalendar />, path:"/student/schedule"}, ,
         {title: "Result", icon: <AiOutlineCheck />, path:"/student/results"},
         {title: "Modules", icon: <BsBook />, path:"/student/modules"},
-        {title: "Lesson", icon: <AiOutlineProfile />, path:"/student/lesson"},
-        {title: "Video library", icon: <AiOutlineVideoCamera />, path:"/student/video-library"},
+        {title: "Lessons", icon: <AiOutlineProfile />, path:"/student/lesson"},
+        {title: "Video Library", icon: <AiOutlineVideoCamera />, path:"/student/video-library"},
         {title: "Development Program", icon: <AiOutlineSnippets />, path: '/student/development-program'},
     ]
     return(
