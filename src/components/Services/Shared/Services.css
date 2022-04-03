@@ -36,6 +36,10 @@
     .services {
         font-size: 13px;
     }
+
+    .services .section {
+        min-height: auto;
+    }
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
