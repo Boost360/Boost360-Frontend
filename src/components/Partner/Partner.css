@@ -3,7 +3,7 @@
     background: #F1F1F1;
     height: 100vh;
     overflow: scroll;
-    overflow-x: none;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-behavior: -webkit-smooth;
 }
