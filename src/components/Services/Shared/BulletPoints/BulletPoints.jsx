@@ -5,7 +5,7 @@ function BulletPoints({data}) {
   return (
       <div>
           {Object.values(data ? data : {}).map((line, i) => 
-            <div className="bulletPoint">
+            <div className="bulletPoint" key={i}>
                 <span>•</span>
                 {`${line}\n\n`}
             </div>

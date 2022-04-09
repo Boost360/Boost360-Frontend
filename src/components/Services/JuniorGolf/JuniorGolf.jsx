@@ -13,11 +13,11 @@ import QA from '../Shared/QA/QA';
 
 // -----------------------------IMAGE / ICON------------------------------
 import Golfer from '../../../static/img/Junior_background.png'
-import background4 from '../../../static/img/background4.png';
-import background5 from '../../../static/img/background5.png';
-import background6 from '../../../static/img/background6.png';
-import background7 from '../../../static/img/background7.png';
-import background8 from '../../../static/img/background8.png';
+import background4 from '../../../static/img/background9.png';
+import background5 from '../../../static/img/background9.png';
+import background6 from '../../../static/img/background9.png';
+import background7 from '../../../static/img/background9.png';
+import background8 from '../../../static/img/background9.png';
 
 
 
