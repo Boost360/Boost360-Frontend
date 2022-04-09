@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import './Lesson.css';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -7,62 +7,51 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import {lesson} from '../../../api/lesson/lesson';
+import { lesson, student } from '../../../api/lesson/lesson';
 import Skeleton from '@mui/material/Skeleton';
+import { Snackbar, Alert } from "@mui/material";
+import { parseDate, diffInHours } from '../../../util/date';
 
-const Lesson = ({user}) => {
+const Lesson = ({ user }) => {
     const student_id = user._id;
-    const [program, setProgram] = React.useState({
-        type : '',
-        EnrolDate : '',
-        Quantity: 0
-    });
-    // Display 6 empty rows by default
-    const emptyRow = {
-        lessonNumber: '',
-        type: '',
-        duration: '',
-        date: '',
-        location: '',
-        notes: ''
-    };
-    const [rows, setRows] = React.useState(Array(6).fill(emptyRow)); 
+    const [rows, setRows] = useState([]);
+    const [program, setProgram] = useState();
+    const [enroledOn, setEnroledOn] = useState();
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const quantity = useMemo(() => rows.length, [rows]);
+    const handleClose = () => setError(null);
+    const getDate = (string) => parseDate(string).substring(0, 10);
 
-
-
-    const [loading, setLoading] = React.useState(true)
-
-    React.useEffect(async () => {
-        let devData = await lesson(student_id);
-        setProgram(devData.data.program);
-        // Use default empty rows if no content present
-        if (devData.data.rows.length > 0) setRows(devData.data.rows); 
+    useEffect(async () => {
+        // Get student lesson rows.
+        let res = await lesson(student_id);
+        res.status === 200 ? setRows(res.data) : setError(res);
+        // Get student program and enrol date.
+        res = await student(student_id);
+        if (res.status === 200) {
+            setProgram(res.data.program && res.data.program);
+            setEnroledOn(res.data.enroledOn && getDate(res.data.enroledOn));
+        } else {
+            setError(res);
+        }
         setLoading(false);
     }, []);
-    
-
-
-    const stringifyDate = (date) => {
-        if  (date) {
-            const option = {day: '2-digit', month: 'short', year: 'numeric'};
-            return date.toLocaleString('en-AU', option).substring(0, 20);
-        }
-    }
 
     return (
         <div>
             {
-                loading?(
+                loading ? (
                     <div className='lesson_container'>
                         <Skeleton variant="rectangular" height={800} />
                     </div>
 
-                ):(
+                ) : (
                     <div className='lesson_container'>
                         <div className="lesson_program">
-                            <h1>{`Program : ${program.type ? program.type : ''}`}</h1>
-                            <h2>{`Enroled on : ${program.enrolDate ? stringifyDate(program.enrolDate) : ''}`}</h2>
-                            <h2>{`Lessons paid : ${program.quantity ? program.quantity : ''}`}</h2>
+                            <h1>{`Program : ${program ? program : ''}`}</h1>
+                            <h2>{`Enroled on : ${enroledOn ? enroledOn : ''}`}</h2>
+                            <h2>{`Lessons paid : ${quantity ? quantity : ''}`}</h2>
                         </div>
                         <TableContainer component={Paper}>
                             <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -86,20 +75,25 @@ const Lesson = ({user}) => {
                                             <TableCell component="th" scope="row" align="left">
                                                 {row.lessonNumber}
                                             </TableCell>
-                                            <TableCell align="left">{row.type}</TableCell>
-                                            <TableCell align="left">{row.duration ? `${row.duration} Hours` : ''}</TableCell>
-                                            <TableCell align="left">{row.date ? stringifyDate(row.date) : ''}</TableCell>
-                                            <TableCell align="left">{row.location}</TableCell>
-                                            <TableCell align="left">{row.notes}</TableCell>
+                                            <TableCell align="left">{row.isRemote ? 'remote' : 'onsite'}</TableCell>
+                                            <TableCell align="left">{row.endDate && `${diffInHours(row.startDate, row.endDate)} Hours`}</TableCell>
+                                            <TableCell align="left">{row.startDate && getDate(row.startDate)}</TableCell>
+                                            <TableCell align="left">{row.location && row.location}</TableCell>
+                                            <TableCell align="left">{row.notes && row.notes}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>
                             </Table>
                         </TableContainer>
                     </div>
-                    
+
                 )
             }
+            <Snackbar anchorOrigin={{ 'vertical': 'bottom', 'horizontal': 'center' }} open={error} autoHideDuration={20000} onClose={handleClose} >
+                <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+                    {error}
+                </Alert>
+            </Snackbar>
         </div>
 
     );
