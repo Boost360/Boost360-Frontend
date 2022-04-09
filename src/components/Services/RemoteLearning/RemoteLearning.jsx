@@ -12,7 +12,6 @@ import Programs from './Programs/Programs';
 
 // -----------------------------ICON / IMAGE-------------------------------
 import { AiOutlineCheckCircle } from 'react-icons/ai';
-import Golfer from '../../../static/img/Remote_background.png';
 
 
 export default function RemoteLearning() {
@@ -20,8 +19,8 @@ export default function RemoteLearning() {
     const remoteLearning = t('remoteLearning', {returnObjects: true }); // All text content is stored in translation file
     return (
         <div className="services">
-            <div className="section">
-                <Intro data={remoteLearning.Intro} graphic={Golfer} graphicStyle={{width: '35%', height: 'auto', right: '8%', bottom: '5%', zIndex: '-4'}} />
+            <div className="section remote-learning-intro">
+                <Intro data={remoteLearning.Intro} />
             </div>
             <div className="section">
                 <Framework data={remoteLearning.Framework} ver={1}/>

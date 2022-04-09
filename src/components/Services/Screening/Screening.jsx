@@ -7,7 +7,6 @@ import QA from '../Shared/QA/QA'
 import ScreeningSession from '../Shared/ScreeningSession/ScreeningSession'
 
 // -----------------------------IMAGE------------------------------
-import Golfer from '../../../static/img/Screening_background.png';
 import background4 from '../../../static/img/background9.png';
 import background5 from '../../../static/img/background9.png';
 import background6 from '../../../static/img/background9.png';
@@ -43,8 +42,8 @@ function Screening() {
   const logos = [];
   return (
     <div className="services">
-      <div className="section">
-        <Intro data={screening.Intro} graphic={Golfer} graphicStyle={{width: '35%', height: 'auto', right: '10%', bottom: '5%', zIndex: '-4'}} ></Intro>
+      <div className="section screening-intro">
+        <Intro data={screening.Intro}></Intro>
       </div>
       <div className="section">
         <ScreeningSession data={screening.Swing}></ScreeningSession>

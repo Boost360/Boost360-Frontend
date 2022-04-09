@@ -50,8 +50,8 @@ export default function JuniorGolf() {
 
     return (
         <div className="services">
-            <div className="section">
-                <Intro data={juniorGolf.Intro} graphic={Golfer} graphicStyle={{width: '40%', height: 'auto', right: '9%', bottom: '20%', zIndex: '-4'}} />
+            <div className="section junior-academy-intro">
+                <Intro data={juniorGolf.Intro} />
             </div>
             <div className="section">
                 <Gallery images={gallery_images} />
