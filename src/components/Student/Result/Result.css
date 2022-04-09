@@ -2,12 +2,11 @@
 .result_container .css-heg063-MuiTabs-flexContainer {
     display: block!important;
 }
-.result_container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-    font: var(--tertiary-medium);
-    margin: 20px;
-}
+
 .result_container .tab {
     color: var(--inactive);
+    font: var(--tertiary-medium);
+    margin: 20px;
 }
 
 .result_container {
