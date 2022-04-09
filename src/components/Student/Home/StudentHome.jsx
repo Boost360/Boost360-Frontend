@@ -27,8 +27,8 @@ export default function StudentHome({setUser}){
         <div className="StudentHomeMain">
             <div className="StudentHomeContainer">
                 <ul>
-                    {cards.map((card) =>
-                        <StudentHomeCard title={card.title} icon={card.icon} path={card.path}></StudentHomeCard>
+                    {cards.map((card, i) =>
+                        <StudentHomeCard title={card.title} icon={card.icon} path={card.path} key={i}></StudentHomeCard>
                     )}
                     <StudentHomeLogout setUser={setUser}></StudentHomeLogout>
                 </ul>
