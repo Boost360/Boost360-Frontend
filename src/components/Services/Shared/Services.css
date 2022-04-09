@@ -32,16 +32,82 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
     .services {
         font-size: 13px;
     }
-
     .services .section {
-        min-height: auto;
+        min-height: 250px;
     }
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+
+
+
+/* ------------Customized intro backgrounds--------------- */
+
+.remote-learning-intro {
+    background: url('../../../static/img/Remote_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.junior-academy-intro {
+    background: url('../../../static/img/Junior_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.screening-intro {
+    background: url('../../../static/img/Screening_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.coaching-intro {
+    background: url('../../../static/img/Coaching_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+    .remote-learning-intro {
+        background: url('../../../static/img/Remote_background_mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .junior-academy-intro {
+        background: url('../../../static/img/Junior_background_mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .screening-intro {
+        background: url('../../../static/img/Screening_background_mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .coaching-intro {
+        background: url('../../../static/img/Coaching_background_mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
 }

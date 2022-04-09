@@ -15,8 +15,8 @@ import { parseDate, diffInHours } from '../../../util/date';
 const Lesson = ({ user }) => {
     const student_id = user._id;
     const [rows, setRows] = useState([]);
-    const [program, setProgram] = useState();
-    const [enroledOn, setEnroledOn] = useState();
+    const [program, setProgram] = useState('unkown');
+    const [enroledOn, setEnroledOn] = useState('unkown');
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const quantity = useMemo(() => rows.length, [rows]);
@@ -30,8 +30,8 @@ const Lesson = ({ user }) => {
         // Get student program and enrol date.
         res = await student(student_id);
         if (res.status === 200) {
-            setProgram(res.data.program && res.data.program);
-            setEnroledOn(res.data.enroledOn && getDate(res.data.enroledOn));
+            res.data.program && setProgram(res.data.program);
+            res.data.enroledOn && setEnroledOn(getDate(res.data.enroledOn));
         } else {
             setError(res);
         }

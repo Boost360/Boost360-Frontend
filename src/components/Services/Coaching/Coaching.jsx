@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next'
 import Instructor from '../Shared/Instructor/Instructor'
 import Intro from '../Shared/Intro/Intro'
 import QA from '../Shared/QA/QA'
-import Golfer from '../../../static/img/Coaching_background.png'
 import badge from '../../../static/img/partner.png'
 import Tab from '../../Tab/Tab'
 
@@ -16,8 +15,8 @@ function Coaching() {
   const isKr = i18n.language === "kr";
   return (
     <div className="services">
-      <div className="section">
-        <Intro data={coaching.Intro} graphic={Golfer} graphicStyle={{width: '34%', height: 'auto', right: '10%', bottom: '5%', zIndex: '-4'}}></Intro>
+      <div className="section coaching-intro">
+        <Intro data={coaching.Intro}></Intro>
       </div>
       {isKr && 
         <div style={{background: 'var(--white)'}}>
