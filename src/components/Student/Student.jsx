@@ -68,7 +68,7 @@ const Student = ({ user, setUser }) => {
             <Route path={`${path}/video-library`} exact>
                 <PageTransition>
                     <NavBar page='Video-library' user={user}></NavBar>
-                    <VideoLibrary></VideoLibrary>
+                    <VideoLibrary user={user}></VideoLibrary>
                 </PageTransition>
             </Route>
 
