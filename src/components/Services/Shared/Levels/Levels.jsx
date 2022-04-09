@@ -81,7 +81,8 @@ export default function Levels({ data }) {
                 <Level  show={scrollY >= pass[i + 2]}
                         heading={value.h0} 
                         description={value.p0} 
-                        style={{top: positions[i + 2].toString() + 'px'}}/>
+                        style={{top: positions[i + 2].toString() + 'px'}}
+                        key={i}/>
             )}
         </div>
     )
