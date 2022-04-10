@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
+import { Skeleton } from '@mui/material';
 import { ViewState } from '@devexpress/dx-react-scheduler';
 import {
   Scheduler, Appointments, MonthView, Toolbar,
@@ -10,6 +11,10 @@ import { withStyles, createStyles } from '@mui/styles';
 import classNames from 'clsx';
 import Grid from '@mui/material/Grid';
 import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
+import { schedule } from '../../../api/schedule/schedule';
+import { classType } from '../../../api/schedule/classType';
+import NotesOutlinedIcon from '@mui/icons-material/NotesOutlined';
+import TagOutlinedIcon from '@mui/icons-material/TagOutlined';
 
 /**
  * Schedule Conponents for Class Time table.
@@ -33,15 +38,7 @@ const styles = ({ palette }) => createStyles({
   },
 });
 
-const resources = [{
-  fieldName: 'type',
-  title: 'Type',
-  instances: [
-    { id: '1', text: 'Type 1', color: '#6FCF97' },
-    { id: '2', text: 'Type 2', color: '#27AE60' },
-    { id: '3', text: 'Type 3', color: '#219653' },
-  ],
-}];
+
 
 
 const Appointment = withStyles(styles)(({
@@ -63,11 +60,12 @@ const AppointmentContent = withStyles(styles, { name: 'AppointmentContent' })(({
           {data.title}
         </div>
         <div className={classNames(classes.text, classes.content)}>
-          {data.location}
+          {data.type[0].name}
         </div>
         <div className={classNames(classes.text, classes.content)}>
-          {`Type: ${data.type}`}
+          {data.location}
         </div>
+       
       </div>
     </Appointments.AppointmentContent>
   );
@@ -78,78 +76,125 @@ const Content = withStyles(styles, { name: 'Content' })(({
   children, appointmentData, classes, ...restProps
 }) => (
   <AppointmentTooltip.Content {...restProps} appointmentData={appointmentData}>
-    <Grid container alignItems="center">
+
+{appointmentData.lessonNumber?<Grid container alignItems="center">
+     
+     <Grid item xs={2} className={classes.textCenter}>
+       <TagOutlinedIcon className={classes.icon} />
+     </Grid>
+  
+     <Grid item xs={10}>
+       <span>{appointmentData.lessonNumber}</span>
+     </Grid>
+   </Grid>:<></>}
+
+    {appointmentData.location?<Grid container alignItems="center">
+     
       <Grid item xs={2} className={classes.textCenter}>
         <RoomOutlinedIcon className={classes.icon} />
       </Grid>
+   
       <Grid item xs={10}>
         <span>{appointmentData.location}</span>
       </Grid>
-    </Grid>
+    </Grid>:<></>}
+
+    {appointmentData.notes?<Grid container alignItems="center">
+     
+     <Grid item xs={2} className={classes.textCenter}>
+       <NotesOutlinedIcon className={classes.icon} />
+     </Grid>
+  
+     <Grid item xs={10}>
+       <span>{appointmentData.notes}</span>
+     </Grid>
+   </Grid>:<></>}
+
+
+   
   </AppointmentTooltip.Content>
 ));
 
 
 
-const Schedule = () => {
+const Schedule = ({user}) => {
+  const [data,setData] = React.useState([])
 
-  const data = [
-    // {
-    //   title: "Golf Class 1",
-    //   startDate: new Date(2021, 9, 23, 9, 30),
-    //   endDate: new Date(2021, 9, 23, 11, 30),
-    //   location: "Bucklands Beach Golf Club",
-    //   type: '1'
-    // },
-    // {
-    //   title: "Golf Class 2",
-    //   startDate: new Date(2021, 9, 12, 9, 30),
-    //   endDate: new Date(2021, 9, 12, 11, 30),
-    //   location: "Bucklands Beach Golf Club",
-    //   type: '2'
-    // },
-    // {
-    //   title: "Golf Class 3",
-    //   startDate: new Date(2021, 9, 15, 9, 30),
-    //   endDate: new Date(2021, 9, 15, 11, 30),
-    //   location: "Bucklands Beach Golf Club",
-    //   type: '3'
-    // }
-  ]
+  const [loading,setLoading] = React.useState(true)
+  
+  const [reso,setReso] = React.useState([])
+  
 
+  React.useEffect(async () => {
+    const resources = [{
+      fieldName: 'type_id',
+      title: 'Type',
+      instances:[],
+    }];
+    let classTypeRes = await classType();
+
+    let res = await schedule(user._id);
+   
+    if (res.status === 200 && classTypeRes.status===200) {
+      classTypeRes.data.map((type)=>{
+        type.id = type._id
+        type.text = type.name
+     
+      })
+      resources[0].instances=classTypeRes.data
+      setReso(resources)  
+      setData(res.data)
+    
+      
+      
+    } else {
+        
+    }
+    setLoading(false);
+}, []);
+
+  
 
 
   return (
 
     <div className="schedulePage">
-      <div className="schedule">
-        <Paper>
-          <Scheduler
-            data={data}
-          >
-            <ViewState
-              defaultCurrentDate="2021-10-26"
-            />
-            <MonthView />
-            <Toolbar />
-            <DateNavigator />
-            <TodayButton />
-            <Appointments
-              appointmentComponent={Appointment}
-              appointmentContentComponent={AppointmentContent}
-            />
-            <AppointmentTooltip
-              contentComponent={Content}
-              showCloseButton
-            />
-            <Resources
-              data={resources}
-            />
-           
-          </Scheduler>
-        </Paper>
-      </div>
-    </div>
+       <div className="schedule">
+      {loading?  <Skeleton variant="rectangular" height={800} />:
+      
+       <Paper>
+         <Scheduler
+           data={data}
+         >
+           <ViewState
+            
+           />
+           <MonthView />
+           <Toolbar />
+           <DateNavigator />
+           <TodayButton />
+           <Appointments
+             appointmentComponent={Appointment}
+             appointmentContentComponent={AppointmentContent}
+           />
+           <AppointmentTooltip
+             contentComponent={Content}
+             showCloseButton
+           />
+           <Resources
+             data={reso}
+           />
+          
+         </Scheduler>
+       </Paper>
+  
+      
+      
+      }
+       </div>
+      
+       </div>
+     
   );
 }
 

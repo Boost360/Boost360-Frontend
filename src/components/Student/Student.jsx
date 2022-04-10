@@ -31,7 +31,7 @@ const Student = ({ user, setUser }) => {
             <Route path={`${path}/schedule`} exact>
                 <PageTransition>
                     <NavBar page='Schedule' user={user}></NavBar>
-                    <Schedule></Schedule>
+                    <Schedule user={user}></Schedule>
                 </PageTransition>
             </Route>
 
