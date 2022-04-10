@@ -42,7 +42,7 @@
 
 .video_library_image_container svg {
     position: relative;
-    stroke: white;
+    stroke: var(--inactive);
     fill: transparent;
     top: -100px;
     font-size: 50px;
