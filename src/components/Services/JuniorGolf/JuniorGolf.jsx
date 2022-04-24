@@ -53,9 +53,6 @@ export default function JuniorGolf() {
             <div className="section junior-academy-intro">
                 <Intro data={juniorGolf.Intro} />
             </div>
-            <div className="section">
-                <Gallery images={gallery_images} />
-            </div>
             {/* <div className="section">
                 <HowItWorks data={juniorGolf.HowItWorks} icon={null} />
             </div> */}
@@ -65,6 +62,9 @@ export default function JuniorGolf() {
             <div className="section" style={{ padding: '0px' }}>
                 <Keypoints heading={juniorGolf.Keypoints.h0}
                     select={[0, 1, 2, 3, 4, 5, 16, 7, 20, 9, 10, 21, 12, 13, 14]}/>
+            </div>
+            <div className="section">
+                <Gallery images={gallery_images} />
             </div>
             <div className="section">
                 <QA data={juniorGolf.QA} addQA={juniorGolf.addQA[i18n.language]}/>
