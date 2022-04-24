@@ -24,7 +24,7 @@ const PartnerDetail = ({partner}) => {
                     })()}
                 </div>
                 <div className='partner_detail_website_link_container'>
-                    <a href={partner.partnerLink}>website link</a>
+                    <a href={partner.partnerLink}>{partner.partnerLink}</a>
                 </div>
             </div>
         </div>
