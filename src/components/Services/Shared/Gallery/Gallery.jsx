@@ -31,7 +31,7 @@ function Gallery({images}) {
             slideNumber={false}
             slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
-            automatic={true}
+            automatic={false}
             dots={true}
             pauseIconColor="white"
             pauseIconSize="40px"
