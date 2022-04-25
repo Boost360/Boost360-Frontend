@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { AiOutlineDollarCircle, AiTwotoneCalendar, AiOutlineLaptop, AiOutlineFundProjectionScreen, AiOutlineFieldTime, AiOutlineLogin, AiOutlineMobile } from 'react-icons/ai';
 import { HiOutlineBadgeCheck } from 'react-icons/hi';
 import { IoIosPeople } from 'react-icons/io';
-import { FaSchool, FaToolbox } from 'react-icons/fa';
+import { FaToolbox } from 'react-icons/fa';
 import { GoPackage, GoLocation } from 'react-icons/go';
 import { BiBookBookmark, BiVideo, BiUserPlus } from  'react-icons/bi';
 import { BsCardChecklist } from 'react-icons/bs';
@@ -21,7 +21,7 @@ const icons = {
     7: <AiOutlineLaptop className='icon' />,
     8: <FaToolbox className='icon' />,
     9: <AiOutlineFundProjectionScreen className='icon' />,
-    10: <FaSchool className='icon' />,
+    10: <span className='icon' style={{ font: "normal normal 500 50px 'Montserrat'" }}> AD </span>,
     11: <HiOutlineBadgeCheck className='icon' />,
     12: <GoPackage className='icon' />,
     13: <BiUserPlus className='icon' />,
