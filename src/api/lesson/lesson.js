@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url = process.env.REACT_APP_API;
-
+// lesson api is no longer used due to change of client requirements.
 export async function lesson(id) {
     const headers = {
         'x-access-token': localStorage.getItem('token')

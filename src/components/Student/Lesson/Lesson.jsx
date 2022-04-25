@@ -7,7 +7,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { lesson, student } from '../../../api/lesson/lesson';
+import { student } from '../../../api/lesson/lesson';
+import { schedule } from '../../../api/schedule/schedule';
 import Skeleton from '@mui/material/Skeleton';
 import { Snackbar, Alert } from "@mui/material";
 import { parseDate, diffInHours } from '../../../util/date';
@@ -19,14 +20,17 @@ const Lesson = ({ user }) => {
     const [enroledOn, setEnroledOn] = useState('unkown');
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const quantity = useMemo(() => rows.length, [rows]);
     const handleClose = () => setError(null);
     const getDate = (string) => parseDate(string).substring(0, 10);
 
     useEffect(async () => {
-        // Get student lesson rows.
-        let res = await lesson(student_id);
-        res.status === 200 ? setRows(res.data) : setError(res);
+        // Get student lesson rows, and sort by date.
+        let res = await schedule(student_id);
+        if (res.status === 200) {
+            setRows( await res.data.sort((a, b) => parseDate(a.startDate) <= parseDate(b.startDate) ? -1 : 1)) 
+        } else {
+            setError(res); 
+        }
         // Get student program and enrol date.
         res = await student(student_id);
         if (res.status === 200) {
@@ -51,13 +55,13 @@ const Lesson = ({ user }) => {
                         <div className="lesson_program">
                             <h1>{`Program : ${program ? program : ''}`}</h1>
                             <h2>{`Enroled on : ${enroledOn ? enroledOn : ''}`}</h2>
-                            <h2>{`Lessons paid : ${quantity ? quantity : ''}`}</h2>
                         </div>
                         <TableContainer component={Paper}>
                             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                                 <TableHead>
                                     <TableRow className='lesson_header'>
                                         <TableCell align="left">Lesson Number</TableCell>
+                                        <TableCell align="left">Status</TableCell>
                                         <TableCell align="left">Type</TableCell>
                                         <TableCell align="left">Duration</TableCell>
                                         <TableCell align="left">Date</TableCell>
@@ -75,6 +79,7 @@ const Lesson = ({ user }) => {
                                             <TableCell component="th" scope="row" align="left">
                                                 {row.lessonNumber}
                                             </TableCell>
+                                            <TableCell align="left">{row.isPaid ? 'Paid' : 'Unpay'}</TableCell>
                                             <TableCell align="left">{row.isRemote ? 'remote' : 'onsite'}</TableCell>
                                             <TableCell align="left">{row.endDate && `${diffInHours(row.startDate, row.endDate)} Hours`}</TableCell>
                                             <TableCell align="left">{row.startDate && getDate(row.startDate)}</TableCell>
