@@ -301,7 +301,7 @@
         "remoteLearning":{
             "Intro": {
                 "h0": "Remote Learning",
-                "content": "In order to maximise your learning opportunity we have created a comprehensive self-learning program. This provides you with the flexibility to learn at your own pace whilst working around other commitments.\n\nYou will receive a comprehensive toolkit of services, designed to ensure you are fully supported and continually learning the skills required to perfect your technique and knowledge.\n\nThe program is aligned with our online modular learning system, which includes topic information, video instruction and interactive quizzes to reinforce learning."
+                "content": "The Remote Learning Program is a new addition to the BP Golf Academy services. It is a project that is still under construction with availability dates set out in the membership details below. \n\nThe dates listed allow us the time deliver the Remote Learning Program service to the high standard we want for our students.\n\nIn order to maximise your learning opportunity we have created a comprehensive self-learning program. This provides you with the flexibility to learn at your own pace whilst working around other commitments.\n\nYou will receive a comprehensive toolkit of services, designed to ensure you are fully supported and continually learning the skills required to perfect your technique and knowledge.\n\nThe program is aligned with our online modular learning system, which includes topic information, video instruction and interactive quizzes to reinforce learning."
             },
             "HowItWorks": {
                 "h0": "How we start",
@@ -345,13 +345,9 @@
                         "h0": "Incentives",
                         "p0": { "0": "Receive a 10% discount on your next program when you achieve your required marks."}
                     },
-                    "5": {
-                        "h0": "Language",
-                        "p0": {"0":"The learning modules and voice-over video swing analysis are available in English, Korean and Chinese."}
-                    },
                     "6": {
                         "h0": "Contact",
-                        "p0": {"0":"For ease of communication for students or parents, we have a person to communicate in English, Korean and Chinese."}
+                        "p0": {"0":"For easy communication for students or parents, we have a person to communicate in English, Korean and Chinese when arranging the program."}
                     },
                     "7": {
                         "h0": "Personal Tuition",
@@ -366,8 +362,8 @@
             "Keypoints": {
                 "h0": "Membership Program",
                 "price": {
-                    "title": "Modules Only Option",
-                    "description": "This option allows the student access to the online modules only, specific to the selected program."
+                    "title": "Program Availability",
+                    "description": "Building your Short Game \t\t\t\t 03/06/2022 \n\nGolf Equipment / The Golf Course \t\t 03/09/2022 \n\nBuilding your Golf Swing \t\t\t\t 03/12/2022"
                 }
             },
             "QA": {
@@ -479,8 +475,8 @@
                 "description": "Each student will be given weekly practice tasks with options to complete either at home or at a practice facility."
             },
             "10": {
-                "title": "Holiday Program",
-                "description": "Our Academy students will get first option of enrolment for holiday programs. Program options will be made available 6 weeks out from term break."
+                "title": "Athlete Development",
+                "description": "Based at AUT Millennium, Athlete Development will provide out Junior Academy students with training and education to better their physical and mental development skills."
             },
             "11": {
                 "title": "Rewards",
@@ -512,7 +508,7 @@
             },
             "18": {
                 "title":"Video Swing Analysis",
-                "description":"Students will receive 12 video swing analysis lessons. The videos include detailed analysis and voice-over instruction."
+                "description":"Students will receive 12 video swing analysis lessons. The videos include detailed analysis and voice-over instruction.\nNote: Video swing analysis is not part of the Golf Equipment program and The Golf Course program."
             },
             "19": {
                 "title":"Lessons Plan",
@@ -577,7 +573,7 @@
             },
             "Movement" : {
               "h0" : "Movement Screening",
-              "description" : "Movement screening is based around the body and swing connection. The movement screening will allow the golf coach to identify the most efficient way for you to swing according to your body functionality.\n\nThe screening options begin with balance and movement competency, with further options for advanced athletes, assessing dynamic strength, body composition and nutrition.",
+              "description" : "AUT Millennium Sports Performance Clinic will provide the services for physical screening and development programs.\n\nMovement screening is based around the body and swing connection. The movement screening will allow the golf coach to identify the most efficient way for you to swing according to your body functionality.\n\nThe screening options begin with balance and movement competency, with further options for advanced athletes, assessing dynamic strength, body composition and nutrition.",
               "outcome" : {
                 "h0" : "Screening outcomes : ",
                 "points" : {
@@ -663,7 +659,7 @@
                 },
                 "1" : {
                     "question" : "How do I qualify for a member price?",
-                    "answer" : {"0" : "You must be one of the following :\n- RemoteLlearning Program Member\n- Junior Academy member\n- Waitakere Golf Course member\n- Rutherford College students and staff"}
+                    "answer" : {"0" : "You must be one of the following :\n- Remote Learning Program Member\n- Junior Academy member\n- Waitakere Golf Course member\n- Rutherford College students or staff"}
                 },
                 "2" : {
                     "question" : "What is the price for 2 or more students per lesson?",
@@ -734,7 +730,7 @@
               }
         },
         "programs": {
-            "h0": "Learning programs",
+            "h0": "Learning Programs",
             "Equipment": {
               "title": "Introduction to Golf Equipment",
               "modules": "10 MODULES",
@@ -769,27 +765,10 @@
             },
             "SwingShort": {
               "title": "Golf Swing Technique - Short Game",
-              "modules": "28 MODULES",
-              "outcome": {
-                "h0": "LEARNING OUTCOMES",
-                "h1": "Chipping / Pitching / Wedge Game / Bunker Shots / Putting",
-                "points": {
-                  "0": "Swing Setup – Create a strong swing foundation.",
-                  "1": "Motion – Understand how each body part moves throughout the swing.",
-                  "2": "Key Swing Position – Execute key swing positions.",
-                  "3": "Swing Sequence – Develop a dynamic swing motion.",
-                  "4": "Golf Club Dynamics – Understand how the golf club moves through impact including key data.",
-                  "5": "Specialty Shots – Make swing adjustments to play slopes/lies/shot shaping."
-                }
-              },
-              "price" : "Modules Only Option   $495\n\nMembership Program  $995"
-            },
-            "SwingLong": {
-              "title": "Golf Swing Technique - Long Game",
               "modules": "22 MODULES",
               "outcome": {
                 "h0": "LEARNING OUTCOMES",
-                "h1": "Irons / Fairway Woods / Driver",
+                "h1": "Chipping / Pitching / Wedge Game / Bunker Shots / Putting",
                 "points": {
                   "0": "Execute swing technique for the specific shot types.",
                   "1": "Understand where to play the various shot types.",
@@ -799,7 +778,24 @@
                   "5": "Adjust technique for specialty shots, including lies and slopes."
                 }
               },
-              "price" : "Modules Only Option   $595\n\nMembership Program  $995"
+              "price" : "$995"
+            },
+            "SwingLong": {
+              "title": "Golf Swing Technique - Long Game",
+              "modules": "28 MODULES",
+              "outcome": {
+                "h0": "LEARNING OUTCOMES",
+                "h1": "Irons / Fairway Woods / Driver",
+                "points": {
+                    "0": "Swing Setup – Create a strong swing foundation.",
+                    "1": "Motion – Understand how each body part moves throughout the swing.",
+                    "2": "Key Swing Position – Execute key swing positions.",
+                    "3": "Swing Sequence – Develop a dynamic swing motion.",
+                    "4": "Golf Club Dynamics – Understand how the golf club moves through impact including key data.",
+                    "5": "Specialty Shots – Make swing adjustments to play slopes/lies/shot shaping."
+                }
+              },
+              "price" : "$995"
             }
           },
         "team" : {

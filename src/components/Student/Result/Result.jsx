@@ -118,9 +118,9 @@ const Result = ({user}) => {
                     allowScrollButtonsMobile
                     aria-label="scrollable force tabs example"
                 >
-                    <Tab label="Notice" {...a11yProps(0)} />
+                    <Tab label="Notices" {...a11yProps(0)} />
                     <Tab label="Swing Data" {...a11yProps(1)} />
-                    <Tab label="Equipments" {...a11yProps(2)} />
+                    <Tab label="Equipment" {...a11yProps(2)} />
                     <Tab label="Yardages" {...a11yProps(3)} />
                     <Tab label="Progress Reports" {...a11yProps(4)} />
                     <Tab label="Physical Development" {...a11yProps(5)} />

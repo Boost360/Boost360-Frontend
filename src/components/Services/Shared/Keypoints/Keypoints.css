@@ -37,6 +37,10 @@
     line-height: 1.2em;
 }
 
+.keypoints .price p {
+    white-space: pre-wrap;
+}
+
 @media screen and (max-width: 768px) {
     .keypoints .price {
         width: 300px;
