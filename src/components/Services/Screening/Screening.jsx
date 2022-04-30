@@ -12,12 +12,17 @@ import background5 from '../../../static/img/background9.png';
 import background6 from '../../../static/img/background9.png';
 import background7 from '../../../static/img/background9.png';
 import background8 from '../../../static/img/background9.png';
+import gallery0 from '../../../static/img/Screening_gallery0.png';
 
 
 function Screening() {
   const [t, i18n] = useTranslation();
   const screening = t('screening', {returnObjects: true});
   const gallery_images = [
+    {
+      image: gallery0,
+      caption: "description"
+    },
     {
         image: background8,
         caption: "description" 

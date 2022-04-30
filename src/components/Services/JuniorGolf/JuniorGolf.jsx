@@ -12,12 +12,11 @@ import Gallery from '../Shared/Gallery/Gallery';
 import QA from '../Shared/QA/QA';
 
 // -----------------------------IMAGE / ICON------------------------------
-import Golfer from '../../../static/img/Junior_background.png'
 import background4 from '../../../static/img/background9.png';
 import background5 from '../../../static/img/background9.png';
 import background6 from '../../../static/img/background9.png';
 import background7 from '../../../static/img/background9.png';
-import background8 from '../../../static/img/background9.png';
+import gallery0 from '../../../static/img/Junior_gallery0.png';
 
 
 
@@ -27,7 +26,7 @@ export default function JuniorGolf() {
     const juniorGolf = t('juniorGolf', {returnObjects: true });
     const gallery_images = [
         {
-            image: background8,
+            image: gallery0,
             caption: "description" 
         }, 
         {
