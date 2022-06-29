@@ -119,7 +119,7 @@ const NavBar = ({ page, user, header = null }) => {
     const MobileMenu = () => {
         return <div className="menuItems-mobile-wrapper" onClick={closeMobileMenu}>
             <div className="menuItems-mobile">
-                <MenuItem page='Remote-learning' className="menuItem-mobile" />
+                {/* <MenuItem page='Remote-learning' className="menuItem-mobile" /> */}
                 <MenuItem page='Junior-golf' className="menuItem-mobile" />
                 <MenuItem page='Screening' className="menuItem-mobile" />
                 <MenuItem page='Coaching' className="menuItem-mobile" />
@@ -133,7 +133,7 @@ const NavBar = ({ page, user, header = null }) => {
 
     const DesktopMenu = () => {
         return <div className="menuItems-middle">
-            <MenuItem page='Remote-learning' />
+            {/* <MenuItem page='Remote-learning' /> */}
             <MenuItem page='Junior-golf' />
             <MenuItem page='Screening' />
             <MenuItem page='Coaching' />
