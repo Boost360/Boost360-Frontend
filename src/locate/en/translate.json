@@ -549,7 +549,7 @@
                 }
               },
               "summary" : "At the conclusion of the screening a report will be available that includes all data collected. The report will also contain recommended areas of development.",
-              "price" : "$ 150"
+              "price" : ""
           
             },
             "Club" : {
@@ -568,8 +568,7 @@
                 }
               },
               "summary" : "A detailed equipment specification report will be available to you. This is a great reference to have for the consistency of future fitting sessions.",
-              "price" : "$ 150"
-          
+              "price" : ""       
             },
             "Movement" : {
               "h0" : "Movement Screening",
@@ -583,7 +582,7 @@
                 }
               },
               "summary" : "At the conclusion of the screening a report will be available that identifies areas with limitations, along with a movement development plan.",
-              "price" : "$ PROGRAM DEPENDENT"
+              "price" : ""
           
             },
             "QA": {

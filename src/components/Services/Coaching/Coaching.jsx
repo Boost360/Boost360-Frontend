@@ -26,9 +26,9 @@ function Coaching() {
       <div className="section">
         <Instructor data={tab === 0 ? coaching.Instructors.Rhys : coaching.KrInstructors.Rhys} badge={badge}></Instructor>
       </div>
-      <div className="section">
+      {/* <div className="section">
         <Instructor data={tab === 0 ? coaching.Instructors.TBA : coaching.KrInstructors.TBA}></Instructor>
-      </div>
+      </div> */}
       <div className="section">
         <QA data={tab === 0 ? coaching.QA : coaching.KrQA}></QA>
       </div>

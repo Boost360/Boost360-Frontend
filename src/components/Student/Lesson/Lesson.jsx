@@ -52,10 +52,11 @@ const Lesson = ({ user }) => {
 
                 ) : (
                     <div className='lesson_container'>
-                        <div className="lesson_program">
+                        {/* Hide the program & enrol date on client's requirement */}
+                        {/* <div className="lesson_program">
                             <h1>{`Program : ${program ? program : ''}`}</h1>
                             <h2>{`Enroled on : ${enroledOn ? enroledOn : ''}`}</h2>
-                        </div>
+                        </div> */}
                         <TableContainer component={Paper}>
                             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                                 <TableHead>
