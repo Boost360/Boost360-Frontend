@@ -7,12 +7,9 @@ import QA from '../Shared/QA/QA'
 import ScreeningSession from '../Shared/ScreeningSession/ScreeningSession'
 
 // -----------------------------IMAGE------------------------------
-import background4 from '../../../static/img/background9.png';
-import background5 from '../../../static/img/background9.png';
-import background6 from '../../../static/img/background9.png';
-import background7 from '../../../static/img/background9.png';
-import background8 from '../../../static/img/background9.png';
 import gallery0 from '../../../static/img/Screening_gallery0.png';
+import gallery1 from '../../../static/img/Screening_gallery1.jpeg';
+import gallery2 from '../../../static/img/Screening_gallery2.jpeg';
 
 
 function Screening() {
@@ -24,25 +21,13 @@ function Screening() {
       caption: "description"
     },
     {
-        image: background8,
+        image: gallery1,
         caption: "description" 
     }, 
     {
-        image: background7,
+        image: gallery2,
         caption: "description" 
-    }, 
-    {
-        image: background6,
-        caption: "description" 
-    }, 
-    {
-        image: background5,
-        caption: "description" 
-    }, 
-    {
-        image: background4,
-        caption: "description" 
-    }, 
+    },
   ]
   const logos = [];
   return (

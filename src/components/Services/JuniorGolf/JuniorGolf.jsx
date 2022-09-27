@@ -12,11 +12,11 @@ import Gallery from '../Shared/Gallery/Gallery';
 import QA from '../Shared/QA/QA';
 
 // -----------------------------IMAGE / ICON------------------------------
-import background4 from '../../../static/img/background9.png';
-import background5 from '../../../static/img/background9.png';
-import background6 from '../../../static/img/background9.png';
-import background7 from '../../../static/img/background9.png';
 import gallery0 from '../../../static/img/Junior_gallery0.png';
+import gallery1 from '../../../static/img/Junior_gallery1.jpeg';
+import gallery2 from '../../../static/img/Junior_gallery2.jpeg';
+import gallery3 from '../../../static/img/Junior_gallery3.png';
+import gallery4 from '../../../static/img/Junior_gallery4.png';
 
 
 
@@ -30,19 +30,19 @@ export default function JuniorGolf() {
             caption: "description" 
         }, 
         {
-            image: background7,
+            image: gallery1,
             caption: "description" 
         }, 
         {
-            image: background6,
+            image: gallery2,
             caption: "description" 
         }, 
         {
-            image: background5,
+            image: gallery3,
             caption: "description" 
         }, 
         {
-            image: background4,
+            image: gallery4,
             caption: "description" 
         }, 
     ]
