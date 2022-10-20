@@ -17,6 +17,10 @@ import gallery1 from '../../../static/img/Junior_gallery1.jpeg';
 import gallery2 from '../../../static/img/Junior_gallery2.jpeg';
 import gallery3 from '../../../static/img/Junior_gallery3.png';
 import gallery4 from '../../../static/img/Junior_gallery4.png';
+import gallery5 from '../../../static/img/Junior_gallery5.png';
+import gallery6 from '../../../static/img/Junior_gallery6.png';
+import gallery7 from '../../../static/img/Junior_gallery7.png';
+import gallery8 from '../../../static/img/Junior_gallery8.png';
 
 
 
@@ -43,6 +47,22 @@ export default function JuniorGolf() {
         }, 
         {
             image: gallery4,
+            caption: "description" 
+        }, 
+        {
+            image: gallery5,
+            caption: "description" 
+        }, 
+        {
+            image: gallery6,
+            caption: "description" 
+        }, 
+        {
+            image: gallery7,
+            caption: "description" 
+        }, 
+        {
+            image: gallery8,
             caption: "description" 
         }, 
     ]
