@@ -20,7 +20,6 @@ import gallery4 from '../../../static/img/Junior_gallery4.png';
 import gallery5 from '../../../static/img/Junior_gallery5.png';
 import gallery6 from '../../../static/img/Junior_gallery6.png';
 import gallery7 from '../../../static/img/Junior_gallery7.png';
-import gallery8 from '../../../static/img/Junior_gallery8.png';
 
 
 
@@ -30,7 +29,7 @@ export default function JuniorGolf() {
     const juniorGolf = t('juniorGolf', {returnObjects: true });
     const gallery_images = [
         {
-            image: gallery0,
+            image: gallery2,
             caption: "description" 
         }, 
         {
@@ -38,7 +37,11 @@ export default function JuniorGolf() {
             caption: "description" 
         }, 
         {
-            image: gallery2,
+            image: gallery5,
+            caption: "description" 
+        }, 
+        {
+            image: gallery0,
             caption: "description" 
         }, 
         {
@@ -46,25 +49,17 @@ export default function JuniorGolf() {
             caption: "description" 
         }, 
         {
-            image: gallery4,
+            image: gallery7,
             caption: "description" 
         }, 
         {
-            image: gallery5,
+            image: gallery4,
             caption: "description" 
         }, 
         {
             image: gallery6,
             caption: "description" 
-        }, 
-        {
-            image: gallery7,
-            caption: "description" 
-        }, 
-        {
-            image: gallery8,
-            caption: "description" 
-        }, 
+        },
     ]
 
     return (

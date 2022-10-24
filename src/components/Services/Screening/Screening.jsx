@@ -8,7 +8,7 @@ import ScreeningSession from '../Shared/ScreeningSession/ScreeningSession'
 
 // -----------------------------IMAGE------------------------------
 import gallery0 from '../../../static/img/Screening_gallery0.png';
-// import gallery1 from '../../../static/img/Screening_gallery1.jpeg';
+import gallery1 from '../../../static/img/Screening_gallery1.png';
 // import gallery2 from '../../../static/img/Screening_gallery2.jpeg';
 
 
@@ -20,10 +20,10 @@ function Screening() {
       image: gallery0,
       caption: "description"
     },
-    // {
-    //     image: gallery1,
-    //     caption: "description" 
-    // }, 
+    {
+        image: gallery1,
+        caption: "description" 
+    }, 
     // {
     //     image: gallery2,
     //     caption: "description" 
