@@ -1,6 +1,7 @@
 import './App.css';
 import Site from './components/Site/Site';
 import LandingPage from './components/LandingPage/LandingPage';
+import Maintenance from './components/Maintenance/Maintenance';
 import React from 'react'
 import { getSelf } from './api/login/login'
 
@@ -10,8 +11,6 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-
-
 
 
 function App() {
@@ -34,13 +33,15 @@ function App() {
         <div className="App" >
             <Switch>
 
-                <Route path="/" exact>
+                {/* <Route path="/" exact>
                     <LandingPage user={user} ></LandingPage>
                 </Route>
 
-                <Site user={user} setUser={setUser}></Site>
+                <Site user={user} setUser={setUser}></Site> */}
 
-
+                <Route path="/">
+                    <Maintenance />
+                </Route>
 
             </Switch>
 

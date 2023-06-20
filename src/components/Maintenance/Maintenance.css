@@ -1,0 +1,37 @@
+
+.Maintenance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Maintenance h1 {
+    font: var(--primary-light);
+    line-height: 170%;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-image: url('../../static/img/logo/black.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .Maintenance h1 {
+        font-size: 30px;
+    }
+    .logo { 
+        width: 60px;
+        height: 60px;
+    }
+}

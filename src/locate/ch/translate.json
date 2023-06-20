@@ -1,6 +1,7 @@
 {
     "translations": {
       "lang": null,
+      "maintenance": "This site is under maintenance...\nWe will be back soon",
       "landing": {
         "enter": "进入网站",
         "login": "学生登录",
